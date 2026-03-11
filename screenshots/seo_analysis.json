@@ -1,0 +1,3401 @@
+{
+  "desktop": {
+    "viewport": {
+      "name": "desktop",
+      "width": 1920,
+      "height": 1080
+    },
+    "seo": {
+      "title": "Home - ENCALMA VACACIONAL",
+      "metaDescription": "estancias en calma El lugar perfecto para desconectar y disfrutar de tus vacaciones. Encuentra tu escapada perfecta Nuestros servicios Tu lugar de vacaciones",
+      "metaKeywords": null,
+      "ogTitle": "Home - ENCALMA VACACIONAL",
+      "ogDescription": "estancias en calma El lugar perfecto para desconectar y disfrutar de tus vacaciones. Encuentra tu escapada perfecta Nuestros servicios Tu lugar de vacaciones en Puerto de Sagunto Espacios para disfrutar de un entorno privilegiado junto al mar Apartamentos vacacionales con alma mediterránea Viviendas acogedoras, pensadas para desconectar y sentirte como en casa Más que anfitriones, vuestros compañeros de viaje Nos apasiona recibiros, conoceros y garantizar que vuestra estancia sea especial ¿Qué dicen de nosotros?Valoraciones de clientes reales Estancias en calma EnCalma Vacacional El Ático Luz, espacio, comodidad, amplitud, tranquilidad, bienestar… para tu familia, tus amigos, tu gente. EnCalma Vacacional La Playa Desayuna con la salida del sol, come con la brisa del mar, cena a la luz de la luna, duerme con el arrullo de las olas…  Ricardo Para repetir!! «Salgo encantado, tanto con los anfitriones como con la casa y la ubicación volvería con los ojos cerrados.» Elena Gusto por los detalles «La casa estaba impecable y tenía muchos detalles. Hemos estado muy a gusto» África Los mejores anfitriones «Un apartamento precioso. Gloria y Álvaro super encantadores con unos detalles que son de agradecer.La playa está a 10 min andando, volveremos seguro» SOBRE NOSOTROS Gloria y Álvaro, el alma de Encalma Vacacional Gloria y Álvaro, pareja en lo personal y lo profesional.Gloria, metódica, perfeccionista, rigurosa, orden y cerebro del back office.Álvaro, apasionado, enérgico, resolutivo, el corazón del front office. Juntos formamos Encalma Vacacional, nuestra pequeña empresa que gestiona 2 apartamentos, por lo que somos nosotros los encargados de absolutamente todo desde el momento de la reserva.La limpieza y revisión del apartamento la hacemos nosotros dos, por lo que garantizamos una limpieza con mucho esmero y cuidado, orden y absolutamente todo revisado antes de recibiros personalmente para daros la bienvenida y las llaves de vuestra casa.Damos lo mejor de nosotros mismos, nos encanta nuestro trabajo y nos sentimos orgullos de que nos confiéis vuestras vacaciones. Reserva tu escapada perfecta Déjanos ser parte de tu descanso: alojamientos cuidados al detalle, trato cercano y auténtica hospitalidad. Dos alojamientos únicos, el Mediterráneo como escenario y nosotros como tus anfitriones personales. CONTACTA",
+      "ogImage": "https://encalmavacacional.com/wp-content/uploads/2026/02/logo_encalma.webp",
+      "h1": [
+        "estancias",
+        "en calma",
+        "Reserva tu escapada perfecta"
+      ],
+      "h2": [
+        "Encuentra tu escapada perfecta",
+        "Nuestros servicios",
+        "",
+        "Estancias en calma"
+      ],
+      "missingAlt": [
+        {
+          "src": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMSIgaGVpZ2h0PSIxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC",
+          "width": 1,
+          "height": 1
+        }
+      ],
+      "buttons": [
+        "Aceptar",
+        "Denegar",
+        "Ver preferencias",
+        "Guardar preferencias",
+        "Ver preferencias",
+        "Alternar menú",
+        "Main Menu",
+        "Alternar menú",
+        "Gestionar consentimiento"
+      ],
+      "popups": [
+        {
+          "selector": "[class*=\"modal\"]",
+          "visible": false,
+          "text": ""
+        },
+        {
+          "selector": "[class*=\"cookie\"]",
+          "visible": false,
+          "text": "Gestionar consentimiento\nPara ofrecer las mejores experiencias, utilizamos tecno"
+        },
+        {
+          "selector": "[class*=\"cookie\"]",
+          "visible": false,
+          "text": "Administrar opciones"
+        },
+        {
+          "selector": "[class*=\"cookie\"]",
+          "visible": false,
+          "text": "Gestionar los servicios"
+        },
+        {
+          "selector": "[class*=\"cookie\"]",
+          "visible": false,
+          "text": "Gestionar {vendor_count} proveedores"
+        },
+        {
+          "selector": "[class*=\"cookie\"]",
+          "visible": false,
+          "text": "Ver preferencias"
+        },
+        {
+          "selector": "[class*=\"cookie\"]",
+          "visible": true,
+          "text": "Política de cookies"
+        }
+      ],
+      "aboveFold": [
+        {
+          "tag": "SPAN",
+          "text": "Funcional",
+          "top": 0
+        },
+        {
+          "tag": "SPAN",
+          "text": "Preferencias",
+          "top": 0
+        },
+        {
+          "tag": "SPAN",
+          "text": "Estadísticas",
+          "top": 0
+        },
+        {
+          "tag": "SPAN",
+          "text": "Marketing",
+          "top": 0
+        },
+        {
+          "tag": "H1",
+          "text": "estancias",
+          "top": 337
+        },
+        {
+          "tag": "H1",
+          "text": "en calma",
+          "top": 377
+        },
+        {
+          "tag": "H2",
+          "text": "Encuentra tu escapada perfecta",
+          "top": 590
+        },
+        {
+          "tag": "P",
+          "text": "WhatsApp",
+          "top": 0
+        }
+      ],
+      "navLinks": [
+        "Inicio",
+        "Apartamentos",
+        "Anfitriones",
+        "Contacto",
+        "Inicio",
+        "Apartamentos",
+        "Apartamento Vacacional La Playa",
+        "Apartamento Vacacional El Atico",
+        "Anfitriones",
+        "Contacto",
+        "Inicio",
+        "Apartamentos"
+      ],
+      "jsonLds": [
+        {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "WebPage",
+              "@id": "https://encalmavacacional.com/",
+              "url": "https://encalmavacacional.com/",
+              "name": "Home - ENCALMA VACACIONAL",
+              "isPartOf": {
+                "@id": "https://encalmavacacional.com/#website"
+              },
+              "about": {
+                "@id": "https://encalmavacacional.com/#organization"
+              },
+              "primaryImageOfPage": {
+                "@id": "https://encalmavacacional.com/#primaryimage"
+              },
+              "image": {
+                "@id": "https://encalmavacacional.com/#primaryimage"
+              },
+              "thumbnailUrl": "http://encalmavacacional.com/wp-content/uploads/2026/02/logo_encalma.webp",
+              "datePublished": "2025-09-04T08:38:17+00:00",
+              "dateModified": "2026-02-24T07:28:50+00:00",
+              "breadcrumb": {
+                "@id": "https://encalmavacacional.com/#breadcrumb"
+              },
+              "inLanguage": "es",
+              "potentialAction": [
+                {
+                  "@type": "ReadAction",
+                  "target": [
+                    "https://encalmavacacional.com/"
+                  ]
+                }
+              ]
+            },
+            {
+              "@type": "ImageObject",
+              "inLanguage": "es",
+              "@id": "https://encalmavacacional.com/#primaryimage",
+              "url": "https://encalmavacacional.com/wp-content/uploads/2026/02/logo_encalma.webp",
+              "contentUrl": "https://encalmavacacional.com/wp-content/uploads/2026/02/logo_encalma.webp",
+              "width": 768,
+              "height": 215,
+              "caption": "logo encalma"
+            },
+            {
+              "@type": "BreadcrumbList",
+              "@id": "https://encalmavacacional.com/#breadcrumb",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Portada"
+                }
+              ]
+            },
+            {
+              "@type": "WebSite",
+              "@id": "https://encalmavacacional.com/#website",
+              "url": "https://encalmavacacional.com/",
+              "name": "ENCALMA VACACIONAL",
+              "description": "Apartamentos Vacacionales Puerto de Sagunto",
+              "publisher": {
+                "@id": "https://encalmavacacional.com/#organization"
+              },
+              "alternateName": "ENCALMA VACACIONAL",
+              "potentialAction": [
+                {
+                  "@type": "SearchAction",
+                  "target": {
+                    "@type": "EntryPoint",
+                    "urlTemplate": "https://encalmavacacional.com/?s={search_term_string}"
+                  },
+                  "query-input": {
+                    "@type": "PropertyValueSpecification",
+                    "valueRequired": true,
+                    "valueName": "search_term_string"
+                  }
+                }
+              ],
+              "inLanguage": "es"
+            },
+            {
+              "@type": "Organization",
+              "@id": "https://encalmavacacional.com/#organization",
+              "name": "ENCALMA VACACIONAL",
+              "url": "https://encalmavacacional.com/",
+              "logo": {
+                "@type": "ImageObject",
+                "inLanguage": "es",
+                "@id": "https://encalmavacacional.com/#/schema/logo/image/",
+                "url": "http://encalmavacacional.com/wp-content/uploads/2025/09/ChatGPT-Image-18-sept-2025-10_32_15.png",
+                "contentUrl": "http://encalmavacacional.com/wp-content/uploads/2025/09/ChatGPT-Image-18-sept-2025-10_32_15.png",
+                "width": 1024,
+                "height": 1024,
+                "caption": "ENCALMA VACACIONAL"
+              },
+              "image": {
+                "@id": "https://encalmavacacional.com/#/schema/logo/image/"
+              }
+            }
+          ]
+        },
+        {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "WebSite",
+              "@id": "https://encalmavacacional.com/#website",
+              "name": "ENCALMA VACACIONAL",
+              "description": "Apartamentos Vacacionales Puerto de Sagunto",
+              "url": "https://encalmavacacional.com/",
+              "potentialAction": {
+                "@id": "https://encalmavacacional.com/#searchaction"
+              },
+              "publisher": {
+                "@id": "https://encalmavacacional.com/#organization"
+              }
+            },
+            {
+              "@type": "WebPage",
+              "@id": "https://encalmavacacional.com#webpage",
+              "name": "Home",
+              "inLanguage": "es_ES",
+              "url": "https://encalmavacacional.com",
+              "isPartOf": {
+                "@id": "https://encalmavacacional.com/#website"
+              },
+              "publisher": {
+                "@id": "https://encalmavacacional.com/#organization"
+              }
+            },
+            {
+              "@type": "Organization",
+              "@id": "https://encalmavacacional.com/#organization",
+              "name": "ENCALMA VACACIONAL",
+              "logo": "https://encalmavacacional.com/wp-content/uploads/2025/09/favicon.png",
+              "slogan": "Apartamentos Vacacionales Puerto de Sagunto",
+              "url": "https://encalmavacacional.com/ "
+            },
+            {
+              "@type": "SearchAction",
+              "@id": "https://encalmavacacional.com/#searchaction",
+              "target": "http://encalmavacacional.com/?s={search_term_string}",
+              "query-input": "required name=search_term_string"
+            }
+          ]
+        },
+        {
+          "@context": "https://schema.org/",
+          "@type": "Product",
+          "name": "ENCALMA VACACIONAL",
+          "image": "https://cdn.trustindex.io/companies/36/36619c391587g630/avatar.jpg",
+          "url": "https://www.encalmavacacional.com",
+          "sku": "36619c391587g630",
+          "description": "ENCALMA VACACIONAL is trusted by over 43 happy customers, earning a 5-star rating! Explore real reviews and share your own experience.",
+          "manufacturer": {
+            "@type": "Organization",
+            "@id": "https://www.trustindex.io/reviews/www.encalmavacacional.com",
+            "name": "ENCALMA VACACIONAL",
+            "logo": "https://cdn.trustindex.io/companies/36/36619c391587g630/avatar.jpg",
+            "url": "https://www.encalmavacacional.com",
+            "description": "ENCALMA VACACIONAL is trusted by over 43 happy customers, earning a 5-star rating! Explore real reviews and share your own experience.",
+            "image": {
+              "@type": "ImageObject",
+              "url": "https://cdn.trustindex.io/companies/36/36619c391587g630/screenshot.jpg",
+              "width": 500,
+              "height": 348
+            },
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Carrer Vent de Gregal, 3",
+              "addressLocality": "Port de Sagunt",
+              "postalCode": "46520",
+              "addressCountry": "ES"
+            },
+            "brand": {
+              "@type": "Brand",
+              "@id": "https://www.encalmavacacional.com",
+              "name": "ENCALMA VACACIONAL"
+            }
+          },
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "worstRating": 1,
+            "bestRating": 5,
+            "ratingValue": 5,
+            "ratingCount": 43
+          },
+          "review": [
+            {
+              "@type": "Review",
+              "datePublished": "2026-02-09T00:00:00+00:00",
+              "reviewBody": "&amp;lt;strong&amp;gt;Excepcional&amp;lt;/strong&amp;gt;",
+              "inLanguage": "es",
+              "url": "https://www.booking.com/hotel/es/encalma-vacacional-sientedisfruta-vive-la-playa.es.html",
+              "author": {
+                "@type": "Person",
+                "name": "Sebastián"
+              },
+              "reviewRating": {
+                "@type": "Rating",
+                "worstRating": 1,
+                "bestRating": 10,
+                "ratingValue": 10
+              },
+              "publisher": {
+                "@type": "Organization",
+                "name": "Trustindex",
+                "sameAs": "https://www.trustindex.io"
+              }
+            },
+            {
+              "@type": "Review",
+              "datePublished": "2026-01-01T00:00:00+00:00",
+              "reviewBody": "&amp;lt;strong&amp;gt;Excepcional&amp;lt;/strong&amp;gt;",
+              "inLanguage": "es",
+              "url": "https://www.booking.com/hotel/es/encalma-vacacional-sientedisfruta-vive-la-playa.es.html",
+              "author": {
+                "@type": "Person",
+                "name": "Hans"
+              },
+              "reviewRating": {
+                "@type": "Rating",
+                "worstRating": 1,
+                "bestRating": 10,
+                "ratingValue": 10
+              },
+              "publisher": {
+                "@type": "Organization",
+                "name": "Trustindex",
+                "sameAs": "https://www.trustindex.io"
+              }
+            },
+            {
+              "@type": "Review",
+              "datePublished": "2025-12-28T00:00:00+00:00",
+              "reviewBody": "Excelente piso, muy bonito, agradable y muy luminoso. La vista increíble totalmente recomendado. Alvaro muy amable y cordial. Se preocupa de todos los detalles.",
+              "inLanguage": "es",
+              "url": "https://www.airbnb.com/rooms/1439648635281761501",
+              "author": {
+                "@type": "Person",
+                "name": "Jorge"
+              },
+              "reviewRating": {
+                "@type": "Rating",
+                "worstRating": 1,
+                "bestRating": 5,
+                "ratingValue": 5
+              },
+              "publisher": {
+                "@type": "Organization",
+                "name": "Trustindex",
+                "sameAs": "https://www.trustindex.io"
+              }
+            },
+            {
+              "@type": "Review",
+              "datePublished": "2025-12-22T00:00:00+00:00",
+              "reviewBody": "El apartamento super bonito, a superado nuestras expectativas es fiel a las fotos.Alvarito y Gloria unos super anfitriones, muy resolutivos y muy cercanos. Llegamos super tarde y Alvarito nos ayudó a buscar un restaurante cerca del apartamento y comimos de lujo. Nos hemos sentido como en casa.Tener parking es un super extra. Sin duda volveremos las próximas vacaciones .",
+              "inLanguage": "es",
+              "url": "https://www.airbnb.com/rooms/1439649589703571365",
+              "author": {
+                "@type": "Person",
+                "name": "Maribel"
+              },
+              "reviewRating": {
+                "@type": "Rating",
+                "worstRating": 1,
+                "bestRating": 5,
+                "ratingValue": 5
+              },
+              "publisher": {
+                "@type": "Organization",
+                "name": "Trustindex",
+                "sameAs": "https://www.trustindex.io"
+              }
+            },
+            {
+              "@type": "Review",
+              "datePublished": "2025-12-20T00:00:00+00:00",
+              "reviewBody": "En general, todo espectacular, desde el primer contacto con Álvaro y Gloria hasta que nos hemos ido.La casa es genial y muy cómoda como se describe en el anuncio pero lo mejor de todo, son ellos por cómo se involucran y la amabilidad y disponibilidad en todo momento.Experiencia de 10.Gracias",
+              "inLanguage": "es",
+              "url": "https://www.airbnb.com/rooms/1439649589703571365",
+              "author": {
+                "@type": "Person",
+                "name": "Raul"
+              },
+              "reviewRating": {
+                "@type": "Rating",
+                "worstRating": 1,
+                "bestRating": 5,
+                "ratingValue": 5
+              },
+              "publisher": {
+                "@type": "Organization",
+                "name": "Trustindex",
+                "sameAs": "https://www.trustindex.io"
+              }
+            },
+            {
+              "@type": "Review",
+              "datePublished": "2025-12-14T14:44:37+00:00",
+              "reviewBody": "",
+              "inLanguage": "-",
+              "url": "https://www.google.com/maps/search/?api=1&amp;query=Google&amp;query_place_id=ChIJSd8GzDEXYA0R2_bjyej_e4w",
+              "author": {
+                "@type": "Person",
+                "name": "Lucia Lucia"
+              },
+              "reviewRating": {
+                "@type": "Rating",
+                "worstRating": 1,
+                "bestRating": 5,
+                "ratingValue": 5
+              },
+              "publisher": {
+                "@type": "Organization",
+                "name": "Trustindex",
+                "sameAs": "https://www.trustindex.io"
+              }
+            },
+            {
+              "@type": "Review",
+              "datePublished": "2025-12-14T00:00:00+00:00",
+              "reviewBody": "Pues sencillamente magnífico lugar el de Gloria y Álvaro. Tal y como se describe en las fotos o incluso mejor: amplísimo, con terraza magnifica, limpio y cómodo. Los anfitriones excepcionales, siempre atentos y dispuestos para el proceso de llegada y durante la estancia. Hemos estado muy cómodos y repetiremos sin dudar si visitamos Port Sagunt de nuevo. Recomendado a la comunidad AirBnB 100%.",
+              "inLanguage": "es",
+              "url": "https://www.airbnb.com/rooms/1439649589703571365",
+              "author": {
+                "@type": "Person",
+                "name": "Rafael"
+              },
+              "reviewRating": {
+                "@type": "Rating",
+                "worstRating": 1,
+                "bestRating": 5,
+                "ratingValue": 5
+              },
+              "publisher": {
+                "@type": "Organization",
+                "name": "Trustindex",
+                "sameAs": "https://www.trustindex.io"
+              }
+            },
+            {
+              "@type": "Review",
+              "datePublished": "2025-12-09T00:00:00+00:00",
+              "reviewBody": "&amp;lt;strong&amp;gt;Wow&amp;lt;/strong&amp;gt; ☺ Hosting fantastico, appartamento grande e ben curato e anche la location meritava, impagabile svegliarsi con l&amp;#039;alba in primo piano  ☹ Nulla",
+              "inLanguage": "it",
+              "url": "https://www.booking.com/hotel/es/encalma-vacacional-sientedisfruta-vive-la-playa.es.html",
+              "author": {
+                "@type": "Person",
+                "name": "Critelli"
+              },
+              "reviewRating": {
+                "@type": "Rating",
+                "worstRating": 1,
+                "bestRating": 10,
+                "ratingValue": 10
+              },
+              "publisher": {
+                "@type": "Organization",
+                "name": "Trustindex",
+                "sameAs": "https://www.trustindex.io"
+              }
+            },
+            {
+              "@type": "Review",
+              "datePublished": "2025-12-08T00:00:00+00:00",
+              "reviewBody": "Je recommande ce logement, très propre Correspond au descriptif de l’annonce",
+              "inLanguage": "fr",
+              "url": "https://www.airbnb.com/rooms/1439649589703571365",
+              "author": {
+                "@type": "Person",
+                "name": "Christophe"
+              },
+              "reviewRating": {
+                "@type": "Rating",
+                "worstRating": 1,
+                "bestRating": 5,
+                "ratingValue": 5
+              },
+              "publisher": {
+                "@type": "Organization",
+                "name": "Trustindex",
+                "sameAs": "https://www.trustindex.io"
+              }
+            },
+            {
+              "@type": "Review",
+              "datePublished": "2025-12-05T06:09:31+00:00",
+              "reviewBody": "De principio a fin, simplemente perfecto. La ubicación del apartamento es en la playa tal cual, mas cerca no se puede estar. Se ve sin levantarte de la cama, literal pues la habitacion tiene una pequeña terraza, aparte de la principal Decorado con mucho gusto y con todo tipo de detalles. Hasta para ir a la playa teniamos sillas, sombrilla, nevera, toallas, raquetas, petanca... Y limpio, muy muy limpio. Los anfitriones, Álvaro y Gloria, unos cracks. Super simpaticos y cercanos. Era nuestro aniversario, y vi en la web que para celebraciones asi, ellos se encargaban de decorar el apartamento o reservar un restaurante... como yo ya tenia preparada alguna sorpresa a mi chica, solo les pedi que decoraran la habitacion. Lo hicieron con sencillez pero con mucha elegancia, nada de llenarlo todo de globos y cosas asi. Me cobraron por el  extra 20€, osea el cava que pusieron, pero llegar al apartamento y encontrartelo con ese detalle y alguna sorpresa mas que nos prepararon, no tiene precio. Muchisimas gracias pareja, porque hemos pasado un fin de semana maravilloso, y gran culpa la teneis vosotros. Nos volveros a ver pronto",
+              "inLanguage": "es",
+              "url": "https://www.google.com/maps/search/?api=1&amp;query=Google&amp;query_place_id=ChIJSd8GzDEXYA0R2_bjyej_e4w",
+              "author": {
+                "@type": "Person",
+                "name": "AzaharHomes"
+              },
+              "reviewRating": {
+                "@type": "Rating",
+                "worstRating": 1,
+                "bestRating": 5,
+                "ratingValue": 5
+              },
+              "publisher": {
+                "@type": "Organization",
+                "name": "Trustindex",
+                "sameAs": "https://www.trustindex.io"
+              }
+            },
+            {
+              "@type": "Review",
+              "datePublished": "2025-11-26T00:00:00+00:00",
+              "reviewBody": "&amp;lt;strong&amp;gt;Excelencia y calidad&amp;lt;/strong&amp;gt; ☺ Es un piso fabuloso,con unos anfitriones excelentes.Todo muy limpió,moderno ,sin faltar ningún detalle para que te sientas en casa,con unas vistas de ensueño.  Llegas allí y no quieres volver!Un piso más que nuevo,moderno y muy luminoso!Destacó la atención de los anfitriones, que son super amables, estando pendiente de todo para que tú estancia sea perfecta,con todo lujo de detalles:como café en cápsulas,fruta de temporada,etc , que hace que tú estancia allí se sienta como en un hotel 5* . Volveré,sin duda!  ☹ Me gustó todo",
+              "inLanguage": "es",
+              "url": "https://www.booking.com/hotel/es/encalma-vacacional-sientedisfruta-vive-la-playa.es.html",
+              "author": {
+                "@type": "Person",
+                "name": "Caterina"
+              },
+              "reviewRating": {
+                "@type": "Rating",
+                "worstRating": 1,
+                "bestRating": 10,
+                "ratingValue": 10
+              },
+              "publisher": {
+                "@type": "Organization",
+                "name": "Trustindex",
+                "sameAs": "https://www.trustindex.io"
+              }
+            },
+            {
+              "@type": "Review",
+              "datePublished": "2025-11-25T15:29:01+00:00",
+              "reviewBody": "Apartamento en primerisima linea de una playa grande y bonita dentro de una urbanizacion ideal para los niños. El apartamento super limpio y todo nuevo , no le faltaba de nada. Y los anfitriones super agradables y atentos.,",
+              "inLanguage": "es",
+              "url": "https://www.google.com/maps/search/?api=1&amp;query=Google&amp;query_place_id=ChIJSd8GzDEXYA0R2_bjyej_e4w",
+              "author": {
+                "@type": "Person",
+                "name": "Ricardo Paesa"
+              },
+              "reviewRating": {
+                "@type": "Rating",
+                "worstRating": 1,
+                "bestRating": 5,
+                "ratingValue": 5
+              },
+              "publisher": {
+                "@type": "Organization",
+                "name": "Trustindex",
+                "sameAs": "https://www.trustindex.io"
+              }
+            },
+            {
+              "@type": "Review",
+              "datePublished": "2025-11-23T00:00:00+00:00",
+              "reviewBody": "El finde de semana ha sido fantástico!! Álvaro y Gloria son unos anfitriones atentos, amables, cariñosos,empaticos, alegres..sin duda de 10, volveremos a repetir porque nos hemos sentido como en casa...Un abrazo muy fuerte y no es un adiós es un hasta pronto familia!!! un 10 !!!!",
+              "inLanguage": "es",
+              "url": "https://www.airbnb.com/rooms/1439649589703571365",
+              "author": {
+                "@type": "Person",
+                "name": "Maria"
+              },
+              "reviewRating": {
+                "@type": "Rating",
+                "worstRating": 1,
+                "bestRating": 5,
+                "ratingValue": 5
+              },
+              "publisher": {
+                "@type": "Organization",
+                "name": "Trustindex",
+                "sameAs": "https://www.trustindex.io"
+              }
+            },
+            {
+              "@type": "Review",
+              "datePublished": "2025-11-16T00:00:00+00:00",
+              "reviewBody": "el apartamento precio y muy bien ubicado y ellos muy majos y agradables!!",
+              "inLanguage": "es",
+              "url": "https://www.airbnb.com/rooms/1439648635281761501",
+              "author": {
+                "@type": "Person",
+                "name": "Víctor"
+              },
+              "reviewRating": {
+                "@type": "Rating",
+                "worstRating": 1,
+                "bestRating": 5,
+                "ratingValue": 5
+              },
+              "publisher": {
+                "@type": "Organization",
+                "name": "Trustindex",
+                "sameAs": "https://www.trustindex.io"
+              }
+            },
+            {
+              "@type": "Review",
+              "datePublished": "2025-11-16T00:00:00+00:00",
+              "reviewBody": "Todo perfecto, el lugar muy bonito y Gloria muy amable y atenta. Cuando volvamos la próxima vez sin duda nos gustaría volver.",
+              "inLanguage": "es",
+              "url": "https://www.airbnb.com/rooms/1439649589703571365",
+              "author": {
+                "@type": "Person",
+                "name": "Carolina"
+              },
+              "reviewRating": {
+                "@type": "Rating",
+                "worstRating": 1,
+                "bestRating": 5,
+                "ratingValue": 5
+              },
+              "publisher": {
+                "@type": "Organization",
+                "name": "Trustindex",
+                "sameAs": "https://www.trustindex.io"
+              }
+            },
+            {
+              "@type": "Review",
+              "datePublished": "2025-11-11T00:00:00+00:00",
+              "reviewBody": "Acceuil tres sympathique, Alvaro et Gloria sont aussi très disponibles. Appartement incroyablement bien pensé, bien équipé. Propre, moderne et lumineux avec de belles vues mer, levé de soleil magnifique assuré!Nous recommandons en dehors des dates ou nous y serons!",
+              "inLanguage": "fr",
+              "url": "https://www.airbnb.com/rooms/1439648635281761501",
+              "author": {
+                "@type": "Person",
+                "name": "Véronique"
+              },
+              "reviewRating": {
+                "@type": "Rating",
+                "worstRating": 1,
+                "bestRating": 5,
+                "ratingValue": 5
+              },
+              "publisher": {
+                "@type": "Organization",
+                "name": "Trustindex",
+                "sameAs": "https://www.trustindex.io"
+              }
+            },
+            {
+              "@type": "Review",
+              "datePublished": "2025-11-09T00:00:00+00:00",
+              "reviewBody": "Todo perfecto. El alojamiento estaba impecable, muy cómodo y con todo lo necesario. Los anfitriones fueron encantadores y atentos en todo momento. Nos sentimos como en casa. ¡Sin duda repetiríamos!",
+              "inLanguage": "es",
+              "url": "https://www.airbnb.com/rooms/1439649589703571365",
+              "author": {
+                "@type": "Person",
+                "name": "Angel"
+              },
+              "reviewRating": {
+                "@type": "Rating",
+                "worstRating": 1,
+                "bestRating": 5,
+                "ratingValue": 5
+              },
+              "publisher": {
+                "@type": "Organization",
+                "name": "Trustindex",
+                "sameAs": "https://www.trustindex.io"
+              }
+            },
+            {
+              "@type": "Review",
+              "datePublished": "2025-11-09T00:00:00+00:00",
+              "reviewBody": "&amp;lt;strong&amp;gt;Todo perfecto&amp;lt;/strong&amp;gt; ☺ La ubicación inmejorable y la comodidad de tener todo cerca.Gloria,la anfitrióna ha sido muy detallista con nosotros y nos preparó una pequeña sorpresa a la llegada. Al piso no le falta detalle y está igual que en las fotos o incluso mejor.Repetiremos sin duda.  ☹ Me gustó todo",
+              "inLanguage": "es",
+              "url": "https://www.booking.com/hotel/es/encalma-vacacional-sientedisfruta-vive-la-playa.es.html",
+              "author": {
+                "@type": "Person",
+                "name": "Maria"
+              },
+              "reviewRating": {
+                "@type": "Rating",
+                "worstRating": 1,
+                "bestRating": 10,
+                "ratingValue": 10
+              },
+              "publisher": {
+                "@type": "Organization",
+                "name": "Trustindex",
+                "sameAs": "https://www.trustindex.io"
+              }
+            },
+            {
+              "@type": "Review",
+              "datePublished": "2025-10-27T00:00:00+00:00",
+              "reviewBody": "Me ha encantado todo. El piso una maravilla todo nuevo muy bien cuidado y con muchos detalles 100% recomendable. Limpio y los anfitriones fenomenales repetiré a futuro. Que la gente no dude de esta estancia. Si puedo ayudar que elijan esta casa que van a quedar encantados.",
+              "inLanguage": "es",
+              "url": "https://www.airbnb.com/rooms/1439648635281761501",
+              "author": {
+                "@type": "Person",
+                "name": "Roberto"
+              },
+              "reviewRating": {
+                "@type": "Rating",
+                "worstRating": 1,
+                "bestRating": 5,
+                "ratingValue": 5
+              },
+              "publisher": {
+                "@type": "Organization",
+                "name": "Trustindex",
+                "sameAs": "https://www.trustindex.io"
+              }
+            },
+            {
+              "@type": "Review",
+              "datePublished": "2025-10-25T00:00:00+00:00",
+              "reviewBody": "A localidade é um tanto distante de Valência, e como era nosso objetivo, o incômodo da distância foi compensada pela ótima estadia. Uma casa de verdade com várias facilidades e presentes para nós. produtos de qualidade, ofertados pelo simpático e prestativo proprietário, o sr. Álvaro. Penso que a cidade deve ser efervescente no verão, mas no outono é meio vazia.",
+              "inLanguage": "pt",
+              "url": "https://www.airbnb.com/rooms/1439649589703571365",
+              "author": {
+                "@type": "Person",
+                "name": "Matheus"
+              },
+              "reviewRating": {
+                "@type": "Rating",
+                "worstRating": 1,
+                "bestRating": 5,
+                "ratingValue": 5
+              },
+              "publisher": {
+                "@type": "Organization",
+                "name": "Trustindex",
+                "sameAs": "https://www.trustindex.io"
+              }
+            }
+          ]
+        }
+      ],
+      "bodyFontSize": "16px",
+      "smallTargets": [
+        {
+          "tag": "BUTTON",
+          "text": "Aceptar",
+          "width": 238,
+          "height": 45
+        },
+        {
+          "tag": "BUTTON",
+          "text": "Denegar",
+          "width": 238,
+          "height": 45
+        },
+        {
+          "tag": "A",
+          "text": "Política de cookies",
+          "width": 111,
+          "height": 27
+        },
+        {
+          "tag": "A",
+          "text": "Política de privacidad",
+          "width": 128,
+          "height": 27
+        },
+        {
+          "tag": "A",
+          "text": "Aviso legal",
+          "width": 64,
+          "height": 27
+        },
+        {
+          "tag": "A",
+          "text": "Ir al contenido",
+          "width": 1,
+          "height": 1
+        },
+        {
+          "tag": "A",
+          "text": "",
+          "width": 133,
+          "height": 44
+        },
+        {
+          "tag": "A",
+          "text": "Inicio",
+          "width": 57,
+          "height": 27
+        },
+        {
+          "tag": "A",
+          "text": "Apartamentos",
+          "width": 129,
+          "height": 27
+        },
+        {
+          "tag": "A",
+          "text": "Anfitriones",
+          "width": 102,
+          "height": 27
+        }
+      ],
+      "totalImages": 24
+    },
+    "horizontal_scroll": false,
+    "screenshots": {
+      "above_fold": "/mnt/c/MCP_CLAUDE/JOSE/NaranjaIT/En_Calma_Vacacional/screenshots/desktop_above_fold.png",
+      "full_page": "/mnt/c/MCP_CLAUDE/JOSE/NaranjaIT/En_Calma_Vacacional/screenshots/desktop_full_page.png"
+    }
+  },
+  "laptop": {
+    "viewport": {
+      "name": "laptop",
+      "width": 1366,
+      "height": 768
+    },
+    "seo": {
+      "title": "Home - ENCALMA VACACIONAL",
+      "metaDescription": "estancias en calma El lugar perfecto para desconectar y disfrutar de tus vacaciones. Encuentra tu escapada perfecta Nuestros servicios Tu lugar de vacaciones",
+      "metaKeywords": null,
+      "ogTitle": "Home - ENCALMA VACACIONAL",
+      "ogDescription": "estancias en calma El lugar perfecto para desconectar y disfrutar de tus vacaciones. Encuentra tu escapada perfecta Nuestros servicios Tu lugar de vacaciones en Puerto de Sagunto Espacios para disfrutar de un entorno privilegiado junto al mar Apartamentos vacacionales con alma mediterránea Viviendas acogedoras, pensadas para desconectar y sentirte como en casa Más que anfitriones, vuestros compañeros de viaje Nos apasiona recibiros, conoceros y garantizar que vuestra estancia sea especial ¿Qué dicen de nosotros?Valoraciones de clientes reales Estancias en calma EnCalma Vacacional El Ático Luz, espacio, comodidad, amplitud, tranquilidad, bienestar… para tu familia, tus amigos, tu gente. EnCalma Vacacional La Playa Desayuna con la salida del sol, come con la brisa del mar, cena a la luz de la luna, duerme con el arrullo de las olas…  Ricardo Para repetir!! «Salgo encantado, tanto con los anfitriones como con la casa y la ubicación volvería con los ojos cerrados.» Elena Gusto por los detalles «La casa estaba impecable y tenía muchos detalles. Hemos estado muy a gusto» África Los mejores anfitriones «Un apartamento precioso. Gloria y Álvaro super encantadores con unos detalles que son de agradecer.La playa está a 10 min andando, volveremos seguro» SOBRE NOSOTROS Gloria y Álvaro, el alma de Encalma Vacacional Gloria y Álvaro, pareja en lo personal y lo profesional.Gloria, metódica, perfeccionista, rigurosa, orden y cerebro del back office.Álvaro, apasionado, enérgico, resolutivo, el corazón del front office. Juntos formamos Encalma Vacacional, nuestra pequeña empresa que gestiona 2 apartamentos, por lo que somos nosotros los encargados de absolutamente todo desde el momento de la reserva.La limpieza y revisión del apartamento la hacemos nosotros dos, por lo que garantizamos una limpieza con mucho esmero y cuidado, orden y absolutamente todo revisado antes de recibiros personalmente para daros la bienvenida y las llaves de vuestra casa.Damos lo mejor de nosotros mismos, nos encanta nuestro trabajo y nos sentimos orgullos de que nos confiéis vuestras vacaciones. Reserva tu escapada perfecta Déjanos ser parte de tu descanso: alojamientos cuidados al detalle, trato cercano y auténtica hospitalidad. Dos alojamientos únicos, el Mediterráneo como escenario y nosotros como tus anfitriones personales. CONTACTA",
+      "ogImage": "https://encalmavacacional.com/wp-content/uploads/2026/02/logo_encalma.webp",
+      "h1": [
+        "estancias",
+        "en calma",
+        "Reserva tu escapada perfecta"
+      ],
+      "h2": [
+        "Encuentra tu escapada perfecta",
+        "Nuestros servicios",
+        "",
+        "Estancias en calma"
+      ],
+      "missingAlt": [
+        {
+          "src": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMSIgaGVpZ2h0PSIxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC",
+          "width": 1,
+          "height": 1
+        }
+      ],
+      "buttons": [
+        "Aceptar",
+        "Denegar",
+        "Ver preferencias",
+        "Guardar preferencias",
+        "Ver preferencias",
+        "Alternar menú",
+        "Main Menu",
+        "Alternar menú",
+        "Gestionar consentimiento"
+      ],
+      "popups": [
+        {
+          "selector": "[class*=\"modal\"]",
+          "visible": false,
+          "text": ""
+        },
+        {
+          "selector": "[class*=\"cookie\"]",
+          "visible": false,
+          "text": "Gestionar consentimiento\nPara ofrecer las mejores experiencias, utilizamos tecno"
+        },
+        {
+          "selector": "[class*=\"cookie\"]",
+          "visible": false,
+          "text": "Administrar opciones"
+        },
+        {
+          "selector": "[class*=\"cookie\"]",
+          "visible": false,
+          "text": "Gestionar los servicios"
+        },
+        {
+          "selector": "[class*=\"cookie\"]",
+          "visible": false,
+          "text": "Gestionar {vendor_count} proveedores"
+        },
+        {
+          "selector": "[class*=\"cookie\"]",
+          "visible": false,
+          "text": "Ver preferencias"
+        },
+        {
+          "selector": "[class*=\"cookie\"]",
+          "visible": true,
+          "text": "Política de cookies"
+        }
+      ],
+      "aboveFold": [
+        {
+          "tag": "DIV",
+          "text": "Gestionar consentimiento\nPara ofrecer las mejores experiencias, utilizamos tecnologías como las cookies para almacenar y",
+          "top": 466
+        },
+        {
+          "tag": "SPAN",
+          "text": "Funcional",
+          "top": 0
+        },
+        {
+          "tag": "SPAN",
+          "text": "Preferencias",
+          "top": 0
+        },
+        {
+          "tag": "SPAN",
+          "text": "Estadísticas",
+          "top": 0
+        },
+        {
+          "tag": "SPAN",
+          "text": "Marketing",
+          "top": 0
+        },
+        {
+          "tag": "H1",
+          "text": "estancias",
+          "top": 337
+        },
+        {
+          "tag": "H1",
+          "text": "en calma",
+          "top": 377
+        },
+        {
+          "tag": "H2",
+          "text": "Encuentra tu escapada perfecta",
+          "top": 590
+        },
+        {
+          "tag": "P",
+          "text": "WhatsApp",
+          "top": 0
+        }
+      ],
+      "navLinks": [
+        "Inicio",
+        "Apartamentos",
+        "Anfitriones",
+        "Contacto",
+        "Inicio",
+        "Apartamentos",
+        "Apartamento Vacacional La Playa",
+        "Apartamento Vacacional El Atico",
+        "Anfitriones",
+        "Contacto",
+        "Inicio",
+        "Apartamentos"
+      ],
+      "jsonLds": [
+        {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "WebPage",
+              "@id": "https://encalmavacacional.com/",
+              "url": "https://encalmavacacional.com/",
+              "name": "Home - ENCALMA VACACIONAL",
+              "isPartOf": {
+                "@id": "https://encalmavacacional.com/#website"
+              },
+              "about": {
+                "@id": "https://encalmavacacional.com/#organization"
+              },
+              "primaryImageOfPage": {
+                "@id": "https://encalmavacacional.com/#primaryimage"
+              },
+              "image": {
+                "@id": "https://encalmavacacional.com/#primaryimage"
+              },
+              "thumbnailUrl": "http://encalmavacacional.com/wp-content/uploads/2026/02/logo_encalma.webp",
+              "datePublished": "2025-09-04T08:38:17+00:00",
+              "dateModified": "2026-02-24T07:28:50+00:00",
+              "breadcrumb": {
+                "@id": "https://encalmavacacional.com/#breadcrumb"
+              },
+              "inLanguage": "es",
+              "potentialAction": [
+                {
+                  "@type": "ReadAction",
+                  "target": [
+                    "https://encalmavacacional.com/"
+                  ]
+                }
+              ]
+            },
+            {
+              "@type": "ImageObject",
+              "inLanguage": "es",
+              "@id": "https://encalmavacacional.com/#primaryimage",
+              "url": "https://encalmavacacional.com/wp-content/uploads/2026/02/logo_encalma.webp",
+              "contentUrl": "https://encalmavacacional.com/wp-content/uploads/2026/02/logo_encalma.webp",
+              "width": 768,
+              "height": 215,
+              "caption": "logo encalma"
+            },
+            {
+              "@type": "BreadcrumbList",
+              "@id": "https://encalmavacacional.com/#breadcrumb",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Portada"
+                }
+              ]
+            },
+            {
+              "@type": "WebSite",
+              "@id": "https://encalmavacacional.com/#website",
+              "url": "https://encalmavacacional.com/",
+              "name": "ENCALMA VACACIONAL",
+              "description": "Apartamentos Vacacionales Puerto de Sagunto",
+              "publisher": {
+                "@id": "https://encalmavacacional.com/#organization"
+              },
+              "alternateName": "ENCALMA VACACIONAL",
+              "potentialAction": [
+                {
+                  "@type": "SearchAction",
+                  "target": {
+                    "@type": "EntryPoint",
+                    "urlTemplate": "https://encalmavacacional.com/?s={search_term_string}"
+                  },
+                  "query-input": {
+                    "@type": "PropertyValueSpecification",
+                    "valueRequired": true,
+                    "valueName": "search_term_string"
+                  }
+                }
+              ],
+              "inLanguage": "es"
+            },
+            {
+              "@type": "Organization",
+              "@id": "https://encalmavacacional.com/#organization",
+              "name": "ENCALMA VACACIONAL",
+              "url": "https://encalmavacacional.com/",
+              "logo": {
+                "@type": "ImageObject",
+                "inLanguage": "es",
+                "@id": "https://encalmavacacional.com/#/schema/logo/image/",
+                "url": "http://encalmavacacional.com/wp-content/uploads/2025/09/ChatGPT-Image-18-sept-2025-10_32_15.png",
+                "contentUrl": "http://encalmavacacional.com/wp-content/uploads/2025/09/ChatGPT-Image-18-sept-2025-10_32_15.png",
+                "width": 1024,
+                "height": 1024,
+                "caption": "ENCALMA VACACIONAL"
+              },
+              "image": {
+                "@id": "https://encalmavacacional.com/#/schema/logo/image/"
+              }
+            }
+          ]
+        },
+        {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "WebSite",
+              "@id": "https://encalmavacacional.com/#website",
+              "name": "ENCALMA VACACIONAL",
+              "description": "Apartamentos Vacacionales Puerto de Sagunto",
+              "url": "https://encalmavacacional.com/",
+              "potentialAction": {
+                "@id": "https://encalmavacacional.com/#searchaction"
+              },
+              "publisher": {
+                "@id": "https://encalmavacacional.com/#organization"
+              }
+            },
+            {
+              "@type": "WebPage",
+              "@id": "https://encalmavacacional.com#webpage",
+              "name": "Home",
+              "inLanguage": "es_ES",
+              "url": "https://encalmavacacional.com",
+              "isPartOf": {
+                "@id": "https://encalmavacacional.com/#website"
+              },
+              "publisher": {
+                "@id": "https://encalmavacacional.com/#organization"
+              }
+            },
+            {
+              "@type": "Organization",
+              "@id": "https://encalmavacacional.com/#organization",
+              "name": "ENCALMA VACACIONAL",
+              "logo": "https://encalmavacacional.com/wp-content/uploads/2025/09/favicon.png",
+              "slogan": "Apartamentos Vacacionales Puerto de Sagunto",
+              "url": "https://encalmavacacional.com/ "
+            },
+            {
+              "@type": "SearchAction",
+              "@id": "https://encalmavacacional.com/#searchaction",
+              "target": "http://encalmavacacional.com/?s={search_term_string}",
+              "query-input": "required name=search_term_string"
+            }
+          ]
+        },
+        {
+          "@context": "https://schema.org/",
+          "@type": "Product",
+          "name": "ENCALMA VACACIONAL",
+          "image": "https://cdn.trustindex.io/companies/36/36619c391587g630/avatar.jpg",
+          "url": "https://www.encalmavacacional.com",
+          "sku": "36619c391587g630",
+          "description": "ENCALMA VACACIONAL is trusted by over 43 happy customers, earning a 5-star rating! Explore real reviews and share your own experience.",
+          "manufacturer": {
+            "@type": "Organization",
+            "@id": "https://www.trustindex.io/reviews/www.encalmavacacional.com",
+            "name": "ENCALMA VACACIONAL",
+            "logo": "https://cdn.trustindex.io/companies/36/36619c391587g630/avatar.jpg",
+            "url": "https://www.encalmavacacional.com",
+            "description": "ENCALMA VACACIONAL is trusted by over 43 happy customers, earning a 5-star rating! Explore real reviews and share your own experience.",
+            "image": {
+              "@type": "ImageObject",
+              "url": "https://cdn.trustindex.io/companies/36/36619c391587g630/screenshot.jpg",
+              "width": 500,
+              "height": 348
+            },
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Carrer Vent de Gregal, 3",
+              "addressLocality": "Port de Sagunt",
+              "postalCode": "46520",
+              "addressCountry": "ES"
+            },
+            "brand": {
+              "@type": "Brand",
+              "@id": "https://www.encalmavacacional.com",
+              "name": "ENCALMA VACACIONAL"
+            }
+          },
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "worstRating": 1,
+            "bestRating": 5,
+            "ratingValue": 5,
+            "ratingCount": 43
+          },
+          "review": [
+            {
+              "@type": "Review",
+              "datePublished": "2026-02-09T00:00:00+00:00",
+              "reviewBody": "&amp;lt;strong&amp;gt;Excepcional&amp;lt;/strong&amp;gt;",
+              "inLanguage": "es",
+              "url": "https://www.booking.com/hotel/es/encalma-vacacional-sientedisfruta-vive-la-playa.es.html",
+              "author": {
+                "@type": "Person",
+                "name": "Sebastián"
+              },
+              "reviewRating": {
+                "@type": "Rating",
+                "worstRating": 1,
+                "bestRating": 10,
+                "ratingValue": 10
+              },
+              "publisher": {
+                "@type": "Organization",
+                "name": "Trustindex",
+                "sameAs": "https://www.trustindex.io"
+              }
+            },
+            {
+              "@type": "Review",
+              "datePublished": "2026-01-01T00:00:00+00:00",
+              "reviewBody": "&amp;lt;strong&amp;gt;Excepcional&amp;lt;/strong&amp;gt;",
+              "inLanguage": "es",
+              "url": "https://www.booking.com/hotel/es/encalma-vacacional-sientedisfruta-vive-la-playa.es.html",
+              "author": {
+                "@type": "Person",
+                "name": "Hans"
+              },
+              "reviewRating": {
+                "@type": "Rating",
+                "worstRating": 1,
+                "bestRating": 10,
+                "ratingValue": 10
+              },
+              "publisher": {
+                "@type": "Organization",
+                "name": "Trustindex",
+                "sameAs": "https://www.trustindex.io"
+              }
+            },
+            {
+              "@type": "Review",
+              "datePublished": "2025-12-28T00:00:00+00:00",
+              "reviewBody": "Excelente piso, muy bonito, agradable y muy luminoso. La vista increíble totalmente recomendado. Alvaro muy amable y cordial. Se preocupa de todos los detalles.",
+              "inLanguage": "es",
+              "url": "https://www.airbnb.com/rooms/1439648635281761501",
+              "author": {
+                "@type": "Person",
+                "name": "Jorge"
+              },
+              "reviewRating": {
+                "@type": "Rating",
+                "worstRating": 1,
+                "bestRating": 5,
+                "ratingValue": 5
+              },
+              "publisher": {
+                "@type": "Organization",
+                "name": "Trustindex",
+                "sameAs": "https://www.trustindex.io"
+              }
+            },
+            {
+              "@type": "Review",
+              "datePublished": "2025-12-22T00:00:00+00:00",
+              "reviewBody": "El apartamento super bonito, a superado nuestras expectativas es fiel a las fotos.Alvarito y Gloria unos super anfitriones, muy resolutivos y muy cercanos. Llegamos super tarde y Alvarito nos ayudó a buscar un restaurante cerca del apartamento y comimos de lujo. Nos hemos sentido como en casa.Tener parking es un super extra. Sin duda volveremos las próximas vacaciones .",
+              "inLanguage": "es",
+              "url": "https://www.airbnb.com/rooms/1439649589703571365",
+              "author": {
+                "@type": "Person",
+                "name": "Maribel"
+              },
+              "reviewRating": {
+                "@type": "Rating",
+                "worstRating": 1,
+                "bestRating": 5,
+                "ratingValue": 5
+              },
+              "publisher": {
+                "@type": "Organization",
+                "name": "Trustindex",
+                "sameAs": "https://www.trustindex.io"
+              }
+            },
+            {
+              "@type": "Review",
+              "datePublished": "2025-12-20T00:00:00+00:00",
+              "reviewBody": "En general, todo espectacular, desde el primer contacto con Álvaro y Gloria hasta que nos hemos ido.La casa es genial y muy cómoda como se describe en el anuncio pero lo mejor de todo, son ellos por cómo se involucran y la amabilidad y disponibilidad en todo momento.Experiencia de 10.Gracias",
+              "inLanguage": "es",
+              "url": "https://www.airbnb.com/rooms/1439649589703571365",
+              "author": {
+                "@type": "Person",
+                "name": "Raul"
+              },
+              "reviewRating": {
+                "@type": "Rating",
+                "worstRating": 1,
+                "bestRating": 5,
+                "ratingValue": 5
+              },
+              "publisher": {
+                "@type": "Organization",
+                "name": "Trustindex",
+                "sameAs": "https://www.trustindex.io"
+              }
+            },
+            {
+              "@type": "Review",
+              "datePublished": "2025-12-14T14:44:37+00:00",
+              "reviewBody": "",
+              "inLanguage": "-",
+              "url": "https://www.google.com/maps/search/?api=1&amp;query=Google&amp;query_place_id=ChIJSd8GzDEXYA0R2_bjyej_e4w",
+              "author": {
+                "@type": "Person",
+                "name": "Lucia Lucia"
+              },
+              "reviewRating": {
+                "@type": "Rating",
+                "worstRating": 1,
+                "bestRating": 5,
+                "ratingValue": 5
+              },
+              "publisher": {
+                "@type": "Organization",
+                "name": "Trustindex",
+                "sameAs": "https://www.trustindex.io"
+              }
+            },
+            {
+              "@type": "Review",
+              "datePublished": "2025-12-14T00:00:00+00:00",
+              "reviewBody": "Pues sencillamente magnífico lugar el de Gloria y Álvaro. Tal y como se describe en las fotos o incluso mejor: amplísimo, con terraza magnifica, limpio y cómodo. Los anfitriones excepcionales, siempre atentos y dispuestos para el proceso de llegada y durante la estancia. Hemos estado muy cómodos y repetiremos sin dudar si visitamos Port Sagunt de nuevo. Recomendado a la comunidad AirBnB 100%.",
+              "inLanguage": "es",
+              "url": "https://www.airbnb.com/rooms/1439649589703571365",
+              "author": {
+                "@type": "Person",
+                "name": "Rafael"
+              },
+              "reviewRating": {
+                "@type": "Rating",
+                "worstRating": 1,
+                "bestRating": 5,
+                "ratingValue": 5
+              },
+              "publisher": {
+                "@type": "Organization",
+                "name": "Trustindex",
+                "sameAs": "https://www.trustindex.io"
+              }
+            },
+            {
+              "@type": "Review",
+              "datePublished": "2025-12-09T00:00:00+00:00",
+              "reviewBody": "&amp;lt;strong&amp;gt;Wow&amp;lt;/strong&amp;gt; ☺ Hosting fantastico, appartamento grande e ben curato e anche la location meritava, impagabile svegliarsi con l&amp;#039;alba in primo piano  ☹ Nulla",
+              "inLanguage": "it",
+              "url": "https://www.booking.com/hotel/es/encalma-vacacional-sientedisfruta-vive-la-playa.es.html",
+              "author": {
+                "@type": "Person",
+                "name": "Critelli"
+              },
+              "reviewRating": {
+                "@type": "Rating",
+                "worstRating": 1,
+                "bestRating": 10,
+                "ratingValue": 10
+              },
+              "publisher": {
+                "@type": "Organization",
+                "name": "Trustindex",
+                "sameAs": "https://www.trustindex.io"
+              }
+            },
+            {
+              "@type": "Review",
+              "datePublished": "2025-12-08T00:00:00+00:00",
+              "reviewBody": "Je recommande ce logement, très propre Correspond au descriptif de l’annonce",
+              "inLanguage": "fr",
+              "url": "https://www.airbnb.com/rooms/1439649589703571365",
+              "author": {
+                "@type": "Person",
+                "name": "Christophe"
+              },
+              "reviewRating": {
+                "@type": "Rating",
+                "worstRating": 1,
+                "bestRating": 5,
+                "ratingValue": 5
+              },
+              "publisher": {
+                "@type": "Organization",
+                "name": "Trustindex",
+                "sameAs": "https://www.trustindex.io"
+              }
+            },
+            {
+              "@type": "Review",
+              "datePublished": "2025-12-05T06:09:31+00:00",
+              "reviewBody": "De principio a fin, simplemente perfecto. La ubicación del apartamento es en la playa tal cual, mas cerca no se puede estar. Se ve sin levantarte de la cama, literal pues la habitacion tiene una pequeña terraza, aparte de la principal Decorado con mucho gusto y con todo tipo de detalles. Hasta para ir a la playa teniamos sillas, sombrilla, nevera, toallas, raquetas, petanca... Y limpio, muy muy limpio. Los anfitriones, Álvaro y Gloria, unos cracks. Super simpaticos y cercanos. Era nuestro aniversario, y vi en la web que para celebraciones asi, ellos se encargaban de decorar el apartamento o reservar un restaurante... como yo ya tenia preparada alguna sorpresa a mi chica, solo les pedi que decoraran la habitacion. Lo hicieron con sencillez pero con mucha elegancia, nada de llenarlo todo de globos y cosas asi. Me cobraron por el  extra 20€, osea el cava que pusieron, pero llegar al apartamento y encontrartelo con ese detalle y alguna sorpresa mas que nos prepararon, no tiene precio. Muchisimas gracias pareja, porque hemos pasado un fin de semana maravilloso, y gran culpa la teneis vosotros. Nos volveros a ver pronto",
+              "inLanguage": "es",
+              "url": "https://www.google.com/maps/search/?api=1&amp;query=Google&amp;query_place_id=ChIJSd8GzDEXYA0R2_bjyej_e4w",
+              "author": {
+                "@type": "Person",
+                "name": "AzaharHomes"
+              },
+              "reviewRating": {
+                "@type": "Rating",
+                "worstRating": 1,
+                "bestRating": 5,
+                "ratingValue": 5
+              },
+              "publisher": {
+                "@type": "Organization",
+                "name": "Trustindex",
+                "sameAs": "https://www.trustindex.io"
+              }
+            },
+            {
+              "@type": "Review",
+              "datePublished": "2025-11-26T00:00:00+00:00",
+              "reviewBody": "&amp;lt;strong&amp;gt;Excelencia y calidad&amp;lt;/strong&amp;gt; ☺ Es un piso fabuloso,con unos anfitriones excelentes.Todo muy limpió,moderno ,sin faltar ningún detalle para que te sientas en casa,con unas vistas de ensueño.  Llegas allí y no quieres volver!Un piso más que nuevo,moderno y muy luminoso!Destacó la atención de los anfitriones, que son super amables, estando pendiente de todo para que tú estancia sea perfecta,con todo lujo de detalles:como café en cápsulas,fruta de temporada,etc , que hace que tú estancia allí se sienta como en un hotel 5* . Volveré,sin duda!  ☹ Me gustó todo",
+              "inLanguage": "es",
+              "url": "https://www.booking.com/hotel/es/encalma-vacacional-sientedisfruta-vive-la-playa.es.html",
+              "author": {
+                "@type": "Person",
+                "name": "Caterina"
+              },
+              "reviewRating": {
+                "@type": "Rating",
+                "worstRating": 1,
+                "bestRating": 10,
+                "ratingValue": 10
+              },
+              "publisher": {
+                "@type": "Organization",
+                "name": "Trustindex",
+                "sameAs": "https://www.trustindex.io"
+              }
+            },
+            {
+              "@type": "Review",
+              "datePublished": "2025-11-25T15:29:01+00:00",
+              "reviewBody": "Apartamento en primerisima linea de una playa grande y bonita dentro de una urbanizacion ideal para los niños. El apartamento super limpio y todo nuevo , no le faltaba de nada. Y los anfitriones super agradables y atentos.,",
+              "inLanguage": "es",
+              "url": "https://www.google.com/maps/search/?api=1&amp;query=Google&amp;query_place_id=ChIJSd8GzDEXYA0R2_bjyej_e4w",
+              "author": {
+                "@type": "Person",
+                "name": "Ricardo Paesa"
+              },
+              "reviewRating": {
+                "@type": "Rating",
+                "worstRating": 1,
+                "bestRating": 5,
+                "ratingValue": 5
+              },
+              "publisher": {
+                "@type": "Organization",
+                "name": "Trustindex",
+                "sameAs": "https://www.trustindex.io"
+              }
+            },
+            {
+              "@type": "Review",
+              "datePublished": "2025-11-23T00:00:00+00:00",
+              "reviewBody": "El finde de semana ha sido fantástico!! Álvaro y Gloria son unos anfitriones atentos, amables, cariñosos,empaticos, alegres..sin duda de 10, volveremos a repetir porque nos hemos sentido como en casa...Un abrazo muy fuerte y no es un adiós es un hasta pronto familia!!! un 10 !!!!",
+              "inLanguage": "es",
+              "url": "https://www.airbnb.com/rooms/1439649589703571365",
+              "author": {
+                "@type": "Person",
+                "name": "Maria"
+              },
+              "reviewRating": {
+                "@type": "Rating",
+                "worstRating": 1,
+                "bestRating": 5,
+                "ratingValue": 5
+              },
+              "publisher": {
+                "@type": "Organization",
+                "name": "Trustindex",
+                "sameAs": "https://www.trustindex.io"
+              }
+            },
+            {
+              "@type": "Review",
+              "datePublished": "2025-11-16T00:00:00+00:00",
+              "reviewBody": "el apartamento precio y muy bien ubicado y ellos muy majos y agradables!!",
+              "inLanguage": "es",
+              "url": "https://www.airbnb.com/rooms/1439648635281761501",
+              "author": {
+                "@type": "Person",
+                "name": "Víctor"
+              },
+              "reviewRating": {
+                "@type": "Rating",
+                "worstRating": 1,
+                "bestRating": 5,
+                "ratingValue": 5
+              },
+              "publisher": {
+                "@type": "Organization",
+                "name": "Trustindex",
+                "sameAs": "https://www.trustindex.io"
+              }
+            },
+            {
+              "@type": "Review",
+              "datePublished": "2025-11-16T00:00:00+00:00",
+              "reviewBody": "Todo perfecto, el lugar muy bonito y Gloria muy amable y atenta. Cuando volvamos la próxima vez sin duda nos gustaría volver.",
+              "inLanguage": "es",
+              "url": "https://www.airbnb.com/rooms/1439649589703571365",
+              "author": {
+                "@type": "Person",
+                "name": "Carolina"
+              },
+              "reviewRating": {
+                "@type": "Rating",
+                "worstRating": 1,
+                "bestRating": 5,
+                "ratingValue": 5
+              },
+              "publisher": {
+                "@type": "Organization",
+                "name": "Trustindex",
+                "sameAs": "https://www.trustindex.io"
+              }
+            },
+            {
+              "@type": "Review",
+              "datePublished": "2025-11-11T00:00:00+00:00",
+              "reviewBody": "Acceuil tres sympathique, Alvaro et Gloria sont aussi très disponibles. Appartement incroyablement bien pensé, bien équipé. Propre, moderne et lumineux avec de belles vues mer, levé de soleil magnifique assuré!Nous recommandons en dehors des dates ou nous y serons!",
+              "inLanguage": "fr",
+              "url": "https://www.airbnb.com/rooms/1439648635281761501",
+              "author": {
+                "@type": "Person",
+                "name": "Véronique"
+              },
+              "reviewRating": {
+                "@type": "Rating",
+                "worstRating": 1,
+                "bestRating": 5,
+                "ratingValue": 5
+              },
+              "publisher": {
+                "@type": "Organization",
+                "name": "Trustindex",
+                "sameAs": "https://www.trustindex.io"
+              }
+            },
+            {
+              "@type": "Review",
+              "datePublished": "2025-11-09T00:00:00+00:00",
+              "reviewBody": "Todo perfecto. El alojamiento estaba impecable, muy cómodo y con todo lo necesario. Los anfitriones fueron encantadores y atentos en todo momento. Nos sentimos como en casa. ¡Sin duda repetiríamos!",
+              "inLanguage": "es",
+              "url": "https://www.airbnb.com/rooms/1439649589703571365",
+              "author": {
+                "@type": "Person",
+                "name": "Angel"
+              },
+              "reviewRating": {
+                "@type": "Rating",
+                "worstRating": 1,
+                "bestRating": 5,
+                "ratingValue": 5
+              },
+              "publisher": {
+                "@type": "Organization",
+                "name": "Trustindex",
+                "sameAs": "https://www.trustindex.io"
+              }
+            },
+            {
+              "@type": "Review",
+              "datePublished": "2025-11-09T00:00:00+00:00",
+              "reviewBody": "&amp;lt;strong&amp;gt;Todo perfecto&amp;lt;/strong&amp;gt; ☺ La ubicación inmejorable y la comodidad de tener todo cerca.Gloria,la anfitrióna ha sido muy detallista con nosotros y nos preparó una pequeña sorpresa a la llegada. Al piso no le falta detalle y está igual que en las fotos o incluso mejor.Repetiremos sin duda.  ☹ Me gustó todo",
+              "inLanguage": "es",
+              "url": "https://www.booking.com/hotel/es/encalma-vacacional-sientedisfruta-vive-la-playa.es.html",
+              "author": {
+                "@type": "Person",
+                "name": "Maria"
+              },
+              "reviewRating": {
+                "@type": "Rating",
+                "worstRating": 1,
+                "bestRating": 10,
+                "ratingValue": 10
+              },
+              "publisher": {
+                "@type": "Organization",
+                "name": "Trustindex",
+                "sameAs": "https://www.trustindex.io"
+              }
+            },
+            {
+              "@type": "Review",
+              "datePublished": "2025-10-27T00:00:00+00:00",
+              "reviewBody": "Me ha encantado todo. El piso una maravilla todo nuevo muy bien cuidado y con muchos detalles 100% recomendable. Limpio y los anfitriones fenomenales repetiré a futuro. Que la gente no dude de esta estancia. Si puedo ayudar que elijan esta casa que van a quedar encantados.",
+              "inLanguage": "es",
+              "url": "https://www.airbnb.com/rooms/1439648635281761501",
+              "author": {
+                "@type": "Person",
+                "name": "Roberto"
+              },
+              "reviewRating": {
+                "@type": "Rating",
+                "worstRating": 1,
+                "bestRating": 5,
+                "ratingValue": 5
+              },
+              "publisher": {
+                "@type": "Organization",
+                "name": "Trustindex",
+                "sameAs": "https://www.trustindex.io"
+              }
+            },
+            {
+              "@type": "Review",
+              "datePublished": "2025-10-25T00:00:00+00:00",
+              "reviewBody": "A localidade é um tanto distante de Valência, e como era nosso objetivo, o incômodo da distância foi compensada pela ótima estadia. Uma casa de verdade com várias facilidades e presentes para nós. produtos de qualidade, ofertados pelo simpático e prestativo proprietário, o sr. Álvaro. Penso que a cidade deve ser efervescente no verão, mas no outono é meio vazia.",
+              "inLanguage": "pt",
+              "url": "https://www.airbnb.com/rooms/1439649589703571365",
+              "author": {
+                "@type": "Person",
+                "name": "Matheus"
+              },
+              "reviewRating": {
+                "@type": "Rating",
+                "worstRating": 1,
+                "bestRating": 5,
+                "ratingValue": 5
+              },
+              "publisher": {
+                "@type": "Organization",
+                "name": "Trustindex",
+                "sameAs": "https://www.trustindex.io"
+              }
+            }
+          ]
+        }
+      ],
+      "bodyFontSize": "16px",
+      "smallTargets": [
+        {
+          "tag": "BUTTON",
+          "text": "Aceptar",
+          "width": 238,
+          "height": 45
+        },
+        {
+          "tag": "BUTTON",
+          "text": "Denegar",
+          "width": 238,
+          "height": 45
+        },
+        {
+          "tag": "A",
+          "text": "Política de cookies",
+          "width": 111,
+          "height": 27
+        },
+        {
+          "tag": "A",
+          "text": "Política de privacidad",
+          "width": 128,
+          "height": 27
+        },
+        {
+          "tag": "A",
+          "text": "Aviso legal",
+          "width": 64,
+          "height": 27
+        },
+        {
+          "tag": "A",
+          "text": "Ir al contenido",
+          "width": 1,
+          "height": 1
+        },
+        {
+          "tag": "A",
+          "text": "",
+          "width": 133,
+          "height": 44
+        },
+        {
+          "tag": "A",
+          "text": "Inicio",
+          "width": 57,
+          "height": 27
+        },
+        {
+          "tag": "A",
+          "text": "Apartamentos",
+          "width": 129,
+          "height": 27
+        },
+        {
+          "tag": "A",
+          "text": "Anfitriones",
+          "width": 102,
+          "height": 27
+        }
+      ],
+      "totalImages": 24
+    },
+    "horizontal_scroll": false,
+    "screenshots": {
+      "above_fold": "/mnt/c/MCP_CLAUDE/JOSE/NaranjaIT/En_Calma_Vacacional/screenshots/laptop_above_fold.png",
+      "full_page": "/mnt/c/MCP_CLAUDE/JOSE/NaranjaIT/En_Calma_Vacacional/screenshots/laptop_full_page.png"
+    }
+  },
+  "tablet": {
+    "viewport": {
+      "name": "tablet",
+      "width": 768,
+      "height": 1024
+    },
+    "seo": {
+      "title": "Home - ENCALMA VACACIONAL",
+      "metaDescription": "estancias en calma El lugar perfecto para desconectar y disfrutar de tus vacaciones. Encuentra tu escapada perfecta Nuestros servicios Tu lugar de vacaciones",
+      "metaKeywords": null,
+      "ogTitle": "Home - ENCALMA VACACIONAL",
+      "ogDescription": "estancias en calma El lugar perfecto para desconectar y disfrutar de tus vacaciones. Encuentra tu escapada perfecta Nuestros servicios Tu lugar de vacaciones en Puerto de Sagunto Espacios para disfrutar de un entorno privilegiado junto al mar Apartamentos vacacionales con alma mediterránea Viviendas acogedoras, pensadas para desconectar y sentirte como en casa Más que anfitriones, vuestros compañeros de viaje Nos apasiona recibiros, conoceros y garantizar que vuestra estancia sea especial ¿Qué dicen de nosotros?Valoraciones de clientes reales Estancias en calma EnCalma Vacacional El Ático Luz, espacio, comodidad, amplitud, tranquilidad, bienestar… para tu familia, tus amigos, tu gente. EnCalma Vacacional La Playa Desayuna con la salida del sol, come con la brisa del mar, cena a la luz de la luna, duerme con el arrullo de las olas…  Ricardo Para repetir!! «Salgo encantado, tanto con los anfitriones como con la casa y la ubicación volvería con los ojos cerrados.» Elena Gusto por los detalles «La casa estaba impecable y tenía muchos detalles. Hemos estado muy a gusto» África Los mejores anfitriones «Un apartamento precioso. Gloria y Álvaro super encantadores con unos detalles que son de agradecer.La playa está a 10 min andando, volveremos seguro» SOBRE NOSOTROS Gloria y Álvaro, el alma de Encalma Vacacional Gloria y Álvaro, pareja en lo personal y lo profesional.Gloria, metódica, perfeccionista, rigurosa, orden y cerebro del back office.Álvaro, apasionado, enérgico, resolutivo, el corazón del front office. Juntos formamos Encalma Vacacional, nuestra pequeña empresa que gestiona 2 apartamentos, por lo que somos nosotros los encargados de absolutamente todo desde el momento de la reserva.La limpieza y revisión del apartamento la hacemos nosotros dos, por lo que garantizamos una limpieza con mucho esmero y cuidado, orden y absolutamente todo revisado antes de recibiros personalmente para daros la bienvenida y las llaves de vuestra casa.Damos lo mejor de nosotros mismos, nos encanta nuestro trabajo y nos sentimos orgullos de que nos confiéis vuestras vacaciones. Reserva tu escapada perfecta Déjanos ser parte de tu descanso: alojamientos cuidados al detalle, trato cercano y auténtica hospitalidad. Dos alojamientos únicos, el Mediterráneo como escenario y nosotros como tus anfitriones personales. CONTACTA",
+      "ogImage": "https://encalmavacacional.com/wp-content/uploads/2026/02/logo_encalma.webp",
+      "h1": [
+        "estancias",
+        "en calma",
+        "Reserva tu escapada perfecta"
+      ],
+      "h2": [
+        "Encuentra tu escapada perfecta",
+        "Nuestros servicios",
+        "",
+        "Estancias en calma"
+      ],
+      "missingAlt": [
+        {
+          "src": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMSIgaGVpZ2h0PSIxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC",
+          "width": 1,
+          "height": 1
+        }
+      ],
+      "buttons": [
+        "Aceptar",
+        "Denegar",
+        "Ver preferencias",
+        "Guardar preferencias",
+        "Ver preferencias",
+        "Alternar menú",
+        "Main Menu",
+        "Alternar menú",
+        "Gestionar consentimiento"
+      ],
+      "popups": [
+        {
+          "selector": "[class*=\"modal\"]",
+          "visible": false,
+          "text": ""
+        },
+        {
+          "selector": "[class*=\"cookie\"]",
+          "visible": false,
+          "text": "Gestionar consentimiento\nPara ofrecer las mejores experiencias, utilizamos tecno"
+        },
+        {
+          "selector": "[class*=\"cookie\"]",
+          "visible": false,
+          "text": "Administrar opciones"
+        },
+        {
+          "selector": "[class*=\"cookie\"]",
+          "visible": false,
+          "text": "Gestionar los servicios"
+        },
+        {
+          "selector": "[class*=\"cookie\"]",
+          "visible": false,
+          "text": "Gestionar {vendor_count} proveedores"
+        },
+        {
+          "selector": "[class*=\"cookie\"]",
+          "visible": false,
+          "text": "Ver preferencias"
+        },
+        {
+          "selector": "[class*=\"cookie\"]",
+          "visible": true,
+          "text": "Política de cookies"
+        }
+      ],
+      "aboveFold": [
+        {
+          "tag": "DIV",
+          "text": "Gestionar consentimiento\nPara ofrecer las mejores experiencias, utilizamos tecnologías como las cookies para almacenar y",
+          "top": 681
+        },
+        {
+          "tag": "SPAN",
+          "text": "Funcional",
+          "top": 0
+        },
+        {
+          "tag": "SPAN",
+          "text": "Preferencias",
+          "top": 0
+        },
+        {
+          "tag": "SPAN",
+          "text": "Estadísticas",
+          "top": 0
+        },
+        {
+          "tag": "SPAN",
+          "text": "Marketing",
+          "top": 0
+        },
+        {
+          "tag": "H1",
+          "text": "estancias",
+          "top": 305
+        },
+        {
+          "tag": "H1",
+          "text": "en calma",
+          "top": 350
+        },
+        {
+          "tag": "H2",
+          "text": "Encuentra tu escapada perfecta",
+          "top": 536
+        },
+        {
+          "tag": "H2",
+          "text": "Nuestros servicios",
+          "top": 761
+        },
+        {
+          "tag": "P",
+          "text": "WhatsApp",
+          "top": 0
+        }
+      ],
+      "navLinks": [
+        "Inicio",
+        "Apartamentos",
+        "Apartamento Vacacional La Playa",
+        "Apartamento Vacacional El Atico",
+        "Anfitriones",
+        "Contacto",
+        "Inicio",
+        "Apartamentos",
+        "Apartamento Vacacional La Playa",
+        "Apartamento Vacacional El Atico",
+        "Anfitriones",
+        "Contacto"
+      ],
+      "jsonLds": [
+        {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "WebPage",
+              "@id": "https://encalmavacacional.com/",
+              "url": "https://encalmavacacional.com/",
+              "name": "Home - ENCALMA VACACIONAL",
+              "isPartOf": {
+                "@id": "https://encalmavacacional.com/#website"
+              },
+              "about": {
+                "@id": "https://encalmavacacional.com/#organization"
+              },
+              "primaryImageOfPage": {
+                "@id": "https://encalmavacacional.com/#primaryimage"
+              },
+              "image": {
+                "@id": "https://encalmavacacional.com/#primaryimage"
+              },
+              "thumbnailUrl": "http://encalmavacacional.com/wp-content/uploads/2026/02/logo_encalma.webp",
+              "datePublished": "2025-09-04T08:38:17+00:00",
+              "dateModified": "2026-02-24T07:28:50+00:00",
+              "breadcrumb": {
+                "@id": "https://encalmavacacional.com/#breadcrumb"
+              },
+              "inLanguage": "es",
+              "potentialAction": [
+                {
+                  "@type": "ReadAction",
+                  "target": [
+                    "https://encalmavacacional.com/"
+                  ]
+                }
+              ]
+            },
+            {
+              "@type": "ImageObject",
+              "inLanguage": "es",
+              "@id": "https://encalmavacacional.com/#primaryimage",
+              "url": "https://encalmavacacional.com/wp-content/uploads/2026/02/logo_encalma.webp",
+              "contentUrl": "https://encalmavacacional.com/wp-content/uploads/2026/02/logo_encalma.webp",
+              "width": 768,
+              "height": 215,
+              "caption": "logo encalma"
+            },
+            {
+              "@type": "BreadcrumbList",
+              "@id": "https://encalmavacacional.com/#breadcrumb",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Portada"
+                }
+              ]
+            },
+            {
+              "@type": "WebSite",
+              "@id": "https://encalmavacacional.com/#website",
+              "url": "https://encalmavacacional.com/",
+              "name": "ENCALMA VACACIONAL",
+              "description": "Apartamentos Vacacionales Puerto de Sagunto",
+              "publisher": {
+                "@id": "https://encalmavacacional.com/#organization"
+              },
+              "alternateName": "ENCALMA VACACIONAL",
+              "potentialAction": [
+                {
+                  "@type": "SearchAction",
+                  "target": {
+                    "@type": "EntryPoint",
+                    "urlTemplate": "https://encalmavacacional.com/?s={search_term_string}"
+                  },
+                  "query-input": {
+                    "@type": "PropertyValueSpecification",
+                    "valueRequired": true,
+                    "valueName": "search_term_string"
+                  }
+                }
+              ],
+              "inLanguage": "es"
+            },
+            {
+              "@type": "Organization",
+              "@id": "https://encalmavacacional.com/#organization",
+              "name": "ENCALMA VACACIONAL",
+              "url": "https://encalmavacacional.com/",
+              "logo": {
+                "@type": "ImageObject",
+                "inLanguage": "es",
+                "@id": "https://encalmavacacional.com/#/schema/logo/image/",
+                "url": "http://encalmavacacional.com/wp-content/uploads/2025/09/ChatGPT-Image-18-sept-2025-10_32_15.png",
+                "contentUrl": "http://encalmavacacional.com/wp-content/uploads/2025/09/ChatGPT-Image-18-sept-2025-10_32_15.png",
+                "width": 1024,
+                "height": 1024,
+                "caption": "ENCALMA VACACIONAL"
+              },
+              "image": {
+                "@id": "https://encalmavacacional.com/#/schema/logo/image/"
+              }
+            }
+          ]
+        },
+        {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "WebSite",
+              "@id": "https://encalmavacacional.com/#website",
+              "name": "ENCALMA VACACIONAL",
+              "description": "Apartamentos Vacacionales Puerto de Sagunto",
+              "url": "https://encalmavacacional.com/",
+              "potentialAction": {
+                "@id": "https://encalmavacacional.com/#searchaction"
+              },
+              "publisher": {
+                "@id": "https://encalmavacacional.com/#organization"
+              }
+            },
+            {
+              "@type": "WebPage",
+              "@id": "https://encalmavacacional.com#webpage",
+              "name": "Home",
+              "inLanguage": "es_ES",
+              "url": "https://encalmavacacional.com",
+              "isPartOf": {
+                "@id": "https://encalmavacacional.com/#website"
+              },
+              "publisher": {
+                "@id": "https://encalmavacacional.com/#organization"
+              }
+            },
+            {
+              "@type": "Organization",
+              "@id": "https://encalmavacacional.com/#organization",
+              "name": "ENCALMA VACACIONAL",
+              "logo": "https://encalmavacacional.com/wp-content/uploads/2025/09/favicon.png",
+              "slogan": "Apartamentos Vacacionales Puerto de Sagunto",
+              "url": "https://encalmavacacional.com/ "
+            },
+            {
+              "@type": "SearchAction",
+              "@id": "https://encalmavacacional.com/#searchaction",
+              "target": "http://encalmavacacional.com/?s={search_term_string}",
+              "query-input": "required name=search_term_string"
+            }
+          ]
+        },
+        {
+          "@context": "https://schema.org/",
+          "@type": "Product",
+          "name": "ENCALMA VACACIONAL",
+          "image": "https://cdn.trustindex.io/companies/36/36619c391587g630/avatar.jpg",
+          "url": "https://www.encalmavacacional.com",
+          "sku": "36619c391587g630",
+          "description": "ENCALMA VACACIONAL is trusted by over 43 happy customers, earning a 5-star rating! Explore real reviews and share your own experience.",
+          "manufacturer": {
+            "@type": "Organization",
+            "@id": "https://www.trustindex.io/reviews/www.encalmavacacional.com",
+            "name": "ENCALMA VACACIONAL",
+            "logo": "https://cdn.trustindex.io/companies/36/36619c391587g630/avatar.jpg",
+            "url": "https://www.encalmavacacional.com",
+            "description": "ENCALMA VACACIONAL is trusted by over 43 happy customers, earning a 5-star rating! Explore real reviews and share your own experience.",
+            "image": {
+              "@type": "ImageObject",
+              "url": "https://cdn.trustindex.io/companies/36/36619c391587g630/screenshot.jpg",
+              "width": 500,
+              "height": 348
+            },
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Carrer Vent de Gregal, 3",
+              "addressLocality": "Port de Sagunt",
+              "postalCode": "46520",
+              "addressCountry": "ES"
+            },
+            "brand": {
+              "@type": "Brand",
+              "@id": "https://www.encalmavacacional.com",
+              "name": "ENCALMA VACACIONAL"
+            }
+          },
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "worstRating": 1,
+            "bestRating": 5,
+            "ratingValue": 5,
+            "ratingCount": 43
+          },
+          "review": [
+            {
+              "@type": "Review",
+              "datePublished": "2026-02-09T00:00:00+00:00",
+              "reviewBody": "&amp;lt;strong&amp;gt;Excepcional&amp;lt;/strong&amp;gt;",
+              "inLanguage": "es",
+              "url": "https://www.booking.com/hotel/es/encalma-vacacional-sientedisfruta-vive-la-playa.es.html",
+              "author": {
+                "@type": "Person",
+                "name": "Sebastián"
+              },
+              "reviewRating": {
+                "@type": "Rating",
+                "worstRating": 1,
+                "bestRating": 10,
+                "ratingValue": 10
+              },
+              "publisher": {
+                "@type": "Organization",
+                "name": "Trustindex",
+                "sameAs": "https://www.trustindex.io"
+              }
+            },
+            {
+              "@type": "Review",
+              "datePublished": "2026-01-01T00:00:00+00:00",
+              "reviewBody": "&amp;lt;strong&amp;gt;Excepcional&amp;lt;/strong&amp;gt;",
+              "inLanguage": "es",
+              "url": "https://www.booking.com/hotel/es/encalma-vacacional-sientedisfruta-vive-la-playa.es.html",
+              "author": {
+                "@type": "Person",
+                "name": "Hans"
+              },
+              "reviewRating": {
+                "@type": "Rating",
+                "worstRating": 1,
+                "bestRating": 10,
+                "ratingValue": 10
+              },
+              "publisher": {
+                "@type": "Organization",
+                "name": "Trustindex",
+                "sameAs": "https://www.trustindex.io"
+              }
+            },
+            {
+              "@type": "Review",
+              "datePublished": "2025-12-28T00:00:00+00:00",
+              "reviewBody": "Excelente piso, muy bonito, agradable y muy luminoso. La vista increíble totalmente recomendado. Alvaro muy amable y cordial. Se preocupa de todos los detalles.",
+              "inLanguage": "es",
+              "url": "https://www.airbnb.com/rooms/1439648635281761501",
+              "author": {
+                "@type": "Person",
+                "name": "Jorge"
+              },
+              "reviewRating": {
+                "@type": "Rating",
+                "worstRating": 1,
+                "bestRating": 5,
+                "ratingValue": 5
+              },
+              "publisher": {
+                "@type": "Organization",
+                "name": "Trustindex",
+                "sameAs": "https://www.trustindex.io"
+              }
+            },
+            {
+              "@type": "Review",
+              "datePublished": "2025-12-22T00:00:00+00:00",
+              "reviewBody": "El apartamento super bonito, a superado nuestras expectativas es fiel a las fotos.Alvarito y Gloria unos super anfitriones, muy resolutivos y muy cercanos. Llegamos super tarde y Alvarito nos ayudó a buscar un restaurante cerca del apartamento y comimos de lujo. Nos hemos sentido como en casa.Tener parking es un super extra. Sin duda volveremos las próximas vacaciones .",
+              "inLanguage": "es",
+              "url": "https://www.airbnb.com/rooms/1439649589703571365",
+              "author": {
+                "@type": "Person",
+                "name": "Maribel"
+              },
+              "reviewRating": {
+                "@type": "Rating",
+                "worstRating": 1,
+                "bestRating": 5,
+                "ratingValue": 5
+              },
+              "publisher": {
+                "@type": "Organization",
+                "name": "Trustindex",
+                "sameAs": "https://www.trustindex.io"
+              }
+            },
+            {
+              "@type": "Review",
+              "datePublished": "2025-12-20T00:00:00+00:00",
+              "reviewBody": "En general, todo espectacular, desde el primer contacto con Álvaro y Gloria hasta que nos hemos ido.La casa es genial y muy cómoda como se describe en el anuncio pero lo mejor de todo, son ellos por cómo se involucran y la amabilidad y disponibilidad en todo momento.Experiencia de 10.Gracias",
+              "inLanguage": "es",
+              "url": "https://www.airbnb.com/rooms/1439649589703571365",
+              "author": {
+                "@type": "Person",
+                "name": "Raul"
+              },
+              "reviewRating": {
+                "@type": "Rating",
+                "worstRating": 1,
+                "bestRating": 5,
+                "ratingValue": 5
+              },
+              "publisher": {
+                "@type": "Organization",
+                "name": "Trustindex",
+                "sameAs": "https://www.trustindex.io"
+              }
+            },
+            {
+              "@type": "Review",
+              "datePublished": "2025-12-14T14:44:37+00:00",
+              "reviewBody": "",
+              "inLanguage": "-",
+              "url": "https://www.google.com/maps/search/?api=1&amp;query=Google&amp;query_place_id=ChIJSd8GzDEXYA0R2_bjyej_e4w",
+              "author": {
+                "@type": "Person",
+                "name": "Lucia Lucia"
+              },
+              "reviewRating": {
+                "@type": "Rating",
+                "worstRating": 1,
+                "bestRating": 5,
+                "ratingValue": 5
+              },
+              "publisher": {
+                "@type": "Organization",
+                "name": "Trustindex",
+                "sameAs": "https://www.trustindex.io"
+              }
+            },
+            {
+              "@type": "Review",
+              "datePublished": "2025-12-14T00:00:00+00:00",
+              "reviewBody": "Pues sencillamente magnífico lugar el de Gloria y Álvaro. Tal y como se describe en las fotos o incluso mejor: amplísimo, con terraza magnifica, limpio y cómodo. Los anfitriones excepcionales, siempre atentos y dispuestos para el proceso de llegada y durante la estancia. Hemos estado muy cómodos y repetiremos sin dudar si visitamos Port Sagunt de nuevo. Recomendado a la comunidad AirBnB 100%.",
+              "inLanguage": "es",
+              "url": "https://www.airbnb.com/rooms/1439649589703571365",
+              "author": {
+                "@type": "Person",
+                "name": "Rafael"
+              },
+              "reviewRating": {
+                "@type": "Rating",
+                "worstRating": 1,
+                "bestRating": 5,
+                "ratingValue": 5
+              },
+              "publisher": {
+                "@type": "Organization",
+                "name": "Trustindex",
+                "sameAs": "https://www.trustindex.io"
+              }
+            },
+            {
+              "@type": "Review",
+              "datePublished": "2025-12-09T00:00:00+00:00",
+              "reviewBody": "&amp;lt;strong&amp;gt;Wow&amp;lt;/strong&amp;gt; ☺ Hosting fantastico, appartamento grande e ben curato e anche la location meritava, impagabile svegliarsi con l&amp;#039;alba in primo piano  ☹ Nulla",
+              "inLanguage": "it",
+              "url": "https://www.booking.com/hotel/es/encalma-vacacional-sientedisfruta-vive-la-playa.es.html",
+              "author": {
+                "@type": "Person",
+                "name": "Critelli"
+              },
+              "reviewRating": {
+                "@type": "Rating",
+                "worstRating": 1,
+                "bestRating": 10,
+                "ratingValue": 10
+              },
+              "publisher": {
+                "@type": "Organization",
+                "name": "Trustindex",
+                "sameAs": "https://www.trustindex.io"
+              }
+            },
+            {
+              "@type": "Review",
+              "datePublished": "2025-12-08T00:00:00+00:00",
+              "reviewBody": "Je recommande ce logement, très propre Correspond au descriptif de l’annonce",
+              "inLanguage": "fr",
+              "url": "https://www.airbnb.com/rooms/1439649589703571365",
+              "author": {
+                "@type": "Person",
+                "name": "Christophe"
+              },
+              "reviewRating": {
+                "@type": "Rating",
+                "worstRating": 1,
+                "bestRating": 5,
+                "ratingValue": 5
+              },
+              "publisher": {
+                "@type": "Organization",
+                "name": "Trustindex",
+                "sameAs": "https://www.trustindex.io"
+              }
+            },
+            {
+              "@type": "Review",
+              "datePublished": "2025-12-05T06:09:31+00:00",
+              "reviewBody": "De principio a fin, simplemente perfecto. La ubicación del apartamento es en la playa tal cual, mas cerca no se puede estar. Se ve sin levantarte de la cama, literal pues la habitacion tiene una pequeña terraza, aparte de la principal Decorado con mucho gusto y con todo tipo de detalles. Hasta para ir a la playa teniamos sillas, sombrilla, nevera, toallas, raquetas, petanca... Y limpio, muy muy limpio. Los anfitriones, Álvaro y Gloria, unos cracks. Super simpaticos y cercanos. Era nuestro aniversario, y vi en la web que para celebraciones asi, ellos se encargaban de decorar el apartamento o reservar un restaurante... como yo ya tenia preparada alguna sorpresa a mi chica, solo les pedi que decoraran la habitacion. Lo hicieron con sencillez pero con mucha elegancia, nada de llenarlo todo de globos y cosas asi. Me cobraron por el  extra 20€, osea el cava que pusieron, pero llegar al apartamento y encontrartelo con ese detalle y alguna sorpresa mas que nos prepararon, no tiene precio. Muchisimas gracias pareja, porque hemos pasado un fin de semana maravilloso, y gran culpa la teneis vosotros. Nos volveros a ver pronto",
+              "inLanguage": "es",
+              "url": "https://www.google.com/maps/search/?api=1&amp;query=Google&amp;query_place_id=ChIJSd8GzDEXYA0R2_bjyej_e4w",
+              "author": {
+                "@type": "Person",
+                "name": "AzaharHomes"
+              },
+              "reviewRating": {
+                "@type": "Rating",
+                "worstRating": 1,
+                "bestRating": 5,
+                "ratingValue": 5
+              },
+              "publisher": {
+                "@type": "Organization",
+                "name": "Trustindex",
+                "sameAs": "https://www.trustindex.io"
+              }
+            },
+            {
+              "@type": "Review",
+              "datePublished": "2025-11-26T00:00:00+00:00",
+              "reviewBody": "&amp;lt;strong&amp;gt;Excelencia y calidad&amp;lt;/strong&amp;gt; ☺ Es un piso fabuloso,con unos anfitriones excelentes.Todo muy limpió,moderno ,sin faltar ningún detalle para que te sientas en casa,con unas vistas de ensueño.  Llegas allí y no quieres volver!Un piso más que nuevo,moderno y muy luminoso!Destacó la atención de los anfitriones, que son super amables, estando pendiente de todo para que tú estancia sea perfecta,con todo lujo de detalles:como café en cápsulas,fruta de temporada,etc , que hace que tú estancia allí se sienta como en un hotel 5* . Volveré,sin duda!  ☹ Me gustó todo",
+              "inLanguage": "es",
+              "url": "https://www.booking.com/hotel/es/encalma-vacacional-sientedisfruta-vive-la-playa.es.html",
+              "author": {
+                "@type": "Person",
+                "name": "Caterina"
+              },
+              "reviewRating": {
+                "@type": "Rating",
+                "worstRating": 1,
+                "bestRating": 10,
+                "ratingValue": 10
+              },
+              "publisher": {
+                "@type": "Organization",
+                "name": "Trustindex",
+                "sameAs": "https://www.trustindex.io"
+              }
+            },
+            {
+              "@type": "Review",
+              "datePublished": "2025-11-25T15:29:01+00:00",
+              "reviewBody": "Apartamento en primerisima linea de una playa grande y bonita dentro de una urbanizacion ideal para los niños. El apartamento super limpio y todo nuevo , no le faltaba de nada. Y los anfitriones super agradables y atentos.,",
+              "inLanguage": "es",
+              "url": "https://www.google.com/maps/search/?api=1&amp;query=Google&amp;query_place_id=ChIJSd8GzDEXYA0R2_bjyej_e4w",
+              "author": {
+                "@type": "Person",
+                "name": "Ricardo Paesa"
+              },
+              "reviewRating": {
+                "@type": "Rating",
+                "worstRating": 1,
+                "bestRating": 5,
+                "ratingValue": 5
+              },
+              "publisher": {
+                "@type": "Organization",
+                "name": "Trustindex",
+                "sameAs": "https://www.trustindex.io"
+              }
+            },
+            {
+              "@type": "Review",
+              "datePublished": "2025-11-23T00:00:00+00:00",
+              "reviewBody": "El finde de semana ha sido fantástico!! Álvaro y Gloria son unos anfitriones atentos, amables, cariñosos,empaticos, alegres..sin duda de 10, volveremos a repetir porque nos hemos sentido como en casa...Un abrazo muy fuerte y no es un adiós es un hasta pronto familia!!! un 10 !!!!",
+              "inLanguage": "es",
+              "url": "https://www.airbnb.com/rooms/1439649589703571365",
+              "author": {
+                "@type": "Person",
+                "name": "Maria"
+              },
+              "reviewRating": {
+                "@type": "Rating",
+                "worstRating": 1,
+                "bestRating": 5,
+                "ratingValue": 5
+              },
+              "publisher": {
+                "@type": "Organization",
+                "name": "Trustindex",
+                "sameAs": "https://www.trustindex.io"
+              }
+            },
+            {
+              "@type": "Review",
+              "datePublished": "2025-11-16T00:00:00+00:00",
+              "reviewBody": "el apartamento precio y muy bien ubicado y ellos muy majos y agradables!!",
+              "inLanguage": "es",
+              "url": "https://www.airbnb.com/rooms/1439648635281761501",
+              "author": {
+                "@type": "Person",
+                "name": "Víctor"
+              },
+              "reviewRating": {
+                "@type": "Rating",
+                "worstRating": 1,
+                "bestRating": 5,
+                "ratingValue": 5
+              },
+              "publisher": {
+                "@type": "Organization",
+                "name": "Trustindex",
+                "sameAs": "https://www.trustindex.io"
+              }
+            },
+            {
+              "@type": "Review",
+              "datePublished": "2025-11-16T00:00:00+00:00",
+              "reviewBody": "Todo perfecto, el lugar muy bonito y Gloria muy amable y atenta. Cuando volvamos la próxima vez sin duda nos gustaría volver.",
+              "inLanguage": "es",
+              "url": "https://www.airbnb.com/rooms/1439649589703571365",
+              "author": {
+                "@type": "Person",
+                "name": "Carolina"
+              },
+              "reviewRating": {
+                "@type": "Rating",
+                "worstRating": 1,
+                "bestRating": 5,
+                "ratingValue": 5
+              },
+              "publisher": {
+                "@type": "Organization",
+                "name": "Trustindex",
+                "sameAs": "https://www.trustindex.io"
+              }
+            },
+            {
+              "@type": "Review",
+              "datePublished": "2025-11-11T00:00:00+00:00",
+              "reviewBody": "Acceuil tres sympathique, Alvaro et Gloria sont aussi très disponibles. Appartement incroyablement bien pensé, bien équipé. Propre, moderne et lumineux avec de belles vues mer, levé de soleil magnifique assuré!Nous recommandons en dehors des dates ou nous y serons!",
+              "inLanguage": "fr",
+              "url": "https://www.airbnb.com/rooms/1439648635281761501",
+              "author": {
+                "@type": "Person",
+                "name": "Véronique"
+              },
+              "reviewRating": {
+                "@type": "Rating",
+                "worstRating": 1,
+                "bestRating": 5,
+                "ratingValue": 5
+              },
+              "publisher": {
+                "@type": "Organization",
+                "name": "Trustindex",
+                "sameAs": "https://www.trustindex.io"
+              }
+            },
+            {
+              "@type": "Review",
+              "datePublished": "2025-11-09T00:00:00+00:00",
+              "reviewBody": "Todo perfecto. El alojamiento estaba impecable, muy cómodo y con todo lo necesario. Los anfitriones fueron encantadores y atentos en todo momento. Nos sentimos como en casa. ¡Sin duda repetiríamos!",
+              "inLanguage": "es",
+              "url": "https://www.airbnb.com/rooms/1439649589703571365",
+              "author": {
+                "@type": "Person",
+                "name": "Angel"
+              },
+              "reviewRating": {
+                "@type": "Rating",
+                "worstRating": 1,
+                "bestRating": 5,
+                "ratingValue": 5
+              },
+              "publisher": {
+                "@type": "Organization",
+                "name": "Trustindex",
+                "sameAs": "https://www.trustindex.io"
+              }
+            },
+            {
+              "@type": "Review",
+              "datePublished": "2025-11-09T00:00:00+00:00",
+              "reviewBody": "&amp;lt;strong&amp;gt;Todo perfecto&amp;lt;/strong&amp;gt; ☺ La ubicación inmejorable y la comodidad de tener todo cerca.Gloria,la anfitrióna ha sido muy detallista con nosotros y nos preparó una pequeña sorpresa a la llegada. Al piso no le falta detalle y está igual que en las fotos o incluso mejor.Repetiremos sin duda.  ☹ Me gustó todo",
+              "inLanguage": "es",
+              "url": "https://www.booking.com/hotel/es/encalma-vacacional-sientedisfruta-vive-la-playa.es.html",
+              "author": {
+                "@type": "Person",
+                "name": "Maria"
+              },
+              "reviewRating": {
+                "@type": "Rating",
+                "worstRating": 1,
+                "bestRating": 10,
+                "ratingValue": 10
+              },
+              "publisher": {
+                "@type": "Organization",
+                "name": "Trustindex",
+                "sameAs": "https://www.trustindex.io"
+              }
+            },
+            {
+              "@type": "Review",
+              "datePublished": "2025-10-27T00:00:00+00:00",
+              "reviewBody": "Me ha encantado todo. El piso una maravilla todo nuevo muy bien cuidado y con muchos detalles 100% recomendable. Limpio y los anfitriones fenomenales repetiré a futuro. Que la gente no dude de esta estancia. Si puedo ayudar que elijan esta casa que van a quedar encantados.",
+              "inLanguage": "es",
+              "url": "https://www.airbnb.com/rooms/1439648635281761501",
+              "author": {
+                "@type": "Person",
+                "name": "Roberto"
+              },
+              "reviewRating": {
+                "@type": "Rating",
+                "worstRating": 1,
+                "bestRating": 5,
+                "ratingValue": 5
+              },
+              "publisher": {
+                "@type": "Organization",
+                "name": "Trustindex",
+                "sameAs": "https://www.trustindex.io"
+              }
+            },
+            {
+              "@type": "Review",
+              "datePublished": "2025-10-25T00:00:00+00:00",
+              "reviewBody": "A localidade é um tanto distante de Valência, e como era nosso objetivo, o incômodo da distância foi compensada pela ótima estadia. Uma casa de verdade com várias facilidades e presentes para nós. produtos de qualidade, ofertados pelo simpático e prestativo proprietário, o sr. Álvaro. Penso que a cidade deve ser efervescente no verão, mas no outono é meio vazia.",
+              "inLanguage": "pt",
+              "url": "https://www.airbnb.com/rooms/1439649589703571365",
+              "author": {
+                "@type": "Person",
+                "name": "Matheus"
+              },
+              "reviewRating": {
+                "@type": "Rating",
+                "worstRating": 1,
+                "bestRating": 5,
+                "ratingValue": 5
+              },
+              "publisher": {
+                "@type": "Organization",
+                "name": "Trustindex",
+                "sameAs": "https://www.trustindex.io"
+              }
+            }
+          ]
+        }
+      ],
+      "bodyFontSize": "14.592px",
+      "smallTargets": [
+        {
+          "tag": "BUTTON",
+          "text": "Aceptar",
+          "width": 728,
+          "height": 45
+        },
+        {
+          "tag": "BUTTON",
+          "text": "Denegar",
+          "width": 728,
+          "height": 45
+        },
+        {
+          "tag": "A",
+          "text": "Política de cookies",
+          "width": 111,
+          "height": 25
+        },
+        {
+          "tag": "A",
+          "text": "Política de privacidad",
+          "width": 128,
+          "height": 25
+        },
+        {
+          "tag": "A",
+          "text": "Aviso legal",
+          "width": 64,
+          "height": 25
+        },
+        {
+          "tag": "A",
+          "text": "Ir al contenido",
+          "width": 1,
+          "height": 1
+        },
+        {
+          "tag": "A",
+          "text": "",
+          "width": 60,
+          "height": 20
+        },
+        {
+          "tag": "BUTTON",
+          "text": "Main Menu",
+          "width": 44,
+          "height": 44
+        },
+        {
+          "tag": "A",
+          "text": "CONTACTA",
+          "width": 132,
+          "height": 45
+        },
+        {
+          "tag": "A",
+          "text": "Inicio",
+          "width": 79,
+          "height": 25
+        }
+      ],
+      "totalImages": 25
+    },
+    "horizontal_scroll": false,
+    "screenshots": {
+      "above_fold": "/mnt/c/MCP_CLAUDE/JOSE/NaranjaIT/En_Calma_Vacacional/screenshots/tablet_above_fold.png",
+      "full_page": "/mnt/c/MCP_CLAUDE/JOSE/NaranjaIT/En_Calma_Vacacional/screenshots/tablet_full_page.png"
+    }
+  },
+  "mobile": {
+    "viewport": {
+      "name": "mobile",
+      "width": 375,
+      "height": 812
+    },
+    "seo": {
+      "title": "Home - ENCALMA VACACIONAL",
+      "metaDescription": "estancias en calma El lugar perfecto para desconectar y disfrutar de tus vacaciones. Encuentra tu escapada perfecta Nuestros servicios Tu lugar de vacaciones",
+      "metaKeywords": null,
+      "ogTitle": "Home - ENCALMA VACACIONAL",
+      "ogDescription": "estancias en calma El lugar perfecto para desconectar y disfrutar de tus vacaciones. Encuentra tu escapada perfecta Nuestros servicios Tu lugar de vacaciones en Puerto de Sagunto Espacios para disfrutar de un entorno privilegiado junto al mar Apartamentos vacacionales con alma mediterránea Viviendas acogedoras, pensadas para desconectar y sentirte como en casa Más que anfitriones, vuestros compañeros de viaje Nos apasiona recibiros, conoceros y garantizar que vuestra estancia sea especial ¿Qué dicen de nosotros?Valoraciones de clientes reales Estancias en calma EnCalma Vacacional El Ático Luz, espacio, comodidad, amplitud, tranquilidad, bienestar… para tu familia, tus amigos, tu gente. EnCalma Vacacional La Playa Desayuna con la salida del sol, come con la brisa del mar, cena a la luz de la luna, duerme con el arrullo de las olas…  Ricardo Para repetir!! «Salgo encantado, tanto con los anfitriones como con la casa y la ubicación volvería con los ojos cerrados.» Elena Gusto por los detalles «La casa estaba impecable y tenía muchos detalles. Hemos estado muy a gusto» África Los mejores anfitriones «Un apartamento precioso. Gloria y Álvaro super encantadores con unos detalles que son de agradecer.La playa está a 10 min andando, volveremos seguro» SOBRE NOSOTROS Gloria y Álvaro, el alma de Encalma Vacacional Gloria y Álvaro, pareja en lo personal y lo profesional.Gloria, metódica, perfeccionista, rigurosa, orden y cerebro del back office.Álvaro, apasionado, enérgico, resolutivo, el corazón del front office. Juntos formamos Encalma Vacacional, nuestra pequeña empresa que gestiona 2 apartamentos, por lo que somos nosotros los encargados de absolutamente todo desde el momento de la reserva.La limpieza y revisión del apartamento la hacemos nosotros dos, por lo que garantizamos una limpieza con mucho esmero y cuidado, orden y absolutamente todo revisado antes de recibiros personalmente para daros la bienvenida y las llaves de vuestra casa.Damos lo mejor de nosotros mismos, nos encanta nuestro trabajo y nos sentimos orgullos de que nos confiéis vuestras vacaciones. Reserva tu escapada perfecta Déjanos ser parte de tu descanso: alojamientos cuidados al detalle, trato cercano y auténtica hospitalidad. Dos alojamientos únicos, el Mediterráneo como escenario y nosotros como tus anfitriones personales. CONTACTA",
+      "ogImage": "https://encalmavacacional.com/wp-content/uploads/2026/02/logo_encalma.webp",
+      "h1": [
+        "estancias",
+        "en calma",
+        "Reserva tu escapada perfecta"
+      ],
+      "h2": [
+        "Encuentra tu escapada perfecta",
+        "Nuestros servicios",
+        "",
+        "Estancias en calma"
+      ],
+      "missingAlt": [
+        {
+          "src": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMSIgaGVpZ2h0PSIxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC",
+          "width": 1,
+          "height": 1
+        }
+      ],
+      "buttons": [
+        "Aceptar",
+        "Denegar",
+        "Ver preferencias",
+        "Guardar preferencias",
+        "Ver preferencias",
+        "Alternar menú",
+        "Main Menu",
+        "Alternar menú",
+        "Gestionar consentimiento"
+      ],
+      "popups": [
+        {
+          "selector": "[class*=\"modal\"]",
+          "visible": false,
+          "text": ""
+        },
+        {
+          "selector": "[id*=\"popup\"]",
+          "visible": false,
+          "text": ""
+        },
+        {
+          "selector": "[id*=\"modal\"]",
+          "visible": false,
+          "text": ""
+        },
+        {
+          "selector": "[class*=\"cookie\"]",
+          "visible": false,
+          "text": "Para ofrecer las mejores experiencias, utilizamos tecnologías como las cookies p"
+        },
+        {
+          "selector": "[class*=\"cookie\"]",
+          "visible": false,
+          "text": "Administrar opciones"
+        },
+        {
+          "selector": "[class*=\"cookie\"]",
+          "visible": false,
+          "text": "Gestionar los servicios"
+        },
+        {
+          "selector": "[class*=\"cookie\"]",
+          "visible": false,
+          "text": "Gestionar {vendor_count} proveedores"
+        },
+        {
+          "selector": "[class*=\"cookie\"]",
+          "visible": false,
+          "text": "Ver preferencias"
+        },
+        {
+          "selector": "[class*=\"cookie\"]",
+          "visible": true,
+          "text": "Política de cookies"
+        }
+      ],
+      "aboveFold": [
+        {
+          "tag": "DIV",
+          "text": "Para ofrecer las mejores experiencias, utilizamos tecnologías como las cookies para almacenar y/o acceder a la informaci",
+          "top": 427
+        },
+        {
+          "tag": "SPAN",
+          "text": "Funcional",
+          "top": 0
+        },
+        {
+          "tag": "SPAN",
+          "text": "Preferencias",
+          "top": 0
+        },
+        {
+          "tag": "SPAN",
+          "text": "Estadísticas",
+          "top": 0
+        },
+        {
+          "tag": "SPAN",
+          "text": "Marketing",
+          "top": 0
+        },
+        {
+          "tag": "H1",
+          "text": "estancias",
+          "top": 189
+        },
+        {
+          "tag": "H1",
+          "text": "en calma",
+          "top": 231
+        },
+        {
+          "tag": "H2",
+          "text": "Encuentra tu escapada perfecta",
+          "top": 394
+        },
+        {
+          "tag": "H2",
+          "text": "Nuestros servicios",
+          "top": 631
+        },
+        {
+          "tag": "P",
+          "text": "WhatsApp",
+          "top": 0
+        }
+      ],
+      "navLinks": [
+        "Inicio",
+        "Apartamentos",
+        "Apartamento Vacacional La Playa",
+        "Apartamento Vacacional El Atico",
+        "Anfitriones",
+        "Contacto",
+        "Inicio",
+        "Apartamentos",
+        "Apartamento Vacacional La Playa",
+        "Apartamento Vacacional El Atico",
+        "Anfitriones",
+        "Contacto"
+      ],
+      "jsonLds": [
+        {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "WebPage",
+              "@id": "https://encalmavacacional.com/",
+              "url": "https://encalmavacacional.com/",
+              "name": "Home - ENCALMA VACACIONAL",
+              "isPartOf": {
+                "@id": "https://encalmavacacional.com/#website"
+              },
+              "about": {
+                "@id": "https://encalmavacacional.com/#organization"
+              },
+              "primaryImageOfPage": {
+                "@id": "https://encalmavacacional.com/#primaryimage"
+              },
+              "image": {
+                "@id": "https://encalmavacacional.com/#primaryimage"
+              },
+              "thumbnailUrl": "http://encalmavacacional.com/wp-content/uploads/2026/02/logo_encalma.webp",
+              "datePublished": "2025-09-04T08:38:17+00:00",
+              "dateModified": "2026-02-24T07:28:50+00:00",
+              "breadcrumb": {
+                "@id": "https://encalmavacacional.com/#breadcrumb"
+              },
+              "inLanguage": "es",
+              "potentialAction": [
+                {
+                  "@type": "ReadAction",
+                  "target": [
+                    "https://encalmavacacional.com/"
+                  ]
+                }
+              ]
+            },
+            {
+              "@type": "ImageObject",
+              "inLanguage": "es",
+              "@id": "https://encalmavacacional.com/#primaryimage",
+              "url": "https://encalmavacacional.com/wp-content/uploads/2026/02/logo_encalma.webp",
+              "contentUrl": "https://encalmavacacional.com/wp-content/uploads/2026/02/logo_encalma.webp",
+              "width": 768,
+              "height": 215,
+              "caption": "logo encalma"
+            },
+            {
+              "@type": "BreadcrumbList",
+              "@id": "https://encalmavacacional.com/#breadcrumb",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Portada"
+                }
+              ]
+            },
+            {
+              "@type": "WebSite",
+              "@id": "https://encalmavacacional.com/#website",
+              "url": "https://encalmavacacional.com/",
+              "name": "ENCALMA VACACIONAL",
+              "description": "Apartamentos Vacacionales Puerto de Sagunto",
+              "publisher": {
+                "@id": "https://encalmavacacional.com/#organization"
+              },
+              "alternateName": "ENCALMA VACACIONAL",
+              "potentialAction": [
+                {
+                  "@type": "SearchAction",
+                  "target": {
+                    "@type": "EntryPoint",
+                    "urlTemplate": "https://encalmavacacional.com/?s={search_term_string}"
+                  },
+                  "query-input": {
+                    "@type": "PropertyValueSpecification",
+                    "valueRequired": true,
+                    "valueName": "search_term_string"
+                  }
+                }
+              ],
+              "inLanguage": "es"
+            },
+            {
+              "@type": "Organization",
+              "@id": "https://encalmavacacional.com/#organization",
+              "name": "ENCALMA VACACIONAL",
+              "url": "https://encalmavacacional.com/",
+              "logo": {
+                "@type": "ImageObject",
+                "inLanguage": "es",
+                "@id": "https://encalmavacacional.com/#/schema/logo/image/",
+                "url": "http://encalmavacacional.com/wp-content/uploads/2025/09/ChatGPT-Image-18-sept-2025-10_32_15.png",
+                "contentUrl": "http://encalmavacacional.com/wp-content/uploads/2025/09/ChatGPT-Image-18-sept-2025-10_32_15.png",
+                "width": 1024,
+                "height": 1024,
+                "caption": "ENCALMA VACACIONAL"
+              },
+              "image": {
+                "@id": "https://encalmavacacional.com/#/schema/logo/image/"
+              }
+            }
+          ]
+        },
+        {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "WebSite",
+              "@id": "https://encalmavacacional.com/#website",
+              "name": "ENCALMA VACACIONAL",
+              "description": "Apartamentos Vacacionales Puerto de Sagunto",
+              "url": "https://encalmavacacional.com/",
+              "potentialAction": {
+                "@id": "https://encalmavacacional.com/#searchaction"
+              },
+              "publisher": {
+                "@id": "https://encalmavacacional.com/#organization"
+              }
+            },
+            {
+              "@type": "WebPage",
+              "@id": "https://encalmavacacional.com#webpage",
+              "name": "Home",
+              "inLanguage": "es_ES",
+              "url": "https://encalmavacacional.com",
+              "isPartOf": {
+                "@id": "https://encalmavacacional.com/#website"
+              },
+              "publisher": {
+                "@id": "https://encalmavacacional.com/#organization"
+              }
+            },
+            {
+              "@type": "Organization",
+              "@id": "https://encalmavacacional.com/#organization",
+              "name": "ENCALMA VACACIONAL",
+              "logo": "https://encalmavacacional.com/wp-content/uploads/2025/09/favicon.png",
+              "slogan": "Apartamentos Vacacionales Puerto de Sagunto",
+              "url": "https://encalmavacacional.com/ "
+            },
+            {
+              "@type": "SearchAction",
+              "@id": "https://encalmavacacional.com/#searchaction",
+              "target": "http://encalmavacacional.com/?s={search_term_string}",
+              "query-input": "required name=search_term_string"
+            }
+          ]
+        },
+        {
+          "@context": "https://schema.org/",
+          "@type": "Product",
+          "name": "ENCALMA VACACIONAL",
+          "image": "https://cdn.trustindex.io/companies/36/36619c391587g630/avatar.jpg",
+          "url": "https://www.encalmavacacional.com",
+          "sku": "36619c391587g630",
+          "description": "ENCALMA VACACIONAL is trusted by over 43 happy customers, earning a 5-star rating! Explore real reviews and share your own experience.",
+          "manufacturer": {
+            "@type": "Organization",
+            "@id": "https://www.trustindex.io/reviews/www.encalmavacacional.com",
+            "name": "ENCALMA VACACIONAL",
+            "logo": "https://cdn.trustindex.io/companies/36/36619c391587g630/avatar.jpg",
+            "url": "https://www.encalmavacacional.com",
+            "description": "ENCALMA VACACIONAL is trusted by over 43 happy customers, earning a 5-star rating! Explore real reviews and share your own experience.",
+            "image": {
+              "@type": "ImageObject",
+              "url": "https://cdn.trustindex.io/companies/36/36619c391587g630/screenshot.jpg",
+              "width": 500,
+              "height": 348
+            },
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Carrer Vent de Gregal, 3",
+              "addressLocality": "Port de Sagunt",
+              "postalCode": "46520",
+              "addressCountry": "ES"
+            },
+            "brand": {
+              "@type": "Brand",
+              "@id": "https://www.encalmavacacional.com",
+              "name": "ENCALMA VACACIONAL"
+            }
+          },
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "worstRating": 1,
+            "bestRating": 5,
+            "ratingValue": 5,
+            "ratingCount": 43
+          },
+          "review": [
+            {
+              "@type": "Review",
+              "datePublished": "2026-02-09T00:00:00+00:00",
+              "reviewBody": "&amp;lt;strong&amp;gt;Excepcional&amp;lt;/strong&amp;gt;",
+              "inLanguage": "es",
+              "url": "https://www.booking.com/hotel/es/encalma-vacacional-sientedisfruta-vive-la-playa.es.html",
+              "author": {
+                "@type": "Person",
+                "name": "Sebastián"
+              },
+              "reviewRating": {
+                "@type": "Rating",
+                "worstRating": 1,
+                "bestRating": 10,
+                "ratingValue": 10
+              },
+              "publisher": {
+                "@type": "Organization",
+                "name": "Trustindex",
+                "sameAs": "https://www.trustindex.io"
+              }
+            },
+            {
+              "@type": "Review",
+              "datePublished": "2026-01-01T00:00:00+00:00",
+              "reviewBody": "&amp;lt;strong&amp;gt;Excepcional&amp;lt;/strong&amp;gt;",
+              "inLanguage": "es",
+              "url": "https://www.booking.com/hotel/es/encalma-vacacional-sientedisfruta-vive-la-playa.es.html",
+              "author": {
+                "@type": "Person",
+                "name": "Hans"
+              },
+              "reviewRating": {
+                "@type": "Rating",
+                "worstRating": 1,
+                "bestRating": 10,
+                "ratingValue": 10
+              },
+              "publisher": {
+                "@type": "Organization",
+                "name": "Trustindex",
+                "sameAs": "https://www.trustindex.io"
+              }
+            },
+            {
+              "@type": "Review",
+              "datePublished": "2025-12-28T00:00:00+00:00",
+              "reviewBody": "Excelente piso, muy bonito, agradable y muy luminoso. La vista increíble totalmente recomendado. Alvaro muy amable y cordial. Se preocupa de todos los detalles.",
+              "inLanguage": "es",
+              "url": "https://www.airbnb.com/rooms/1439648635281761501",
+              "author": {
+                "@type": "Person",
+                "name": "Jorge"
+              },
+              "reviewRating": {
+                "@type": "Rating",
+                "worstRating": 1,
+                "bestRating": 5,
+                "ratingValue": 5
+              },
+              "publisher": {
+                "@type": "Organization",
+                "name": "Trustindex",
+                "sameAs": "https://www.trustindex.io"
+              }
+            },
+            {
+              "@type": "Review",
+              "datePublished": "2025-12-22T00:00:00+00:00",
+              "reviewBody": "El apartamento super bonito, a superado nuestras expectativas es fiel a las fotos.Alvarito y Gloria unos super anfitriones, muy resolutivos y muy cercanos. Llegamos super tarde y Alvarito nos ayudó a buscar un restaurante cerca del apartamento y comimos de lujo. Nos hemos sentido como en casa.Tener parking es un super extra. Sin duda volveremos las próximas vacaciones .",
+              "inLanguage": "es",
+              "url": "https://www.airbnb.com/rooms/1439649589703571365",
+              "author": {
+                "@type": "Person",
+                "name": "Maribel"
+              },
+              "reviewRating": {
+                "@type": "Rating",
+                "worstRating": 1,
+                "bestRating": 5,
+                "ratingValue": 5
+              },
+              "publisher": {
+                "@type": "Organization",
+                "name": "Trustindex",
+                "sameAs": "https://www.trustindex.io"
+              }
+            },
+            {
+              "@type": "Review",
+              "datePublished": "2025-12-20T00:00:00+00:00",
+              "reviewBody": "En general, todo espectacular, desde el primer contacto con Álvaro y Gloria hasta que nos hemos ido.La casa es genial y muy cómoda como se describe en el anuncio pero lo mejor de todo, son ellos por cómo se involucran y la amabilidad y disponibilidad en todo momento.Experiencia de 10.Gracias",
+              "inLanguage": "es",
+              "url": "https://www.airbnb.com/rooms/1439649589703571365",
+              "author": {
+                "@type": "Person",
+                "name": "Raul"
+              },
+              "reviewRating": {
+                "@type": "Rating",
+                "worstRating": 1,
+                "bestRating": 5,
+                "ratingValue": 5
+              },
+              "publisher": {
+                "@type": "Organization",
+                "name": "Trustindex",
+                "sameAs": "https://www.trustindex.io"
+              }
+            },
+            {
+              "@type": "Review",
+              "datePublished": "2025-12-14T14:44:37+00:00",
+              "reviewBody": "",
+              "inLanguage": "-",
+              "url": "https://www.google.com/maps/search/?api=1&amp;query=Google&amp;query_place_id=ChIJSd8GzDEXYA0R2_bjyej_e4w",
+              "author": {
+                "@type": "Person",
+                "name": "Lucia Lucia"
+              },
+              "reviewRating": {
+                "@type": "Rating",
+                "worstRating": 1,
+                "bestRating": 5,
+                "ratingValue": 5
+              },
+              "publisher": {
+                "@type": "Organization",
+                "name": "Trustindex",
+                "sameAs": "https://www.trustindex.io"
+              }
+            },
+            {
+              "@type": "Review",
+              "datePublished": "2025-12-14T00:00:00+00:00",
+              "reviewBody": "Pues sencillamente magnífico lugar el de Gloria y Álvaro. Tal y como se describe en las fotos o incluso mejor: amplísimo, con terraza magnifica, limpio y cómodo. Los anfitriones excepcionales, siempre atentos y dispuestos para el proceso de llegada y durante la estancia. Hemos estado muy cómodos y repetiremos sin dudar si visitamos Port Sagunt de nuevo. Recomendado a la comunidad AirBnB 100%.",
+              "inLanguage": "es",
+              "url": "https://www.airbnb.com/rooms/1439649589703571365",
+              "author": {
+                "@type": "Person",
+                "name": "Rafael"
+              },
+              "reviewRating": {
+                "@type": "Rating",
+                "worstRating": 1,
+                "bestRating": 5,
+                "ratingValue": 5
+              },
+              "publisher": {
+                "@type": "Organization",
+                "name": "Trustindex",
+                "sameAs": "https://www.trustindex.io"
+              }
+            },
+            {
+              "@type": "Review",
+              "datePublished": "2025-12-09T00:00:00+00:00",
+              "reviewBody": "&amp;lt;strong&amp;gt;Wow&amp;lt;/strong&amp;gt; ☺ Hosting fantastico, appartamento grande e ben curato e anche la location meritava, impagabile svegliarsi con l&amp;#039;alba in primo piano  ☹ Nulla",
+              "inLanguage": "it",
+              "url": "https://www.booking.com/hotel/es/encalma-vacacional-sientedisfruta-vive-la-playa.es.html",
+              "author": {
+                "@type": "Person",
+                "name": "Critelli"
+              },
+              "reviewRating": {
+                "@type": "Rating",
+                "worstRating": 1,
+                "bestRating": 10,
+                "ratingValue": 10
+              },
+              "publisher": {
+                "@type": "Organization",
+                "name": "Trustindex",
+                "sameAs": "https://www.trustindex.io"
+              }
+            },
+            {
+              "@type": "Review",
+              "datePublished": "2025-12-08T00:00:00+00:00",
+              "reviewBody": "Je recommande ce logement, très propre Correspond au descriptif de l’annonce",
+              "inLanguage": "fr",
+              "url": "https://www.airbnb.com/rooms/1439649589703571365",
+              "author": {
+                "@type": "Person",
+                "name": "Christophe"
+              },
+              "reviewRating": {
+                "@type": "Rating",
+                "worstRating": 1,
+                "bestRating": 5,
+                "ratingValue": 5
+              },
+              "publisher": {
+                "@type": "Organization",
+                "name": "Trustindex",
+                "sameAs": "https://www.trustindex.io"
+              }
+            },
+            {
+              "@type": "Review",
+              "datePublished": "2025-12-05T06:09:31+00:00",
+              "reviewBody": "De principio a fin, simplemente perfecto. La ubicación del apartamento es en la playa tal cual, mas cerca no se puede estar. Se ve sin levantarte de la cama, literal pues la habitacion tiene una pequeña terraza, aparte de la principal Decorado con mucho gusto y con todo tipo de detalles. Hasta para ir a la playa teniamos sillas, sombrilla, nevera, toallas, raquetas, petanca... Y limpio, muy muy limpio. Los anfitriones, Álvaro y Gloria, unos cracks. Super simpaticos y cercanos. Era nuestro aniversario, y vi en la web que para celebraciones asi, ellos se encargaban de decorar el apartamento o reservar un restaurante... como yo ya tenia preparada alguna sorpresa a mi chica, solo les pedi que decoraran la habitacion. Lo hicieron con sencillez pero con mucha elegancia, nada de llenarlo todo de globos y cosas asi. Me cobraron por el  extra 20€, osea el cava que pusieron, pero llegar al apartamento y encontrartelo con ese detalle y alguna sorpresa mas que nos prepararon, no tiene precio. Muchisimas gracias pareja, porque hemos pasado un fin de semana maravilloso, y gran culpa la teneis vosotros. Nos volveros a ver pronto",
+              "inLanguage": "es",
+              "url": "https://www.google.com/maps/search/?api=1&amp;query=Google&amp;query_place_id=ChIJSd8GzDEXYA0R2_bjyej_e4w",
+              "author": {
+                "@type": "Person",
+                "name": "AzaharHomes"
+              },
+              "reviewRating": {
+                "@type": "Rating",
+                "worstRating": 1,
+                "bestRating": 5,
+                "ratingValue": 5
+              },
+              "publisher": {
+                "@type": "Organization",
+                "name": "Trustindex",
+                "sameAs": "https://www.trustindex.io"
+              }
+            },
+            {
+              "@type": "Review",
+              "datePublished": "2025-11-26T00:00:00+00:00",
+              "reviewBody": "&amp;lt;strong&amp;gt;Excelencia y calidad&amp;lt;/strong&amp;gt; ☺ Es un piso fabuloso,con unos anfitriones excelentes.Todo muy limpió,moderno ,sin faltar ningún detalle para que te sientas en casa,con unas vistas de ensueño.  Llegas allí y no quieres volver!Un piso más que nuevo,moderno y muy luminoso!Destacó la atención de los anfitriones, que son super amables, estando pendiente de todo para que tú estancia sea perfecta,con todo lujo de detalles:como café en cápsulas,fruta de temporada,etc , que hace que tú estancia allí se sienta como en un hotel 5* . Volveré,sin duda!  ☹ Me gustó todo",
+              "inLanguage": "es",
+              "url": "https://www.booking.com/hotel/es/encalma-vacacional-sientedisfruta-vive-la-playa.es.html",
+              "author": {
+                "@type": "Person",
+                "name": "Caterina"
+              },
+              "reviewRating": {
+                "@type": "Rating",
+                "worstRating": 1,
+                "bestRating": 10,
+                "ratingValue": 10
+              },
+              "publisher": {
+                "@type": "Organization",
+                "name": "Trustindex",
+                "sameAs": "https://www.trustindex.io"
+              }
+            },
+            {
+              "@type": "Review",
+              "datePublished": "2025-11-25T15:29:01+00:00",
+              "reviewBody": "Apartamento en primerisima linea de una playa grande y bonita dentro de una urbanizacion ideal para los niños. El apartamento super limpio y todo nuevo , no le faltaba de nada. Y los anfitriones super agradables y atentos.,",
+              "inLanguage": "es",
+              "url": "https://www.google.com/maps/search/?api=1&amp;query=Google&amp;query_place_id=ChIJSd8GzDEXYA0R2_bjyej_e4w",
+              "author": {
+                "@type": "Person",
+                "name": "Ricardo Paesa"
+              },
+              "reviewRating": {
+                "@type": "Rating",
+                "worstRating": 1,
+                "bestRating": 5,
+                "ratingValue": 5
+              },
+              "publisher": {
+                "@type": "Organization",
+                "name": "Trustindex",
+                "sameAs": "https://www.trustindex.io"
+              }
+            },
+            {
+              "@type": "Review",
+              "datePublished": "2025-11-23T00:00:00+00:00",
+              "reviewBody": "El finde de semana ha sido fantástico!! Álvaro y Gloria son unos anfitriones atentos, amables, cariñosos,empaticos, alegres..sin duda de 10, volveremos a repetir porque nos hemos sentido como en casa...Un abrazo muy fuerte y no es un adiós es un hasta pronto familia!!! un 10 !!!!",
+              "inLanguage": "es",
+              "url": "https://www.airbnb.com/rooms/1439649589703571365",
+              "author": {
+                "@type": "Person",
+                "name": "Maria"
+              },
+              "reviewRating": {
+                "@type": "Rating",
+                "worstRating": 1,
+                "bestRating": 5,
+                "ratingValue": 5
+              },
+              "publisher": {
+                "@type": "Organization",
+                "name": "Trustindex",
+                "sameAs": "https://www.trustindex.io"
+              }
+            },
+            {
+              "@type": "Review",
+              "datePublished": "2025-11-16T00:00:00+00:00",
+              "reviewBody": "el apartamento precio y muy bien ubicado y ellos muy majos y agradables!!",
+              "inLanguage": "es",
+              "url": "https://www.airbnb.com/rooms/1439648635281761501",
+              "author": {
+                "@type": "Person",
+                "name": "Víctor"
+              },
+              "reviewRating": {
+                "@type": "Rating",
+                "worstRating": 1,
+                "bestRating": 5,
+                "ratingValue": 5
+              },
+              "publisher": {
+                "@type": "Organization",
+                "name": "Trustindex",
+                "sameAs": "https://www.trustindex.io"
+              }
+            },
+            {
+              "@type": "Review",
+              "datePublished": "2025-11-16T00:00:00+00:00",
+              "reviewBody": "Todo perfecto, el lugar muy bonito y Gloria muy amable y atenta. Cuando volvamos la próxima vez sin duda nos gustaría volver.",
+              "inLanguage": "es",
+              "url": "https://www.airbnb.com/rooms/1439649589703571365",
+              "author": {
+                "@type": "Person",
+                "name": "Carolina"
+              },
+              "reviewRating": {
+                "@type": "Rating",
+                "worstRating": 1,
+                "bestRating": 5,
+                "ratingValue": 5
+              },
+              "publisher": {
+                "@type": "Organization",
+                "name": "Trustindex",
+                "sameAs": "https://www.trustindex.io"
+              }
+            },
+            {
+              "@type": "Review",
+              "datePublished": "2025-11-11T00:00:00+00:00",
+              "reviewBody": "Acceuil tres sympathique, Alvaro et Gloria sont aussi très disponibles. Appartement incroyablement bien pensé, bien équipé. Propre, moderne et lumineux avec de belles vues mer, levé de soleil magnifique assuré!Nous recommandons en dehors des dates ou nous y serons!",
+              "inLanguage": "fr",
+              "url": "https://www.airbnb.com/rooms/1439648635281761501",
+              "author": {
+                "@type": "Person",
+                "name": "Véronique"
+              },
+              "reviewRating": {
+                "@type": "Rating",
+                "worstRating": 1,
+                "bestRating": 5,
+                "ratingValue": 5
+              },
+              "publisher": {
+                "@type": "Organization",
+                "name": "Trustindex",
+                "sameAs": "https://www.trustindex.io"
+              }
+            },
+            {
+              "@type": "Review",
+              "datePublished": "2025-11-09T00:00:00+00:00",
+              "reviewBody": "Todo perfecto. El alojamiento estaba impecable, muy cómodo y con todo lo necesario. Los anfitriones fueron encantadores y atentos en todo momento. Nos sentimos como en casa. ¡Sin duda repetiríamos!",
+              "inLanguage": "es",
+              "url": "https://www.airbnb.com/rooms/1439649589703571365",
+              "author": {
+                "@type": "Person",
+                "name": "Angel"
+              },
+              "reviewRating": {
+                "@type": "Rating",
+                "worstRating": 1,
+                "bestRating": 5,
+                "ratingValue": 5
+              },
+              "publisher": {
+                "@type": "Organization",
+                "name": "Trustindex",
+                "sameAs": "https://www.trustindex.io"
+              }
+            },
+            {
+              "@type": "Review",
+              "datePublished": "2025-11-09T00:00:00+00:00",
+              "reviewBody": "&amp;lt;strong&amp;gt;Todo perfecto&amp;lt;/strong&amp;gt; ☺ La ubicación inmejorable y la comodidad de tener todo cerca.Gloria,la anfitrióna ha sido muy detallista con nosotros y nos preparó una pequeña sorpresa a la llegada. Al piso no le falta detalle y está igual que en las fotos o incluso mejor.Repetiremos sin duda.  ☹ Me gustó todo",
+              "inLanguage": "es",
+              "url": "https://www.booking.com/hotel/es/encalma-vacacional-sientedisfruta-vive-la-playa.es.html",
+              "author": {
+                "@type": "Person",
+                "name": "Maria"
+              },
+              "reviewRating": {
+                "@type": "Rating",
+                "worstRating": 1,
+                "bestRating": 10,
+                "ratingValue": 10
+              },
+              "publisher": {
+                "@type": "Organization",
+                "name": "Trustindex",
+                "sameAs": "https://www.trustindex.io"
+              }
+            },
+            {
+              "@type": "Review",
+              "datePublished": "2025-10-27T00:00:00+00:00",
+              "reviewBody": "Me ha encantado todo. El piso una maravilla todo nuevo muy bien cuidado y con muchos detalles 100% recomendable. Limpio y los anfitriones fenomenales repetiré a futuro. Que la gente no dude de esta estancia. Si puedo ayudar que elijan esta casa que van a quedar encantados.",
+              "inLanguage": "es",
+              "url": "https://www.airbnb.com/rooms/1439648635281761501",
+              "author": {
+                "@type": "Person",
+                "name": "Roberto"
+              },
+              "reviewRating": {
+                "@type": "Rating",
+                "worstRating": 1,
+                "bestRating": 5,
+                "ratingValue": 5
+              },
+              "publisher": {
+                "@type": "Organization",
+                "name": "Trustindex",
+                "sameAs": "https://www.trustindex.io"
+              }
+            },
+            {
+              "@type": "Review",
+              "datePublished": "2025-10-25T00:00:00+00:00",
+              "reviewBody": "A localidade é um tanto distante de Valência, e como era nosso objetivo, o incômodo da distância foi compensada pela ótima estadia. Uma casa de verdade com várias facilidades e presentes para nós. produtos de qualidade, ofertados pelo simpático e prestativo proprietário, o sr. Álvaro. Penso que a cidade deve ser efervescente no verão, mas no outono é meio vazia.",
+              "inLanguage": "pt",
+              "url": "https://www.airbnb.com/rooms/1439649589703571365",
+              "author": {
+                "@type": "Person",
+                "name": "Matheus"
+              },
+              "reviewRating": {
+                "@type": "Rating",
+                "worstRating": 1,
+                "bestRating": 5,
+                "ratingValue": 5
+              },
+              "publisher": {
+                "@type": "Organization",
+                "name": "Trustindex",
+                "sameAs": "https://www.trustindex.io"
+              }
+            }
+          ]
+        }
+      ],
+      "bodyFontSize": "21px",
+      "smallTargets": [
+        {
+          "tag": "BUTTON",
+          "text": "Aceptar",
+          "width": 335,
+          "height": 45
+        },
+        {
+          "tag": "BUTTON",
+          "text": "Denegar",
+          "width": 335,
+          "height": 45
+        },
+        {
+          "tag": "A",
+          "text": "Política de cookies",
+          "width": 106,
+          "height": 36
+        },
+        {
+          "tag": "A",
+          "text": "Política de privacidad",
+          "width": 125,
+          "height": 36
+        },
+        {
+          "tag": "A",
+          "text": "Aviso legal",
+          "width": 59,
+          "height": 36
+        },
+        {
+          "tag": "A",
+          "text": "Ir al contenido",
+          "width": 1,
+          "height": 1
+        },
+        {
+          "tag": "A",
+          "text": "",
+          "width": 50,
+          "height": 17
+        },
+        {
+          "tag": "A",
+          "text": "CONTACTA",
+          "width": 131,
+          "height": 44
+        },
+        {
+          "tag": "A",
+          "text": "Inicio",
+          "width": 48,
+          "height": 46
+        },
+        {
+          "tag": "A",
+          "text": "Apartamentos",
+          "width": 138,
+          "height": 46
+        }
+      ],
+      "totalImages": 24
+    },
+    "horizontal_scroll": false,
+    "screenshots": {
+      "above_fold": "/mnt/c/MCP_CLAUDE/JOSE/NaranjaIT/En_Calma_Vacacional/screenshots/mobile_above_fold.png",
+      "full_page": "/mnt/c/MCP_CLAUDE/JOSE/NaranjaIT/En_Calma_Vacacional/screenshots/mobile_full_page.png"
+    }
+  }
+}
