@@ -5,18 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tarjetas con Mismo Alto</title>
     <style>
-        body {
+        @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap');
+
+        /* body {
             margin: 0;
-            padding: 20px;
-            background: #f5f5f5;
-            font-family: 'Segoe UI', sans-serif;
-        }
+            padding: 40px 20px;
+            background: #FFFFFF;
+            font-family: 'DM Sans', sans-serif;
+            color: #454F5E;
+        } */
 
         /* Contenedor principal */
         .tarjetas-container {
             display: flex;
             flex-wrap: wrap;
-            gap: 20px;
+            gap: 24px;
             justify-content: center;
             max-width: 1200px;
             margin: 0 auto;
@@ -24,23 +27,23 @@
 
         /* Cada tarjeta ocupará 1/3 del espacio */
         .tarjeta-wrapper {
-            flex: 1 1 calc(33.333% - 14px);
+            flex: 1 1 calc(33.333% - 16px);
             min-width: 280px;
             display: flex;
         }
 
         /* Esto hace que todas las tarjetas tengan el mismo alto */
         .tarjetas-grid-card {
-            background: #f7fbf9;
-            border: 2px solid #cbe3da;
-            border-radius: 12px;
-            padding: 24px;
-            color: #003b2c;
-            font-family: 'Segoe UI', sans-serif;
-            font-size: 15px;
-            line-height: 22px;
+            background: #EDF6EE;
+            border: 2px solid #1B9C85;
+            border-radius: 8px;
+            padding: 32px 24px;
+            color: #0F172A;
+            font-family: 'DM Sans', sans-serif;
+            font-size: 16px;
+            line-height: 1.6;
             text-align: center;
-            
+
             /* Esto es lo importante: hace que la tarjeta ocupe todo el alto disponible */
             display: flex;
             flex-direction: column;
@@ -49,73 +52,136 @@
         }
 
         .tarjetas-grid-card h3 {
-            margin: 0 0 15px;
-            font-size: 20px;
+            margin: 0 0 16px;
+            font-size: 1.25rem;
             font-weight: 600;
+            color: #0F172A;
         }
 
         .tarjetas-grid-card p {
             margin: 0 0 12px;
+            color: #454F5E;
         }
 
         .tarjetas-grid-card p:last-child {
             margin: 0;
         }
 
-        .tarjetas-grid-card > div:first-child {
-            font-size: 54px;
-            margin-bottom: 10px;
+        .tarjetas-grid-card img {
+            display: block;
         }
 
         /* Tarjeta 1 - Seguridad */
         .tarjeta-1 {
-            background: #f7fbf9;
-            border-color: #cbe3da;
-            color: #003b2c;
+            background: #EDF6EE;
+            border-color: #1B9C85;
+            color: #0F172A;
+        }
+
+        .tarjeta-1 .highlight-box {
+            background: #1B9C85;
+            padding: 12px 16px;
+            border-radius: 6px;
+            font-weight: 600;
+            color: #FFFFFF;
+            margin-top: 15px;
         }
 
         /* Tarjeta 2 - Precio */
         .tarjeta-2 {
-            background: #fef9f3;
-            border-color: #f5d7b5;
-            color: #5a3b00;
+            background: #EDF6EE;
+            border-color: #1B9C85;
+            color: #0F172A;
         }
 
         .tarjeta-2 .highlight-box {
-            background: #fff3e4;
-            padding: 10px 16px;
-            border-radius: 8px;
+            background: #1B9C85;
+            padding: 12px 16px;
+            border-radius: 6px;
             font-weight: 600;
-            color: #5a3b00;
-            margin-top: 15px;
+            color: #FFFFFF;
+            margin-top: auto;
         }
 
         /* Tarjeta 3 - Trato */
         .tarjeta-3 {
-            background: #f3f7ff;
-            border-color: #c8d9ff;
-            color: #002c63;
+            background: #EDF6EE;
+            border-color: #1B9C85;
+            color: #0F172A;
         }
 
         .tarjeta-3 .highlight-box {
-            background: #e8f0ff;
-            padding: 10px 16px;
-            border-radius: 8px;
+            background: #1B9C85;
+            padding: 12px 16px;
+            border-radius: 6px;
             font-weight: 600;
-            color: #002c63;
-            margin-top: 15px;
+            color: #FFFFFF;
+            margin-top: auto;
         }
 
         /* Responsive */
-        @media (max-width: 768px) {
+        @media (max-width: 921px) {
+            .tarjeta-wrapper {
+                flex: 1 1 calc(50% - 12px);
+            }
+        }
+
+        @media (max-width: 544px) {
             .tarjeta-wrapper {
                 flex: 1 1 100%;
                 min-width: 100%;
+            }
+
+            .tarjetas-grid-card {
+                padding: 24px 16px;
+            }
+
+            body {
+                padding: 20px 16px;
             }
         }
     </style>
 </head>
 <body>
+    <div style="
+        text-align: center;
+        margin: 0 auto 60px;
+        max-width: 1200px;
+        padding: 0 20px;
+    ">
+        <h2 style="
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #0F172A;
+            margin: 0 0 20px;
+            font-family: 'DM Sans', sans-serif;
+        ">
+            Tu lugar de vacaciones en Puerto de Sagunto
+        </h2>
+        <p style="
+            font-size: 1.125rem;
+            color: #454F5E;
+            margin: 0;
+            line-height: 1.8;
+            font-family: 'DM Sans', sans-serif;
+        ">
+            Espacios para disfrutar de un entorno privilegiado junto al mar
+        </p>
+    </div>
+
+    <h2 style="
+        text-align: center;
+        font-family: 'Roboto Slab', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        color: rgb(83, 105, 65);
+        font-size: 40px;
+        line-height: 52px;
+        margin: 40px 0 40px;
+    ">
+        Nuestros servicios
+    </h2>
+
     <div class="tarjetas-container">
         <!-- Tarjeta 1 -->
         <div class="tarjeta-wrapper">
@@ -128,12 +194,16 @@
                     <strong>Stripe</strong>, <strong>PayPal</strong> y <strong>Authorize.net</strong>.
                 </p>
                 <p>
-                    Tus datos sensibles se envían directamente a sus servidores ultra‑seguros 
+                    Tus datos sensibles se envían directamente a sus servidores ultra‑seguros
                     bajo estrictos estándares de cumplimiento <strong>PCI‑DSS</strong>.
                 </p>
-                <p style="font-weight: 600; margin-top: auto;">
+                <div class="highlight-box" style="margin-top: auto;">
                     Tu seguridad es nuestra prioridad.
-                </p>
+                </div>
+                <div style="margin-top: 20px; padding-top: 20px; border-top: 1px solid rgba(27, 156, 133, 0.2); display: flex; align-items: center; justify-content: center; gap: 12px; flex-wrap: wrap;">
+                    <span style="font-size: 12px; color: #454F5E; font-weight: 500;">Proveedores aceptados:</span>
+                    <img src="http://encalmavacacional.com/wp-content/uploads/2026/03/Stripe-wordmark-Blurple.svg" alt="Stripe" style="height: 20px; object-fit: contain;">
+                </div>
             </div>
         </div>
 
@@ -177,56 +247,34 @@
                 </div>
             </div>
         </div>
+
+        <!-- Tarjeta 4 - Méritos -->
+        <div class="tarjeta-wrapper">
+            <div class="tarjetas-grid-card tarjeta-3">
+                <img src="http://encalmavacacional.com/wp-content/uploads/2026/03/award2.svg" alt="Méritos y reconocimientos" style="width: 54px; height: 54px; margin: 0 auto 10px;">
+                <h3>Méritos y reconocimientos</h3>
+                <p>
+                    Somos <strong>Superanfitriones en Airbnb</strong>, una distinción que solo obtienen los alojamientos con un servicio excepcional.
+                </p>
+                <p>
+                    Nuestro alojamiento se encuentra entre el <strong>5% y 10% de los apartamentos favoritos</strong> por los viajeros.
+                </p>
+                <p>
+                    Formamos parte de la categoría <strong>"Recomendado por los viajeros"</strong> en Airbnb gracias a las valoraciones constantes.
+                </p>
+                <p>
+                    Booking.com nos ha otorgado el <strong>Traveller Review Awards 2026</strong>, un reconocimiento basado en la satisfacción real de los huéspedes.
+                </p>
+                <div class="highlight-box" style="margin-top: auto;">
+                    Tu tranquilidad está respaldada por miles de viajeros.
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 </html>
 
 
-<div style="
-    background:#f8f4ff;
-    border:2px solid #d9c7ff;
-    border-radius:12px;
-    padding:24px;
-    margin:20px 0;
-    color:#3a2266;
-    font-family:'Segoe UI', sans-serif;
-    font-size:15px;
-    line-height:22px;
-    text-align:center;
-">
-    <img src="http://encalmavacacional.com/wp-content/uploads/2026/03/award2.svg" alt="Méritos y reconocimientos" style="width: 54px; height: 54px; margin: 0 auto 10px; display: block;">
-
-    <h3 style="margin:0 0 15px; font-size:20px; font-weight:600;">
-        Méritos y reconocimientos
-    </h3>
-
-    <p style="margin:0 0 12px;">
-        Somos <strong>Superanfitriones en Airbnb</strong>, una distinción que solo obtienen los alojamientos con un servicio excepcional.
-    </p>
-
-    <p style="margin:0 0 12px;">
-        Nuestro alojamiento se encuentra entre el <strong>5% y 10% de los apartamentos favoritos</strong> por los viajeros.
-    </p>
-
-    <p style="margin:0 0 12px;">
-        Formamos parte de la categoría <strong>“Recomendado por los viajeros”</strong> en Airbnb gracias a las valoraciones constantes.
-    </p>
-
-    <p style="margin:0 0 12px;">
-        Booking.com nos ha otorgado el <strong>Traveller Review Awards 2026</strong>, un reconocimiento basado en la satisfacción real de los huéspedes.
-    </p>
-
-    <p style="
-        background:#f2e8ff;
-        padding:10px 16px;
-        border-radius:8px;
-        font-weight:600;
-        color:#3a2266;
-        margin-top:15px;
-    ">
-        Tu tranquilidad está respaldada por miles de viajeros.
-    </p>
-</div>
 
 Lo que nos hace tu mejor opcion
 
