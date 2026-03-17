@@ -65,6 +65,7 @@ async function getAllArticlesFromPrismic() {
                 title: content.titulo?.[0]?.text || 'Sin título',
                 category: content.categoria || 'General',
                 excerpt: content.resumen?.[0]?.text || '',
+                image: content.imagen_hero?.url || '',
                 date: formatDate(content.fecha),
                 author: content.autor || 'Anónimo',
                 slug: doc.uid,
@@ -139,8 +140,8 @@ function parsePrismicContent(blocks) {
     blocks.forEach(block => {
         const text = (block.text || '').trim();
 
-        // Saltar bloques vacíos
-        if (!text) return;
+        // Saltar bloques vacíos (pero no imágenes, que no tienen text)
+        if (!text && block.type !== 'image') return;
 
         if (block.type === 'heading2' || block.type === 'heading1') {
             html += `<h3 class="article-section-title">${text}</h3>`;
@@ -155,9 +156,27 @@ function parsePrismicContent(blocks) {
         } else if (block.type === 'o-list-item') {
             html += `<li class="article-paragraph">${applySpans(text, block.spans)}</li>`;
         } else if (block.type === 'image') {
-            const src = block.url || '';
+            let src = '';
+            let alt = '';
+
+            // Prismic puede devolver la imagen en diferentes formatos
+            if (block.url) {
+                src = block.url;
+                alt = block.alt || 'Imagen del artículo';
+            } else if (block.image && block.image.url) {
+                src = block.image.url;
+                alt = block.image.alt || 'Imagen del artículo';
+            }
+
             if (src) {
-                html += `<img class="article-image" src="${src}" alt="${block.alt || ''}" style="width:100%; height:auto; border-radius:4px;">`;
+                // Optimizar imagen para web (ancho máximo 800px, mantener proporción)
+                let imageUrl = src;
+                if (src.includes('?')) {
+                    imageUrl = `${src}&w=800&fit=max`;
+                } else {
+                    imageUrl = `${src}?w=800&fit=max`;
+                }
+                html += `<figure class="article-figure"><img class="article-image" src="${imageUrl}" alt="${alt}" loading="lazy"><figcaption>${alt}</figcaption></figure>`;
             }
         }
     });
@@ -189,9 +208,20 @@ async function renderRelatedArticles(currentSlug) {
         return;
     }
 
-    container.innerHTML = related.map(article => `
+    container.innerHTML = related.map(article => {
+        let imageStyle = '';
+        if (article.image) {
+            let imageUrl = article.image;
+            if (article.image.includes('?')) {
+                imageUrl = `${article.image}&w=400&h=200&fit=crop`;
+            } else {
+                imageUrl = `${article.image}?w=400&h=200&fit=crop`;
+            }
+            imageStyle = `style="background-image: url('${imageUrl}'); background-size: cover; background-position: center;"`;
+        }
+        return `
         <article class="related-article">
-            <div class="related-article-image"></div>
+            <div class="related-article-image" ${imageStyle}></div>
             <div class="related-article-content">
                 <span class="related-article-category">${article.category}</span>
                 <h4 class="related-article-title">${article.title}</h4>
@@ -199,7 +229,8 @@ async function renderRelatedArticles(currentSlug) {
                 <a href="article.html?slug=${article.slug}" class="related-article-link">Leer más →</a>
             </div>
         </article>
-    `).join('');
+    `;
+    }).join('');
 }
 
 // Función para cargar y renderizar el artículo
