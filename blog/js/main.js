@@ -70,20 +70,33 @@ function getCategories(articles) {
 // Función para renderizar categorías dinámicas
 function renderCategories(categories) {
     const container = document.getElementById('categoriesGrid');
+    const totalArticles = Object.values(categories).reduce((sum, count) => sum + count, 0);
 
-    container.innerHTML = Object.entries(categories).map(([name, count]) => `
+    let html = `
+        <div class="category-card ${activeCategory === null ? 'category-active' : ''}" data-category="all">
+            <h4 class="category-name">Todo</h4>
+            <p class="category-desc">${totalArticles} ${totalArticles === 1 ? 'artículo' : 'artículos'}</p>
+        </div>
+    `;
+
+    html += Object.entries(categories).map(([name, count]) => `
         <div class="category-card ${activeCategory === name ? 'category-active' : ''}" data-category="${name}">
             <h4 class="category-name">${name}</h4>
             <p class="category-desc">${count} ${count === 1 ? 'artículo' : 'artículos'}</p>
         </div>
     `).join('');
 
+    container.innerHTML = html;
+
     // Añadir eventos de clic para filtrar
     container.querySelectorAll('.category-card').forEach(card => {
         card.addEventListener('click', function() {
             const category = this.dataset.category;
 
-            if (activeCategory === category) {
+            if (category === 'all') {
+                // Mostrar todos
+                activeCategory = null;
+            } else if (activeCategory === category) {
                 // Desactivar filtro
                 activeCategory = null;
             } else {
@@ -110,22 +123,34 @@ function renderArticles(articles) {
         return;
     }
 
-    container.innerHTML = articles.map(article => `
-        <article class="article-item">
-            ${article.image
-                ? `<img class="article-image" src="${article.image}" alt="${article.title}">`
-                : `<div class="article-image"></div>`
+    container.innerHTML = articles.map(article => {
+        let imageUrl = '';
+        if (article.image) {
+            // Prismic CDN optimización: si ya tiene parámetros, añadimos con &, si no con ?
+            if (article.image.includes('?')) {
+                imageUrl = `${article.image}&w=600&h=400&fit=crop`;
+            } else {
+                imageUrl = `${article.image}?w=600&h=400&fit=crop`;
             }
-            <div class="article-content">
-                <h4>${article.title}</h4>
-                <p>${article.excerpt}</p>
-                <p style="font-size: 12px; color: #999999;">
-                    ${article.date} · Por ${article.author}
-                </p>
-                <a href="article.html?slug=${article.slug}" class="article-link">Leer más →</a>
-            </div>
-        </article>
-    `).join('');
+        }
+
+        return `
+            <article class="article-item">
+                ${imageUrl
+                    ? `<img class="article-image" src="${imageUrl}" alt="${article.title}" width="300" height="200" loading="lazy">`
+                    : `<div class="article-image"></div>`
+                }
+                <div class="article-content">
+                    <h4>${article.title}</h4>
+                    <p>${article.excerpt}</p>
+                    <p style="font-size: 12px; color: #999999;">
+                        ${article.date} · Por ${article.author}
+                    </p>
+                    <a href="article.html?slug=${article.slug}" class="article-link">Leer más →</a>
+                </div>
+            </article>
+        `;
+    }).join('');
 }
 
 // Inicializar cuando el DOM esté listo

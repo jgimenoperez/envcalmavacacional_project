@@ -2,19 +2,23 @@
 .article-hero-image {
     width: 100%;
     height: 500px;
-    background-color: #E8DDD0;
+    background-color: var(--color-sand-dark);
     margin-bottom: 0;
 }
 
 /* Article Main Content */
 .article-main {
-    background-color: var(--color-white);
+    background-color: var(--color-cream);
     padding: 56px;
 }
 
 .article-wrapper {
     max-width: 800px;
     margin: 0 auto;
+    background-color: var(--color-white);
+    padding: 48px;
+    border-radius: 8px;
+    border: 1px solid var(--color-divider);
 }
 
 /* Article Meta */
@@ -24,9 +28,9 @@
 
 .article-category {
     font-size: 12px;
-    font-weight: 500;
-    letter-spacing: 1px;
-    color: var(--color-text-light);
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    color: var(--color-sea);
     text-transform: uppercase;
     margin-bottom: 12px;
     display: block;
@@ -38,7 +42,7 @@
     font-weight: 400;
     line-height: 1.1;
     margin-bottom: 24px;
-    color: var(--color-dark);
+    color: var(--color-navy);
 }
 
 .article-info {
@@ -52,8 +56,8 @@
 
 /* Article Divider */
 .article-divider {
-    height: 1px;
-    background-color: var(--color-divider);
+    height: 2px;
+    background: linear-gradient(to right, var(--color-sea), var(--color-rope), transparent);
     margin-bottom: 32px;
 }
 
@@ -70,34 +74,35 @@
     font-weight: 400;
     line-height: 1;
     margin-bottom: 12px;
-    color: var(--color-dark);
+    color: var(--color-navy);
 }
 
 .article-paragraph {
     font-size: 16px;
-    line-height: 1.6;
+    line-height: 1.7;
     color: var(--color-text);
 }
 
 .article-image {
     width: 100%;
     height: 350px;
-    background-color: var(--color-light-bg);
-    border-radius: 4px;
+    background-color: var(--color-sand);
+    border-radius: 8px;
     margin: 8px 0;
 }
 
 .article-tip-section {
-    background-color: var(--color-light-bg);
+    background-color: var(--color-sand);
     padding: 24px;
-    border-radius: 4px;
+    border-radius: 8px;
     margin-top: 16px;
+    border-left: 4px solid var(--color-sea);
 }
 
 .article-tip-title {
     font-size: 14px;
     font-weight: 600;
-    color: var(--color-dark);
+    color: var(--color-navy);
     margin-bottom: 12px;
     text-transform: uppercase;
     letter-spacing: 0.5px;
@@ -112,11 +117,12 @@
 }
 
 .article-tip-item:before {
-    content: "✓";
+    content: "~";
     position: absolute;
     left: 0;
-    color: var(--color-dark);
+    color: var(--color-sea);
     font-weight: bold;
+    font-size: 16px;
 }
 
 .article-tip-item:last-child {
@@ -125,7 +131,7 @@
 
 /* Related Articles Section */
 .related-section {
-    background-color: var(--color-light-bg);
+    background-color: var(--color-sand);
     padding: 48px 56px;
 }
 
@@ -139,20 +145,21 @@
 
 .related-article {
     background-color: var(--color-white);
-    border-radius: 4px;
+    border-radius: 8px;
     overflow: hidden;
+    border: 1px solid var(--color-divider);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .related-article:hover {
     transform: translateY(-4px);
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 8px 24px rgba(27, 42, 74, 0.12);
 }
 
 .related-article-image {
     width: 100%;
     height: 200px;
-    background-color: var(--color-light-bg);
+    background-color: var(--color-sand);
 }
 
 .related-article-content {
@@ -161,9 +168,9 @@
 
 .related-article-category {
     font-size: 11px;
-    font-weight: 500;
+    font-weight: 600;
     letter-spacing: 1px;
-    color: var(--color-text-light);
+    color: var(--color-sea);
     text-transform: uppercase;
     margin-bottom: 8px;
     display: block;
@@ -174,7 +181,7 @@
     font-size: 18px;
     font-weight: 400;
     margin-bottom: 12px;
-    color: var(--color-dark);
+    color: var(--color-navy);
     line-height: 1.3;
 }
 
@@ -188,15 +195,17 @@
 .related-article-link {
     display: inline-block;
     font-size: 12px;
-    color: var(--color-dark);
+    color: var(--color-sea);
     text-decoration: none;
-    font-weight: 500;
-    border-bottom: 1px solid var(--color-dark);
-    transition: opacity 0.3s ease;
+    font-weight: 600;
+    border-bottom: 2px solid var(--color-sea);
+    padding-bottom: 1px;
+    transition: color 0.3s ease, border-color 0.3s ease;
 }
 
 .related-article-link:hover {
-    opacity: 0.7;
+    color: var(--color-navy);
+    border-color: var(--color-navy);
 }
 
 /* Responsive */
@@ -207,6 +216,10 @@
 
     .article-main {
         padding: 32px 20px;
+    }
+
+    .article-wrapper {
+        padding: 24px;
     }
 
     .article-title {
@@ -250,6 +263,7 @@
 
     .article-wrapper {
         max-width: 100%;
+        padding: 16px;
     }
 
     .related-section {

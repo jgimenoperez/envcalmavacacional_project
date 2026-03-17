@@ -218,10 +218,17 @@ async function loadArticle() {
         return;
     }
 
-    // Renderizar imagen hero
+    // Renderizar imagen hero (optimizada para web)
     const heroImage = document.querySelector('.article-hero-image');
     if (article.image) {
-        heroImage.style.backgroundImage = `url(${article.image})`;
+        let imageUrl = article.image;
+        // Prismic CDN optimización: si ya tiene parámetros, añadimos con &, si no con ?
+        if (article.image.includes('?')) {
+            imageUrl = `${article.image}&w=1440&h=500&fit=crop`;
+        } else {
+            imageUrl = `${article.image}?w=1440&h=500&fit=crop`;
+        }
+        heroImage.style.backgroundImage = `url(${imageUrl})`;
         heroImage.style.backgroundSize = 'cover';
         heroImage.style.backgroundPosition = 'center';
     }

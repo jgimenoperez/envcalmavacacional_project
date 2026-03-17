@@ -11,16 +11,27 @@
     <header class="header">
         <div class="header-content">
             <div class="logo-section">
-                <h1 class="logo">Encalma Vacacional</h1>
+                <a href="index.html">
+                    <img class="logo-img" src="https://images.prismic.io/encalmavacacionalblog/abk2Ibbci2UF6G39_logo_encalma-1-.webp?auto=format,compress&h=40&dpr=2" alt="Encalma Vacacional" width="160" height="40" loading="eager">
+                </a>
             </div>
-            <nav class="nav-section">
+            <button class="nav-toggle" aria-label="Menú">
+                <span></span><span></span><span></span>
+            </button>
+            <nav class="nav-section" id="mainNav">
                 <a href="#" class="nav-link">Inicio</a>
-                <span class="nav-dot"></span>
-                <a href="#" class="nav-link">Blog</a>
-                <span class="nav-dot"></span>
-                <a href="#" class="nav-link">Destinos</a>
-                <span class="nav-dot"></span>
+                <div class="nav-dropdown">
+                    <a href="#" class="nav-link nav-dropdown-toggle">Apartamentos <span class="nav-arrow">&#9662;</span></a>
+                    <div class="nav-dropdown-menu">
+                        <a href="#">Apartamento Vacacional La Playa</a>
+                        <a href="#">Apartamento Vacacional El Ático</a>
+                    </div>
+                </div>
+                <a href="#" class="nav-link">Anfitriones</a>
                 <a href="#" class="nav-link">Contacto</a>
+                <a href="#" class="nav-link">Faqs</a>
+                <a href="index.html" class="nav-link">Blog</a>
+                <a href="index.html" class="nav-link nav-active">Actualidad de Sagunto</a>
             </nav>
         </div>
     </header>
@@ -52,33 +63,35 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="footer-content">
-            <div class="footer-column">
-                <h5 class="footer-title">Encalma Vacacional</h5>
-                <p class="footer-text">Tu compañero de viajes</p>
+            <div class="footer-column footer-nav">
+                <div class="footer-nav-links">
+                    <a href="#">Inicio</a>
+                    <a href="#">Apartamentos</a>
+                    <a href="#">Anfitriones</a>
+                    <a href="#">Contacto</a>
+                    <a href="#">Faqs</a>
+                </div>
+                <div class="footer-nav-links">
+                    <a href="index.html">Actualidad de Sagunto</a>
+                    <span class="footer-flags">
+                        <img src="https://flagcdn.com/w20/es.png" alt="Español" width="20" height="14" loading="lazy">
+                        <img src="https://flagcdn.com/w20/gb.png" alt="English" width="20" height="14" loading="lazy">
+                    </span>
+                </div>
             </div>
-            <div class="footer-column">
-                <h5 class="footer-title">Links</h5>
-                <ul class="footer-links">
-                    <li><a href="#">Inicio</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Contacto</a></li>
-                </ul>
+            <div class="footer-column footer-logo-col">
+                <img class="footer-logo" src="https://images.prismic.io/encalmavacacionalblog/abk2Ibbci2UF6G39_logo_encalma-1-.webp?auto=format,compress&h=60&dpr=2" alt="Encalma Vacacional" width="120" height="60" loading="lazy">
             </div>
-            <div class="footer-column">
-                <h5 class="footer-title">Síguenos</h5>
-                <ul class="footer-links">
-                    <li><a href="#">Instagram</a></li>
-                    <li><a href="#">Facebook</a></li>
-                    <li><a href="#">Twitter</a></li>
-                </ul>
+            <div class="footer-column footer-contact">
+                <p class="footer-contact-title">Apartamentos Vacacionales EnCalma</p>
+                <p class="footer-phone">Gloria · <a href="tel:+34653399081">+34 653 39 90 81</a></p>
+                <p class="footer-phone">Álvaro · <a href="tel:+34618874229">+34 618 87 4229</a></p>
+                <a href="#" class="footer-instagram">Instagram <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#F5C542" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
             </div>
-        </div>
-        <div class="footer-divider"></div>
-        <div class="footer-bottom">
-            <p class="footer-copyright">© 2026 Encalma Vacacional. Todos los derechos reservados.</p>
         </div>
     </footer>
 
+    <script src="js/nav.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>
