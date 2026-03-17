@@ -1,0 +1,1635 @@
+{
+  "version": "2.8",
+  "children": [
+    {
+      "type": "frame",
+      "id": "bi8Au",
+      "x": 0,
+      "y": 0,
+      "name": "Frame",
+      "clip": true,
+      "width": 1440,
+      "fill": "#FFFFFF",
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "frame",
+          "id": "kLVZh",
+          "name": "header",
+          "width": "fill_container",
+          "height": 80,
+          "fill": "#0A0A0A",
+          "padding": [
+            0,
+            56
+          ],
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "YWFvc",
+              "name": "logoSection",
+              "height": "fill_container",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "FinVu",
+                  "name": "logo",
+                  "fill": "#FFFFFF",
+                  "content": "En Calma",
+                  "fontFamily": "DM Serif Display",
+                  "fontSize": 24,
+                  "letterSpacing": 2
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "XX2CF",
+              "name": "navSection",
+              "height": "fill_container",
+              "gap": 32,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "Fcp8S",
+                  "name": "navHome",
+                  "fill": "#FFFFFF",
+                  "content": "Inicio",
+                  "fontFamily": "Inter",
+                  "fontSize": 13,
+                  "fontWeight": "500"
+                },
+                {
+                  "type": "ellipse",
+                  "id": "ySVkt",
+                  "name": "navDot1",
+                  "fill": "#444444",
+                  "width": 4,
+                  "height": 4
+                },
+                {
+                  "type": "text",
+                  "id": "IraNy",
+                  "name": "navBlog",
+                  "fill": "#FFFFFF",
+                  "content": "Blog",
+                  "fontFamily": "Inter",
+                  "fontSize": 13,
+                  "fontWeight": "500"
+                },
+                {
+                  "type": "ellipse",
+                  "id": "Pm28o",
+                  "name": "navDot2",
+                  "fill": "#444444",
+                  "width": 4,
+                  "height": 4
+                },
+                {
+                  "type": "text",
+                  "id": "huISs",
+                  "name": "navDestinos",
+                  "fill": "#FFFFFF",
+                  "content": "Destinos",
+                  "fontFamily": "Inter",
+                  "fontSize": 13,
+                  "fontWeight": "500"
+                },
+                {
+                  "type": "ellipse",
+                  "id": "95BIB",
+                  "name": "navDot3",
+                  "fill": "#444444",
+                  "width": 4,
+                  "height": 4
+                },
+                {
+                  "type": "text",
+                  "id": "REIDt",
+                  "name": "navContacto",
+                  "fill": "#FFFFFF",
+                  "content": "Contacto",
+                  "fontFamily": "Inter",
+                  "fontSize": 13,
+                  "fontWeight": "500"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "zcRtc",
+          "name": "heroSection",
+          "width": "fill_container",
+          "height": 600,
+          "fill": "#F5F5F5",
+          "layout": "vertical",
+          "gap": 24,
+          "padding": 56,
+          "justifyContent": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "45bWJ",
+              "name": "heroTitle",
+              "fill": "#0A0A0A",
+              "textGrowth": "fixed-width",
+              "width": 800,
+              "content": "Descubre los mejores destinos de turismo vacacional",
+              "lineHeight": 1,
+              "fontFamily": "DM Serif Display",
+              "fontSize": 92,
+              "letterSpacing": -3
+            },
+            {
+              "type": "text",
+              "id": "eGAgj",
+              "name": "heroSubtitle",
+              "fill": "#333333",
+              "textGrowth": "fixed-width",
+              "width": 600,
+              "content": "Experiencias únicas, lugares increíbles y momentos inolvidables en los destinos más hermosos del mundo",
+              "lineHeight": 1.5,
+              "fontFamily": "Inter",
+              "fontSize": 16
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "U4y5P",
+          "name": "featuredSection",
+          "width": "fill_container",
+          "fill": "#FFFFFF",
+          "layout": "vertical",
+          "gap": 48,
+          "padding": [
+            48,
+            56
+          ],
+          "children": [
+            {
+              "type": "text",
+              "id": "DrmJs",
+              "name": "featuredTitle",
+              "fill": "#0A0A0A",
+              "content": "Artículos destacados",
+              "lineHeight": 1,
+              "fontFamily": "DM Serif Display",
+              "fontSize": 52,
+              "letterSpacing": -2
+            },
+            {
+              "type": "frame",
+              "id": "MxNtW",
+              "name": "articlesGrid",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 24,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "exj15",
+                  "name": "article1",
+                  "width": "fill_container",
+                  "height": 320,
+                  "gap": 32,
+                  "children": [
+                    {
+                      "type": "rectangle",
+                      "id": "djt6A",
+                      "name": "article1Image",
+                      "fill": "#E8DDD0",
+                      "width": 480,
+                      "height": "fill_container"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "trLO5",
+                      "name": "article1Content",
+                      "width": "fill_container",
+                      "height": "fill_container",
+                      "layout": "vertical",
+                      "gap": 16,
+                      "justifyContent": "space_between",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "26Lij",
+                          "name": "article1Category",
+                          "fill": "#999999",
+                          "content": "PLAYAS",
+                          "fontFamily": "Inter",
+                          "fontSize": 12,
+                          "fontWeight": "500",
+                          "letterSpacing": 1
+                        },
+                        {
+                          "type": "text",
+                          "id": "RwplC",
+                          "name": "article1MainTitle",
+                          "fill": "#0A0A0A",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Playas paradisíacas de Tulum: guía completa para tu próximo viaje",
+                          "lineHeight": 1.1,
+                          "fontFamily": "DM Serif Display",
+                          "fontSize": 28
+                        },
+                        {
+                          "type": "text",
+                          "id": "2JNtl",
+                          "name": "article1Excerpt",
+                          "fill": "#666666",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Descubre las mejores playas de Tulum con aguas cristalinas, arenas blancas y una atmósfera tropical incomparable. Aquí te compartimos todo lo que necesitas saber.",
+                          "lineHeight": 1.4,
+                          "fontFamily": "Inter",
+                          "fontSize": 14
+                        },
+                        {
+                          "type": "frame",
+                          "id": "u4qxD",
+                          "name": "article1Meta",
+                          "width": "fill_container",
+                          "gap": 16,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "zLuVY",
+                              "name": "article1Date",
+                              "fill": "#999999",
+                              "content": "15 de marzo, 2026",
+                              "fontFamily": "Inter",
+                              "fontSize": 13
+                            },
+                            {
+                              "type": "text",
+                              "id": "u1E93",
+                              "name": "article1ReadMore",
+                              "fill": "#0A0A0A",
+                              "content": "Leer más →",
+                              "fontFamily": "Inter",
+                              "fontSize": 13,
+                              "fontWeight": "500"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "rectangle",
+                  "id": "PM0Gm",
+                  "name": "divider1",
+                  "fill": "#E0E0E0",
+                  "width": "fill_container",
+                  "height": 1
+                },
+                {
+                  "type": "frame",
+                  "id": "eNvfX",
+                  "name": "article2",
+                  "width": "fill_container",
+                  "height": 320,
+                  "gap": 32,
+                  "children": [
+                    {
+                      "type": "rectangle",
+                      "id": "yUfKu",
+                      "name": "article2Image",
+                      "fill": "#D4E8E0",
+                      "width": 480,
+                      "height": "fill_container"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "fG2h0",
+                      "name": "article2Content",
+                      "width": "fill_container",
+                      "height": "fill_container",
+                      "layout": "vertical",
+                      "gap": 16,
+                      "justifyContent": "space_between",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "QXfBR",
+                          "name": "article2Category",
+                          "fill": "#999999",
+                          "content": "MONTAÑA",
+                          "fontFamily": "Inter",
+                          "fontSize": 12,
+                          "fontWeight": "500",
+                          "letterSpacing": 1
+                        },
+                        {
+                          "type": "text",
+                          "id": "h7FZp",
+                          "name": "article2MainTitle",
+                          "fill": "#0A0A0A",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Senderismo en los Andes: aventura en las alturas",
+                          "lineHeight": 1.1,
+                          "fontFamily": "DM Serif Display",
+                          "fontSize": 28
+                        },
+                        {
+                          "type": "text",
+                          "id": "5pCfM",
+                          "name": "article2Excerpt",
+                          "fill": "#666666",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Explora las mejores rutas de senderismo en los Andes y experimenta vistas espectaculares, aire puro y la magia de la naturaleza en su máxima expresión.",
+                          "lineHeight": 1.4,
+                          "fontFamily": "Inter",
+                          "fontSize": 14
+                        },
+                        {
+                          "type": "frame",
+                          "id": "9bMN8",
+                          "name": "article2Meta",
+                          "width": "fill_container",
+                          "gap": 16,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "cEAaS",
+                              "name": "article2Date",
+                              "fill": "#999999",
+                              "content": "12 de marzo, 2026",
+                              "fontFamily": "Inter",
+                              "fontSize": 13
+                            },
+                            {
+                              "type": "text",
+                              "id": "p2ICh",
+                              "name": "article2ReadMore",
+                              "fill": "#0A0A0A",
+                              "content": "Leer más →",
+                              "fontFamily": "Inter",
+                              "fontSize": 13,
+                              "fontWeight": "500"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "ec4nt",
+                  "name": "article3",
+                  "width": "fill_container",
+                  "height": 320,
+                  "gap": 32,
+                  "children": [
+                    {
+                      "type": "rectangle",
+                      "id": "RhR3u",
+                      "name": "article3Image",
+                      "fill": "#E8E0D4",
+                      "width": 480,
+                      "height": "fill_container"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "777xi",
+                      "name": "article3Content",
+                      "width": "fill_container",
+                      "height": "fill_container",
+                      "layout": "vertical",
+                      "gap": 16,
+                      "justifyContent": "space_between",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "WHweO",
+                          "name": "article3Category",
+                          "fill": "#999999",
+                          "content": "CULTURA",
+                          "fontFamily": "Inter",
+                          "fontSize": 12,
+                          "fontWeight": "500",
+                          "letterSpacing": 1
+                        },
+                        {
+                          "type": "text",
+                          "id": "MUvjW",
+                          "name": "article3MainTitle",
+                          "fill": "#0A0A0A",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Patrimonio cultural: ciudades históricas que debes visitar",
+                          "lineHeight": 1.1,
+                          "fontFamily": "DM Serif Display",
+                          "fontSize": 28
+                        },
+                        {
+                          "type": "text",
+                          "id": "bztNU",
+                          "name": "article3Excerpt",
+                          "fill": "#666666",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Viaja a través del tiempo explorando ciudades llenas de historia, arquitectura milenaria y tradiciones ancestrales que cuentan las historias de civilizaciones pasadas.",
+                          "lineHeight": 1.4,
+                          "fontFamily": "Inter",
+                          "fontSize": 14
+                        },
+                        {
+                          "type": "frame",
+                          "id": "3pihf",
+                          "name": "article3Meta",
+                          "width": "fill_container",
+                          "gap": 16,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "cp4I6",
+                              "name": "article3Date",
+                              "fill": "#999999",
+                              "content": "8 de marzo, 2026",
+                              "fontFamily": "Inter",
+                              "fontSize": 13
+                            },
+                            {
+                              "type": "text",
+                              "id": "6EW0M",
+                              "name": "article3ReadMore",
+                              "fill": "#0A0A0A",
+                              "content": "Leer más →",
+                              "fontFamily": "Inter",
+                              "fontSize": 13,
+                              "fontWeight": "500"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "J4EZu",
+          "name": "categoriesSection",
+          "width": "fill_container",
+          "fill": "#F5F5F5",
+          "layout": "vertical",
+          "gap": 32,
+          "padding": [
+            48,
+            56
+          ],
+          "children": [
+            {
+              "type": "text",
+              "id": "26K7Q",
+              "name": "categoriesTitle",
+              "fill": "#0A0A0A",
+              "content": "Explora por categoría",
+              "lineHeight": 1,
+              "fontFamily": "DM Serif Display",
+              "fontSize": 52,
+              "letterSpacing": -2
+            },
+            {
+              "type": "frame",
+              "id": "b4AVp",
+              "name": "categoriesGrid",
+              "width": "fill_container",
+              "gap": 24,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "GGroZ",
+                  "name": "category1",
+                  "width": "fill_container",
+                  "height": 200,
+                  "fill": "#FFFFFF",
+                  "layout": "vertical",
+                  "gap": 16,
+                  "padding": 32,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "PXlJB",
+                      "name": "category1Icon",
+                      "fill": "#0A0A0A",
+                      "content": "🏖️",
+                      "fontFamily": "Inter",
+                      "fontSize": 40
+                    },
+                    {
+                      "type": "text",
+                      "id": "teTQE",
+                      "name": "category1Name",
+                      "fill": "#0A0A0A",
+                      "content": "Playas",
+                      "lineHeight": 1,
+                      "fontFamily": "DM Serif Display",
+                      "fontSize": 28
+                    },
+                    {
+                      "type": "text",
+                      "id": "Y7Hyy",
+                      "name": "category1Count",
+                      "fill": "#999999",
+                      "content": "24 artículos",
+                      "fontFamily": "Inter",
+                      "fontSize": 13
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "6VJUA",
+                  "name": "category2",
+                  "width": "fill_container",
+                  "height": 200,
+                  "fill": "#FFFFFF",
+                  "layout": "vertical",
+                  "gap": 16,
+                  "padding": 32,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "aZduR",
+                      "name": "category2Icon",
+                      "fill": "#0A0A0A",
+                      "content": "⛰️",
+                      "fontFamily": "Inter",
+                      "fontSize": 40
+                    },
+                    {
+                      "type": "text",
+                      "id": "25KK3",
+                      "name": "category2Name",
+                      "fill": "#0A0A0A",
+                      "content": "Montaña",
+                      "lineHeight": 1,
+                      "fontFamily": "DM Serif Display",
+                      "fontSize": 28
+                    },
+                    {
+                      "type": "text",
+                      "id": "CV9XD",
+                      "name": "category2Count",
+                      "fill": "#999999",
+                      "content": "18 artículos",
+                      "fontFamily": "Inter",
+                      "fontSize": 13
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "q8yDP",
+                  "name": "category3",
+                  "width": "fill_container",
+                  "height": 200,
+                  "fill": "#FFFFFF",
+                  "layout": "vertical",
+                  "gap": 16,
+                  "padding": 32,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "YddKz",
+                      "name": "category3Icon",
+                      "fill": "#0A0A0A",
+                      "content": "🏛️",
+                      "fontFamily": "Inter",
+                      "fontSize": 40
+                    },
+                    {
+                      "type": "text",
+                      "id": "fgE4C",
+                      "name": "category3Name",
+                      "fill": "#0A0A0A",
+                      "content": "Cultura",
+                      "lineHeight": 1,
+                      "fontFamily": "DM Serif Display",
+                      "fontSize": 28
+                    },
+                    {
+                      "type": "text",
+                      "id": "71KuG",
+                      "name": "category3Count",
+                      "fill": "#999999",
+                      "content": "31 artículos",
+                      "fontFamily": "Inter",
+                      "fontSize": 13
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "hsoUV",
+          "name": "footer",
+          "width": "fill_container",
+          "fill": "#0A0A0A",
+          "layout": "vertical",
+          "gap": 32,
+          "padding": [
+            48,
+            56
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "7X3uF",
+              "name": "footerContent",
+              "width": "fill_container",
+              "gap": 64,
+              "justifyContent": "space_between",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "HeVxB",
+                  "name": "footerLeft",
+                  "layout": "vertical",
+                  "gap": 20,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "5Y7xq",
+                      "name": "footerLogo",
+                      "fill": "#FFFFFF",
+                      "content": "En Calma",
+                      "lineHeight": 1,
+                      "fontFamily": "DM Serif Display",
+                      "fontSize": 28,
+                      "letterSpacing": 2
+                    },
+                    {
+                      "type": "text",
+                      "id": "d6NMX",
+                      "name": "footerTagline",
+                      "fill": "#999999",
+                      "textGrowth": "fixed-width",
+                      "width": 280,
+                      "content": "Inspiración y guías para viajar mejor",
+                      "lineHeight": 1.4,
+                      "fontFamily": "Inter",
+                      "fontSize": 14
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "wI63h",
+                  "name": "footerCenter",
+                  "layout": "vertical",
+                  "gap": 16,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "k5kkS",
+                      "name": "footerLinksTitle",
+                      "fill": "#FFFFFF",
+                      "content": "Enlaces",
+                      "lineHeight": 1,
+                      "fontFamily": "DM Serif Display",
+                      "fontSize": 16
+                    },
+                    {
+                      "type": "text",
+                      "id": "olPwq",
+                      "name": "footerLink1",
+                      "fill": "#999999",
+                      "content": "Sobre nosotros",
+                      "fontFamily": "Inter",
+                      "fontSize": 13
+                    },
+                    {
+                      "type": "text",
+                      "id": "0yOk0",
+                      "name": "footerLink2",
+                      "fill": "#999999",
+                      "content": "Política de privacidad",
+                      "fontFamily": "Inter",
+                      "fontSize": 13
+                    },
+                    {
+                      "type": "text",
+                      "id": "6BpTJ",
+                      "name": "footerLink3",
+                      "fill": "#999999",
+                      "content": "Términos de servicio",
+                      "fontFamily": "Inter",
+                      "fontSize": 13
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "NRFwt",
+                  "name": "footerRight",
+                  "layout": "vertical",
+                  "gap": 16,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "Kjf3n",
+                      "name": "footerSocialTitle",
+                      "fill": "#FFFFFF",
+                      "content": "Síguenos",
+                      "lineHeight": 1,
+                      "fontFamily": "DM Serif Display",
+                      "fontSize": 16
+                    },
+                    {
+                      "type": "frame",
+                      "id": "GF4Hh",
+                      "name": "footerSocial",
+                      "gap": 16,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "s2BqI",
+                          "name": "footerSocialIg",
+                          "fill": "#999999",
+                          "content": "Instagram",
+                          "fontFamily": "Inter",
+                          "fontSize": 13
+                        },
+                        {
+                          "type": "text",
+                          "id": "FpVW3",
+                          "name": "footerSocialTw",
+                          "fill": "#999999",
+                          "content": "Twitter",
+                          "fontFamily": "Inter",
+                          "fontSize": 13
+                        },
+                        {
+                          "type": "text",
+                          "id": "Ziu6f",
+                          "name": "footerSocialFb",
+                          "fill": "#999999",
+                          "content": "Facebook",
+                          "fontFamily": "Inter",
+                          "fontSize": 13
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "rectangle",
+              "id": "A5s9x",
+              "name": "footerDivider",
+              "fill": "#444444",
+              "width": "fill_container",
+              "height": 1
+            },
+            {
+              "type": "frame",
+              "id": "UdI1T",
+              "name": "footerBottom",
+              "width": "fill_container",
+              "justifyContent": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "ipFFz",
+                  "name": "footerCopyright",
+                  "fill": "#999999",
+                  "content": "© 2026 En Calma. Todos los derechos reservados.",
+                  "fontFamily": "Inter",
+                  "fontSize": 12
+                },
+                {
+                  "type": "text",
+                  "id": "uxHIO",
+                  "name": "footerCopyright",
+                  "fill": "#999999",
+                  "content": "© 2026 En Calma. Todos los derechos reservados.",
+                  "fontFamily": "Inter",
+                  "fontSize": 12
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "Pt46U",
+      "x": 0,
+      "y": 0,
+      "name": "Entrada del Blog",
+      "width": 1440,
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "frame",
+          "id": "Rzkc1",
+          "name": "articleHeader",
+          "width": "fill_container",
+          "height": 80,
+          "fill": "#0A0A0A",
+          "padding": [
+            0,
+            56
+          ],
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "qBKse",
+              "name": "articleLogoSection",
+              "height": "fill_container",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "UlmEX",
+                  "name": "articleLogo",
+                  "fill": "#FFFFFF",
+                  "content": "En Calma",
+                  "fontFamily": "DM Serif Display",
+                  "fontSize": 24,
+                  "letterSpacing": 2
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "oZa7F",
+              "name": "articleNavSection",
+              "height": "fill_container",
+              "gap": 32,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "2tYZ8",
+                  "name": "articleNavHome",
+                  "fill": "#FFFFFF",
+                  "content": "Inicio",
+                  "fontFamily": "Inter",
+                  "fontSize": 13,
+                  "fontWeight": "500"
+                },
+                {
+                  "type": "ellipse",
+                  "id": "nLFvH",
+                  "name": "articleNavDot1",
+                  "fill": "#444444",
+                  "width": 4,
+                  "height": 4
+                },
+                {
+                  "type": "text",
+                  "id": "KUCxv",
+                  "name": "articleNavBlog",
+                  "fill": "#FFFFFF",
+                  "content": "Blog",
+                  "fontFamily": "Inter",
+                  "fontSize": 13,
+                  "fontWeight": "500"
+                },
+                {
+                  "type": "ellipse",
+                  "id": "1Nem3",
+                  "name": "articleNavDot2",
+                  "fill": "#444444",
+                  "width": 4,
+                  "height": 4
+                },
+                {
+                  "type": "text",
+                  "id": "Zntzu",
+                  "name": "articleNavDestinos",
+                  "fill": "#FFFFFF",
+                  "content": "Destinos",
+                  "fontFamily": "Inter",
+                  "fontSize": 13,
+                  "fontWeight": "500"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "rectangle",
+          "id": "KC3Rv",
+          "name": "articleHeroImage",
+          "fill": "#E8DDD0",
+          "width": "fill_container",
+          "height": 500
+        },
+        {
+          "type": "frame",
+          "id": "irD9k",
+          "name": "articleContent",
+          "width": "fill_container",
+          "fill": "#FFFFFF",
+          "layout": "vertical",
+          "gap": 32,
+          "padding": 56,
+          "children": [
+            {
+              "type": "frame",
+              "id": "swwU7",
+              "name": "articleMeta",
+              "width": 800,
+              "layout": "vertical",
+              "gap": 12,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "F0rGZ",
+                  "name": "articleCategory",
+                  "fill": "#999999",
+                  "content": "PLAYAS",
+                  "fontFamily": "Inter",
+                  "fontSize": 12,
+                  "fontWeight": "500",
+                  "letterSpacing": 1
+                },
+                {
+                  "type": "text",
+                  "id": "Vdih4",
+                  "name": "articleTitle",
+                  "fill": "#0A0A0A",
+                  "textGrowth": "fixed-width",
+                  "width": 800,
+                  "content": "Playas paradisíacas de Tulum: guía completa para tu próximo viaje",
+                  "lineHeight": 1.1,
+                  "fontFamily": "DM Serif Display",
+                  "fontSize": 52
+                },
+                {
+                  "type": "frame",
+                  "id": "8Qta4",
+                  "name": "articleMetaInfo",
+                  "width": "fill_container",
+                  "gap": 24,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "RNNHo",
+                      "name": "articleAuthor",
+                      "fill": "#666666",
+                      "content": "Por María González",
+                      "fontFamily": "Inter",
+                      "fontSize": 13
+                    },
+                    {
+                      "type": "rectangle",
+                      "id": "mmkeE",
+                      "name": "articleDividerMeta",
+                      "fill": "#E0E0E0",
+                      "width": 1,
+                      "height": 14
+                    },
+                    {
+                      "type": "text",
+                      "id": "Ew3nR",
+                      "name": "articleDatePublished",
+                      "fill": "#666666",
+                      "content": "15 de marzo, 2026",
+                      "fontFamily": "Inter",
+                      "fontSize": 13
+                    },
+                    {
+                      "type": "rectangle",
+                      "id": "eeUyC",
+                      "name": "articleDividerMeta2",
+                      "fill": "#E0E0E0",
+                      "width": 1,
+                      "height": 14
+                    },
+                    {
+                      "type": "text",
+                      "id": "EpOVt",
+                      "name": "articleReadTime",
+                      "fill": "#666666",
+                      "content": "8 min de lectura",
+                      "fontFamily": "Inter",
+                      "fontSize": 13
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "rectangle",
+              "id": "8NVEI",
+              "name": "articleMainDivider",
+              "fill": "#E0E0E0",
+              "width": "fill_container",
+              "height": 1
+            },
+            {
+              "type": "frame",
+              "id": "v4iVr",
+              "name": "articleBodySection",
+              "width": 800,
+              "layout": "vertical",
+              "gap": 24,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "Pq8NO",
+                  "name": "articleParagraph1Title",
+                  "fill": "#0A0A0A",
+                  "content": "¿Por qué Tulum es un destino imprescindible?",
+                  "lineHeight": 1,
+                  "fontFamily": "DM Serif Display",
+                  "fontSize": 28
+                },
+                {
+                  "type": "text",
+                  "id": "Wg0B7",
+                  "name": "articleParagraph1",
+                  "fill": "#333333",
+                  "textGrowth": "fixed-width",
+                  "width": 800,
+                  "content": "Tulum es mucho más que playas. Ubicado en la Riviera Maya mexicana, este destino combina lo mejor de la naturaleza con la historia ancestral. Sus playas de arena blanca y aguas turquesas te dejarán sin aliento, mientras que las ruinas mayas que se alzan sobre los acantilados te transportarán a tiempos remotos.",
+                  "lineHeight": 1.6,
+                  "fontFamily": "Inter",
+                  "fontSize": 16
+                },
+                {
+                  "type": "rectangle",
+                  "id": "Lp3lR",
+                  "name": "articleImage1",
+                  "fill": "#D4E8E0",
+                  "width": "fill_container",
+                  "height": 350
+                },
+                {
+                  "type": "text",
+                  "id": "l6sQ1",
+                  "name": "articleParagraph2Title",
+                  "fill": "#0A0A0A",
+                  "content": "Las mejores playas de Tulum",
+                  "lineHeight": 1,
+                  "fontFamily": "DM Serif Display",
+                  "fontSize": 28
+                },
+                {
+                  "type": "text",
+                  "id": "Qg28l",
+                  "name": "articleParagraph2",
+                  "fill": "#333333",
+                  "textGrowth": "fixed-width",
+                  "width": 800,
+                  "content": "Dentro de Tulum encontrarás varias playas con características únicas. Playa Paraíso es perfecta para familias con su agua tranquila y servicios de playa. Si prefieres un ambiente más bohemio, La Playa Central te ofrece bares y restaurantes con los pies en la arena. Para los que buscan privacidad, Playa Pescadores es una joya escondida.",
+                  "lineHeight": 1.6,
+                  "fontFamily": "Inter",
+                  "fontSize": 16
+                },
+                {
+                  "type": "text",
+                  "id": "9Sx8G",
+                  "name": "articleParagraph3Title",
+                  "fill": "#0A0A0A",
+                  "content": "Actividades y experiencias",
+                  "lineHeight": 1,
+                  "fontFamily": "DM Serif Display",
+                  "fontSize": 28
+                },
+                {
+                  "type": "text",
+                  "id": "JKqDR",
+                  "name": "articleParagraph3",
+                  "fill": "#333333",
+                  "textGrowth": "fixed-width",
+                  "width": 800,
+                  "content": "Más allá de disfrutar del mar, Tulum ofrece múltiples actividades. Buceo y snorkel en cenotes subterráneos es una experiencia única que no encontrarás en otro lugar. También puedes explorar las ruinas mayas de Tulum, que se ubican justo en el acantilado con vista al mar. Los amantes del yoga encontrarán retiros especiales en varios resorts de la zona.",
+                  "lineHeight": 1.6,
+                  "fontFamily": "Inter",
+                  "fontSize": 16
+                },
+                {
+                  "type": "rectangle",
+                  "id": "CZyGp",
+                  "name": "articleImage2",
+                  "fill": "#E8E0D4",
+                  "width": "fill_container",
+                  "height": 350
+                },
+                {
+                  "type": "text",
+                  "id": "LDBoh",
+                  "name": "articleParagraph4Title",
+                  "fill": "#0A0A0A",
+                  "content": "Mejores épocas para visitar",
+                  "lineHeight": 1,
+                  "fontFamily": "DM Serif Display",
+                  "fontSize": 28
+                },
+                {
+                  "type": "text",
+                  "id": "u13qS",
+                  "name": "articleParagraph4",
+                  "fill": "#333333",
+                  "textGrowth": "fixed-width",
+                  "width": 800,
+                  "content": "La mejor época para visitar Tulum es de noviembre a abril, cuando el clima es más seco y las temperaturas son agradables. Aunque el destino es hermoso durante todo el año, evita la temporada de huracanes de septiembre a octubre. Si prefieres playas más tranquilas y precios más bajos, considera viajar en mayo o junio.",
+                  "lineHeight": 1.6,
+                  "fontFamily": "Inter",
+                  "fontSize": 16
+                },
+                {
+                  "type": "rectangle",
+                  "id": "KsQsf",
+                  "name": "articleImage3",
+                  "fill": "#D4D8E8",
+                  "width": "fill_container",
+                  "height": 350
+                },
+                {
+                  "type": "frame",
+                  "id": "6cM5k",
+                  "name": "articleTipsSection",
+                  "width": "fill_container",
+                  "fill": "#F5F5F5",
+                  "layout": "vertical",
+                  "gap": 16,
+                  "padding": 24,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "QyGco",
+                      "name": "articleTipsTitle",
+                      "fill": "#0A0A0A",
+                      "content": "💡 Consejos prácticos",
+                      "lineHeight": 1,
+                      "fontFamily": "DM Serif Display",
+                      "fontSize": 20
+                    },
+                    {
+                      "type": "text",
+                      "id": "wuzu4",
+                      "name": "articleTip1",
+                      "fill": "#333333",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Lleva protector solar con factor alto: el sol en el Caribe es intenso",
+                      "lineHeight": 1.4,
+                      "fontFamily": "Inter",
+                      "fontSize": 14
+                    },
+                    {
+                      "type": "text",
+                      "id": "oJghp",
+                      "name": "articleTip2",
+                      "fill": "#333333",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Alquilar un scooter es una buena opción para moverse entre playas",
+                      "lineHeight": 1.4,
+                      "fontFamily": "Inter",
+                      "fontSize": 14
+                    },
+                    {
+                      "type": "text",
+                      "id": "n2ep3",
+                      "name": "articleTip3",
+                      "fill": "#333333",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Prueba la gastronomía local: los mariscos frescos son deliciosos",
+                      "lineHeight": 1.4,
+                      "fontFamily": "Inter",
+                      "fontSize": 14
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "QF31w",
+          "name": "relatedSection",
+          "width": "fill_container",
+          "fill": "#F5F5F5",
+          "layout": "vertical",
+          "gap": 32,
+          "padding": [
+            48,
+            56
+          ],
+          "children": [
+            {
+              "type": "text",
+              "id": "tS7GK",
+              "name": "relatedTitle",
+              "fill": "#0A0A0A",
+              "content": "Artículos relacionados",
+              "lineHeight": 1,
+              "fontFamily": "DM Serif Display",
+              "fontSize": 52,
+              "letterSpacing": -2
+            },
+            {
+              "type": "frame",
+              "id": "u98M1",
+              "name": "relatedGrid",
+              "width": "fill_container",
+              "gap": 24,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "f7neC",
+                  "name": "relatedArticle1",
+                  "width": "fill_container",
+                  "height": 380,
+                  "layout": "vertical",
+                  "gap": 16,
+                  "children": [
+                    {
+                      "type": "rectangle",
+                      "id": "Sjy86",
+                      "name": "relatedImage1",
+                      "fill": "#E8DDD0",
+                      "width": "fill_container",
+                      "height": 200
+                    },
+                    {
+                      "type": "frame",
+                      "id": "YWlBy",
+                      "name": "relatedContent1",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 12,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "yphrv",
+                          "name": "relatedCategory1",
+                          "fill": "#999999",
+                          "content": "PLAYAS",
+                          "fontFamily": "Inter",
+                          "fontSize": 12,
+                          "fontWeight": "500",
+                          "letterSpacing": 1
+                        },
+                        {
+                          "type": "text",
+                          "id": "EM2Eh",
+                          "name": "relatedTitle1",
+                          "fill": "#0A0A0A",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Cenotes de Riviera Maya: agua cristalina y naturaleza pura",
+                          "lineHeight": 1.1,
+                          "fontFamily": "DM Serif Display",
+                          "fontSize": 20
+                        },
+                        {
+                          "type": "text",
+                          "id": "wXaxQ",
+                          "name": "relatedDate1",
+                          "fill": "#999999",
+                          "content": "22 de febrero, 2026",
+                          "fontFamily": "Inter",
+                          "fontSize": 12
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "UlOFX",
+                  "name": "relatedArticle2",
+                  "width": "fill_container",
+                  "height": 380,
+                  "layout": "vertical",
+                  "gap": 16,
+                  "children": [
+                    {
+                      "type": "rectangle",
+                      "id": "Ny4JL",
+                      "name": "relatedImage2",
+                      "fill": "#D4E8E0",
+                      "width": "fill_container",
+                      "height": 200
+                    },
+                    {
+                      "type": "frame",
+                      "id": "RydMj",
+                      "name": "relatedContent2",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 12,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "8xJKQ",
+                          "name": "relatedCategory2",
+                          "fill": "#999999",
+                          "content": "GASTRONOMÍA",
+                          "fontFamily": "Inter",
+                          "fontSize": 12,
+                          "fontWeight": "500",
+                          "letterSpacing": 1
+                        },
+                        {
+                          "type": "text",
+                          "id": "hHhD9",
+                          "name": "relatedTitle2",
+                          "fill": "#0A0A0A",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Cocina yucateca: sabores auténticos del Caribe mexicano",
+                          "lineHeight": 1.1,
+                          "fontFamily": "DM Serif Display",
+                          "fontSize": 20
+                        },
+                        {
+                          "type": "text",
+                          "id": "AeaZQ",
+                          "name": "relatedDate2",
+                          "fill": "#999999",
+                          "content": "18 de febrero, 2026",
+                          "fontFamily": "Inter",
+                          "fontSize": 12
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "Pxnl8",
+                  "name": "relatedArticle3",
+                  "width": "fill_container",
+                  "height": 380,
+                  "layout": "vertical",
+                  "gap": 16,
+                  "children": [
+                    {
+                      "type": "rectangle",
+                      "id": "4wcr5",
+                      "name": "relatedImage3",
+                      "fill": "#E8E0D4",
+                      "width": "fill_container",
+                      "height": 200
+                    },
+                    {
+                      "type": "frame",
+                      "id": "vYEt5",
+                      "name": "relatedContent3",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 12,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "bCY6Y",
+                          "name": "relatedCategory3",
+                          "fill": "#999999",
+                          "content": "HISTORIA",
+                          "fontFamily": "Inter",
+                          "fontSize": 12,
+                          "fontWeight": "500",
+                          "letterSpacing": 1
+                        },
+                        {
+                          "type": "text",
+                          "id": "0M4K6",
+                          "name": "relatedTitle3",
+                          "fill": "#0A0A0A",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Ruinas mayas de la Riviera: civilizaciones que dejaron legado",
+                          "lineHeight": 1.1,
+                          "fontFamily": "DM Serif Display",
+                          "fontSize": 20
+                        },
+                        {
+                          "type": "text",
+                          "id": "mCcCZ",
+                          "name": "relatedDate3",
+                          "fill": "#999999",
+                          "content": "10 de febrero, 2026",
+                          "fontFamily": "Inter",
+                          "fontSize": 12
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "N0kfV",
+          "name": "articleFooter",
+          "width": "fill_container",
+          "fill": "#0A0A0A",
+          "layout": "vertical",
+          "gap": 32,
+          "padding": [
+            48,
+            56
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "uWQ0V",
+              "name": "articleFooterContent",
+              "width": "fill_container",
+              "gap": 64,
+              "justifyContent": "space_between",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "VHQFG",
+                  "name": "articleFooterLeft",
+                  "layout": "vertical",
+                  "gap": 20,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "kDN1u",
+                      "name": "articleFooterLogo",
+                      "fill": "#FFFFFF",
+                      "content": "En Calma",
+                      "lineHeight": 1,
+                      "fontFamily": "DM Serif Display",
+                      "fontSize": 28,
+                      "letterSpacing": 2
+                    },
+                    {
+                      "type": "text",
+                      "id": "Az0Ns",
+                      "name": "articleFooterTagline",
+                      "fill": "#999999",
+                      "textGrowth": "fixed-width",
+                      "width": 280,
+                      "content": "Inspiración y guías para viajar mejor",
+                      "lineHeight": 1.4,
+                      "fontFamily": "Inter",
+                      "fontSize": 14
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "U2a23",
+                  "name": "articleFooterCenter",
+                  "layout": "vertical",
+                  "gap": 16,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "Yjvyy",
+                      "name": "articleFooterLinksTitle",
+                      "fill": "#FFFFFF",
+                      "content": "Enlaces",
+                      "lineHeight": 1,
+                      "fontFamily": "DM Serif Display",
+                      "fontSize": 16
+                    },
+                    {
+                      "type": "text",
+                      "id": "5yxoW",
+                      "name": "articleFooterLink1",
+                      "fill": "#999999",
+                      "content": "Sobre nosotros",
+                      "fontFamily": "Inter",
+                      "fontSize": 13
+                    },
+                    {
+                      "type": "text",
+                      "id": "VWty0",
+                      "name": "articleFooterLink2",
+                      "fill": "#999999",
+                      "content": "Política de privacidad",
+                      "fontFamily": "Inter",
+                      "fontSize": 13
+                    },
+                    {
+                      "type": "text",
+                      "id": "3pjEV",
+                      "name": "articleFooterLink3",
+                      "fill": "#999999",
+                      "content": "Términos de servicio",
+                      "fontFamily": "Inter",
+                      "fontSize": 13
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "v8x50",
+                  "name": "articleFooterRight",
+                  "layout": "vertical",
+                  "gap": 16,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "46e2X",
+                      "name": "articleFooterSocialTitle",
+                      "fill": "#FFFFFF",
+                      "content": "Síguenos",
+                      "lineHeight": 1,
+                      "fontFamily": "DM Serif Display",
+                      "fontSize": 16
+                    },
+                    {
+                      "type": "frame",
+                      "id": "bcbYV",
+                      "name": "articleFooterSocial",
+                      "gap": 16,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "895VE",
+                          "name": "articleFooterSocialIg",
+                          "fill": "#999999",
+                          "content": "Instagram",
+                          "fontFamily": "Inter",
+                          "fontSize": 13
+                        },
+                        {
+                          "type": "text",
+                          "id": "RxC5s",
+                          "name": "articleFooterSocialTw",
+                          "fill": "#999999",
+                          "content": "Twitter",
+                          "fontFamily": "Inter",
+                          "fontSize": 13
+                        },
+                        {
+                          "type": "text",
+                          "id": "AeKZo",
+                          "name": "articleFooterSocialFb",
+                          "fill": "#999999",
+                          "content": "Facebook",
+                          "fontFamily": "Inter",
+                          "fontSize": 13
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "rectangle",
+              "id": "KZfHk",
+              "name": "articleFooterDivider",
+              "fill": "#444444",
+              "width": "fill_container",
+              "height": 1
+            },
+            {
+              "type": "frame",
+              "id": "I8rd9",
+              "name": "articleFooterBottom",
+              "width": "fill_container",
+              "justifyContent": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "jMmL6",
+                  "name": "articleFooterCopyright",
+                  "fill": "#999999",
+                  "content": "© 2026 En Calma. Todos los derechos reservados.",
+                  "fontFamily": "Inter",
+                  "fontSize": 12
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
