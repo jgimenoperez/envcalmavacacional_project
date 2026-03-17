@@ -207,12 +207,27 @@ body {
     background-color: var(--color-white);
     padding: 32px;
     border-radius: 4px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
 }
 
 .category-card:hover {
     transform: translateY(-4px);
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+.category-card.category-active {
+    border-color: var(--color-dark);
+    background-color: var(--color-dark);
+}
+
+.category-card.category-active .category-name {
+    color: var(--color-white);
+}
+
+.category-card.category-active .category-desc {
+    color: #cccccc;
 }
 
 .category-name {

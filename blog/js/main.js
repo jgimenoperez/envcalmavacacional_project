@@ -3,6 +3,10 @@ const PRISMIC_REPO = 'encalmavacacionalblog';
 const PRISMIC_TOKEN = 'MC5hYmszN1JBQUFDUUFEbWFH.77-9V0Dvv73vv71-L--_vV8_77-9emDvv73vv71H77-977-977-977-9SlMe77-977-9Ye-_vQ0hQV9i';
 const PRISMIC_API = `https://${PRISMIC_REPO}.cdn.prismic.io/api/v2`;
 
+// Estado global
+let allArticles = [];
+let activeCategory = null;
+
 // Paso 1: Obtener el master ref de Prismic
 async function getMasterRef() {
     const response = await fetch(`${PRISMIC_API}?access_token=${PRISMIC_TOKEN}`);
@@ -50,12 +54,59 @@ function formatDate(dateString) {
     return date.toLocaleDateString('es-ES', options);
 }
 
+// Función para extraer categorías únicas y contar artículos
+function getCategories(articles) {
+    const categoryMap = {};
+    articles.forEach(article => {
+        const cat = article.category;
+        if (!categoryMap[cat]) {
+            categoryMap[cat] = 0;
+        }
+        categoryMap[cat]++;
+    });
+    return categoryMap;
+}
+
+// Función para renderizar categorías dinámicas
+function renderCategories(categories) {
+    const container = document.getElementById('categoriesGrid');
+
+    container.innerHTML = Object.entries(categories).map(([name, count]) => `
+        <div class="category-card ${activeCategory === name ? 'category-active' : ''}" data-category="${name}">
+            <h4 class="category-name">${name}</h4>
+            <p class="category-desc">${count} ${count === 1 ? 'artículo' : 'artículos'}</p>
+        </div>
+    `).join('');
+
+    // Añadir eventos de clic para filtrar
+    container.querySelectorAll('.category-card').forEach(card => {
+        card.addEventListener('click', function() {
+            const category = this.dataset.category;
+
+            if (activeCategory === category) {
+                // Desactivar filtro
+                activeCategory = null;
+            } else {
+                activeCategory = category;
+            }
+
+            // Re-renderizar
+            const filtered = activeCategory
+                ? allArticles.filter(a => a.category === activeCategory)
+                : allArticles;
+
+            renderArticles(filtered);
+            renderCategories(getCategories(allArticles));
+        });
+    });
+}
+
 // Función para renderizar los artículos
 function renderArticles(articles) {
     const container = document.getElementById('articlesContainer');
 
     if (articles.length === 0) {
-        container.innerHTML = '<p>No hay artículos disponibles. Crea algunos en Prismic.</p>';
+        container.innerHTML = '<p>No hay artículos disponibles.</p>';
         return;
     }
 
@@ -79,6 +130,10 @@ function renderArticles(articles) {
 
 // Inicializar cuando el DOM esté listo
 document.addEventListener('DOMContentLoaded', async function() {
-    const articles = await getArticlesFromPrismic();
-    renderArticles(articles);
+    allArticles = await getArticlesFromPrismic();
+    renderArticles(allArticles);
+
+    // Renderizar categorías dinámicas
+    const categories = getCategories(allArticles);
+    renderCategories(categories);
 });
