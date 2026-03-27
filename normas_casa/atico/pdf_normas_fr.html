@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Forum&display=swap');
+        @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css');
+
+        .normas-container {
+            font-family: 'DM Sans', sans-serif;
+            color: #222222;
+            margin: 0;
+            padding: 15px 20px;
+            background-color: #ffffff;
+            line-height: 1.3;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 8px;
+            position: relative;
+            padding-top: 100px;
+            min-height: 120px;
+        }
+
+        .logo {
+            max-width: 300px;
+            position: absolute;
+            top: 25%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            margin: 0;
+            z-index: 5;
+        }
+
+        .title {
+            font-family: 'Forum', serif;
+            font-size: 24px;
+            color: #536941;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin: 50px 0 4px 0;
+            position: relative;
+            z-index: 10;
+        }
+
+        .subtitle {
+            font-size: 14px;
+            color: #666;
+            max-width: 100%;
+            margin: 0;
+            font-style: italic;
+            position: relative;
+            z-index: 10;
+        }
+
+        .divider {
+            border-top: 1px solid #536941;
+            margin: 20px 0 15px 0;
+            opacity: 0.2;
+        }
+
+        .columns-wrapper {
+            display: flex;
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .column {
+            flex: 1;
+        }
+
+        .section {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 14px;
+            padding: 0;
+            gap: 10px;
+        }
+
+        .icon-container {
+            width: 30px;
+            height: 30px;
+            flex-shrink: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .icon-fa {
+            font-size: 20px;
+            color: #536941;
+        }
+
+        .content {
+            flex-grow: 1;
+        }
+
+        .label {
+            font-family: 'Forum', serif;
+            font-weight: bold;
+            font-size: 14px;
+            color: #536941;
+            margin: 0 0 3px 0;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .text {
+            font-size: 12px;
+            color: #333;
+            margin: 0;
+        }
+
+        .contact-info {
+            font-size: 12px;
+            color: #333;
+            margin: 0;
+        }
+
+        .normas-list {
+            font-size: 12px;
+            color: #333;
+            margin: 0;
+            padding-left: 15px;
+        }
+
+        .normas-list li {
+            margin-bottom: 3px;
+        }
+
+        .footer {
+            margin-top: 20px;
+            padding-top: 10px;
+            border-top: 2px solid #536941;
+            text-align: center;
+            font-size: 11px;
+            color: #536941;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+        }
+
+        @page {
+            margin: 0;
+            margin-bottom: 0;
+            margin-top: 0;
+            size: auto;
+        }
+
+        @media print {
+            body {
+                margin: 0;
+                padding: 0;
+            }
+            .normas-container {
+                margin: 0;
+                padding: 15px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="normas-container">
+        <div class="header">
+            <div class="title">Bienvenue dans notre maison</div>
+            <p class="subtitle">Ceci est un petit guide pour vous faciliter votre séjour en ce qui concerne les règles de la maison et le fonctionnement général.</p>
+            <img src="http://encalmavacacional.com/wp-content/uploads/2025/09/ChatGPT-Image-18-sept-2025-10_32_15.png" alt="En Calma Vacacional" class="logo">
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="columns-wrapper">
+            <!-- COLONNE GAUCHE -->
+            <div class="column">
+                <div class="section">
+                    <div class="icon-container">
+                        <i class="fas fa-map-marker-alt icon-fa"></i>
+                    </div>
+                    <div class="content">
+                        <div class="label">Adresse</div>
+                        <div class="text">Calle Cid nº 9, piso 5º, puerta 19<br>Puerto de Sagunto<br>Valencia</div>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <div class="icon-container">
+                        <i class="fas fa-parking icon-fa"></i>
+                    </div>
+                    <div class="content">
+                        <div class="label">Parking</div>
+                        <div class="text">Plaza de parking nº 2</div>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <div class="icon-container">
+                        <i class="fas fa-phone icon-fa"></i>
+                    </div>
+                    <div class="content">
+                        <div class="label">Contact</div>
+                        <div class="contact-info">
+                            <strong>GLORIA:</strong> 653 39 90 81<br>
+                            <strong>ALVARO:</strong> 618 87 42 29
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <div class="icon-container">
+                        <i class="fas fa-wifi icon-fa"></i>
+                    </div>
+                    <div class="content">
+                        <div class="label">WiFi</div>
+                        <div class="text">zx73qdtg</div>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <div class="icon-container">
+                        <i class="fas fa-sign-out-alt icon-fa"></i>
+                    </div>
+                    <div class="content">
+                        <div class="label">Heure de Départ</div>
+                        <div class="text">Le départ est à 11h00. Veuillez nous notifier par téléphone ou WhatsApp au moment de votre départ.</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- COLONNE DROITE -->
+            <div class="column">
+<div class="section">
+                    <div class="icon-container">
+                        <i class="fas fa-list icon-fa" style="color: #d84040;"></i>
+                    </div>
+                    <div class="content">
+                        <div class="label">Règles</div>
+                        <ul class="normas-list">
+                            <li>Interdiction de fumer (sauf sur les terrasses).</li>
+                            <li>Les animaux domestiques ne sont pas autorisés.</li>
+                            <li>Réduire le bruit à partir de 22h00.</li>
+                        </ul>
+                    </div>
+                </div>
+
+<div class="section">
+                    <div class="icon-container">
+                        <i class="fas fa-fire icon-fa"></i>
+                    </div>
+                    <div class="content">
+                        <div class="label">Plaque de Cuisson</div>
+                        <div class="text">Sélectionnez la zone de cuisson et ajustez la puissance.<br>Si « LO » apparaît sur l'écran, appuyez sur le bouton<br>de verrouillage quelques secondes pour déverrouiller.</div>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <div class="icon-container">
+                        <i class="fas fa-sink icon-fa"></i>
+                    </div>
+                    <div class="content">
+                        <div class="label">Lave-Vaisselle</div>
+                        <div class="text">Dispose de sel et de brillant. Sélectionnez le programme ECO et appuyez sur Play.</div>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <div class="icon-container">
+                        <i class="fas fa-shower icon-fa"></i>
+                    </div>
+                    <div class="content">
+                        <div class="label">Eau Chaude</div>
+                        <div class="text">Le chauffe-eau a une grande capacité, mais pas<br>suffisante pour 5 douches consécutives prolongées,<br>surtout en hiver.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            &copy; 2026 EN CALMA VACACIONAL &bull; PUERTO DE SAGUNTO
+        </div>
+    </div>
+</body>
+</html>

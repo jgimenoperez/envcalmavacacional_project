@@ -3,7 +3,9 @@
     "allow": [
       "WebFetch(domain:encalmavacacional.com)",
       "WebFetch(domain:encalmavacacionalblog.cdn.prismic.io)",
-      "WebFetch(domain:images.prismic.io)"
+      "WebFetch(domain:images.prismic.io)",
+      "WebSearch",
+      "Skill(update-config)"
     ]
   }
 }
