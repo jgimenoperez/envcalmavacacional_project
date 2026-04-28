@@ -1,0 +1,555 @@
+<div class="lodgify-box">
+  <div class="lodgify-form">
+
+    <div class="date-range-wrapper">
+      <div class="date-range">
+        <div class="date-field" onclick="toggleCalendar()">
+          <span class="date-label">Llegada</span>
+          <span id="checkinText" class="date-value empty">dd/mm/aaaa</span>
+        </div>
+        <div class="date-field" onclick="toggleCalendar()">
+          <span class="date-label">Salida</span>
+          <span id="checkoutText" class="date-value empty">dd/mm/aaaa</span>
+        </div>
+        <button class="clear-dates" id="clearDates" onclick="clearDates(event)" title="Limpiar fechas">✕</button>
+      </div>
+      <div class="calendar-dropdown" id="calendarDropdown"></div>
+    </div>
+
+    <div class="guests">
+      <div class="guests-input" onclick="toggleGuests()">
+        <span id="guestsText">1 adulto</span> ▾
+      </div>
+
+      <div class="guests-dropdown" id="guestsDropdown">
+
+        <div class="row">
+          <div>
+            <strong>adultos</strong>
+            <small>Edades 13 o mayores</small>
+          </div>
+          <div class="counter">
+            <button onclick="changeGuests('adults', -1)">−</button>
+            <span id="adults">1</span>
+            <button onclick="changeGuests('adults', 1)">+</button>
+          </div>
+        </div>
+
+        <div class="row">
+          <div>
+            <strong>niños</strong>
+            <small>Edades 2 - 12</small>
+          </div>
+          <div class="counter">
+            <button onclick="changeGuests('children', -1)">−</button>
+            <span id="children">0</span>
+            <button onclick="changeGuests('children', 1)">+</button>
+          </div>
+        </div>
+
+        <div class="row">
+          <div>
+            <strong>bebés</strong>
+            <small>Menos de 2</small>
+          </div>
+          <div class="counter">
+            <button onclick="changeGuests('infants', -1)">−</button>
+            <span id="infants">0</span>
+            <button onclick="changeGuests('infants', 1)">+</button>
+          </div>
+        </div>
+
+        <div class="row">
+          <div>
+            <strong>mascotas</strong>
+          </div>
+          <div class="counter">
+            <button onclick="changeGuests('pets', -1)">−</button>
+            <span id="pets">0</span>
+            <button onclick="changeGuests('pets', 1)">+</button>
+          </div>
+        </div>
+
+        <button class="done" onclick="toggleGuests()">Hecho</button>
+      </div>
+    </div>
+
+    <button class="search" onclick="search()">🔍 Buscar</button>
+  </div>
+</div>
+
+<style>
+.lodgify-box {
+  max-width: 1000px;
+  margin: auto;
+}
+.lodgify-form {
+  display: flex;
+  gap: 15px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 14px;
+  align-items: center;
+}
+.lodgify-form input {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+.date-range-wrapper {
+  position: relative;
+  flex: 1;
+}
+.date-range {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: #fff;
+  position: relative;
+}
+.date-field {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 10px 14px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  cursor: pointer;
+  background: #fff;
+  transition: border-color 0.2s;
+}
+.date-field:hover {
+  border-color: #bbb;
+}
+.date-label {
+  font-size: 13px;
+  color: #333;
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+.date-value {
+  font-size: 13px;
+  color: #333;
+}
+.date-value.empty {
+  color: #999;
+}
+.clear-dates {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  border: none;
+  background: #e0e0e0;
+  color: #666;
+  cursor: pointer;
+  font-size: 11px;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  flex-shrink: 0;
+}
+.clear-dates.visible {
+  display: flex;
+}
+.clear-dates:hover {
+  background: #ccc;
+}
+.calendar-dropdown {
+  display: none;
+  position: absolute;
+  top: 55px;
+  left: -150px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,.15);
+  padding: 20px;
+  z-index: 10;
+  min-width: 650px;
+}
+.calendar-dropdown.active {
+  display: block;
+}
+.cal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.cal-header button {
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  color: #999;
+}
+.cal-header button:hover {
+  color: #333;
+}
+.cal-months {
+  display: flex;
+  gap: 40px;
+}
+.cal-month {
+  flex: 1;
+}
+.cal-month-title {
+  text-align: center;
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 15px;
+}
+.cal-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 5px;
+  text-align: center;
+}
+.cal-day-header {
+  font-size: 11px;
+  color: #999;
+  font-weight: 600;
+  padding: 8px 0;
+}
+.cal-day {
+  padding: 8px;
+  font-size: 13px;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: all 0.2s;
+}
+.cal-day.empty {
+  cursor: default;
+}
+.cal-day.disabled {
+  color: #bbb;
+  cursor: not-allowed;
+  text-decoration: line-through;
+}
+.cal-day.selected {
+  background: #f6c400;
+  color: #333;
+  font-weight: bold;
+}
+.cal-day.in-range {
+  background: #fef0b3;
+  color: #333;
+  border-radius: 0;
+}
+.cal-day.in-range.start,
+.cal-day.range-start {
+  background: #f6c400;
+  color: #333;
+  font-weight: bold;
+  border-radius: 6px 0 0 6px;
+}
+.cal-day.in-range.end,
+.cal-day.range-end {
+  background: #f6c400;
+  color: #333;
+  font-weight: bold;
+  border-radius: 0 6px 6px 0;
+}
+.cal-day:not(.empty):not(.disabled):not(.selected):not(.in-range):hover {
+  background: #f0f0f0;
+}
+.guests {
+  position: relative;
+  flex: 1;
+}
+.guests-input {
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.guests-dropdown {
+  display: none;
+  position: absolute;
+  top: 110%;
+  left: 0;
+  width: 100%;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0,0,0,.1);
+  padding: 15px;
+  z-index: 10;
+}
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.row small {
+  display: block;
+  color: #777;
+}
+.counter {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.counter button {
+  width: 32px;
+  height: 32px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  background: #f9f9f9;
+  cursor: pointer;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s;
+}
+.counter button:hover {
+  background: #efefef;
+  border-color: #ccc;
+}
+.counter span {
+  width: 30px;
+  text-align: center;
+  font-weight: 500;
+}
+.done {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background: #f5f5f5;
+}
+.search {
+  background: #f6c400;
+  border: none;
+  padding: 14px 25px;
+  border-radius: 999px;
+  cursor: pointer;
+}
+</style>
+
+<script>
+const state = {
+  adults: 1,
+  children: 0,
+  infants: 0,
+  pets: 0
+};
+
+function toggleGuests() {
+  const d = document.getElementById('guestsDropdown');
+  d.style.display = d.style.display === 'block' ? 'none' : 'block';
+  updateText();
+}
+
+function changeGuests(type, delta) {
+  if (type === 'adults' && state.adults + delta < 1) return;
+  if (state[type] + delta < 0) return;
+
+  state[type] += delta;
+  document.getElementById(type).innerText = state[type];
+  updateText();
+}
+
+function updateText() {
+  let t = `${state.adults} adulto${state.adults > 1 ? 's' : ''}`;
+  if (state.children) t += `, ${state.children} niño${state.children > 1 ? 's' : ''}`;
+  if (state.infants) t += `, ${state.infants} bebé${state.infants > 1 ? 's' : ''}`;
+  if (state.pets) t += `, ${state.pets} mascota${state.pets > 1 ? 's' : ''}`;
+  document.getElementById('guestsText').innerText = t;
+}
+
+let calStartDate = null;
+let calEndDate = null;
+let calHoverDate = null;
+let calViewYear = new Date().getFullYear();
+let calViewMonth = new Date().getMonth();
+
+function toggleCalendar() {
+  const dropdown = document.getElementById('calendarDropdown');
+  if (dropdown.classList.contains('active')) return;
+  dropdown.classList.add('active');
+  renderCalendar();
+  setTimeout(() => {
+    document.addEventListener('click', closeCalendarOnOutsideClick);
+  }, 0);
+}
+
+function closeCalendarOnOutsideClick(e) {
+  const cal = document.getElementById('calendarDropdown');
+  const range = document.querySelector('.date-range');
+  if (!cal.contains(e.target) && !range.contains(e.target)) {
+    cal.classList.remove('active');
+    document.removeEventListener('click', closeCalendarOnOutsideClick);
+  }
+}
+
+function renderCalendar() {
+  const dropdown = document.getElementById('calendarDropdown');
+  const months = [];
+
+  for (let i = 0; i < 2; i++) {
+    const y = calViewYear + Math.floor((calViewMonth + i) / 12);
+    const m = (calViewMonth + i) % 12;
+    months.push(renderMonth(y, m));
+  }
+
+  dropdown.innerHTML = `
+    <div class="cal-header">
+      <button onclick="changeMonth(-1)">←</button>
+      <div class="cal-months">${months.join('')}</div>
+      <button onclick="changeMonth(1)">→</button>
+    </div>
+  `;
+}
+
+function renderMonth(year, month) {
+  const names = ['enero', 'febrero', 'marzo', 'abril', 'mayo', 'junio', 'julio', 'agosto', 'septiembre', 'octubre', 'noviembre', 'diciembre'];
+  let firstDay = new Date(year, month, 1).getDay();
+  firstDay = firstDay === 0 ? 6 : firstDay - 1;
+  const daysInMonth = new Date(year, month + 1, 0).getDate();
+  const today = new Date();
+  today.setHours(0, 0, 0, 0);
+
+  let html = `<div class="cal-month"><div class="cal-month-title">${names[month]} de ${year}</div><div class="cal-grid">`;
+
+  const dayNames = ['lun', 'mar', 'mié', 'jue', 'vie', 'sáb', 'dom'];
+  dayNames.forEach(d => html += `<div class="cal-day-header">${d}</div>`);
+
+  for (let i = 0; i < firstDay; i++) html += '<div class="cal-day empty"></div>';
+
+  for (let day = 1; day <= daysInMonth; day++) {
+    const date = new Date(year, month, day);
+    date.setHours(0, 0, 0, 0);
+    const dateStr = `${year}-${String(month + 1).padStart(2, '0')}-${String(day).padStart(2, '0')}`;
+
+    let classes = 'cal-day';
+    if (date < today) classes += ' disabled';
+    else {
+      if (calStartDate && calEndDate) {
+        const start = new Date(calStartDate);
+        const end = new Date(calEndDate);
+        start.setHours(0, 0, 0, 0);
+        end.setHours(0, 0, 0, 0);
+        if (dateStr === calStartDate) classes += ' selected range-start';
+        else if (dateStr === calEndDate) classes += ' selected range-end';
+        else if (date > start && date < end) classes += ' in-range';
+      } else if (calStartDate && !calEndDate) {
+        if (dateStr === calStartDate) classes += ' selected';
+      }
+    }
+
+    const click = date < today ? '' : `onclick="event.stopPropagation(); selectDate('${dateStr}')"`;
+    html += `<div class="${classes}" ${click}>${day}</div>`;
+  }
+
+  html += '</div></div>';
+  return html;
+}
+
+function changeMonth(delta) {
+  calViewMonth += delta;
+  if (calViewMonth > 11) {
+    calViewMonth = 0;
+    calViewYear++;
+  } else if (calViewMonth < 0) {
+    calViewMonth = 11;
+    calViewYear--;
+  }
+  renderCalendar();
+}
+
+function selectDate(dateStr) {
+  let shouldClose = false;
+
+  if (!calStartDate) {
+    calStartDate = dateStr;
+  } else if (!calEndDate) {
+    if (dateStr < calStartDate) {
+      calEndDate = calStartDate;
+      calStartDate = dateStr;
+    } else if (dateStr === calStartDate) {
+      return;
+    } else {
+      calEndDate = dateStr;
+    }
+    shouldClose = true;
+  } else {
+    calStartDate = dateStr;
+    calEndDate = null;
+  }
+
+  updateCalendarInputs();
+  renderCalendar();
+
+  if (shouldClose) {
+    document.getElementById('calendarDropdown').classList.remove('active');
+    document.removeEventListener('click', closeCalendarOnOutsideClick);
+  }
+}
+
+function formatDateShort(dateStr) {
+  const months = ['ene', 'feb', 'mar', 'abr', 'may', 'jun', 'jul', 'ago', 'sep', 'oct', 'nov', 'dic'];
+  const [y, m, d] = dateStr.split('-');
+  return `${parseInt(d)} ${months[parseInt(m) - 1]} ${y}`;
+}
+
+function updateCalendarInputs() {
+  const checkinEl = document.getElementById('checkinText');
+  const checkoutEl = document.getElementById('checkoutText');
+  const clearBtn = document.getElementById('clearDates');
+
+  if (calStartDate) {
+    checkinEl.innerText = formatDateShort(calStartDate);
+    checkinEl.classList.remove('empty');
+  } else {
+    checkinEl.innerText = 'dd/mm/aaaa';
+    checkinEl.classList.add('empty');
+  }
+
+  if (calEndDate) {
+    checkoutEl.innerText = formatDateShort(calEndDate);
+    checkoutEl.classList.remove('empty');
+  } else {
+    checkoutEl.innerText = 'dd/mm/aaaa';
+    checkoutEl.classList.add('empty');
+  }
+
+  if (calStartDate && calEndDate) {
+    clearBtn.classList.add('visible');
+  } else {
+    clearBtn.classList.remove('visible');
+  }
+}
+
+function clearDates(e) {
+  e.stopPropagation();
+  calStartDate = null;
+  calEndDate = null;
+  updateCalendarInputs();
+  renderCalendar();
+}
+
+function search() {
+  const params = {
+    adults: parseInt(state.adults) || 1,
+    sort: "price"
+  };
+
+  if (calStartDate) {
+    params.arrival = calStartDate.replace(/-/g, '');
+  }
+  if (calEndDate) {
+    params.departure = calEndDate.replace(/-/g, '');
+  }
+
+  params.children = parseInt(state.children) || 0;
+  params.infants = parseInt(state.infants) || 0;
+  params.pets = parseInt(state.pets) || 0;
+
+  const url = new URL("https://alvaro--garcia.lodgify.com/es/propiedades/");
+  url.search = new URLSearchParams(params).toString();
+  window.open(url, "_blank");
+}
+</script>
