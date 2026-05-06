@@ -5,7 +5,9 @@
       "WebFetch(domain:encalmavacacionalblog.cdn.prismic.io)",
       "WebFetch(domain:images.prismic.io)",
       "WebSearch",
-      "Skill(update-config)"
+      "Skill(update-config)",
+      "PowerShell(head *)",
+      "PowerShell(Get-ChildItem -Path \"C:\\\\MCP_CLAUDE\\\\JOSE\\\\NaranjaIT\\\\En_Calma_Vacacional\" -Recurse -File | ForEach-Object { $_.FullName })"
     ]
   }
 }
