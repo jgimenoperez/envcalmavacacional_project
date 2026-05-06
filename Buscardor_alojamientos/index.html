@@ -113,7 +113,7 @@
           </div>
         </div>
 
-        <div class="ec-guest-row ec-guest-row--last">
+        <div class="ec-guest-row ec-guest-row--last" style="display: none;">
           <div class="ec-guest-info">
             <span class="ec-guest-name">Mascotas</span>
             <span class="ec-guest-desc">¿Traes compañía?</span>
@@ -1025,7 +1025,7 @@
     if (calStartDate) params.arrival = calStartDate.replace(/-/g, '');
     if (calEndDate) params.departure = calEndDate.replace(/-/g, '');
 
-    const url = new URL('https://alvaro--garcia.lodgify.com/es/propiedades/');
+    const url = new URL('https://encalmavacacional.lodgify.com/es/propiedades/');
     url.search = new URLSearchParams(params).toString();
     window.open(url, '_blank');
   }
