@@ -1,229 +1,405 @@
-<div class="lodgify-box">
-  <div class="lodgify-form">
+<div class="ec-box">
+  <div class="ec-form">
 
-    <div class="date-range-wrapper">
-      <div class="date-range">
-        <div class="date-field" onclick="toggleCalendar()">
-          <span class="date-label">Llegada</span>
-          <span id="checkinText" class="date-value empty">dd/mm/aaaa</span>
+    <div class="ec-date-wrapper">
+      <div class="ec-date-range" onclick="toggleCalendar()">
+
+        <div class="ec-date-field">
+          <span class="ec-field-icon">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+              <line x1="16" y1="2" x2="16" y2="6"></line>
+              <line x1="8" y1="2" x2="8" y2="6"></line>
+              <line x1="3" y1="10" x2="21" y2="10"></line>
+            </svg>
+          </span>
+          <div class="ec-field-text">
+            <span class="ec-field-label">Llegada</span>
+            <span id="checkinText" class="ec-field-value empty">Añade fecha</span>
+          </div>
         </div>
-        <div class="date-field" onclick="toggleCalendar()">
-          <span class="date-label">Salida</span>
-          <span id="checkoutText" class="date-value empty">dd/mm/aaaa</span>
+
+        <div class="ec-divider"></div>
+
+        <div class="ec-date-field">
+          <span class="ec-field-icon">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+              <line x1="16" y1="2" x2="16" y2="6"></line>
+              <line x1="8" y1="2" x2="8" y2="6"></line>
+              <line x1="3" y1="10" x2="21" y2="10"></line>
+            </svg>
+          </span>
+          <div class="ec-field-text">
+            <span class="ec-field-label">Salida</span>
+            <span id="checkoutText" class="ec-field-value empty">Añade fecha</span>
+          </div>
         </div>
-        <button class="clear-dates" id="clearDates" onclick="clearDates(event)" title="Limpiar fechas">✕</button>
+
+        <div class="ec-clear" id="clearDates" onclick="clearDates(event)" role="button" tabindex="0" title="Limpiar fechas"
+          aria-label="Limpiar fechas seleccionadas">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
+            stroke-linecap="round" stroke-linejoin="round">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </div>
+
       </div>
-      <div class="calendar-dropdown" id="calendarDropdown"></div>
+      <div class="ec-calendar-dropdown" id="calendarDropdown"></div>
     </div>
 
-    <div class="guests">
-      <div class="guests-input" onclick="toggleGuests()">
-        <span id="guestsText">1 adulto</span> ▾
+    <div class="ec-guests">
+      <div class="ec-guests-input" onclick="toggleGuests()" role="button" aria-haspopup="true" aria-expanded="false"
+        id="guestsToggle">
+        <span class="ec-field-icon">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+            <circle cx="9" cy="7" r="4"></circle>
+            <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+            <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+          </svg>
+        </span>
+        <div class="ec-field-text">
+          <span class="ec-field-label">Huéspedes</span>
+          <span id="guestsText" class="ec-field-value">1 adulto</span>
+        </div>
+        <span class="ec-chevron">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+            stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="6 9 12 15 18 9"></polyline>
+          </svg>
+        </span>
       </div>
 
-      <div class="guests-dropdown" id="guestsDropdown">
+      <div class="ec-guests-dropdown" id="guestsDropdown" role="dialog" aria-label="Seleccionar huéspedes">
 
-        <div class="row">
-          <div>
-            <strong>adultos</strong>
-            <small>Edades 13 o mayores</small>
+        <div class="ec-guest-row">
+          <div class="ec-guest-info">
+            <span class="ec-guest-name">Adultos</span>
+            <span class="ec-guest-desc">13 años o más</span>
           </div>
-          <div class="counter">
-            <button onclick="changeGuests('adults', -1)">−</button>
-            <span id="adults">1</span>
-            <button onclick="changeGuests('adults', 1)">+</button>
+          <div class="ec-counter">
+            <div class="ec-counter-btn" onclick="changeGuests('adults', -1)" role="button" tabindex="0" aria-label="Reducir adultos">−</div>
+            <span id="adults" class="ec-counter-val">1</span>
+            <div class="ec-counter-btn" onclick="changeGuests('adults', 1)" role="button" tabindex="0" aria-label="Aumentar adultos">+</div>
           </div>
         </div>
 
-        <div class="row">
-          <div>
-            <strong>niños</strong>
-            <small>Edades 2 - 12</small>
+        <div class="ec-guest-row">
+          <div class="ec-guest-info">
+            <span class="ec-guest-name">Niños</span>
+            <span class="ec-guest-desc">2 – 12 años</span>
           </div>
-          <div class="counter">
-            <button onclick="changeGuests('children', -1)">−</button>
-            <span id="children">0</span>
-            <button onclick="changeGuests('children', 1)">+</button>
-          </div>
-        </div>
-
-        <div class="row">
-          <div>
-            <strong>bebés</strong>
-            <small>Menos de 2</small>
-          </div>
-          <div class="counter">
-            <button onclick="changeGuests('infants', -1)">−</button>
-            <span id="infants">0</span>
-            <button onclick="changeGuests('infants', 1)">+</button>
+          <div class="ec-counter">
+            <div class="ec-counter-btn" onclick="changeGuests('children', -1)" role="button" tabindex="0" aria-label="Reducir niños">−</div>
+            <span id="children" class="ec-counter-val">0</span>
+            <div class="ec-counter-btn" onclick="changeGuests('children', 1)" role="button" tabindex="0" aria-label="Aumentar niños">+</div>
           </div>
         </div>
 
-        <div class="row">
-          <div>
-            <strong>mascotas</strong>
+        <div class="ec-guest-row">
+          <div class="ec-guest-info">
+            <span class="ec-guest-name">Bebés</span>
+            <span class="ec-guest-desc">Menos de 2 años</span>
           </div>
-          <div class="counter">
-            <button onclick="changeGuests('pets', -1)">−</button>
-            <span id="pets">0</span>
-            <button onclick="changeGuests('pets', 1)">+</button>
+          <div class="ec-counter">
+            <div class="ec-counter-btn" onclick="changeGuests('infants', -1)" role="button" tabindex="0" aria-label="Reducir bebés">−</div>
+            <span id="infants" class="ec-counter-val">0</span>
+            <div class="ec-counter-btn" onclick="changeGuests('infants', 1)" role="button" tabindex="0" aria-label="Aumentar bebés">+</div>
           </div>
         </div>
 
-        <button class="done" onclick="toggleGuests()">Hecho</button>
+        <div class="ec-guest-row ec-guest-row--last">
+          <div class="ec-guest-info">
+            <span class="ec-guest-name">Mascotas</span>
+            <span class="ec-guest-desc">¿Traes compañía?</span>
+          </div>
+          <div class="ec-counter">
+            <div class="ec-counter-btn" onclick="changeGuests('pets', -1)" role="button" tabindex="0" aria-label="Reducir mascotas">−</div>
+            <span id="pets" class="ec-counter-val">0</span>
+            <div class="ec-counter-btn" onclick="changeGuests('pets', 1)" role="button" tabindex="0" aria-label="Aumentar mascotas">+</div>
+          </div>
+        </div>
+
+        <div class="ec-done" onclick="toggleGuests()" role="button" tabindex="0">Confirmar</div>
       </div>
     </div>
 
-    <button class="search" onclick="search()">
-      <svg class="search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-        stroke-width="2">
+    <div class="ec-search" onclick="search()" role="button" tabindex="0" aria-label="Buscar alojamientos">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+        stroke-linecap="round" stroke-linejoin="round">
         <circle cx="11" cy="11" r="8"></circle>
-        <path d="m21 21-4.35-4.35"></path>
+        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
       </svg>
-      Buscar
-    </button>
+      <span>Buscar</span>
+    </div>
+
   </div>
 </div>
 
 <style>
-  * {
+  /* ─── Reset ─────────────────────────────────────────────── */
+  *,
+  *::before,
+  *::after {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
   }
 
-  .lodgify-box {
-    max-width: 1000px;
+  /* ─── Design tokens ──────────────────────────────────────── */
+  :root {
+    --ec-brand: #2a7d6f;
+    /* teal oscuro — confianza, naturaleza */
+    --ec-brand-light: #3a9e8e;
+    /* teal medio  */
+    --ec-brand-pale: #e8f5f3;
+    /* teal muy suave — hover de rango */
+    --ec-accent: #f5a623;
+    /* naranja cálido — CTA */
+    --ec-accent-hover: #e8951a;
+    --ec-accent-text: #fff;
+
+    --ec-surface: #ffffff;
+    --ec-surface-alt: #f8faf9;
+    --ec-border: #dce8e5;
+    --ec-border-focus: #2a7d6f;
+
+    --ec-text-primary: #1a2e2b;
+    --ec-text-secondary: #4a6b65;
+    --ec-text-muted: #8aaba5;
+    --ec-text-placeholder: #a8c4bf;
+
+    --ec-radius-sm: 6px;
+    --ec-radius-md: 10px;
+    --ec-radius-lg: 16px;
+    --ec-radius-full: 999px;
+
+    --ec-shadow-sm: 0 1px 3px rgba(42, 125, 111, 0.08);
+    --ec-shadow-md: 0 4px 16px rgba(42, 125, 111, 0.12);
+    --ec-shadow-lg: 0 12px 40px rgba(42, 125, 111, 0.18);
+
+    --ec-transition: 0.18s ease;
+
+    --ec-font: 'Inter', system-ui, -apple-system, sans-serif;
+  }
+
+  /* ─── Outer wrapper ──────────────────────────────────────── */
+  .ec-box {
+    max-width: 1040px;
     margin: auto;
-    padding: 15px;
+    padding: 16px;
+    font-family: var(--ec-font);
   }
 
-  .lodgify-form {
+  /* ─── Form row ───────────────────────────────────────────── */
+  .ec-form {
     display: flex;
-    gap: 15px;
-    background: #fff;
-    padding: 20px;
-    border-radius: 14px;
-    align-items: center;
-    flex-wrap: wrap;
-  }
-
-  .lodgify-form input {
-    padding: 12px;
-    border-radius: 8px;
-    border: 1px solid #ddd;
-  }
-
-  .date-range-wrapper {
-    /* position: relative;
-    flex: 1;
-    min-width: 200px; */
-  }
-
-  .date-range {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    background: #fff;
+    gap: 0;
+    background: var(--ec-surface);
+    border-radius: var(--ec-radius-lg);
+    box-shadow: var(--ec-shadow-md);
+    border: 1px solid var(--ec-border);
+    align-items: stretch;
+    overflow: visible;
     position: relative;
-    flex-wrap: wrap;
   }
 
-  .date-field {
+  /* ─── Shared field structure ─────────────────────────────── */
+  .ec-field-icon {
+    color: var(--ec-brand);
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+  }
+
+  .ec-field-text {
     display: flex;
     flex-direction: column;
-    flex: 1;
-    min-width: 120px;
-    padding: 10px 14px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    cursor: pointer;
-    background: #fff;
-    transition: border-color 0.2s;
+    gap: 2px;
+    min-width: 0;
   }
 
-  .date-field:hover {
-    border-color: #bbb;
+  .ec-field-label {
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--ec-text-secondary);
+    line-height: 1;
   }
 
-  .date-label {
-    font-size: 13px;
-    color: #333;
-    font-weight: 600;
-    margin-bottom: 2px;
+  .ec-field-value {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--ec-text-primary);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 
-  .date-value {
-    font-size: 13px;
-    color: #333;
+  .ec-field-value.empty {
+    color: var(--ec-text-placeholder);
+    font-weight: 400;
   }
 
-  .date-value.empty {
-    color: #999;
+  /* ─── Date range wrapper ─────────────────────────────────── */
+  .ec-date-wrapper {
+    position: relative;
+    flex: 2;
+    min-width: 0;
   }
 
-  .clear-dates {
-    width: 22px;
-    height: 22px;
-    border-radius: 50%;
-    border: none;
-    background: #e0e0e0;
-    color: #666;
-    cursor: pointer;
-    font-size: 11px;
-    display: none;
+  .ec-date-range {
+    display: flex;
     align-items: center;
-    justify-content: center;
-    padding: 0;
+    height: 100%;
+    cursor: pointer;
+    border-radius: var(--ec-radius-lg) 0 0 var(--ec-radius-lg);
+    transition: background var(--ec-transition);
+    padding: 0 4px;
+  }
+
+  .ec-date-range:hover {
+    background: var(--ec-surface-alt);
+  }
+
+  .ec-date-range:focus-within {
+    outline: 2px solid var(--ec-border-focus);
+    outline-offset: -2px;
+    border-radius: var(--ec-radius-lg) 0 0 var(--ec-radius-lg);
+  }
+
+  .ec-date-field {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex: 1;
+    padding: 14px 16px;
+    min-width: 0;
+  }
+
+  /* ─── Vertical divider between fields ───────────────────── */
+  .ec-divider {
+    width: 1px;
+    height: 32px;
+    background: var(--ec-border);
     flex-shrink: 0;
   }
 
-  .clear-dates.visible {
+  /* ─── Clear button ───────────────────────────────────────── */
+  .ec-clear {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    border: 1.5px solid var(--ec-border);
+    background: var(--ec-surface);
+    color: var(--ec-text-muted);
+    cursor: pointer;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    margin-right: 8px;
+    transition: all var(--ec-transition);
+  }
+
+  .ec-clear.visible {
     display: flex;
   }
 
-  .clear-dates:hover {
-    background: #ccc;
+  .ec-clear {
+    background: #fee2e2;
+    border-color: #f87171;
+    color: #ef4444;
+    transform: scale(1.1);
   }
 
-  .calendar-dropdown {
+  /* ─── Calendar dropdown ──────────────────────────────────── */
+  .ec-calendar-dropdown {
     display: none;
     position: absolute;
-    top: 55px;
+    top: calc(100% + 10px);
     left: 0;
-    background: #fff;
-    border-radius: 12px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, .15);
-    padding: 20px;
-    z-index: 10;
-    min-width: 320px;
-    max-width: calc(100vw - 40px);
+    background: var(--ec-surface);
+    border-radius: var(--ec-radius-lg);
+    box-shadow: var(--ec-shadow-lg);
+    border: 1px solid var(--ec-border);
+    padding: 20px 24px 24px;
+    z-index: 100;
+    min-width: 340px;
   }
 
-  .calendar-dropdown.active {
+  .ec-calendar-dropdown.active {
     display: block;
+    animation: ec-fade-in 0.15s ease;
   }
 
-  .cal-header {
-    /* display: flex; */
-    /* justify-content: space-between; */
-    /* align-items: center; */
-    /* margin-bottom: 20px; */
+  @keyframes ec-fade-in {
+    from {
+      opacity: 0;
+      transform: translateY(4px);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
   }
 
-  .cal-header button {
-    background: none;
-    border: none;
-    font-size: 20px;
+  /* ─── Calendar header (nav) ──────────────────────────────── */
+  /* .cal-header {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+  } */
+
+  .cal-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 4px;
+    position: relative;
+  }
+
+  .cal-nav-btn {
+    background: var(--ec-surface);
+    border: 1px solid var(--ec-border);
+    border-radius: var(--ec-radius-sm);
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     cursor: pointer;
-    color: #999;
+    color: var(--ec-text-secondary);
+    transition: all var(--ec-transition);
+    flex-shrink: 0;
+    box-shadow: var(--ec-shadow-sm);
   }
 
-  .cal-header button:hover {
-    color: #333;
+  .cal-nav-btn:hover {
+    background: var(--ec-brand);
+    border-color: var(--ec-brand);
+    color: var(--ec-accent-text);
+    box-shadow: 0 2px 8px rgba(42, 125, 111, 0.2);
+    transform: translateY(-1px);
   }
 
+  .cal-nav-btn svg {
+    stroke: currentColor;
+    stroke-width: 2.5;
+  }
+
+  /* ─── Calendar months grid ───────────────────────────────── */
   .cal-months {
     display: flex;
-    gap: 20px;
+    gap: 32px;
+    flex: 1;
   }
 
   .cal-month {
@@ -233,36 +409,43 @@
 
   .cal-month-title {
     text-align: center;
-    font-size: 14px;
-    font-weight: 600;
-    color: #333;
-    margin-bottom: 15px;
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--ec-text-primary);
+    text-transform: capitalize;
+    padding: 0 0 14px;
+    letter-spacing: 0.02em;
   }
 
   .cal-grid {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
-    gap: 5px;
+    gap: 3px;
     text-align: center;
   }
 
   .cal-day-header {
-    font-size: 11px;
-    color: #999;
-    font-weight: 600;
-    padding: 8px 0;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: var(--ec-text-muted);
+    padding: 6px 0 8px;
   }
 
   .cal-day {
-    padding: 8px;
+    padding: 0;
     font-size: 13px;
+    font-weight: 400;
     cursor: pointer;
-    border-radius: 6px;
-    transition: all 0.2s;
+    border-radius: var(--ec-radius-sm);
+    transition: all var(--ec-transition);
     aspect-ratio: 1;
     display: flex;
     align-items: center;
     justify-content: center;
+    color: var(--ec-text-primary);
+    position: relative;
   }
 
   .cal-day.empty {
@@ -270,318 +453,392 @@
   }
 
   .cal-day.disabled {
-    color: #bbb;
+    color: var(--ec-text-placeholder);
     cursor: not-allowed;
-    text-decoration: line-through;
+    font-weight: 300;
   }
 
-  .cal-day.selected {
-    background: #f6c400;
-    color: #333;
-    font-weight: bold;
+  /* Selected endpoints */
+  .cal-day.selected,
+  .cal-day.range-start,
+  .cal-day.range-end {
+    background: var(--ec-brand) !important;
+    color: #fff !important;
+    font-weight: 700;
+    border-radius: var(--ec-radius-sm);
   }
 
+  /* Range fill */
   .cal-day.in-range {
-    background: #fef0b3;
-    color: #333;
+    background: var(--ec-brand-pale);
+    color: var(--ec-brand);
     border-radius: 0;
   }
 
   .cal-day.in-range.start,
   .cal-day.range-start {
-    background: #f6c400;
-    color: #333;
-    font-weight: bold;
-    border-radius: 6px 0 0 6px;
+    border-radius: var(--ec-radius-sm) 0 0 var(--ec-radius-sm);
   }
 
   .cal-day.in-range.end,
   .cal-day.range-end {
-    background: #f6c400;
-    color: #333;
-    font-weight: bold;
-    border-radius: 0 6px 6px 0;
+    border-radius: 0 var(--ec-radius-sm) var(--ec-radius-sm) 0;
   }
 
-  .cal-day:not(.empty):not(.disabled):not(.selected):not(.in-range):hover {
-    background: #f0f0f0;
+  /* Hover for available days */
+  .cal-day:not(.empty):not(.disabled):not(.selected):not(.in-range):not(.range-start):not(.range-end):hover {
+    background: var(--ec-brand-pale);
+    color: var(--ec-brand);
+    font-weight: 600;
   }
 
-  .guests {
+  /* ─── Guests section ─────────────────────────────────────── */
+  .ec-guests {
     position: relative;
     flex: 1;
-    min-width: 150px;
+    min-width: 0;
+    border-left: 1px solid var(--ec-border);
+    border-right: 1px solid var(--ec-border);
   }
 
-  .guests-input {
-    padding: 12px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
+  .ec-guests-input {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 14px 16px;
     cursor: pointer;
-    width: 100%;
+    height: 100%;
+    transition: background var(--ec-transition);
   }
 
-  .guests-dropdown {
+  .ec-guests-input:hover {
+    background: var(--ec-surface-alt);
+  }
+
+  .ec-chevron {
+    color: var(--ec-text-muted);
+    margin-left: auto;
+    flex-shrink: 0;
+    transition: transform var(--ec-transition);
+  }
+
+  .ec-guests-input.open .ec-chevron {
+    transform: rotate(180deg);
+  }
+
+  /* ─── Guests dropdown ────────────────────────────────────── */
+  .ec-guests-dropdown {
     display: none;
     position: absolute;
-    top: 110%;
+    top: calc(100% + 10px);
     left: 0;
     width: 100%;
-    min-width: 250px;
-    background: #fff;
-    border-radius: 12px;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, .1);
-    padding: 15px;
-    z-index: 10;
+    min-width: 280px;
+    background: var(--ec-surface);
+    border-radius: var(--ec-radius-lg);
+    box-shadow: var(--ec-shadow-lg);
+    border: 1px solid var(--ec-border);
+    padding: 20px;
+    z-index: 100;
+    animation: ec-fade-in 0.15s ease;
   }
 
-  .row {
+  .ec-guests-dropdown.open {
+    display: block;
+  }
+
+  .ec-guest-row {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 15px;
-    gap: 10px;
+    padding: 12px 0;
+    border-bottom: 1px solid var(--ec-border);
+    gap: 12px;
   }
 
-  .row small {
-    display: block;
-    color: #777;
+  .ec-guest-row--last {
+    border-bottom: none;
+    padding-bottom: 16px;
   }
 
-  .counter {
+  .ec-guest-info {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+
+  .ec-guest-name {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--ec-text-primary);
+  }
+
+  .ec-guest-desc {
+    font-size: 11px;
+    color: var(--ec-text-muted);
+  }
+
+  /* ─── Counter ────────────────────────────────────────────── */
+  .ec-counter {
     display: flex;
     align-items: center;
-    gap: 12px;
+    gap: 10px;
     flex-shrink: 0;
   }
 
-  .counter button {
+  .ec-counter-btn {
     width: 32px;
     height: 32px;
-    border: 1px solid #ddd;
-    border-radius: 6px;
-    background: #f9f9f9;
+    border: 1.5px solid var(--ec-border);
+    border-radius: 50%;
+    background: var(--ec-surface);
+    color: var(--ec-text-primary);
     cursor: pointer;
     font-size: 18px;
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: all 0.2s;
+    line-height: 1;
+    transition: all var(--ec-transition);
     flex-shrink: 0;
   }
 
-  .counter button:hover {
-    background: #efefef;
-    border-color: #ccc;
+  .ec-counter-btn:hover {
+    border-color: var(--ec-brand);
+    color: var(--ec-brand);
+    background: var(--ec-brand-pale);
   }
 
-  .counter span {
-    width: 30px;
+  .ec-counter-btn:active {
+    transform: scale(0.92);
+  }
+
+  .ec-counter-val {
+    width: 24px;
     text-align: center;
-    font-weight: 500;
-    flex-shrink: 0;
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--ec-text-primary);
   }
 
-  .done {
+  /* ─── Done / Confirm button inside guests dropdown ───────── */
+  .ec-done {
     width: 100%;
     padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    background: #f5f5f5;
+    border: 1.5px solid var(--ec-brand);
+    border-radius: var(--ec-radius-md);
+    background: var(--ec-brand-pale);
+    color: var(--ec-brand);
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.03em;
     cursor: pointer;
+    transition: all var(--ec-transition);
   }
 
-  .search {
-    background: #f6c400;
+  .ec-done:hover {
+    background: var(--ec-brand);
+    color: #fff;
+  }
+
+  /* ─── Search button ──────────────────────────────────────── */
+  .ec-search {
+    background: var(--ec-accent);
+    color: #000;
     border: none;
-    padding: 14px 25px;
-    border-radius: 999px;
+    padding: 0 28px;
+    border-radius: 0 var(--ec-radius-lg) var(--ec-radius-lg) 0;
     cursor: pointer;
-    font-weight: 600;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 0.02em;
     white-space: nowrap;
-    transition: all 0.2s;
     display: flex;
     align-items: center;
     gap: 8px;
-  }
-
-  .search-icon {
-    display: flex;
-    align-items: center;
+    min-width: 120px;
     justify-content: center;
+    transition: all var(--ec-transition);
+    flex-shrink: 0;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15);
   }
 
-  .search:hover {
-    background: #f0b800;
-    transform: translateY(-1px);
+  .ec-search:hover {
+    background: var(--ec-accent-hover);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 4px 12px rgba(245, 166, 35, 0.35);
   }
 
-  @media (max-width: 768px) {
-    .lodgify-box {
-      padding: 10px;
+  .ec-search:active {
+    transform: scale(0.98);
+  }
+
+  /* ─── Responsive: tablet ─────────────────────────────────── */
+  @media (max-width: 820px) {
+    .ec-box {
+      padding: 12px;
     }
 
-    .lodgify-form {
+    .ec-form {
       flex-direction: column;
-      padding: 15px;
-      gap: 12px;
+      border-radius: var(--ec-radius-lg);
+      gap: 0;
     }
 
-    .date-range-wrapper,
-    .guests {
-      width: 100%;
-      min-width: auto;
-    }
-
-    .date-range {
+    .ec-date-wrapper {
+      flex: none;
       width: 100%;
     }
 
-    .date-field {
-      flex: 1;
+    .ec-date-range {
+      border-radius: var(--ec-radius-lg) var(--ec-radius-lg) 0 0;
+      border-bottom: 1px solid var(--ec-border);
+    }
+
+    .ec-guests {
+      width: 100%;
+      border-left: none;
+      border-right: none;
+      border-bottom: 1px solid var(--ec-border);
+    }
+
+    .ec-guests-input {
+      border-radius: 0;
+    }
+
+    .ec-search {
+      border-radius: 0 0 var(--ec-radius-lg) var(--ec-radius-lg);
+      padding: 14px 20px;
       min-width: auto;
+      width: 100%;
+      font-size: 15px;
+    }
+
+    .ec-calendar-dropdown {
+      left: 0;
+      right: 0;
+      min-width: 0;
     }
 
     .cal-months {
-      flex-direction: column;
-      gap: 20px;
-    }
-
-    .calendar-dropdown {
-      /* left: 50%; */
-      /* transform: translateX(-50%); */
-      /* min-width: 280px; */
-      /* max-width: calc(100vw - 30px); */
-      /* background-color: rebeccapurple; */
-    }
-
-    .cal-month {
-      min-width: auto;
-    }
-
-    .guests-dropdown {
-      min-width: auto;
-      left: 50%;
-      transform: translateX(-50%);
-    }
-
-    .search {
-      width: 100%;
-      padding: 12px 20px;
+      gap: 24px;
     }
   }
 
-  @media (max-width: 480px) {
-    .lodgify-box {
+  /* ─── Responsive: mobile ─────────────────────────────────── */
+  @media (max-width: 560px) {
+    .ec-box {
       padding: 8px;
     }
 
-    .lodgify-form {
-      padding: 12px;
-      gap: 10px;
+    .ec-date-field {
+      padding: 12px 12px;
     }
 
-    .date-field {
-      padding: 8px 10px;
+    .ec-guests-input {
+      padding: 12px 12px;
     }
 
-    .date-label {
-      font-size: 12px;
+    /* Stack the two date fields vertically on small screens */
+    .ec-date-range {
+      flex-wrap: wrap;
+      gap: 0;
     }
 
-    .date-value {
-      font-size: 12px;
+    .ec-date-field:first-child {
+      border-bottom: 1px solid var(--ec-border);
+    }
+
+    .ec-divider {
+      display: none;
+    }
+
+    .ec-date-field {
+      flex: 1 0 100%;
+    }
+
+    .ec-clear {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      margin: 0;
+    }
+
+    /* Single-month calendar on mobile */
+    .cal-months {
+      flex-direction: column;
+    }
+
+    .ec-calendar-dropdown {
+      padding: 14px 14px 18px;
     }
 
     .cal-day {
-      padding: 3px;
-      font-size: 10px;
-    }
-
-    .calendar-dropdown {
-      padding: 8px;
-      left: 0 !important;
-      transform: none !important;
-      width: 100%;
-      box-sizing: border-box;
-    }
-
-    .cal-header {
-      margin-bottom: 8px;
-    }
-
-    .cal-header button {
-      font-size: 14px;
-    }
-
-    .cal-months {
-      flex-direction: column;
-    }
-
-    .cal-month {
-      min-width: auto;
-    }
-
-    .cal-month-title {
-      font-size: 11px;
-      margin-bottom: 6px;
+      font-size: 12px;
     }
 
     .cal-day-header {
-      font-size: 7px;
-      padding: 2px 0;
+      font-size: 9px;
+      padding: 4px 0 6px;
     }
 
-    .cal-grid {
-      gap: 1px;
+    .cal-month-title {
+      font-size: 12px;
     }
 
-    .guests-input {
-      font-size: 14px;
-      padding: 10px;
-    }
-
-    .row {
-      flex-direction: column;
-      align-items: flex-start;
-      margin-bottom: 12px;
-    }
-
-    .counter {
-      align-self: flex-end;
-    }
-
-    .search {
-      font-size: 14px;
-      padding: 11px 18px;
+    .ec-guests-dropdown {
+      left: 50%;
+      transform: translateX(-50%);
+      min-width: 280px;
     }
   }
 </style>
 
 <script>
-  const state = {
-    adults: 1,
-    children: 0,
-    infants: 0,
-    pets: 0
-  };
+  /* ─── State ────────────────────────────────────────────── */
+  const state = { adults: 1, children: 0, infants: 0, pets: 0 };
 
+  /* ─── Guests ────────────────────────────────────────────── */
   function toggleGuests() {
-    const d = document.getElementById('guestsDropdown');
-    d.style.display = d.style.display === 'block' ? 'none' : 'block';
-    updateText();
+    const dropdown = document.getElementById('guestsDropdown');
+    const toggle = document.getElementById('guestsToggle');
+    const isOpen = dropdown.classList.contains('open');
+
+    if (isOpen) {
+      dropdown.classList.remove('open');
+      toggle.classList.remove('open');
+      toggle.setAttribute('aria-expanded', 'false');
+    } else {
+      dropdown.classList.add('open');
+      toggle.classList.add('open');
+      toggle.setAttribute('aria-expanded', 'true');
+      // Close when clicking outside
+      setTimeout(() => {
+        document.addEventListener('click', closeGuestsOutside, { once: true });
+      }, 0);
+    }
+    updateGuestsText();
+  }
+
+  function closeGuestsOutside(e) {
+    const wrapper = document.querySelector('.ec-guests');
+    if (!wrapper.contains(e.target)) {
+      document.getElementById('guestsDropdown').classList.remove('open');
+      document.getElementById('guestsToggle').classList.remove('open');
+      document.getElementById('guestsToggle').setAttribute('aria-expanded', 'false');
+    }
   }
 
   function changeGuests(type, delta) {
     if (type === 'adults' && state.adults + delta < 1) return;
     if (state[type] + delta < 0) return;
-
     state[type] += delta;
     document.getElementById(type).innerText = state[type];
-    updateText();
+
+    // Dim/disable the minus button when at minimum
+    updateGuestsText();
   }
 
-  function updateText() {
+  function updateGuestsText() {
     let t = `${state.adults} adulto${state.adults > 1 ? 's' : ''}`;
     if (state.children) t += `, ${state.children} niño${state.children > 1 ? 's' : ''}`;
     if (state.infants) t += `, ${state.infants} bebé${state.infants > 1 ? 's' : ''}`;
@@ -589,9 +846,9 @@
     document.getElementById('guestsText').innerText = t;
   }
 
+  /* ─── Calendar ──────────────────────────────────────────── */
   let calStartDate = null;
   let calEndDate = null;
-  let calHoverDate = null;
   let calViewYear = new Date().getFullYear();
   let calViewMonth = new Date().getMonth();
 
@@ -601,49 +858,55 @@
     dropdown.classList.add('active');
     renderCalendar();
     setTimeout(() => {
-      document.addEventListener('click', closeCalendarOnOutsideClick);
+      document.addEventListener('click', closeCalendarOutside);
     }, 0);
   }
 
-  function closeCalendarOnOutsideClick(e) {
+  function closeCalendarOutside(e) {
     const cal = document.getElementById('calendarDropdown');
-    const range = document.querySelector('.date-range');
+    const range = document.querySelector('.ec-date-range');
     if (!cal.contains(e.target) && !range.contains(e.target)) {
       cal.classList.remove('active');
-      document.removeEventListener('click', closeCalendarOnOutsideClick);
+      document.removeEventListener('click', closeCalendarOutside);
     }
   }
 
   function renderCalendar() {
     const dropdown = document.getElementById('calendarDropdown');
+    const isMobile = window.innerWidth <= 560;
+    const monthCount = isMobile ? 1 : 2;
     const months = [];
 
-    for (let i = 0; i < 2; i++) {
+    for (let i = 0; i < monthCount; i++) {
       const y = calViewYear + Math.floor((calViewMonth + i) / 12);
       const m = (calViewMonth + i) % 12;
       months.push(renderMonth(y, m));
     }
 
     dropdown.innerHTML = `
-    <div class="cal-header">
-      <button onclick="changeMonth(-1)">←</button>
-      <div class="cal-months">${months.join('')}</div>
-      <button onclick="changeMonth(1)">→</button>
-    </div>
-  `;
+      <div class="cal-header">
+        <div class="cal-nav-btn" onclick="event.stopPropagation(); changeMonth(-1)" role="button" tabindex="0" aria-label="Mes anterior">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
+        </div>
+        <div class="cal-months">${months.join('')}</div>
+        <div class="cal-nav-btn" onclick="event.stopPropagation(); changeMonth(1)" role="button" tabindex="0" aria-label="Mes siguiente">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+        </div>
+      </div>
+    `;
   }
 
   function renderMonth(year, month) {
-    const names = ['enero', 'febrero', 'marzo', 'abril', 'mayo', 'junio', 'julio', 'agosto', 'septiembre', 'octubre', 'noviembre', 'diciembre'];
+    const names = ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'];
     let firstDay = new Date(year, month, 1).getDay();
     firstDay = firstDay === 0 ? 6 : firstDay - 1;
     const daysInMonth = new Date(year, month + 1, 0).getDate();
     const today = new Date();
     today.setHours(0, 0, 0, 0);
 
-    let html = `<div class="cal-month"><div class="cal-month-title">${names[month]} de ${year}</div><div class="cal-grid">`;
+    let html = `<div class="cal-month"><div class="cal-month-title">${names[month]} ${year}</div><div class="cal-grid">`;
 
-    const dayNames = ['lun', 'mar', 'mié', 'jue', 'vie', 'sáb', 'dom'];
+    const dayNames = ['Lu', 'Ma', 'Mi', 'Ju', 'Vi', 'Sa', 'Do'];
     dayNames.forEach(d => html += `<div class="cal-day-header">${d}</div>`);
 
     for (let i = 0; i < firstDay; i++) html += '<div class="cal-day empty"></div>';
@@ -654,13 +917,12 @@
       const dateStr = `${year}-${String(month + 1).padStart(2, '0')}-${String(day).padStart(2, '0')}`;
 
       let classes = 'cal-day';
-      if (date < today) classes += ' disabled';
-      else {
+      if (date < today) {
+        classes += ' disabled';
+      } else {
         if (calStartDate && calEndDate) {
-          const start = new Date(calStartDate);
-          const end = new Date(calEndDate);
-          start.setHours(0, 0, 0, 0);
-          end.setHours(0, 0, 0, 0);
+          const start = new Date(calStartDate); start.setHours(0, 0, 0, 0);
+          const end = new Date(calEndDate); end.setHours(0, 0, 0, 0);
           if (dateStr === calStartDate) classes += ' selected range-start';
           else if (dateStr === calEndDate) classes += ' selected range-end';
           else if (date > start && date < end) classes += ' in-range';
@@ -669,8 +931,8 @@
         }
       }
 
-      const click = date < today ? '' : `onclick="event.stopPropagation(); selectDate('${dateStr}')"`;
-      html += `<div class="${classes}" ${click}>${day}</div>`;
+      const clickAttr = date < today ? '' : `onclick="event.stopPropagation(); selectDate('${dateStr}')"`;
+      html += `<div class="${classes}" ${clickAttr} ${date < today ? '' : `role="button" tabindex="0" aria-label="${day} de ${names[month]}"`}>${day}</div>`;
     }
 
     html += '</div></div>';
@@ -679,13 +941,8 @@
 
   function changeMonth(delta) {
     calViewMonth += delta;
-    if (calViewMonth > 11) {
-      calViewMonth = 0;
-      calViewYear++;
-    } else if (calViewMonth < 0) {
-      calViewMonth = 11;
-      calViewYear--;
-    }
+    if (calViewMonth > 11) { calViewMonth = 0; calViewYear++; }
+    else if (calViewMonth < 0) { calViewMonth = 11; calViewYear--; }
     renderCalendar();
   }
 
@@ -714,7 +971,7 @@
 
     if (shouldClose) {
       document.getElementById('calendarDropdown').classList.remove('active');
-      document.removeEventListener('click', closeCalendarOnOutsideClick);
+      document.removeEventListener('click', closeCalendarOutside);
     }
   }
 
@@ -733,7 +990,7 @@
       checkinEl.innerText = formatDateShort(calStartDate);
       checkinEl.classList.remove('empty');
     } else {
-      checkinEl.innerText = 'dd/mm/aaaa';
+      checkinEl.innerText = 'Añade fecha';
       checkinEl.classList.add('empty');
     }
 
@@ -741,15 +998,11 @@
       checkoutEl.innerText = formatDateShort(calEndDate);
       checkoutEl.classList.remove('empty');
     } else {
-      checkoutEl.innerText = 'dd/mm/aaaa';
+      checkoutEl.innerText = 'Añade fecha';
       checkoutEl.classList.add('empty');
     }
 
-    if (calStartDate && calEndDate) {
-      clearBtn.classList.add('visible');
-    } else {
-      clearBtn.classList.remove('visible');
-    }
+    clearBtn.classList.toggle('visible', !!(calStartDate && calEndDate));
   }
 
   function clearDates(e) {
@@ -760,24 +1013,20 @@
     renderCalendar();
   }
 
+  /* ─── Search ────────────────────────────────────────────── */
   function search() {
     const params = {
       adults: parseInt(state.adults) || 1,
       children: parseInt(state.children) || 0,
       infants: parseInt(state.infants) || 0,
       pets: parseInt(state.pets) || 0,
-      sort: "price"
+      sort: 'price'
     };
+    if (calStartDate) params.arrival = calStartDate.replace(/-/g, '');
+    if (calEndDate) params.departure = calEndDate.replace(/-/g, '');
 
-    if (calStartDate) {
-      params.arrival = calStartDate.replace(/-/g, '');
-    }
-    if (calEndDate) {
-      params.departure = calEndDate.replace(/-/g, '');
-    }
-
-    const url = new URL("https://alvaro--garcia.lodgify.com/es/propiedades/");
+    const url = new URL('https://alvaro--garcia.lodgify.com/es/propiedades/');
     url.search = new URLSearchParams(params).toString();
-    window.open(url, "_blank");
+    window.open(url, '_blank');
   }
 </script>
