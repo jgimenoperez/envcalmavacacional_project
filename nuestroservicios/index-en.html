@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cards with Same Height</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap');
+
+        /* body {
+            margin: 0;
+            padding: 40px 20px;
+            background: #FFFFFF;
+            font-family: 'DM Sans', sans-serif;
+            color: #454F5E;
+        } */
+
+        /* Contenedor principal */
+        .tarjetas-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 24px;
+            justify-content: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* Cada tarjeta ocupará 1/3 del espacio */
+        .tarjeta-wrapper {
+            flex: 1 1 calc(33.333% - 16px);
+            min-width: 280px;
+            display: flex;
+        }
+
+        /* Esto hace que todas las tarjetas tengan el mismo alto */
+        .tarjetas-grid-card {
+            background: #EDF6EE;
+            border: 2px solid #1B9C85;
+            border-radius: 8px;
+            padding: 32px 24px;
+            color: #0F172A;
+            font-family: 'DM Sans', sans-serif;
+            font-size: 16px;
+            line-height: 1.6;
+            text-align: center;
+
+            /* Esto es lo importante: hace que la tarjeta ocupe todo el alto disponible */
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            width: 100%;
+        }
+
+        .tarjetas-grid-card h3 {
+            margin: 0 0 16px;
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: #0F172A;
+        }
+
+        .tarjetas-grid-card p {
+            margin: 0 0 12px;
+            color: #454F5E;
+        }
+
+        .tarjetas-grid-card p:last-child {
+            margin: 0;
+        }
+
+        .tarjetas-grid-card img {
+            display: block;
+        }
+
+        /* Tarjeta 1 - Seguridad */
+        .tarjeta-1 {
+            background: #EDF6EE;
+            border-color: #1B9C85;
+            color: #0F172A;
+        }
+
+        .tarjeta-1 .highlight-box {
+            background: #1B9C85;
+            padding: 12px 16px;
+            border-radius: 6px;
+            font-weight: 600;
+            color: #FFFFFF;
+            margin-top: 15px;
+        }
+
+        /* Tarjeta 2 - Precio */
+        .tarjeta-2 {
+            background: #EDF6EE;
+            border-color: #1B9C85;
+            color: #0F172A;
+        }
+
+        .tarjeta-2 .highlight-box {
+            background: #1B9C85;
+            padding: 12px 16px;
+            border-radius: 6px;
+            font-weight: 600;
+            color: #FFFFFF;
+            margin-top: auto;
+        }
+
+        /* Tarjeta 3 - Trato */
+        .tarjeta-3 {
+            background: #EDF6EE;
+            border-color: #1B9C85;
+            color: #0F172A;
+        }
+
+        .tarjeta-3 .highlight-box {
+            background: #1B9C85;
+            padding: 12px 16px;
+            border-radius: 6px;
+            font-weight: 600;
+            color: #FFFFFF;
+            margin-top: auto;
+        }
+
+        /* Responsive */
+        @media (max-width: 921px) {
+            .tarjeta-wrapper {
+                flex: 1 1 calc(50% - 12px);
+            }
+        }
+
+        @media (max-width: 544px) {
+            .tarjeta-wrapper {
+                flex: 1 1 100%;
+                min-width: 100%;
+            }
+
+            .tarjetas-grid-card {
+                padding: 24px 16px;
+            }
+
+            body {
+                padding: 20px 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div style="
+        text-align: center;
+        margin: 0 auto 60px;
+        max-width: 1200px;
+        padding: 0 20px;
+    ">
+        <h2 style="
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #0F172A;
+            margin: 0 0 20px;
+            font-family: 'DM Sans', sans-serif;
+        ">
+            Your vacation place in Puerto de Sagunto
+        </h2>
+        <p style="
+            font-size: 1.125rem;
+            color: #454F5E;
+            margin: 0;
+            line-height: 1.8;
+            font-family: 'DM Sans', sans-serif;
+        ">
+            Spaces to enjoy a privileged environment by the sea
+        </p>
+    </div>
+
+    <h2 style="
+        text-align: center;
+        font-family: 'Roboto Slab', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        color: rgb(83, 105, 65);
+        font-size: 40px;
+        line-height: 52px;
+        margin: 40px 0 40px;
+    ">
+        Our services
+    </h2>
+
+    <div class="tarjetas-container">
+        <!-- Card 1 -->
+        <div class="tarjeta-wrapper">
+            <div class="tarjetas-grid-card tarjeta-1">
+                <img src="https://encalmavacacional.com/wp-content/uploads/2026/03/shield-lock.svg" alt="Security" style="width: 54px; height: 54px; margin: 0 auto 10px;">
+                <h3>Is it safe to pay here?</h3>
+                <p><strong>Absolutely.</strong></p>
+                <p>
+                    We only work with <strong>Stripe</strong>, the most reliable payment platform on the market.
+                    
+                </p>
+                <p>
+                    Your sensitive data is sent directly to their ultra‑secure servers
+                    under strict <strong>PCI‑DSS</strong> compliance standards.
+                </p>
+                <div style="margin-top: 20px; margin-bottom: 32px; padding-top: 20px; border-top: 1px solid rgba(27, 156, 133, 0.2); display: flex; align-items: center; justify-content: center; gap: 12px; flex-wrap: wrap;">
+                    <span style="font-size: 12px; color: #454F5E; font-weight: 500;">Accepted providers:</span>
+                    <img src="https://encalmavacacional.com/wp-content/uploads/2026/03/Stripe-wordmark-Blurple.svg" alt="Stripe" style="height: 20px; object-fit: contain;">
+                </div>
+                <div class="highlight-box" style="margin-top: auto;">
+                    Your security is our priority.
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="tarjeta-wrapper">
+            <div class="tarjetas-grid-card tarjeta-2">
+                <img src="https://encalmavacacional.com/wp-content/uploads/2026/03/coin-euro.svg" alt="Price" style="width: 54px; height: 54px; margin: 0 auto 10px;">
+                <h3>Best price guaranteed</h3>
+                <p>
+                    We guarantee you the <strong>best price</strong>.
+                </p>
+                <p>
+                    Benefit from <strong>lower rates and greater cancellation flexibility</strong>.
+                </p>
+                <p>
+                    Also, enjoy exclusive advantages such as
+                    <strong>early check‑in</strong> and <strong>late check‑out</strong>, among other benefits.
+                </p>
+                <div class="highlight-box" style="margin-top: auto;">
+                    Booking direct is always better.
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="tarjeta-wrapper">
+            <div class="tarjetas-grid-card tarjeta-3">
+                <img src="https://encalmavacacional.com/wp-content/uploads/2026/03/heart2.svg" alt="Personalized treatment" style="width: 54px; height: 54px; margin: 0 auto 10px;">
+                <h3>Personalized treatment</h3>
+                <p>
+                    Enjoy close and completely personalized attention.
+                </p>
+                <p>
+                    We are available <strong>24 hours</strong> to help you at any time.
+                </p>
+                <p>
+                    You will have access to <strong>2 direct contact phone numbers</strong> to resolve questions or emergencies without waiting.
+                </p>
+                <div class="highlight-box" style="margin-top: auto;">
+                    We are always here for you.
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 4 - Merits -->
+        <div class="tarjeta-wrapper">
+            <div class="tarjetas-grid-card tarjeta-3">
+                <img src="https://encalmavacacional.com/wp-content/uploads/2026/03/award2.svg" alt="Merits and recognitions" style="width: 54px; height: 54px; margin: 0 auto 10px;">
+                <h3>Merits and recognitions</h3>
+                <p>
+                    We are <strong>Superhosts on Airbnb</strong>, a distinction only awarded to accommodations with exceptional service.
+                </p>
+                <p>
+                    <a href="https://encalmavacacional.com/apartamento-vacacional-atico/" style="color: #1B9C85; text-decoration: none; font-weight: 600;"><strong>The attic</strong></a> is among the <strong>5%</strong> and <a href="https://encalmavacacional.com/apartamento-vacacional-ciudamar/" style="color: #1B9C85; text-decoration: none; font-weight: 600;"><strong>The beach</strong></a> among the <strong>10% of travelers' favorite apartments</strong>.
+                </p>
+                <p>
+                    We are part of the category <strong>"Recommended by travelers"</strong> on Airbnb thanks to consistent ratings.
+                </p>
+                <p>
+                    Booking.com has awarded us the <strong>Traveller Review Awards 2026</strong>, a recognition based on real guest satisfaction.
+                </p>
+                <div class="highlight-box" style="margin-top: auto;">
+                    Your peace of mind is backed by thousands of travelers.
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
