@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sección Méritos y Reconocimientos - EnCalma Vacacional</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Roboto+Slab:wght@400;500;600;700&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'DM Sans', sans-serif;
+            background: #FFFFFF;
+        }
+
+        /* ========== SECCIÓN MÉRITOS ========== */
+        .meritos-section {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 60px 20px;
+        }
+
+        .meritos-header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .meritos-header h2 {
+            font-family: 'Roboto Slab', sans-serif;
+            font-size: 2.5rem;
+            font-weight: 400;
+            color: #536941;
+            margin-bottom: 16px;
+        }
+
+        .meritos-header p {
+            font-size: 1.125rem;
+            color: #454F5E;
+            max-width: 600px;
+            margin: 0 auto;
+            line-height: 1.8;
+        }
+
+        /* ========== BADGE PRINCIPAL BOOKING ========== */
+        .booking-award-banner {
+            background: linear-gradient(135deg, #003580 0%, #0047AB 50%, #0060E0 100%);
+            border-radius: 16px;
+            padding: 40px;
+            display: flex;
+            align-items: center;
+            gap: 40px;
+            margin-bottom: 50px;
+            box-shadow: 0 8px 32px rgba(0, 53, 128, 0.15);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .booking-award-banner::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -10%;
+            width: 300px;
+            height: 300px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 50%;
+        }
+
+        .booking-award-banner::after {
+            content: '';
+            position: absolute;
+            bottom: -30%;
+            left: 20%;
+            width: 200px;
+            height: 200px;
+            background: rgba(255, 255, 255, 0.03);
+            border-radius: 50%;
+        }
+
+        .booking-badge-img {
+            flex-shrink: 0;
+            width: 180px;
+            height: auto;
+            position: relative;
+            z-index: 1;
+        }
+
+        .booking-award-content {
+            position: relative;
+            z-index: 1;
+            color: #FFFFFF;
+        }
+
+        .booking-award-content h3 {
+            font-family: 'Roboto Slab', sans-serif;
+            font-size: 1.75rem;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+
+        .booking-award-content p {
+            font-size: 1rem;
+            line-height: 1.7;
+            opacity: 0.95;
+            max-width: 500px;
+        }
+
+        .booking-award-content .award-year {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.2);
+            padding: 6px 16px;
+            border-radius: 20px;
+            font-weight: 600;
+            font-size: 0.875rem;
+            margin-top: 16px;
+            backdrop-filter: blur(4px);
+        }
+
+        /* ========== GRID DE MÉRITOS ========== */
+        .meritos-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 24px;
+            margin-bottom: 50px;
+        }
+
+        .merito-card {
+            background: #EDF6EE;
+            border: 2px solid #1B9C85;
+            border-radius: 12px;
+            padding: 32px 24px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .merito-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 24px rgba(27, 156, 133, 0.15);
+        }
+
+        .merito-icon {
+            width: 54px;
+            height: 54px;
+            margin: 0 auto 16px;
+        }
+
+        .merito-card h4 {
+            font-family: 'Roboto Slab', sans-serif;
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: #0F172A;
+            margin-bottom: 12px;
+        }
+
+        .merito-card p {
+            font-size: 0.95rem;
+            color: #454F5E;
+            line-height: 1.7;
+        }
+
+        .merito-card p strong {
+            color: #0F172A;
+        }
+
+        .merito-card .highlight-box {
+            background: #1B9C85;
+            padding: 10px 16px;
+            border-radius: 6px;
+            font-weight: 600;
+            color: #FFFFFF;
+            margin-top: 20px;
+            font-size: 0.875rem;
+        }
+
+        /* ========== BARRA DE CONFIANZA ========== */
+        .trust-bar {
+            background: #F8FAF9;
+            border: 1px solid #E0EDE3;
+            border-radius: 12px;
+            padding: 32px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 48px;
+            flex-wrap: wrap;
+        }
+
+        .trust-item {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .trust-icon {
+            width: 32px;
+            height: 32px;
+            flex-shrink: 0;
+        }
+
+        .trust-text {
+            font-size: 0.9rem;
+            color: #454F5E;
+            font-weight: 500;
+        }
+
+        .trust-text strong {
+            color: #0F172A;
+            display: block;
+        }
+
+        /* ========== RESPONSIVE ========== */
+        @media (max-width: 768px) {
+            .booking-award-banner {
+                flex-direction: column;
+                text-align: center;
+                padding: 32px 24px;
+                gap: 24px;
+            }
+
+            .booking-badge-img {
+                width: 140px;
+            }
+
+            .booking-award-content p {
+                margin: 0 auto;
+            }
+
+            .meritos-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .meritos-header h2 {
+                font-size: 2rem;
+            }
+
+            .trust-bar {
+                flex-direction: column;
+                gap: 24px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .meritos-section {
+                padding: 40px 16px;
+            }
+
+            .booking-award-banner {
+                padding: 24px 16px;
+            }
+
+            .booking-award-content h3 {
+                font-size: 1.4rem;
+            }
+
+            .merito-card {
+                padding: 24px 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ========== SECCIÓN MÉRITOS Y RECONOCIMIENTOS ========== -->
+    <section class="meritos-section">
+
+        <!-- Cabecera -->
+        <div class="meritos-header">
+            <h2>Reconocimientos y Confianza</h2>
+            <p>Miles de viajeros ya han disfrutado de sus vacaciones con nosotros. Estos son los avales que respaldan nuestra dedicación.</p>
+        </div>
+
+        <!-- Banner Principal Booking.com Award -->
+        <div class="booking-award-banner">
+            <img src="https://encalmavacacional.com/wp-content/uploads/2026/03/Digital-Award_RA-2026.png" alt="Booking.com Traveller Review Awards 2026" class="booking-badge-img">
+            <div class="booking-award-content">
+                <h3>Booking.com Traveller Review Awards 2026</h3>
+                <p>Un reconocimiento basado en la satisfacción real de los huéspedes. Booking.com nos ha otorgado este premio por las valoraciones excepcionales recibidas durante el último año.</p>
+                <span class="award-year">Edición 2026</span>
+            </div>
+        </div>
+
+        <!-- Grid de Méritos -->
+        <div class="meritos-grid">
+
+            <!-- Superhost Airbnb -->
+            <div class="merito-card">
+                <img src="https://encalmavacacional.com/wp-content/uploads/2026/03/award2.svg" alt="Superhost Airbnb" class="merito-icon">
+                <h4>Superanfitriones en Airbnb</h4>
+                <p>Somos <strong>Superhosts</strong>, una distinción que solo obtienen los alojamientos con un servicio excepcional y valoraciones constantes de 5 estrellas.</p>
+                <div class="highlight-box">Solo el 4% de los anfitriones lo consigue</div>
+            </div>
+
+            <!-- Top Favoritos -->
+            <div class="merito-card">
+                <img src="https://encalmavacacional.com/wp-content/uploads/2026/03/heart2.svg" alt="Apartamentos favoritos" class="merito-icon">
+                <h4>Entre los favoritos de los viajeros</h4>
+                <p><strong>El Ático</strong> se encuentra entre el <strong>5%</strong> y <strong>La Playa</strong> entre el <strong>10% de los apartamentos favoritos</strong> elegidos por los viajeros en Airbnb.</p>
+                <div class="highlight-box">Recomendado por los viajeros</div>
+            </div>
+
+            <!-- Seguridad en pagos -->
+            <div class="merito-card">
+                <img src="https://encalmavacacional.com/wp-content/uploads/2026/03/shield-lock.svg" alt="Pagos seguros" class="merito-icon">
+                <h4>Pagos 100% seguros</h4>
+                <p>Trabajamos con <strong>Stripe, PayPal y Authorize.net</strong>. Tus datos se envían directamente a servidores ultra-seguros bajo estándares <strong>PCI-DSS</strong>.</p>
+                <div class="highlight-box">Tus datos nunca pasan por nuestro servidor</div>
+            </div>
+
+            <!-- Atención 24h -->
+            <div class="merito-card">
+                <img src="https://encalmavacacional.com/wp-content/uploads/2026/03/heart2.svg" alt="Atención personalizada" class="merito-icon">
+                <h4>Atención directa 24 horas</h4>
+                <p>Gloria y Álvaro están disponibles <strong>24 horas</strong>. Tendrás acceso a <strong>2 teléfonos de contacto directo</strong> para resolver cualquier duda o emergencia.</p>
+                <div class="highlight-box">Siempre estamos aquí para ti</div>
+            </div>
+
+        </div>
+
+        <!-- Barra de Confianza -->
+        <div class="trust-bar">
+            <div class="trust-item">
+                <img src="https://encalmavacacional.com/wp-content/uploads/2026/03/shield-lock.svg" alt="Seguridad" class="trust-icon">
+                <div class="trust-text">
+                    <strong>Pago cifrado</strong>
+                    Estándares PCI-DSS
+                </div>
+            </div>
+            <div class="trust-item">
+                <img src="https://encalmavacacional.com/wp-content/uploads/2026/03/award2.svg" alt="Premios" class="trust-icon">
+                <div class="trust-text">
+                    <strong>Premios 2026</strong>
+                    Booking.com & Airbnb
+                </div>
+            </div>
+            <div class="trust-item">
+                <img src="https://encalmavacacional.com/wp-content/uploads/2026/03/heart2.svg" alt="Valoraciones" class="trust-icon">
+                <div class="trust-text">
+                    <strong>+500 valoraciones</strong>
+                    Huéspedes satisfechos
+                </div>
+            </div>
+            <div class="trust-item">
+                <img src="https://encalmavacacional.com/wp-content/uploads/2026/03/coin-euro.svg" alt="Mejor precio" class="trust-icon">
+                <div class="trust-text">
+                    <strong>Mejor precio</strong>
+                    Reservar directo es mejor
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+</body>
+</html>

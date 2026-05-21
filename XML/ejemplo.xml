@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<peticion>
+  <solicitud>
+    <codigoEstablecimiento>COD123456</codigoEstablecimiento>
+
+    <!-- COMUNICACION 1 -->
+    <comunicacion>
+      <contrato>
+        <referencia>BA2CA9B057</referencia>
+        <fechaContrato>2026-03-30</fechaContrato>
+        <fechaEntrada>2026-03-30T00:00:00</fechaEntrada>
+        <fechaSalida>2026-04-01T00:00:00</fechaSalida>
+        <numPersonas>3</numPersonas>
+
+        <pago>
+          <tipoPago>EF</tipoPago>
+        </pago>
+      </contrato>
+
+      <persona>
+        <rol>VI</rol>
+        <nombre>Susan</nombre>
+        <apellido1>Montecalvo</apellido1>
+        <apellido2></apellido2>
+        <tipoDocumento>NIF</tipoDocumento>
+        <numeroDocumento>X7746632W</numeroDocumento>
+
+        <direccion>
+          <direccion>Bercial (El)</direccion>
+          <codigoMunicipio>28065</codigoMunicipio>
+          <codigoPostal>28907</codigoPostal>
+          <pais>ESP</pais>
+        </direccion>
+
+        <correo>montecalvo_susan@yahoo.com</correo>
+      </persona>
+
+      <persona>
+        <rol>VI</rol>
+        <nombre>John Clyde</nombre>
+        <apellido1>Montaña</apellido1>
+        <apellido2></apellido2>
+        <tipoDocumento>NIF</tipoDocumento>
+        <numeroDocumento>Y4607557G</numeroDocumento>
+
+        <direccion>
+          <direccion>Bercial (El)</direccion>
+          <codigoMunicipio>28065</codigoMunicipio>
+          <codigoPostal>28907</codigoPostal>
+          <pais>ESP</pais>
+        </direccion>
+
+        <correo>montecalvo_susan@yahoo.com</correo>
+      </persona>
+
+      <persona>
+        <rol>VI</rol>
+        <nombre>Diego</nombre>
+        <apellido1>Barrientos</apellido1>
+        <apellido2>Moro</apellido2>
+        <tipoDocumento>NIF</tipoDocumento>
+        <numeroDocumento>50183327H</numeroDocumento>
+
+        <direccion>
+          <direccion>Bercial (El)</direccion>
+          <codigoMunicipio>28065</codigoMunicipio>
+          <codigoPostal>28907</codigoPostal>
+          <pais>ESP</pais>
+        </direccion>
+
+        <correo>dbarri.685351@guest.booking.com</correo>
+      </persona>
+
+    </comunicacion>
+
+    <!-- COMUNICACION 2 -->
+    <comunicacion>
+      <contrato>
+        <referencia>F892D6377A</referencia>
+        <fechaContrato>2026-03-30</fechaContrato>
+        <fechaEntrada>2026-03-30T00:00:00</fechaEntrada>
+        <fechaSalida>2026-04-01T00:00:00</fechaSalida>
+        <numPersonas>2</numPersonas>
+
+        <pago>
+          <tipoPago>EF</tipoPago>
+        </pago>
+      </contrato>
+
+      <persona>
+        <rol>VI</rol>
+        <nombre>Maria Ximena</nombre>
+        <apellido1>Cardenas</apellido1>
+        <apellido2>Alvarez</apellido2>
+        <tipoDocumento>PAS</tipoDocumento>
+        <numeroDocumento>AW889497</numeroDocumento>
+
+        <direccion>
+          <direccion>Carrboro, NC</direccion>
+          <nombreMunicipio>Carrboro</nombreMunicipio>
+          <codigoPostal>27510</codigoPostal>
+          <pais>USA</pais>
+        </direccion>
+
+        <correo>mxcardenas@gmail.com</correo>
+      </persona>
+
+      <persona>
+        <rol>VI</rol>
+        <nombre>Jimena Catalina</nombre>
+        <apellido1>Jaimes</apellido1>
+        <apellido2>Iregui</apellido2>
+        <tipoDocumento>PAS</tipoDocumento>
+        <numeroDocumento>BG644734</numeroDocumento>
+
+        <direccion>
+          <direccion>Bogotá</direccion>
+          <nombreMunicipio>Bogotá</nombreMunicipio>
+          <codigoPostal>1010011</codigoPostal>
+          <pais>COL</pais>
+        </direccion>
+
+        <correo>cjaimes26@hotmail.com</correo>
+      </persona>
+
+    </comunicacion>
+
+  </solicitud>
+</peticion>

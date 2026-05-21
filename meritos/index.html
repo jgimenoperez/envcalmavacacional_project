@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Méritos y Reconocimientos — EnCalma Vacacional</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Roboto+Slab:wght@400&display=swap');
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        /* ───── SECCIÓN COMPLETA ───── */
+        .meritos-section {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 60px 20px 80px;
+            font-family: 'DM Sans', sans-serif;
+            color: #0F172A;
+        }
+
+        /* ───── ENCABEZADO ───── */
+        .meritos-header {
+            text-align: center;
+            margin-bottom: 56px;
+        }
+
+        .meritos-header .meritos-label {
+            display: inline-block;
+            font-size: 13px;
+            font-weight: 700;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            color: #1B9C85;
+            background: #EDF6EE;
+            padding: 6px 16px;
+            border-radius: 999px;
+            margin-bottom: 20px;
+        }
+
+        .meritos-header h2 {
+            font-family: 'Roboto Slab', serif;
+            font-weight: 400;
+            font-size: 40px;
+            line-height: 1.3;
+            color: #536941;
+            margin-bottom: 16px;
+        }
+
+        .meritos-header .meritos-subtitle {
+            font-size: 1.125rem;
+            color: #454F5E;
+            max-width: 640px;
+            margin: 0 auto;
+            line-height: 1.8;
+        }
+
+        /* ───── BADGE DESTACADO ───── */
+        .meritos-featured {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 48px;
+        }
+
+        .meritos-featured-card {
+            background: #ffffff;
+            border: 1px solid #dce8e5;
+            border-radius: 16px;
+            box-shadow: 0 4px 24px rgba(27, 156, 133, 0.08);
+            padding: 40px 48px;
+            display: flex;
+            align-items: center;
+            gap: 32px;
+            max-width: 700px;
+            width: 100%;
+            transition: box-shadow 0.25s ease, transform 0.25s ease;
+        }
+
+        .meritos-featured-card:hover {
+            box-shadow: 0 8px 32px rgba(27, 156, 133, 0.14);
+            transform: translateY(-2px);
+        }
+
+        .meritos-featured-badge {
+            width: 120px;
+            height: 120px;
+            flex-shrink: 0;
+            border-radius: 12px;
+            object-fit: contain;
+            background: #003b95;
+            padding: 12px;
+        }
+
+        .meritos-featured-text h3 {
+            font-family: 'DM Sans', sans-serif;
+            font-weight: 700;
+            font-size: 1.35rem;
+            color: #0F172A;
+            margin-bottom: 8px;
+        }
+
+        .meritos-featured-text p {
+            font-size: 0.95rem;
+            color: #454F5E;
+            line-height: 1.7;
+            margin-bottom: 6px;
+        }
+
+        .meritos-featured-text .meritos-platform {
+            font-size: 13px;
+            font-weight: 600;
+            color: #1B9C85;
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+        }
+
+        /* ───── CUADRÍCULA DE MÉRITOS ───── */
+        .meritos-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 24px;
+            margin-bottom: 48px;
+        }
+
+        .merito-card {
+            background: #EDF6EE;
+            border: 2px solid #1B9C85;
+            border-radius: 8px;
+            padding: 28px 20px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 12px;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .merito-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(27, 156, 133, 0.12);
+        }
+
+        .merito-card .merito-icon {
+            width: 48px;
+            height: 48px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #1B9C85;
+            border-radius: 50%;
+            flex-shrink: 0;
+        }
+
+        .merito-card .merito-icon svg {
+            width: 24px;
+            height: 24px;
+            color: #ffffff;
+            stroke: #ffffff;
+        }
+
+        .merito-card h4 {
+            font-size: 1rem;
+            font-weight: 700;
+            color: #0F172A;
+            font-family: 'DM Sans', sans-serif;
+        }
+
+        .merito-card p {
+            font-size: 0.85rem;
+            color: #454F5E;
+            line-height: 1.5;
+        }
+
+        .merito-card .merito-platform-badge {
+            font-size: 11px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: #1B9C85;
+            background: #ffffff;
+            padding: 4px 12px;
+            border-radius: 999px;
+            border: 1px solid rgba(27, 156, 133, 0.3);
+        }
+
+        /* ───── BARRA DE CONFIANZA ───── */
+        .meritos-trust-bar {
+            background: linear-gradient(135deg, #1B9C85 0%, #168a75 100%);
+            border-radius: 12px;
+            padding: 32px 40px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .meritos-trust-bar .meritos-trust-icon {
+            width: 44px;
+            height: 44px;
+            background: rgba(255,255,255,0.18);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .meritos-trust-bar .meritos-trust-icon svg {
+            width: 22px;
+            height: 22px;
+            color: #ffffff;
+            stroke: #ffffff;
+        }
+
+        .meritos-trust-bar p {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #ffffff;
+            line-height: 1.6;
+            max-width: 600px;
+        }
+
+        .meritos-trust-bar .meritos-trust-sub {
+            font-size: 0.9rem;
+            font-weight: 400;
+            color: rgba(255,255,255,0.8);
+        }
+
+        /* ───── RESPONSIVE ───── */
+        @media (max-width: 900px) {
+            .meritos-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .meritos-featured-card {
+                flex-direction: column;
+                text-align: center;
+                padding: 32px 24px;
+            }
+
+            .meritos-featured-badge {
+                width: 100px;
+                height: 100px;
+            }
+
+            .meritos-header h2 {
+                font-size: 32px;
+            }
+        }
+
+        @media (max-width: 544px) {
+            .meritos-section {
+                padding: 40px 16px 60px;
+            }
+
+            .meritos-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .meritos-featured-card {
+                padding: 24px 20px;
+                gap: 20px;
+            }
+
+            .meritos-featured-badge {
+                width: 80px;
+                height: 80px;
+            }
+
+            .meritos-featured-text h3 {
+                font-size: 1.15rem;
+            }
+
+            .meritos-header h2 {
+                font-size: 26px;
+            }
+
+            .meritos-trust-bar {
+                padding: 24px 20px;
+            }
+
+            .meritos-trust-bar p {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<section class="meritos-section">
+
+    <!-- ── Encabezado ── -->
+    <div class="meritos-header">
+        <span class="meritos-label">Calidad reconocida</span>
+        <h2>Méritos y reconocimientos</h2>
+        <p class="meritos-subtitle">
+            Cada distinción es el reflejo de la confianza que miles de viajeros han depositado en nosotros
+        </p>
+    </div>
+
+    <!-- ── Badge destacado: Traveller Review Awards 2026 ── -->
+    <div class="meritos-featured">
+        <div class="meritos-featured-card">
+            <img
+                class="meritos-featured-badge"
+                src="https://encalmavacacional.com/wp-content/uploads/2026/05/Digital-Award_RA-2026.png"
+                alt="Traveller Review Awards 2026 — Booking.com"
+                loading="lazy"
+            >
+            <div class="meritos-featured-text">
+                <span class="meritos-platform">Booking.com</span>
+                <h3>Traveller Review Awards 2026</h3>
+                <p>
+                    Un reconocimiento basado en la satisfacción real de los huéspedes.
+                    Solo los alojamientos con puntuaciones excepcionales reciben este galardón.
+                </p>
+                <p>
+                    Avala nuestro compromiso diario con la excelencia y el cuidado de cada detalle.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- ── Cuadrícula de méritos ── -->
+    <div class="meritos-grid">
+
+        <!-- Superhost Airbnb -->
+        <div class="merito-card">
+            <div class="merito-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 2 2 7l10 5 10-5-10-5z"></path>
+                    <path d="M2 17l10 5 10-5"></path>
+                    <path d="M2 12l10 5 10-5"></path>
+                </svg>
+            </div>
+            <span class="merito-platform-badge">Airbnb</span>
+            <h4>Superanfitriones</h4>
+            <p>
+                Una distinción que solo obtienen los alojamientos con un servicio excepcional, valoraciones impecables y cero cancelaciones.
+            </p>
+        </div>
+
+        <!-- Top 5% El Ático -->
+        <div class="merito-card">
+            <div class="merito-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                </svg>
+            </div>
+            <span class="merito-platform-badge">Airbnb</span>
+            <h4>Top 5 % favoritos</h4>
+            <p>
+                <strong>El Ático</strong> está entre el 5 % de los apartamentos preferidos por los viajeros en todo el mundo.
+            </p>
+        </div>
+
+        <!-- Top 10% La Playa -->
+        <div class="merito-card">
+            <div class="merito-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                </svg>
+            </div>
+            <span class="merito-platform-badge">Airbnb</span>
+            <h4>Top 10 % favoritos</h4>
+            <p>
+                <strong>La Playa</strong> está entre el 10 % de los apartamentos más valorados por los huéspedes.
+            </p>
+        </div>
+
+        <!-- Recomendado por viajeros -->
+        <div class="merito-card">
+            <div class="merito-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3H14z"></path>
+                    <path d="M7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"></path>
+                </svg>
+            </div>
+            <span class="merito-platform-badge">Airbnb</span>
+            <h4>Recomendado por viajeros</h4>
+            <p>
+                Formamos parte de la categoría <strong>"Recomendado por los viajeros"</strong> gracias a las valoraciones constantes de nuestros huéspedes.
+            </p>
+        </div>
+
+    </div>
+
+    <!-- ── Barra de confianza ── -->
+    <div class="meritos-trust-bar">
+        <div class="meritos-trust-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                <path d="M9 12l2 2 4-4"></path>
+            </svg>
+        </div>
+        <p>Tu tranquilidad está respaldada por miles de viajeros</p>
+        <p class="meritos-trust-sub">
+            Más de 100 reseñas verificadas en Airbnb y Booking.com avalan nuestra dedicación
+        </p>
+    </div>
+
+</section>
+
+</body>
+</html>
