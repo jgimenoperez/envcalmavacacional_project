@@ -1,0 +1,794 @@
+<div class="ec-box">
+  <div class="ec-form">
+
+    <div class="ec-date-wrapper">
+      <div class="ec-date-range" onclick="toggleCalendar()">
+
+        <div class="ec-date-field">
+          <span class="ec-field-icon">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+              <line x1="16" y1="2" x2="16" y2="6"></line>
+              <line x1="8" y1="2" x2="8" y2="6"></line>
+              <line x1="3" y1="10" x2="21" y2="10"></line>
+            </svg>
+          </span>
+          <div class="ec-field-text">
+            <span class="ec-field-label">Check-in</span>
+            <span id="checkinText" class="ec-field-value empty">Add date</span>
+          </div>
+        </div>
+
+        <div class="ec-divider"></div>
+
+        <div class="ec-date-field">
+          <span class="ec-field-icon">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+              <line x1="16" y1="2" x2="16" y2="6"></line>
+              <line x1="8" y1="2" x2="8" y2="6"></line>
+              <line x1="3" y1="10" x2="21" y2="10"></line>
+            </svg>
+          </span>
+          <div class="ec-field-text">
+            <span class="ec-field-label">Check-out</span>
+            <span id="checkoutText" class="ec-field-value empty">Add date</span>
+          </div>
+        </div>
+
+        <div class="ec-clear" id="clearDates" onclick="clearDates(event)" role="button" tabindex="0" title="Clear dates"
+          aria-label="Clear selected dates">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
+            stroke-linecap="round" stroke-linejoin="round">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </div>
+
+      </div>
+      <div class="ec-calendar-dropdown" id="calendarDropdown"></div>
+    </div>
+
+    <div class="ec-guests">
+      <div class="ec-guests-input" onclick="toggleGuests()" role="button" aria-haspopup="true" aria-expanded="false"
+        id="guestsToggle">
+        <span class="ec-field-icon">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+            <circle cx="9" cy="7" r="4"></circle>
+            <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+            <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+          </svg>
+        </span>
+        <div class="ec-field-text">
+          <span class="ec-field-label">Guests</span>
+          <span id="guestsText" class="ec-field-value">1 adult</span>
+        </div>
+        <span class="ec-chevron">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+            stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="6 9 12 15 18 9"></polyline>
+          </svg>
+        </span>
+      </div>
+
+      <div class="ec-guests-dropdown" id="guestsDropdown" role="dialog" aria-label="Select guests">
+
+        <div class="ec-guest-row">
+          <div class="ec-guest-info">
+            <span class="ec-guest-name">Adults</span>
+            <span class="ec-guest-desc">13 years or older</span>
+          </div>
+          <div class="ec-counter">
+            <div class="ec-counter-btn" onclick="changeGuests('adults', -1)" role="button" tabindex="0" aria-label="Decrease adults">−</div>
+            <span id="adults" class="ec-counter-val">1</span>
+            <div class="ec-counter-btn" onclick="changeGuests('adults', 1)" role="button" tabindex="0" aria-label="Increase adults">+</div>
+          </div>
+        </div>
+
+        <div class="ec-guest-row">
+          <div class="ec-guest-info">
+            <span class="ec-guest-name">Children</span>
+            <span class="ec-guest-desc">2 – 12 years</span>
+          </div>
+          <div class="ec-counter">
+            <div class="ec-counter-btn" onclick="changeGuests('children', -1)" role="button" tabindex="0" aria-label="Decrease children">−</div>
+            <span id="children" class="ec-counter-val">0</span>
+            <div class="ec-counter-btn" onclick="changeGuests('children', 1)" role="button" tabindex="0" aria-label="Increase children">+</div>
+          </div>
+        </div>
+
+        <div class="ec-guest-row">
+          <div class="ec-guest-info">
+            <span class="ec-guest-name">Infants</span>
+            <span class="ec-guest-desc">Under 2 years</span>
+          </div>
+          <div class="ec-counter">
+            <div class="ec-counter-btn" onclick="changeGuests('infants', -1)" role="button" tabindex="0" aria-label="Decrease infants">−</div>
+            <span id="infants" class="ec-counter-val">0</span>
+            <div class="ec-counter-btn" onclick="changeGuests('infants', 1)" role="button" tabindex="0" aria-label="Increase infants">+</div>
+          </div>
+        </div>
+
+        <div class="ec-guest-row ec-guest-row--last" style="display: none;">
+          <div class="ec-guest-info">
+            <span class="ec-guest-name">Pets</span>
+            <span class="ec-guest-desc">Bringing a pet?</span>
+          </div>
+          <div class="ec-counter">
+            <div class="ec-counter-btn" onclick="changeGuests('pets', -1)" role="button" tabindex="0" aria-label="Decrease pets">−</div>
+            <span id="pets" class="ec-counter-val">0</span>
+            <div class="ec-counter-btn" onclick="changeGuests('pets', 1)" role="button" tabindex="0" aria-label="Increase pets">+</div>
+          </div>
+        </div>
+
+        <div class="ec-done" onclick="toggleGuests()" role="button" tabindex="0">Confirm</div>
+      </div>
+    </div>
+
+    <div class="ec-search" onclick="search()" role="button" tabindex="0" aria-label="Search accommodations">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+        stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="11" cy="11" r="8"></circle>
+        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+      </svg>
+      <span>Search</span>
+    </div>
+
+  </div>
+</div>
+
+<style>
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  :root {
+    --ec-brand: #2a7d6f;
+    --ec-brand-light: #3a9e8e;
+    --ec-brand-pale: #e8f5f3;
+    --ec-accent: #f5a623;
+    --ec-accent-hover: #e8951a;
+    --ec-accent-text: #fff;
+
+    --ec-surface: #ffffff;
+    --ec-surface-alt: #f8faf9;
+    --ec-border: #dce8e5;
+    --ec-border-focus: #2a7d6f;
+
+    --ec-text-primary: #1a2e2b;
+    --ec-text-secondary: #4a6b65;
+    --ec-text-muted: #8aaba5;
+    --ec-text-placeholder: #a8c4bf;
+
+    --ec-radius-sm: 6px;
+    --ec-radius-md: 10px;
+    --ec-radius-lg: 16px;
+    --ec-radius-full: 999px;
+
+    --ec-shadow-sm: 0 1px 3px rgba(42, 125, 111, 0.08);
+    --ec-shadow-md: 0 4px 16px rgba(42, 125, 111, 0.12);
+    --ec-shadow-lg: 0 12px 40px rgba(42, 125, 111, 0.18);
+
+    --ec-transition: 0.18s ease;
+
+    --ec-font: 'Inter', system-ui, -apple-system, sans-serif;
+  }
+
+  .ec-box {
+    max-width: 1040px;
+    margin: auto;
+    padding: 16px;
+    font-family: var(--ec-font);
+  }
+
+  .ec-form {
+    display: flex;
+    gap: 0;
+    background: var(--ec-surface);
+    border-radius: var(--ec-radius-lg);
+    box-shadow: var(--ec-shadow-md);
+    border: 1px solid var(--ec-border);
+    align-items: stretch;
+    overflow: visible;
+    position: relative;
+  }
+
+  .ec-field-icon {
+    color: var(--ec-brand);
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+  }
+
+  .ec-field-text {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    min-width: 0;
+  }
+
+  .ec-field-label {
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--ec-text-secondary);
+    line-height: 1;
+  }
+
+  .ec-field-value {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--ec-text-primary);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .ec-field-value.empty {
+    color: var(--ec-text-placeholder);
+    font-weight: 400;
+  }
+
+  .ec-date-wrapper {
+    position: relative;
+    flex: 2;
+    min-width: 0;
+  }
+
+  .ec-date-range {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    cursor: pointer;
+    border-radius: var(--ec-radius-lg) 0 0 var(--ec-radius-lg);
+    transition: background var(--ec-transition);
+    padding: 0 4px;
+  }
+
+  .ec-date-range:hover {
+    background: var(--ec-surface-alt);
+  }
+
+  .ec-date-range:focus-within {
+    outline: 2px solid var(--ec-border-focus);
+    outline-offset: -2px;
+    border-radius: var(--ec-radius-lg) 0 0 var(--ec-radius-lg);
+  }
+
+  .ec-date-field {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex: 1;
+    padding: 14px 16px;
+    min-width: 0;
+  }
+
+  .ec-divider {
+    width: 1px;
+    height: 32px;
+    background: var(--ec-border);
+    flex-shrink: 0;
+  }
+
+  .ec-clear {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    border: 1.5px solid var(--ec-border);
+    background: var(--ec-surface);
+    color: var(--ec-text-muted);
+    cursor: pointer;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    margin-right: 8px;
+    transition: all var(--ec-transition);
+  }
+
+  .ec-clear.visible {
+    display: flex;
+  }
+
+  .ec-clear {
+    background: #fee2e2;
+    border-color: #f87171;
+    color: #ef4444;
+    transform: scale(1.1);
+  }
+
+  .ec-calendar-dropdown {
+    display: none;
+    position: absolute;
+    top: calc(100% + 10px);
+    left: 0;
+    background: var(--ec-surface);
+    border-radius: var(--ec-radius-lg);
+    box-shadow: var(--ec-shadow-lg);
+    border: 1px solid var(--ec-border);
+    padding: 20px 24px 24px;
+    z-index: 100;
+    min-width: 340px;
+  }
+
+  .ec-calendar-dropdown.active {
+    display: block;
+    animation: ec-fade-in 0.15s ease;
+  }
+
+  @keyframes ec-fade-in {
+    from { opacity: 0; transform: translateY(4px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+
+  .cal-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 4px;
+    position: relative;
+  }
+
+  .cal-nav-btn {
+    background: var(--ec-surface);
+    border: 1px solid var(--ec-border);
+    border-radius: var(--ec-radius-sm);
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: var(--ec-text-secondary);
+    transition: all var(--ec-transition);
+    flex-shrink: 0;
+    box-shadow: var(--ec-shadow-sm);
+  }
+
+  .cal-nav-btn:hover {
+    background: var(--ec-brand);
+    border-color: var(--ec-brand);
+    color: var(--ec-accent-text);
+    box-shadow: 0 2px 8px rgba(42, 125, 111, 0.2);
+    transform: translateY(-1px);
+  }
+
+  .cal-nav-btn svg {
+    stroke: currentColor;
+    stroke-width: 2.5;
+  }
+
+  .cal-months {
+    display: flex;
+    gap: 32px;
+    flex: 1;
+  }
+
+  .cal-month {
+    flex: 1;
+    min-width: 200px;
+  }
+
+  .cal-month-title {
+    text-align: center;
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--ec-text-primary);
+    text-transform: capitalize;
+    padding: 0 0 14px;
+    letter-spacing: 0.02em;
+  }
+
+  .cal-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 3px;
+    text-align: center;
+  }
+
+  .cal-day-header {
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: var(--ec-text-muted);
+    padding: 6px 0 8px;
+  }
+
+  .cal-day {
+    padding: 0;
+    font-size: 13px;
+    font-weight: 400;
+    cursor: pointer;
+    border-radius: var(--ec-radius-sm);
+    transition: all var(--ec-transition);
+    aspect-ratio: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--ec-text-primary);
+    position: relative;
+  }
+
+  .cal-day.empty   { cursor: default; }
+  .cal-day.disabled { color: var(--ec-text-placeholder); cursor: not-allowed; font-weight: 300; }
+
+  .cal-day.selected,
+  .cal-day.range-start,
+  .cal-day.range-end {
+    background: var(--ec-brand) !important;
+    color: #fff !important;
+    font-weight: 700;
+    border-radius: var(--ec-radius-sm);
+  }
+
+  .cal-day.in-range { background: var(--ec-brand-pale); color: var(--ec-brand); border-radius: 0; }
+  .cal-day.in-range.start, .cal-day.range-start { border-radius: var(--ec-radius-sm) 0 0 var(--ec-radius-sm); }
+  .cal-day.in-range.end,   .cal-day.range-end   { border-radius: 0 var(--ec-radius-sm) var(--ec-radius-sm) 0; }
+
+  .cal-day:not(.empty):not(.disabled):not(.selected):not(.in-range):not(.range-start):not(.range-end):hover {
+    background: var(--ec-brand-pale);
+    color: var(--ec-brand);
+    font-weight: 600;
+  }
+
+  .ec-guests {
+    position: relative;
+    flex: 1;
+    min-width: 0;
+    border-left: 1px solid var(--ec-border);
+    border-right: 1px solid var(--ec-border);
+  }
+
+  .ec-guests-input {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 14px 16px;
+    cursor: pointer;
+    height: 100%;
+    transition: background var(--ec-transition);
+  }
+
+  .ec-guests-input:hover { background: var(--ec-surface-alt); }
+
+  .ec-chevron {
+    color: var(--ec-text-muted);
+    margin-left: auto;
+    flex-shrink: 0;
+    transition: transform var(--ec-transition);
+  }
+
+  .ec-guests-input.open .ec-chevron { transform: rotate(180deg); }
+
+  .ec-guests-dropdown {
+    display: none;
+    position: absolute;
+    top: calc(100% + 10px);
+    left: 0;
+    width: 100%;
+    min-width: 280px;
+    background: var(--ec-surface);
+    border-radius: var(--ec-radius-lg);
+    box-shadow: var(--ec-shadow-lg);
+    border: 1px solid var(--ec-border);
+    padding: 20px;
+    z-index: 100;
+    animation: ec-fade-in 0.15s ease;
+  }
+
+  .ec-guests-dropdown.open { display: block; }
+
+  .ec-guest-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 0;
+    border-bottom: 1px solid var(--ec-border);
+    gap: 12px;
+  }
+
+  .ec-guest-row--last { border-bottom: none; padding-bottom: 16px; }
+
+  .ec-guest-info { display: flex; flex-direction: column; gap: 2px; }
+
+  .ec-guest-name { font-size: 14px; font-weight: 600; color: var(--ec-text-primary); }
+  .ec-guest-desc { font-size: 11px; color: var(--ec-text-muted); }
+
+  .ec-counter { display: flex; align-items: center; gap: 10px; flex-shrink: 0; }
+
+  .ec-counter-btn {
+    width: 32px;
+    height: 32px;
+    border: 1.5px solid var(--ec-border);
+    border-radius: 50%;
+    background: var(--ec-surface);
+    color: var(--ec-text-primary);
+    cursor: pointer;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+    transition: all var(--ec-transition);
+    flex-shrink: 0;
+  }
+
+  .ec-counter-btn:hover { border-color: var(--ec-brand); color: var(--ec-brand); background: var(--ec-brand-pale); }
+  .ec-counter-btn:active { transform: scale(0.92); }
+
+  .ec-counter-val { width: 24px; text-align: center; font-size: 15px; font-weight: 600; color: var(--ec-text-primary); }
+
+  .ec-done {
+    width: 100%;
+    padding: 10px;
+    border: 1.5px solid var(--ec-brand);
+    border-radius: var(--ec-radius-md);
+    background: var(--ec-brand-pale);
+    color: var(--ec-brand);
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    cursor: pointer;
+    transition: all var(--ec-transition);
+  }
+
+  .ec-done:hover { background: var(--ec-brand); color: #fff; }
+
+  .ec-search {
+    background: var(--ec-accent);
+    color: #000;
+    border: none;
+    padding: 0 28px;
+    border-radius: 0 var(--ec-radius-lg) var(--ec-radius-lg) 0;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    min-width: 120px;
+    justify-content: center;
+    transition: all var(--ec-transition);
+    flex-shrink: 0;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15);
+  }
+
+  .ec-search:hover {
+    background: var(--ec-accent-hover);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 4px 12px rgba(245, 166, 35, 0.35);
+  }
+
+  .ec-search:active { transform: scale(0.98); }
+
+  @media (max-width: 820px) {
+    .ec-box { padding: 12px; }
+    .ec-form { flex-direction: column; border-radius: var(--ec-radius-lg); gap: 0; }
+    .ec-date-wrapper { flex: none; width: 100%; }
+    .ec-date-range { border-radius: var(--ec-radius-lg) var(--ec-radius-lg) 0 0; border-bottom: 1px solid var(--ec-border); }
+    .ec-guests { width: 100%; border-left: none; border-right: none; border-bottom: 1px solid var(--ec-border); }
+    .ec-guests-input { border-radius: 0; }
+    .ec-search { border-radius: 0 0 var(--ec-radius-lg) var(--ec-radius-lg); padding: 14px 20px; min-width: auto; width: 100%; font-size: 15px; }
+    .ec-calendar-dropdown { left: 0; right: 0; min-width: 0; }
+    .cal-months { gap: 24px; }
+  }
+
+  @media (max-width: 560px) {
+    .ec-box { padding: 8px; }
+    .ec-date-field { padding: 12px 12px; }
+    .ec-guests-input { padding: 12px 12px; }
+    .ec-date-range { flex-wrap: wrap; gap: 0; }
+    .ec-date-field:first-child { border-bottom: 1px solid var(--ec-border); }
+    .ec-divider { display: none; }
+    .ec-date-field { flex: 1 0 100%; }
+    .ec-clear { position: absolute; top: 10px; right: 10px; margin: 0; }
+    .cal-months { flex-direction: column; }
+    .ec-calendar-dropdown { padding: 14px 14px 18px; }
+    .cal-day { font-size: 12px; }
+    .cal-day-header { font-size: 9px; padding: 4px 0 6px; }
+    .cal-month-title { font-size: 12px; }
+    .ec-guests-dropdown { left: 50%; transform: translateX(-50%); min-width: 280px; }
+  }
+</style>
+
+<script>
+  const state = { adults: 1, children: 0, infants: 0, pets: 0 };
+
+  function toggleGuests() {
+    const dropdown = document.getElementById('guestsDropdown');
+    const toggle = document.getElementById('guestsToggle');
+    const isOpen = dropdown.classList.contains('open');
+    if (isOpen) {
+      dropdown.classList.remove('open');
+      toggle.classList.remove('open');
+      toggle.setAttribute('aria-expanded', 'false');
+    } else {
+      dropdown.classList.add('open');
+      toggle.classList.add('open');
+      toggle.setAttribute('aria-expanded', 'true');
+      setTimeout(() => { document.addEventListener('click', closeGuestsOutside, { once: true }); }, 0);
+    }
+    updateGuestsText();
+  }
+
+  function closeGuestsOutside(e) {
+    const wrapper = document.querySelector('.ec-guests');
+    if (!wrapper.contains(e.target)) {
+      document.getElementById('guestsDropdown').classList.remove('open');
+      document.getElementById('guestsToggle').classList.remove('open');
+      document.getElementById('guestsToggle').setAttribute('aria-expanded', 'false');
+    }
+  }
+
+  function changeGuests(type, delta) {
+    if (type === 'adults' && state.adults + delta < 1) return;
+    if (state[type] + delta < 0) return;
+    state[type] += delta;
+    document.getElementById(type).innerText = state[type];
+    updateGuestsText();
+  }
+
+  function updateGuestsText() {
+    let t = `${state.adults} adult${state.adults > 1 ? 's' : ''}`;
+    if (state.children) t += `, ${state.children} child${state.children > 1 ? 'ren' : ''}`;
+    if (state.infants)  t += `, ${state.infants} infant${state.infants > 1 ? 's' : ''}`;
+    if (state.pets)     t += `, ${state.pets} pet${state.pets > 1 ? 's' : ''}`;
+    document.getElementById('guestsText').innerText = t;
+  }
+
+  let calStartDate = null;
+  let calEndDate = null;
+  let calViewYear = new Date().getFullYear();
+  let calViewMonth = new Date().getMonth();
+
+  function toggleCalendar() {
+    const dropdown = document.getElementById('calendarDropdown');
+    if (dropdown.classList.contains('active')) return;
+    dropdown.classList.add('active');
+    renderCalendar();
+    setTimeout(() => { document.addEventListener('click', closeCalendarOutside); }, 0);
+  }
+
+  function closeCalendarOutside(e) {
+    const cal = document.getElementById('calendarDropdown');
+    const range = document.querySelector('.ec-date-range');
+    if (!cal.contains(e.target) && !range.contains(e.target)) {
+      cal.classList.remove('active');
+      document.removeEventListener('click', closeCalendarOutside);
+    }
+  }
+
+  function renderCalendar() {
+    const dropdown = document.getElementById('calendarDropdown');
+    const isMobile = window.innerWidth <= 560;
+    const monthCount = isMobile ? 1 : 2;
+    const months = [];
+    for (let i = 0; i < monthCount; i++) {
+      const y = calViewYear + Math.floor((calViewMonth + i) / 12);
+      const m = (calViewMonth + i) % 12;
+      months.push(renderMonth(y, m));
+    }
+    dropdown.innerHTML = `
+      <div class="cal-header">
+        <div class="cal-nav-btn" onclick="event.stopPropagation(); changeMonth(-1)" role="button" tabindex="0" aria-label="Previous month">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
+        </div>
+        <div class="cal-months">${months.join('')}</div>
+        <div class="cal-nav-btn" onclick="event.stopPropagation(); changeMonth(1)" role="button" tabindex="0" aria-label="Next month">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+        </div>
+      </div>`;
+  }
+
+  function renderMonth(year, month) {
+    const names = ['January','February','March','April','May','June','July','August','September','October','November','December'];
+    let firstDay = new Date(year, month, 1).getDay();
+    firstDay = firstDay === 0 ? 6 : firstDay - 1;
+    const daysInMonth = new Date(year, month + 1, 0).getDate();
+    const today = new Date(); today.setHours(0, 0, 0, 0);
+
+    let html = `<div class="cal-month"><div class="cal-month-title">${names[month]} ${year}</div><div class="cal-grid">`;
+    const dayNames = ['Mo','Tu','We','Th','Fr','Sa','Su'];
+    dayNames.forEach(d => html += `<div class="cal-day-header">${d}</div>`);
+    for (let i = 0; i < firstDay; i++) html += '<div class="cal-day empty"></div>';
+    for (let day = 1; day <= daysInMonth; day++) {
+      const date = new Date(year, month, day); date.setHours(0, 0, 0, 0);
+      const dateStr = `${year}-${String(month + 1).padStart(2, '0')}-${String(day).padStart(2, '0')}`;
+      let classes = 'cal-day';
+      if (date < today) {
+        classes += ' disabled';
+      } else {
+        if (calStartDate && calEndDate) {
+          const start = new Date(calStartDate); start.setHours(0, 0, 0, 0);
+          const end   = new Date(calEndDate);   end.setHours(0, 0, 0, 0);
+          if (dateStr === calStartDate)      classes += ' selected range-start';
+          else if (dateStr === calEndDate)   classes += ' selected range-end';
+          else if (date > start && date < end) classes += ' in-range';
+        } else if (calStartDate && !calEndDate) {
+          if (dateStr === calStartDate) classes += ' selected';
+        }
+      }
+      const clickAttr = date < today ? '' : `onclick="event.stopPropagation(); selectDate('${dateStr}')"`;
+      html += `<div class="${classes}" ${clickAttr} ${date < today ? '' : `role="button" tabindex="0" aria-label="${day} ${names[month]}"`}>${day}</div>`;
+    }
+    html += '</div></div>';
+    return html;
+  }
+
+  function changeMonth(delta) {
+    calViewMonth += delta;
+    if (calViewMonth > 11) { calViewMonth = 0; calViewYear++; }
+    else if (calViewMonth < 0) { calViewMonth = 11; calViewYear--; }
+    renderCalendar();
+  }
+
+  function selectDate(dateStr) {
+    let shouldClose = false;
+    if (!calStartDate) {
+      calStartDate = dateStr;
+    } else if (!calEndDate) {
+      if (dateStr < calStartDate) { calEndDate = calStartDate; calStartDate = dateStr; }
+      else if (dateStr === calStartDate) { return; }
+      else { calEndDate = dateStr; }
+      shouldClose = true;
+    } else {
+      calStartDate = dateStr; calEndDate = null;
+    }
+    updateCalendarInputs();
+    renderCalendar();
+    if (shouldClose) {
+      document.getElementById('calendarDropdown').classList.remove('active');
+      document.removeEventListener('click', closeCalendarOutside);
+    }
+  }
+
+  function formatDateShort(dateStr) {
+    const months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+    const [y, m, d] = dateStr.split('-');
+    return `${parseInt(d)} ${months[parseInt(m) - 1]} ${y}`;
+  }
+
+  function updateCalendarInputs() {
+    const checkinEl  = document.getElementById('checkinText');
+    const checkoutEl = document.getElementById('checkoutText');
+    const clearBtn   = document.getElementById('clearDates');
+    if (calStartDate) { checkinEl.innerText = formatDateShort(calStartDate); checkinEl.classList.remove('empty'); }
+    else { checkinEl.innerText = 'Add date'; checkinEl.classList.add('empty'); }
+    if (calEndDate) { checkoutEl.innerText = formatDateShort(calEndDate); checkoutEl.classList.remove('empty'); }
+    else { checkoutEl.innerText = 'Add date'; checkoutEl.classList.add('empty'); }
+    clearBtn.classList.toggle('visible', !!(calStartDate && calEndDate));
+  }
+
+  function clearDates(e) {
+    e.stopPropagation();
+    calStartDate = null; calEndDate = null;
+    updateCalendarInputs(); renderCalendar();
+  }
+
+  function search() {
+    const params = {
+      adults: parseInt(state.adults) || 1,
+      children: parseInt(state.children) || 0,
+      infants: parseInt(state.infants) || 0,
+      pets: parseInt(state.pets) || 0,
+      sort: 'price'
+    };
+    if (calStartDate) params.arrival   = calStartDate.replace(/-/g, '');
+    if (calEndDate)   params.departure = calEndDate.replace(/-/g, '');
+    const url = new URL('https://encalmavacacional.lodgify.com/es/propiedades/');
+    url.search = new URLSearchParams(params).toString();
+    window.open(url, '_blank');
+  }
+</script>
