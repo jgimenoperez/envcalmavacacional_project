@@ -2,16 +2,45 @@
 # -*- coding: utf-8 -*-
 """
 Generate XML for "Partes de Viajeros" (traveler reports) from CSV data.
-Based on Instrucciones v1.2.0, Section 3: PARTES DE VIAJEROS
+Based on official Plantilla_alojamientos.xml template.
 """
 
 import csv
 import re
-import xml.dom.minidom as minidom
-from xml.etree.ElementTree import Element, SubElement, tostring
+import calendar
+import xml.etree.ElementTree as ET
+from xml.dom import minidom
 
 CSV_PATH = r"C:\MCP_CLAUDE\JOSE\NaranjaIT\En_Calma_Vacacional\XML\parteviajeros.csv"
 XML_PATH = r"C:\MCP_CLAUDE\JOSE\NaranjaIT\En_Calma_Vacacional\XML\parteviajeros.xml"
+
+NS = "http://www.neg.hospedajes.mir.es/altaParteHospedaje"
+FECHA_NACIMIENTO_DEFAULT = "1980-01-01"
+CODIGO_ESTABLECIMIENTO = "0000277232"
+
+
+def get_timezone(date_str):
+    """Return +02:00 (CEST) or +01:00 (CET) based on European DST rules.
+    CEST: last Sunday of March to last Sunday of October."""
+    try:
+        parts = date_str.strip().split("-")
+        y, m, d = int(parts[0]), int(parts[1]), int(parts[2])
+    except (ValueError, IndexError):
+        return "+01:00"
+
+    def last_sunday(year, month):
+        last_day = calendar.monthrange(year, month)[1]
+        for day in range(last_day, 0, -1):
+            if calendar.weekday(year, month, day) == 6:
+                return day
+        return last_day
+
+    mar_sunday = last_sunday(y, 3)
+    oct_sunday = last_sunday(y, 10)
+
+    if (m > 3 and m < 10) or (m == 3 and d >= mar_sunday) or (m == 10 and d < oct_sunday):
+        return "+02:00"
+    return "+01:00"
 
 
 def parse_date_es(date_str):
@@ -23,55 +52,53 @@ def parse_date_es(date_str):
         return date_str
 
 
-def detect_tipo_documento(num_doc, pais):
+def detect_tipo_documento(num_doc):
     """Detect document type from its format."""
     if not num_doc:
         return None
-    num_doc = num_doc.strip()
-    # Spanish DNI: 8 digits + letter (case-insensitive)
-    if re.match(r'^\d{8}[A-Za-z]$', num_doc):
+    num_doc = num_doc.strip().upper()
+    if re.match(r'^\d{8}[A-Z]$', num_doc):
         return "NIF"
-    # Spanish NIE: X/Y/Z + 7 digits + letter
-    if re.match(r'^[XYZxyz]\d{7}[A-Za-z]$', num_doc):
+    if re.match(r'^[XYZ]\d{7}[A-Z]$', num_doc):
         return "NIE"
-    # Looks like a passport (alphanumeric, no spaces, 5-15 chars)
-    if re.match(r'^[A-Za-z0-9]{5,15}$', num_doc):
+    if re.match(r'^[A-Z0-9]{5,15}$', num_doc):
         return "PAS"
     return "OTRO"
 
 
 def clean_numero_documento(val):
-    """Clean and fix document number values."""
+    """Clean and fix document number values.
+    Uppercase for NIF/NIE, preserve original case for passports."""
     if not val:
         return ""
     val = val.strip()
-    # Fix scientific notation (e.g., 1,90838E+11)
     if re.match(r'^\d+[,\.]\d+E\+\d+$', val):
         try:
             num = float(val.replace(",", "."))
             val = str(int(num))
         except ValueError:
             pass
+    if re.match(r'^\d{8}[A-Za-z]$', val) or re.match(r'^[XYZxyz]\d{7}[A-Za-z]$', val):
+        val = val.upper()
     return val
 
 
 def read_csv():
-    """Read and group CSV data by establishment code."""
+    """Read and group CSV data by reservation code."""
     groups = {}
     with open(CSV_PATH, "r", encoding="utf-8") as f:
         reader = csv.reader(f, delimiter="\t")
         for row in reader:
-            if len(row) < 15:
+            if len(row) < 16:
                 continue
-            cod_est = row[0].strip()
-            if cod_est not in groups:
-                groups[cod_est] = {
-                    "codigoEstablecimiento": cod_est,
+            cod_ref = row[0].strip()
+            if cod_ref not in groups:
+                groups[cod_ref] = {
                     "fechaEntrada": parse_date_es(row[1]),
                     "fechaSalida": parse_date_es(row[2]),
                     "personas": [],
                 }
-            groups[cod_est]["personas"].append(
+            groups[cod_ref]["personas"].append(
                 {
                     "nombre": (row[4] or "").strip(),
                     "apellido1": (row[5] or "").strip(),
@@ -85,130 +112,148 @@ def read_csv():
                     "pais": (row[13] or "").strip(),
                     "correo": (row[14] or "").strip(),
                     "parentesco": (row[15] or "").strip(),
+                    "fechaNacimiento": parse_date_es(row[16]) if len(row) > 16 and row[16].strip() else "",
                 }
             )
     return groups
 
 
+def fmt_date(date_str):
+    """Format date as YYYY-MM-DD+tz."""
+    if not date_str:
+        return ""
+    tz = get_timezone(date_str)
+    return f"{date_str}{tz}"
+
+
+def fmt_datetime(date_str):
+    """Format datetime as YYYY-MM-DDThh:mm:ss+tz."""
+    if not date_str:
+        return ""
+    tz = get_timezone(date_str)
+    return f"{date_str}T00:00:00{tz}"
+
+
 def build_direccion(persona):
     """Build the direccion block for a persona."""
-    direccion = Element("direccion")
-    # The CSV doesn't contain street address; use "NO CONSTA"
-    SubElement(direccion, "direccion").text = "NO CONSTA"
+    direccion = ET.Element("direccion")
+    ET.SubElement(direccion, "direccion").text = "NO CONSTA"
 
     pais = persona["pais"]
 
     if pais == "ESP":
         cod_mun = persona["codigoMunicipio"]
         if cod_mun:
-            SubElement(direccion, "codigoMunicipio").text = cod_mun
+            ET.SubElement(direccion, "codigoMunicipio").text = cod_mun
     else:
         nom_mun = persona["nombreMunicipio"]
         if nom_mun:
-            SubElement(direccion, "nombreMunicipio").text = nom_mun
+            ET.SubElement(direccion, "nombreMunicipio").text = nom_mun
 
     cp = persona["codigoPostal"]
     if cp:
-        SubElement(direccion, "codigoPostal").text = cp
+        ET.SubElement(direccion, "codigoPostal").text = cp
 
-    SubElement(direccion, "pais").text = pais or "ESP"
+    ET.SubElement(direccion, "pais").text = pais if pais else "ESP"
 
     return direccion
 
 
 def build_persona(persona):
     """Build a persona element."""
-    elem = Element("persona")
+    elem = ET.Element("persona")
 
-    SubElement(elem, "rol").text = "VI"
-    SubElement(elem, "nombre").text = persona["nombre"]
+    ET.SubElement(elem, "rol").text = "VI"
+    ET.SubElement(elem, "nombre").text = persona["nombre"]
 
     ap1 = persona["apellido1"]
     if ap1:
-        SubElement(elem, "apellido1").text = ap1
+        ET.SubElement(elem, "apellido1").text = ap1
 
     ap2 = persona["apellido2"]
     if ap2:
-        SubElement(elem, "apellido2").text = ap2
+        ET.SubElement(elem, "apellido2").text = ap2
 
-    # Determine tipoDocumento
     num_doc = persona["numeroDocumento"]
     tipo_raw = persona["tipoDocumento_raw"]
     if tipo_raw:
         tipo_doc = tipo_raw
     else:
-        tipo_doc = detect_tipo_documento(num_doc, persona["pais"])
+        tipo_doc = detect_tipo_documento(num_doc)
 
     if tipo_doc and num_doc:
-        SubElement(elem, "tipoDocumento").text = tipo_doc
-        SubElement(elem, "numeroDocumento").text = num_doc
+        ET.SubElement(elem, "tipoDocumento").text = tipo_doc
+        ET.SubElement(elem, "numeroDocumento").text = num_doc
         sop = persona["soporteDocumento"]
         if sop and tipo_doc in ("NIF", "NIE"):
-            SubElement(elem, "soporteDocumento").text = sop
+            ET.SubElement(elem, "soporteDocumento").text = sop
     elif num_doc:
-        SubElement(elem, "numeroDocumento").text = num_doc
+        ET.SubElement(elem, "numeroDocumento").text = num_doc
 
-    # Address
+    fnac = persona["fechaNacimiento"]
+    ET.SubElement(elem, "fechaNacimiento").text = fmt_date(fnac if fnac else FECHA_NACIMIENTO_DEFAULT)
+
+    pais = persona["pais"]
+    if pais:
+        ET.SubElement(elem, "nacionalidad").text = pais if pais else "ESP"
+
     elem.append(build_direccion(persona))
 
-    # Contact: correo available
     correo = persona["correo"]
     if correo:
-        SubElement(elem, "correo").text = correo
+        ET.SubElement(elem, "correo").text = correo
 
-    # Parentesco (if present, usually for minors or related persons)
     parentesco = persona["parentesco"]
     if parentesco:
-        SubElement(elem, "parentesco").text = parentesco
+        ET.SubElement(elem, "parentesco").text = parentesco
 
     return elem
 
 
 def build_pago():
-    """Build pago block with default values since CSV has no payment info."""
-    pago = Element("pago")
-    SubElement(pago, "tipoPago").text = "OTRO"
+    """Build pago block with default values."""
+    pago = ET.Element("pago")
+    ET.SubElement(pago, "tipoPago").text = "OTRO"
     return pago
 
 
 def build_contrato(group):
     """Build the contrato block."""
-    contrato = Element("contrato")
+    contrato = ET.Element("contrato")
 
-    # Reference: establishment + entry date
-    ref = f"{group['codigoEstablecimiento']}"
-    SubElement(contrato, "referencia").text = ref
+    ET.SubElement(contrato, "referencia").text = group.get("referencia", "")
 
-    # fechaContrato: use entry date (not in CSV)
-    SubElement(contrato, "fechaContrato").text = group["fechaEntrada"]
+    fecha_entrada = group["fechaEntrada"]
+    ET.SubElement(contrato, "fechaContrato").text = fmt_date(fecha_entrada)
+    ET.SubElement(contrato, "fechaEntrada").text = fmt_datetime(fecha_entrada)
+    ET.SubElement(contrato, "fechaSalida").text = fmt_datetime(group["fechaSalida"])
 
-    # fechaEntrada / fechaSalida
-    SubElement(contrato, "fechaEntrada").text = group["fechaEntrada"] + "T00:00:00"
-    SubElement(contrato, "fechaSalida").text = group["fechaSalida"] + "T00:00:00"
-
-    # numPersonas
     num = str(len(group["personas"]))
-    SubElement(contrato, "numPersonas").text = num
+    ET.SubElement(contrato, "numPersonas").text = num
 
-    # Pago (required, with defaults)
+    ET.SubElement(contrato, "numHabitaciones").text = "3"
+    ET.SubElement(contrato, "internet").text = "true"
+
     contrato.append(build_pago())
 
     return contrato
 
 
 def build_xml(groups):
-    """Build the complete XML document."""
-    root = Element("peticion")
+    """Build the complete XML document.
+    Single solicitud, multiple comunicacion blocks."""
+    root = ET.Element("peticion")
 
-    # Sort groups by entry date
-    sorted_groups = sorted(groups.values(), key=lambda g: g["fechaEntrada"])
+    solicitud = ET.SubElement(root, "solicitud")
+    ET.SubElement(solicitud, "codigoEstablecimiento").text = CODIGO_ESTABLECIMIENTO
 
-    for group in sorted_groups:
-        solicitud = SubElement(root, "solicitud")
-        SubElement(solicitud, "codigoEstablecimiento").text = '0000277232'
-        
+    sorted_refs = sorted(groups.keys(), key=lambda r: groups[r]["fechaEntrada"])
 
-        comunicacion = SubElement(solicitud, "comunicacion")
+    for ref in sorted_refs:
+        group = groups[ref]
+        group["referencia"] = ref
+
+        comunicacion = ET.SubElement(solicitud, "comunicacion")
         comunicacion.append(build_contrato(group))
 
         for persona in group["personas"]:
@@ -218,12 +263,20 @@ def build_xml(groups):
 
 
 def prettify_xml(root):
-    """Return pretty-printed XML string."""
-    rough = tostring(root, encoding="utf-8")
+    """Return pretty-printed XML string with correct namespace."""
+    rough = ET.tostring(root, encoding="unicode")
     dom = minidom.parseString(rough)
-    return '<?xml version="1.0" encoding="UTF-8"?>\n' + dom.toprettyxml(
-        indent="  "
-    ).replace('<?xml version="1.0" ?>\n', "")
+    pretty = dom.toprettyxml(indent="  ")
+    lines = pretty.splitlines()
+    if lines and lines[0].startswith("<?xml"):
+        lines = lines[1:]
+    xml_str = "\n".join(lines)
+    xml_str = xml_str.replace(
+        "<peticion>",
+        '<ns2:peticion xmlns:ns2="%s">' % NS
+    )
+    xml_str = xml_str.replace("</peticion>", "</ns2:peticion>")
+    return '<?xml version="1.0" encoding="UTF-8"?>\n' + xml_str
 
 
 def main():

@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<peticion>
+<ns2:peticion xmlns:ns2="http://www.neg.hospedajes.mir.es/altaParteHospedaje">
   <solicitud>
     <codigoEstablecimiento>0000277232</codigoEstablecimiento>
     <comunicacion>
       <contrato>
         <referencia>DF8ABC5238</referencia>
-        <fechaContrato>2025-06-26</fechaContrato>
-        <fechaEntrada>2025-06-26T00:00:00</fechaEntrada>
-        <fechaSalida>2025-06-29T00:00:00</fechaSalida>
+        <fechaContrato>2025-06-26+02:00</fechaContrato>
+        <fechaEntrada>2025-06-26T00:00:00+02:00</fechaEntrada>
+        <fechaSalida>2025-06-29T00:00:00+02:00</fechaSalida>
         <numPersonas>5</numPersonas>
+        <numHabitaciones>3</numHabitaciones>
+        <internet>true</internet>
         <pago>
           <tipoPago>OTRO</tipoPago>
         </pago>
@@ -20,6 +22,8 @@
         <tipoDocumento>NIE</tipoDocumento>
         <numeroDocumento>Y9497175Y</numeroDocumento>
         <soporteDocumento>E24335923</soporteDocumento>
+        <fechaNacimiento>1980-03-24+01:00</fechaNacimiento>
+        <nacionalidad>ESP</nacionalidad>
         <direccion>
           <direccion>NO CONSTA</direccion>
           <codigoMunicipio>28072</codigoMunicipio>
@@ -36,6 +40,8 @@
         <tipoDocumento>NIE</tipoDocumento>
         <numeroDocumento>Y8980000D</numeroDocumento>
         <soporteDocumento>E05575089</soporteDocumento>
+        <fechaNacimiento>1970-05-03+02:00</fechaNacimiento>
+        <nacionalidad>ESP</nacionalidad>
         <direccion>
           <direccion>NO CONSTA</direccion>
           <codigoMunicipio>28072</codigoMunicipio>
@@ -50,8 +56,10 @@
         <nombre>Carmela</nombre>
         <apellido1>Bonacina</apellido1>
         <tipoDocumento>NIE</tipoDocumento>
-        <numeroDocumento>y9293876g</numeroDocumento>
+        <numeroDocumento>Y9293876G</numeroDocumento>
         <soporteDocumento>e05660155</soporteDocumento>
+        <fechaNacimiento>2009-02-03+01:00</fechaNacimiento>
+        <nacionalidad>ESP</nacionalidad>
         <direccion>
           <direccion>NO CONSTA</direccion>
           <codigoMunicipio>28072</codigoMunicipio>
@@ -68,6 +76,8 @@
         <tipoDocumento>NIE</tipoDocumento>
         <numeroDocumento>Z1722029R</numeroDocumento>
         <soporteDocumento>E26956718</soporteDocumento>
+        <fechaNacimiento>1935-11-02+01:00</fechaNacimiento>
+        <nacionalidad>ESP</nacionalidad>
         <direccion>
           <direccion>NO CONSTA</direccion>
           <codigoMunicipio>28072</codigoMunicipio>
@@ -84,6 +94,8 @@
         <tipoDocumento>NIE</tipoDocumento>
         <numeroDocumento>Z0831525B</numeroDocumento>
         <soporteDocumento>E05935907</soporteDocumento>
+        <fechaNacimiento>1938-07-11+02:00</fechaNacimiento>
+        <nacionalidad>ESP</nacionalidad>
         <direccion>
           <direccion>NO CONSTA</direccion>
           <codigoMunicipio>28072</codigoMunicipio>
@@ -94,16 +106,15 @@
         <parentesco>SG</parentesco>
       </persona>
     </comunicacion>
-  </solicitud>
-  <solicitud>
-    <codigoEstablecimiento>0000277232</codigoEstablecimiento>
     <comunicacion>
       <contrato>
         <referencia>795F55CB1A</referencia>
-        <fechaContrato>2025-09-05</fechaContrato>
-        <fechaEntrada>2025-09-05T00:00:00</fechaEntrada>
-        <fechaSalida>2025-09-07T00:00:00</fechaSalida>
+        <fechaContrato>2025-09-05+02:00</fechaContrato>
+        <fechaEntrada>2025-09-05T00:00:00+02:00</fechaEntrada>
+        <fechaSalida>2025-09-07T00:00:00+02:00</fechaSalida>
         <numPersonas>5</numPersonas>
+        <numHabitaciones>3</numHabitaciones>
+        <internet>true</internet>
         <pago>
           <tipoPago>OTRO</tipoPago>
         </pago>
@@ -116,6 +127,8 @@
         <tipoDocumento>NIF</tipoDocumento>
         <numeroDocumento>05605273N</numeroDocumento>
         <soporteDocumento>CAP147248</soporteDocumento>
+        <fechaNacimiento>1950-02-28+01:00</fechaNacimiento>
+        <nacionalidad>ESP</nacionalidad>
         <direccion>
           <direccion>NO CONSTA</direccion>
           <codigoMunicipio>28079</codigoMunicipio>
@@ -130,8 +143,10 @@
         <apellido1>López Roso</apellido1>
         <apellido2>Molina</apellido2>
         <tipoDocumento>NIF</tipoDocumento>
-        <numeroDocumento>05678740v</numeroDocumento>
+        <numeroDocumento>05678740V</numeroDocumento>
         <soporteDocumento>CAP147392</soporteDocumento>
+        <fechaNacimiento>1985-01-31+01:00</fechaNacimiento>
+        <nacionalidad>ESP</nacionalidad>
         <direccion>
           <direccion>NO CONSTA</direccion>
           <codigoMunicipio>28079</codigoMunicipio>
@@ -148,6 +163,8 @@
         <tipoDocumento>NIF</tipoDocumento>
         <numeroDocumento>50871378R</numeroDocumento>
         <soporteDocumento>CFQ103155</soporteDocumento>
+        <fechaNacimiento>1981-02-04+01:00</fechaNacimiento>
+        <nacionalidad>ESP</nacionalidad>
         <direccion>
           <direccion>NO CONSTA</direccion>
           <codigoMunicipio>28079</codigoMunicipio>
@@ -162,8 +179,10 @@
         <apellido1>Ribera</apellido1>
         <apellido2>López Roso</apellido2>
         <tipoDocumento>NIF</tipoDocumento>
-        <numeroDocumento>50871379w</numeroDocumento>
+        <numeroDocumento>50871379W</numeroDocumento>
         <soporteDocumento>CFJ167919</soporteDocumento>
+        <fechaNacimiento>1979-06-08+02:00</fechaNacimiento>
+        <nacionalidad>ESP</nacionalidad>
         <direccion>
           <direccion>NO CONSTA</direccion>
           <codigoMunicipio>28079</codigoMunicipio>
@@ -178,8 +197,10 @@
         <apellido1>Canales</apellido1>
         <apellido2>Duarte</apellido2>
         <tipoDocumento>NIF</tipoDocumento>
-        <numeroDocumento>50128117p</numeroDocumento>
+        <numeroDocumento>50128117P</numeroDocumento>
         <soporteDocumento>CAS196787</soporteDocumento>
+        <fechaNacimiento>1980-07-14+02:00</fechaNacimiento>
+        <nacionalidad>ESP</nacionalidad>
         <direccion>
           <direccion>NO CONSTA</direccion>
           <codigoMunicipio>28079</codigoMunicipio>
@@ -189,16 +210,15 @@
         <correo>bealopezroso@hotmail.com</correo>
       </persona>
     </comunicacion>
-  </solicitud>
-  <solicitud>
-    <codigoEstablecimiento>0000277232</codigoEstablecimiento>
     <comunicacion>
       <contrato>
         <referencia>F6C96CB4A7</referencia>
-        <fechaContrato>2025-09-10</fechaContrato>
-        <fechaEntrada>2025-09-10T00:00:00</fechaEntrada>
-        <fechaSalida>2025-09-14T00:00:00</fechaSalida>
+        <fechaContrato>2025-09-10+02:00</fechaContrato>
+        <fechaEntrada>2025-09-10T00:00:00+02:00</fechaEntrada>
+        <fechaSalida>2025-09-14T00:00:00+02:00</fechaSalida>
         <numPersonas>2</numPersonas>
+        <numHabitaciones>3</numHabitaciones>
+        <internet>true</internet>
         <pago>
           <tipoPago>OTRO</tipoPago>
         </pago>
@@ -211,6 +231,8 @@
         <tipoDocumento>NIF</tipoDocumento>
         <numeroDocumento>72405823Y</numeroDocumento>
         <soporteDocumento>BNT105368</soporteDocumento>
+        <fechaNacimiento>1988-12-23+01:00</fechaNacimiento>
+        <nacionalidad>ESP</nacionalidad>
         <direccion>
           <direccion>NO CONSTA</direccion>
           <codigoMunicipio>48071</codigoMunicipio>
@@ -227,6 +249,8 @@
         <tipoDocumento>NIF</tipoDocumento>
         <numeroDocumento>45994102J</numeroDocumento>
         <soporteDocumento>CCA192880</soporteDocumento>
+        <fechaNacimiento>2000-06-07+02:00</fechaNacimiento>
+        <nacionalidad>ESP</nacionalidad>
         <direccion>
           <direccion>NO CONSTA</direccion>
           <codigoMunicipio>48078</codigoMunicipio>
@@ -236,16 +260,15 @@
         <correo>arianeeportu@gmail.com</correo>
       </persona>
     </comunicacion>
-  </solicitud>
-  <solicitud>
-    <codigoEstablecimiento>0000277232</codigoEstablecimiento>
     <comunicacion>
       <contrato>
         <referencia>D2EEA03B0A</referencia>
-        <fechaContrato>2025-09-15</fechaContrato>
-        <fechaEntrada>2025-09-15T00:00:00</fechaEntrada>
-        <fechaSalida>2025-09-17T00:00:00</fechaSalida>
+        <fechaContrato>2025-09-15+02:00</fechaContrato>
+        <fechaEntrada>2025-09-15T00:00:00+02:00</fechaEntrada>
+        <fechaSalida>2025-09-17T00:00:00+02:00</fechaSalida>
         <numPersonas>4</numPersonas>
+        <numHabitaciones>3</numHabitaciones>
+        <internet>true</internet>
         <pago>
           <tipoPago>OTRO</tipoPago>
         </pago>
@@ -256,6 +279,8 @@
         <apellido1>Villarroel</apellido1>
         <tipoDocumento>PAS</tipoDocumento>
         <numeroDocumento>F64863004</numeroDocumento>
+        <fechaNacimiento>1984-12-31+01:00</fechaNacimiento>
+        <nacionalidad>CHL</nacionalidad>
         <direccion>
           <direccion>NO CONSTA</direccion>
           <nombreMunicipio>Colina</nombreMunicipio>
@@ -271,6 +296,8 @@
         <apellido1>Rodriguez</apellido1>
         <tipoDocumento>PAS</tipoDocumento>
         <numeroDocumento>F65175467</numeroDocumento>
+        <fechaNacimiento>1976-12-16+01:00</fechaNacimiento>
+        <nacionalidad>CHL</nacionalidad>
         <direccion>
           <direccion>NO CONSTA</direccion>
           <nombreMunicipio>Colina</nombreMunicipio>
@@ -286,6 +313,8 @@
         <apellido1>Rodriguez</apellido1>
         <tipoDocumento>PAS</tipoDocumento>
         <numeroDocumento>F65175441</numeroDocumento>
+        <fechaNacimiento>2014-12-26+01:00</fechaNacimiento>
+        <nacionalidad>CHL</nacionalidad>
         <direccion>
           <direccion>NO CONSTA</direccion>
           <nombreMunicipio>Colina</nombreMunicipio>
@@ -301,6 +330,8 @@
         <apellido1>Rodriguez</apellido1>
         <tipoDocumento>PAS</tipoDocumento>
         <numeroDocumento>F65175454</numeroDocumento>
+        <fechaNacimiento>2019-09-09+02:00</fechaNacimiento>
+        <nacionalidad>CHL</nacionalidad>
         <direccion>
           <direccion>NO CONSTA</direccion>
           <nombreMunicipio>Colina</nombreMunicipio>
@@ -311,16 +342,15 @@
         <parentesco>HJ</parentesco>
       </persona>
     </comunicacion>
-  </solicitud>
-  <solicitud>
-    <codigoEstablecimiento>0000277232</codigoEstablecimiento>
     <comunicacion>
       <contrato>
         <referencia>BF2E9D280A</referencia>
-        <fechaContrato>2025-09-18</fechaContrato>
-        <fechaEntrada>2025-09-18T00:00:00</fechaEntrada>
-        <fechaSalida>2025-09-23T00:00:00</fechaSalida>
+        <fechaContrato>2025-09-18+02:00</fechaContrato>
+        <fechaEntrada>2025-09-18T00:00:00+02:00</fechaEntrada>
+        <fechaSalida>2025-09-23T00:00:00+02:00</fechaSalida>
         <numPersonas>2</numPersonas>
+        <numHabitaciones>3</numHabitaciones>
+        <internet>true</internet>
         <pago>
           <tipoPago>OTRO</tipoPago>
         </pago>
@@ -333,6 +363,8 @@
         <tipoDocumento>NIF</tipoDocumento>
         <numeroDocumento>51979875J</numeroDocumento>
         <soporteDocumento>CDY193661</soporteDocumento>
+        <fechaNacimiento>1954-06-04+02:00</fechaNacimiento>
+        <nacionalidad>ESP</nacionalidad>
         <direccion>
           <direccion>NO CONSTA</direccion>
           <codigoMunicipio>19257</codigoMunicipio>
@@ -349,6 +381,8 @@
         <tipoDocumento>NIF</tipoDocumento>
         <numeroDocumento>70159526G</numeroDocumento>
         <soporteDocumento>CDY193680</soporteDocumento>
+        <fechaNacimiento>1949-08-16+02:00</fechaNacimiento>
+        <nacionalidad>ESP</nacionalidad>
         <direccion>
           <direccion>NO CONSTA</direccion>
           <codigoMunicipio>19257</codigoMunicipio>
@@ -358,16 +392,15 @@
         <correo>vidal@proc.e.telefonica.net</correo>
       </persona>
     </comunicacion>
-  </solicitud>
-  <solicitud>
-    <codigoEstablecimiento>0000277232</codigoEstablecimiento>
     <comunicacion>
       <contrato>
         <referencia>34F1A5F072</referencia>
-        <fechaContrato>2025-09-26</fechaContrato>
-        <fechaEntrada>2025-09-26T00:00:00</fechaEntrada>
-        <fechaSalida>2025-09-28T00:00:00</fechaSalida>
+        <fechaContrato>2025-09-26+02:00</fechaContrato>
+        <fechaEntrada>2025-09-26T00:00:00+02:00</fechaEntrada>
+        <fechaSalida>2025-09-28T00:00:00+02:00</fechaSalida>
         <numPersonas>5</numPersonas>
+        <numHabitaciones>3</numHabitaciones>
+        <internet>true</internet>
         <pago>
           <tipoPago>OTRO</tipoPago>
         </pago>
@@ -380,6 +413,8 @@
         <tipoDocumento>NIE</tipoDocumento>
         <numeroDocumento>Y4578594K</numeroDocumento>
         <soporteDocumento>E25993739</soporteDocumento>
+        <fechaNacimiento>1988-08-29+02:00</fechaNacimiento>
+        <nacionalidad>COL</nacionalidad>
         <direccion>
           <direccion>NO CONSTA</direccion>
           <nombreMunicipio>Madrid</nombreMunicipio>
@@ -396,6 +431,8 @@
         <apellido2>Solano</apellido2>
         <tipoDocumento>PAS</tipoDocumento>
         <numeroDocumento>AT996959</numeroDocumento>
+        <fechaNacimiento>1993-09-15+02:00</fechaNacimiento>
+        <nacionalidad>COL</nacionalidad>
         <direccion>
           <direccion>NO CONSTA</direccion>
           <nombreMunicipio>Madrid</nombreMunicipio>
@@ -413,6 +450,8 @@
         <tipoDocumento>NIF</tipoDocumento>
         <numeroDocumento>54865486K</numeroDocumento>
         <soporteDocumento>CAD152587</soporteDocumento>
+        <fechaNacimiento>1990-01-17+01:00</fechaNacimiento>
+        <nacionalidad>ESP</nacionalidad>
         <direccion>
           <direccion>NO CONSTA</direccion>
           <codigoMunicipio>28079</codigoMunicipio>
@@ -430,6 +469,8 @@
         <tipoDocumento>NIF</tipoDocumento>
         <numeroDocumento>55574034P</numeroDocumento>
         <soporteDocumento>CLE129228</soporteDocumento>
+        <fechaNacimiento>2020-05-02+02:00</fechaNacimiento>
+        <nacionalidad>ESP</nacionalidad>
         <direccion>
           <direccion>NO CONSTA</direccion>
           <codigoMunicipio>28079</codigoMunicipio>
@@ -447,6 +488,8 @@
         <tipoDocumento>NIF</tipoDocumento>
         <numeroDocumento>55216937D</numeroDocumento>
         <soporteDocumento>BME154792</soporteDocumento>
+        <fechaNacimiento>1970-10-10+02:00</fechaNacimiento>
+        <nacionalidad>ESP</nacionalidad>
         <direccion>
           <direccion>NO CONSTA</direccion>
           <codigoMunicipio>28079</codigoMunicipio>
@@ -457,16 +500,15 @@
         <parentesco>PM</parentesco>
       </persona>
     </comunicacion>
-  </solicitud>
-  <solicitud>
-    <codigoEstablecimiento>0000277232</codigoEstablecimiento>
     <comunicacion>
       <contrato>
         <referencia>B0065E321F</referencia>
-        <fechaContrato>2025-10-08</fechaContrato>
-        <fechaEntrada>2025-10-08T00:00:00</fechaEntrada>
-        <fechaSalida>2025-10-10T00:00:00</fechaSalida>
+        <fechaContrato>2025-10-08+02:00</fechaContrato>
+        <fechaEntrada>2025-10-08T00:00:00+02:00</fechaEntrada>
+        <fechaSalida>2025-10-10T00:00:00+02:00</fechaSalida>
         <numPersonas>4</numPersonas>
+        <numHabitaciones>3</numHabitaciones>
+        <internet>true</internet>
         <pago>
           <tipoPago>OTRO</tipoPago>
         </pago>
@@ -477,6 +519,8 @@
         <apellido1>Mimoza</apellido1>
         <tipoDocumento>PAS</tipoDocumento>
         <numeroDocumento>L5j62hyvv</numeroDocumento>
+        <fechaNacimiento>1979-10-23+02:00</fechaNacimiento>
+        <nacionalidad>DEU</nacionalidad>
         <direccion>
           <direccion>NO CONSTA</direccion>
           <nombreMunicipio>Mainz-Kostheim</nombreMunicipio>
@@ -492,6 +536,8 @@
         <apellido1>Mehaj</apellido1>
         <tipoDocumento>PAS</tipoDocumento>
         <numeroDocumento>L5j6pv3lr</numeroDocumento>
+        <fechaNacimiento>1970-07-20+02:00</fechaNacimiento>
+        <nacionalidad>DEU</nacionalidad>
         <direccion>
           <direccion>NO CONSTA</direccion>
           <nombreMunicipio>Mainz-Kostheim</nombreMunicipio>
@@ -507,6 +553,8 @@
         <apellido1>Mehaj</apellido1>
         <tipoDocumento>PAS</tipoDocumento>
         <numeroDocumento>L5J6P8THC</numeroDocumento>
+        <fechaNacimiento>2009-12-08+01:00</fechaNacimiento>
+        <nacionalidad>DEU</nacionalidad>
         <direccion>
           <direccion>NO CONSTA</direccion>
           <nombreMunicipio>Mainz-Kostheim</nombreMunicipio>
@@ -520,6 +568,8 @@
         <rol>VI</rol>
         <nombre>Migena</nombre>
         <apellido1>Mehaj</apellido1>
+        <fechaNacimiento>2012-07-22+02:00</fechaNacimiento>
+        <nacionalidad>DEU</nacionalidad>
         <direccion>
           <direccion>NO CONSTA</direccion>
           <nombreMunicipio>Mainz-Kostheim</nombreMunicipio>
@@ -530,16 +580,15 @@
         <parentesco>HJ</parentesco>
       </persona>
     </comunicacion>
-  </solicitud>
-  <solicitud>
-    <codigoEstablecimiento>0000277232</codigoEstablecimiento>
     <comunicacion>
       <contrato>
         <referencia>28D95E62DE</referencia>
-        <fechaContrato>2025-10-17</fechaContrato>
-        <fechaEntrada>2025-10-17T00:00:00</fechaEntrada>
-        <fechaSalida>2025-10-19T00:00:00</fechaSalida>
+        <fechaContrato>2025-10-17+02:00</fechaContrato>
+        <fechaEntrada>2025-10-17T00:00:00+02:00</fechaEntrada>
+        <fechaSalida>2025-10-19T00:00:00+02:00</fechaSalida>
         <numPersonas>2</numPersonas>
+        <numHabitaciones>3</numHabitaciones>
+        <internet>true</internet>
         <pago>
           <tipoPago>OTRO</tipoPago>
         </pago>
@@ -552,6 +601,8 @@
         <tipoDocumento>NIF</tipoDocumento>
         <numeroDocumento>74220893P</numeroDocumento>
         <soporteDocumento>BEW168236</soporteDocumento>
+        <fechaNacimiento>1968-10-16+02:00</fechaNacimiento>
+        <nacionalidad>ESP</nacionalidad>
         <direccion>
           <direccion>NO CONSTA</direccion>
           <codigoMunicipio>03065</codigoMunicipio>
@@ -568,6 +619,8 @@
         <tipoDocumento>NIF</tipoDocumento>
         <numeroDocumento>45678202H</numeroDocumento>
         <soporteDocumento>CGL186343</soporteDocumento>
+        <fechaNacimiento>1979-11-07+01:00</fechaNacimiento>
+        <nacionalidad>ESP</nacionalidad>
         <direccion>
           <direccion>NO CONSTA</direccion>
           <codigoMunicipio>43153</codigoMunicipio>
@@ -577,16 +630,15 @@
         <correo>josebalc@hotmail.com</correo>
       </persona>
     </comunicacion>
-  </solicitud>
-  <solicitud>
-    <codigoEstablecimiento>0000277232</codigoEstablecimiento>
     <comunicacion>
       <contrato>
         <referencia>F62F1097DC</referencia>
-        <fechaContrato>2025-10-24</fechaContrato>
-        <fechaEntrada>2025-10-24T00:00:00</fechaEntrada>
-        <fechaSalida>2025-10-27T00:00:00</fechaSalida>
+        <fechaContrato>2025-10-24+02:00</fechaContrato>
+        <fechaEntrada>2025-10-24T00:00:00+02:00</fechaEntrada>
+        <fechaSalida>2025-10-27T00:00:00+01:00</fechaSalida>
         <numPersonas>6</numPersonas>
+        <numHabitaciones>3</numHabitaciones>
+        <internet>true</internet>
         <pago>
           <tipoPago>OTRO</tipoPago>
         </pago>
@@ -597,8 +649,10 @@
         <apellido1>Carrasco</apellido1>
         <apellido2>Pardo</apellido2>
         <tipoDocumento>NIF</tipoDocumento>
-        <numeroDocumento>48828182x</numeroDocumento>
+        <numeroDocumento>48828182X</numeroDocumento>
         <soporteDocumento>Cjh136248</soporteDocumento>
+        <fechaNacimiento>1994-04-10+02:00</fechaNacimiento>
+        <nacionalidad>ESP</nacionalidad>
         <direccion>
           <direccion>NO CONSTA</direccion>
           <codigoMunicipio>45081</codigoMunicipio>
@@ -614,8 +668,10 @@
         <apellido1>Villalba</apellido1>
         <apellido2>Gondar</apellido2>
         <tipoDocumento>NIF</tipoDocumento>
-        <numeroDocumento>53477217d</numeroDocumento>
+        <numeroDocumento>53477217D</numeroDocumento>
         <soporteDocumento>Ckl115617</soporteDocumento>
+        <fechaNacimiento>1991-07-24+02:00</fechaNacimiento>
+        <nacionalidad>ESP</nacionalidad>
         <direccion>
           <direccion>NO CONSTA</direccion>
           <codigoMunicipio>28150</codigoMunicipio>
@@ -631,8 +687,10 @@
         <apellido1>Gondar</apellido1>
         <apellido2>Garea</apellido2>
         <tipoDocumento>NIF</tipoDocumento>
-        <numeroDocumento>04843011q</numeroDocumento>
+        <numeroDocumento>04843011Q</numeroDocumento>
         <soporteDocumento>Bav114858</soporteDocumento>
+        <fechaNacimiento>1968-03-26+01:00</fechaNacimiento>
+        <nacionalidad>ESP</nacionalidad>
         <direccion>
           <direccion>NO CONSTA</direccion>
           <codigoMunicipio>28150</codigoMunicipio>
@@ -650,6 +708,8 @@
         <tipoDocumento>NIF</tipoDocumento>
         <numeroDocumento>54935771H</numeroDocumento>
         <soporteDocumento>Ckf166681</soporteDocumento>
+        <fechaNacimiento>2019-07-05+02:00</fechaNacimiento>
+        <nacionalidad>ESP</nacionalidad>
         <direccion>
           <direccion>NO CONSTA</direccion>
           <codigoMunicipio>45081</codigoMunicipio>
@@ -665,8 +725,10 @@
         <apellido1>Villalba</apellido1>
         <apellido2>Carrasco</apellido2>
         <tipoDocumento>NIF</tipoDocumento>
-        <numeroDocumento>35725834a</numeroDocumento>
+        <numeroDocumento>35725834A</numeroDocumento>
         <soporteDocumento>Ckm156350</soporteDocumento>
+        <fechaNacimiento>2024-03-23+01:00</fechaNacimiento>
+        <nacionalidad>ESP</nacionalidad>
         <direccion>
           <direccion>NO CONSTA</direccion>
           <codigoMunicipio>45081</codigoMunicipio>
@@ -682,8 +744,10 @@
         <apellido1>Villalba</apellido1>
         <apellido2>Mañas</apellido2>
         <tipoDocumento>NIF</tipoDocumento>
-        <numeroDocumento>11795071g</numeroDocumento>
+        <numeroDocumento>11795071G</numeroDocumento>
         <soporteDocumento>Clh129919</soporteDocumento>
+        <fechaNacimiento>1965-06-22+02:00</fechaNacimiento>
+        <nacionalidad>ESP</nacionalidad>
         <direccion>
           <direccion>NO CONSTA</direccion>
           <codigoMunicipio>28150</codigoMunicipio>
@@ -694,16 +758,15 @@
         <parentesco>AB</parentesco>
       </persona>
     </comunicacion>
-  </solicitud>
-  <solicitud>
-    <codigoEstablecimiento>0000277232</codigoEstablecimiento>
     <comunicacion>
       <contrato>
         <referencia>4268FA9954</referencia>
-        <fechaContrato>2025-11-01</fechaContrato>
-        <fechaEntrada>2025-11-01T00:00:00</fechaEntrada>
-        <fechaSalida>2025-11-03T00:00:00</fechaSalida>
+        <fechaContrato>2025-11-01+01:00</fechaContrato>
+        <fechaEntrada>2025-11-01T00:00:00+01:00</fechaEntrada>
+        <fechaSalida>2025-11-03T00:00:00+01:00</fechaSalida>
         <numPersonas>5</numPersonas>
+        <numHabitaciones>3</numHabitaciones>
+        <internet>true</internet>
         <pago>
           <tipoPago>OTRO</tipoPago>
         </pago>
@@ -714,6 +777,8 @@
         <apellido1>Mitroi</apellido1>
         <tipoDocumento>PAS</tipoDocumento>
         <numeroDocumento>063427313</numeroDocumento>
+        <fechaNacimiento>1988-03-07+01:00</fechaNacimiento>
+        <nacionalidad>ESP</nacionalidad>
         <direccion>
           <direccion>NO CONSTA</direccion>
           <codigoMunicipio>50018</codigoMunicipio>
@@ -731,6 +796,8 @@
         <tipoDocumento>NIF</tipoDocumento>
         <numeroDocumento>72965487B</numeroDocumento>
         <soporteDocumento>CBG117743</soporteDocumento>
+        <fechaNacimiento>1972-10-31+01:00</fechaNacimiento>
+        <nacionalidad>ESP</nacionalidad>
         <direccion>
           <direccion>NO CONSTA</direccion>
           <codigoMunicipio>50018</codigoMunicipio>
@@ -748,6 +815,8 @@
         <tipoDocumento>NIF</tipoDocumento>
         <numeroDocumento>17466060K</numeroDocumento>
         <soporteDocumento>CHP160362</soporteDocumento>
+        <fechaNacimiento>2011-07-12+02:00</fechaNacimiento>
+        <nacionalidad>ESP</nacionalidad>
         <direccion>
           <direccion>NO CONSTA</direccion>
           <codigoMunicipio>50018</codigoMunicipio>
@@ -762,6 +831,8 @@
         <nombre>Cristian</nombre>
         <apellido1>Losilla</apellido1>
         <apellido2>Mitroi</apellido2>
+        <fechaNacimiento>2018-01-11+01:00</fechaNacimiento>
+        <nacionalidad>ESP</nacionalidad>
         <direccion>
           <direccion>NO CONSTA</direccion>
           <codigoMunicipio>50018</codigoMunicipio>
@@ -776,6 +847,8 @@
         <nombre>Sandra</nombre>
         <apellido1>Losilla</apellido1>
         <apellido2>Mitroi</apellido2>
+        <fechaNacimiento>2021-11-16+01:00</fechaNacimiento>
+        <nacionalidad>ESP</nacionalidad>
         <direccion>
           <direccion>NO CONSTA</direccion>
           <codigoMunicipio>50018</codigoMunicipio>
@@ -786,16 +859,15 @@
         <parentesco>HJ</parentesco>
       </persona>
     </comunicacion>
-  </solicitud>
-  <solicitud>
-    <codigoEstablecimiento>0000277232</codigoEstablecimiento>
     <comunicacion>
       <contrato>
         <referencia>4F3547BB0D</referencia>
-        <fechaContrato>2025-11-08</fechaContrato>
-        <fechaEntrada>2025-11-08T00:00:00</fechaEntrada>
-        <fechaSalida>2025-11-11T00:00:00</fechaSalida>
+        <fechaContrato>2025-11-08+01:00</fechaContrato>
+        <fechaEntrada>2025-11-08T00:00:00+01:00</fechaEntrada>
+        <fechaSalida>2025-11-11T00:00:00+01:00</fechaSalida>
         <numPersonas>3</numPersonas>
+        <numHabitaciones>3</numHabitaciones>
+        <internet>true</internet>
         <pago>
           <tipoPago>OTRO</tipoPago>
         </pago>
@@ -806,6 +878,8 @@
         <apellido1>SMEYERS</apellido1>
         <tipoDocumento>PAS</tipoDocumento>
         <numeroDocumento>190838000000</numeroDocumento>
+        <fechaNacimiento>1979-04-05+02:00</fechaNacimiento>
+        <nacionalidad>FRA</nacionalidad>
         <direccion>
           <direccion>NO CONSTA</direccion>
           <nombreMunicipio>Clonas sur varèze</nombreMunicipio>
@@ -820,6 +894,8 @@
         <apellido1>Rodriguez</apellido1>
         <tipoDocumento>PAS</tipoDocumento>
         <numeroDocumento>V7B088Y08</numeroDocumento>
+        <fechaNacimiento>1938-05-06+02:00</fechaNacimiento>
+        <nacionalidad>FRA</nacionalidad>
         <direccion>
           <direccion>NO CONSTA</direccion>
           <nombreMunicipio>Vienne</nombreMunicipio>
@@ -835,6 +911,8 @@
         <apellido2>SMEYERS</apellido2>
         <tipoDocumento>PAS</tipoDocumento>
         <numeroDocumento>C12XFL4R4</numeroDocumento>
+        <fechaNacimiento>1957-09-12+02:00</fechaNacimiento>
+        <nacionalidad>FRA</nacionalidad>
         <direccion>
           <direccion>NO CONSTA</direccion>
           <nombreMunicipio>saint sorlin de vienne</nombreMunicipio>
@@ -844,16 +922,15 @@
         <correo>alain.smeyers@gmail.com</correo>
       </persona>
     </comunicacion>
-  </solicitud>
-  <solicitud>
-    <codigoEstablecimiento>0000277232</codigoEstablecimiento>
     <comunicacion>
       <contrato>
         <referencia>0AC6B10F56</referencia>
-        <fechaContrato>2025-11-14</fechaContrato>
-        <fechaEntrada>2025-11-14T00:00:00</fechaEntrada>
-        <fechaSalida>2025-11-16T00:00:00</fechaSalida>
+        <fechaContrato>2025-11-14+01:00</fechaContrato>
+        <fechaEntrada>2025-11-14T00:00:00+01:00</fechaEntrada>
+        <fechaSalida>2025-11-16T00:00:00+01:00</fechaSalida>
         <numPersonas>4</numPersonas>
+        <numHabitaciones>3</numHabitaciones>
+        <internet>true</internet>
         <pago>
           <tipoPago>OTRO</tipoPago>
         </pago>
@@ -866,6 +943,8 @@
         <tipoDocumento>NIF</tipoDocumento>
         <numeroDocumento>72171762Q</numeroDocumento>
         <soporteDocumento>CHB190781</soporteDocumento>
+        <fechaNacimiento>1992-11-27+01:00</fechaNacimiento>
+        <nacionalidad>ESP</nacionalidad>
         <direccion>
           <direccion>NO CONSTA</direccion>
           <codigoMunicipio>39042</codigoMunicipio>
@@ -882,6 +961,8 @@
         <tipoDocumento>NIF</tipoDocumento>
         <numeroDocumento>72173715Z</numeroDocumento>
         <soporteDocumento>CIH143865</soporteDocumento>
+        <fechaNacimiento>1995-03-13+01:00</fechaNacimiento>
+        <nacionalidad>ESP</nacionalidad>
         <direccion>
           <direccion>NO CONSTA</direccion>
           <codigoMunicipio>39042</codigoMunicipio>
@@ -898,6 +979,8 @@
         <tipoDocumento>NIF</tipoDocumento>
         <numeroDocumento>72081425T</numeroDocumento>
         <soporteDocumento>BOP116505</soporteDocumento>
+        <fechaNacimiento>1997-04-11+02:00</fechaNacimiento>
+        <nacionalidad>ESP</nacionalidad>
         <direccion>
           <direccion>NO CONSTA</direccion>
           <codigoMunicipio>39079</codigoMunicipio>
@@ -914,6 +997,8 @@
         <tipoDocumento>NIF</tipoDocumento>
         <numeroDocumento>72104116J</numeroDocumento>
         <soporteDocumento>CCK129278</soporteDocumento>
+        <fechaNacimiento>1996-06-23+02:00</fechaNacimiento>
+        <nacionalidad>ESP</nacionalidad>
         <direccion>
           <direccion>NO CONSTA</direccion>
           <codigoMunicipio>39043</codigoMunicipio>
@@ -923,16 +1008,15 @@
         <correo>Alejandrolainz59@gmail.com</correo>
       </persona>
     </comunicacion>
-  </solicitud>
-  <solicitud>
-    <codigoEstablecimiento>0000277232</codigoEstablecimiento>
     <comunicacion>
       <contrato>
         <referencia>DBAE9DF5AF</referencia>
-        <fechaContrato>2025-11-21</fechaContrato>
-        <fechaEntrada>2025-11-21T00:00:00</fechaEntrada>
-        <fechaSalida>2025-11-23T00:00:00</fechaSalida>
+        <fechaContrato>2025-11-21+01:00</fechaContrato>
+        <fechaEntrada>2025-11-21T00:00:00+01:00</fechaEntrada>
+        <fechaSalida>2025-11-23T00:00:00+01:00</fechaSalida>
         <numPersonas>3</numPersonas>
+        <numHabitaciones>3</numHabitaciones>
+        <internet>true</internet>
         <pago>
           <tipoPago>OTRO</tipoPago>
         </pago>
@@ -943,8 +1027,10 @@
         <apellido1>Osipov</apellido1>
         <apellido2>Eatica</apellido2>
         <tipoDocumento>NIF</tipoDocumento>
-        <numeroDocumento>60910636n</numeroDocumento>
+        <numeroDocumento>60910636N</numeroDocumento>
         <soporteDocumento>Cks187769</soporteDocumento>
+        <fechaNacimiento>1979-10-22+02:00</fechaNacimiento>
+        <nacionalidad>ESP</nacionalidad>
         <direccion>
           <direccion>NO CONSTA</direccion>
           <codigoMunicipio>28079</codigoMunicipio>
@@ -960,8 +1046,10 @@
         <apellido1>Amarandei</apellido1>
         <apellido2>Prochipiuc</apellido2>
         <tipoDocumento>NIF</tipoDocumento>
-        <numeroDocumento>60922477p</numeroDocumento>
+        <numeroDocumento>60922477P</numeroDocumento>
         <soporteDocumento>Cks187667</soporteDocumento>
+        <fechaNacimiento>1976-11-19+01:00</fechaNacimiento>
+        <nacionalidad>ESP</nacionalidad>
         <direccion>
           <direccion>NO CONSTA</direccion>
           <codigoMunicipio>28079</codigoMunicipio>
@@ -977,8 +1065,10 @@
         <apellido1>Amarandei</apellido1>
         <apellido2>Osipov</apellido2>
         <tipoDocumento>NIF</tipoDocumento>
-        <numeroDocumento>60645218z</numeroDocumento>
+        <numeroDocumento>60645218Z</numeroDocumento>
         <soporteDocumento>Cjk137114</soporteDocumento>
+        <fechaNacimiento>2010-01-21+01:00</fechaNacimiento>
+        <nacionalidad>ESP</nacionalidad>
         <direccion>
           <direccion>NO CONSTA</direccion>
           <codigoMunicipio>28079</codigoMunicipio>
@@ -989,16 +1079,15 @@
         <parentesco>HJ</parentesco>
       </persona>
     </comunicacion>
-  </solicitud>
-  <solicitud>
-    <codigoEstablecimiento>0000277232</codigoEstablecimiento>
     <comunicacion>
       <contrato>
         <referencia>4C880F3A62</referencia>
-        <fechaContrato>2025-12-05</fechaContrato>
-        <fechaEntrada>2025-12-05T00:00:00</fechaEntrada>
-        <fechaSalida>2025-12-07T00:00:00</fechaSalida>
+        <fechaContrato>2025-12-05+01:00</fechaContrato>
+        <fechaEntrada>2025-12-05T00:00:00+01:00</fechaEntrada>
+        <fechaSalida>2025-12-07T00:00:00+01:00</fechaSalida>
         <numPersonas>5</numPersonas>
+        <numHabitaciones>3</numHabitaciones>
+        <internet>true</internet>
         <pago>
           <tipoPago>OTRO</tipoPago>
         </pago>
@@ -1009,6 +1098,8 @@
         <apellido1>Giuseppe</apellido1>
         <tipoDocumento>PAS</tipoDocumento>
         <numeroDocumento>ca00346ij</numeroDocumento>
+        <fechaNacimiento>1976-12-03+01:00</fechaNacimiento>
+        <nacionalidad>ITA</nacionalidad>
         <direccion>
           <direccion>NO CONSTA</direccion>
           <nombreMunicipio>simeri crichi</nombreMunicipio>
@@ -1024,6 +1115,8 @@
         <apellido1>pizzari</apellido1>
         <tipoDocumento>PAS</tipoDocumento>
         <numeroDocumento>ca92478fe</numeroDocumento>
+        <fechaNacimiento>1983-01-02+01:00</fechaNacimiento>
+        <nacionalidad>ITA</nacionalidad>
         <direccion>
           <direccion>NO CONSTA</direccion>
           <nombreMunicipio>ronco all'adige</nombreMunicipio>
@@ -1039,6 +1132,8 @@
         <apellido1>critelli</apellido1>
         <tipoDocumento>PAS</tipoDocumento>
         <numeroDocumento>ca39966ij</numeroDocumento>
+        <fechaNacimiento>2009-06-24+02:00</fechaNacimiento>
+        <nacionalidad>ITA</nacionalidad>
         <direccion>
           <direccion>NO CONSTA</direccion>
           <nombreMunicipio>ronco all'adige</nombreMunicipio>
@@ -1054,6 +1149,8 @@
         <apellido1>critelli</apellido1>
         <tipoDocumento>PAS</tipoDocumento>
         <numeroDocumento>ca39965ij</numeroDocumento>
+        <fechaNacimiento>2011-08-23+02:00</fechaNacimiento>
+        <nacionalidad>ITA</nacionalidad>
         <direccion>
           <direccion>NO CONSTA</direccion>
           <nombreMunicipio>ronco all'adige</nombreMunicipio>
@@ -1069,6 +1166,8 @@
         <apellido1>critelli</apellido1>
         <tipoDocumento>PAS</tipoDocumento>
         <numeroDocumento>ca42698qu</numeroDocumento>
+        <fechaNacimiento>2013-12-03+01:00</fechaNacimiento>
+        <nacionalidad>ITA</nacionalidad>
         <direccion>
           <direccion>NO CONSTA</direccion>
           <nombreMunicipio>ronco all'adige</nombreMunicipio>
@@ -1079,16 +1178,15 @@
         <parentesco>HJ</parentesco>
       </persona>
     </comunicacion>
-  </solicitud>
-  <solicitud>
-    <codigoEstablecimiento>0000277232</codigoEstablecimiento>
     <comunicacion>
       <contrato>
         <referencia>CA6EAAE029</referencia>
-        <fechaContrato>2025-12-19</fechaContrato>
-        <fechaEntrada>2025-12-19T00:00:00</fechaEntrada>
-        <fechaSalida>2025-12-21T00:00:00</fechaSalida>
+        <fechaContrato>2025-12-19+01:00</fechaContrato>
+        <fechaEntrada>2025-12-19T00:00:00+01:00</fechaEntrada>
+        <fechaSalida>2025-12-21T00:00:00+01:00</fechaSalida>
         <numPersonas>3</numPersonas>
+        <numHabitaciones>3</numHabitaciones>
+        <internet>true</internet>
         <pago>
           <tipoPago>OTRO</tipoPago>
         </pago>
@@ -1099,6 +1197,8 @@
         <apellido1>Wytema</apellido1>
         <tipoDocumento>PAS</tipoDocumento>
         <numeroDocumento>NYRLCDKC2</numeroDocumento>
+        <fechaNacimiento>1982-08-05+02:00</fechaNacimiento>
+        <nacionalidad>NLD</nacionalidad>
         <direccion>
           <direccion>NO CONSTA</direccion>
           <nombreMunicipio>Haarlem</nombreMunicipio>
@@ -1114,6 +1214,8 @@
         <apellido1>Diaz</apellido1>
         <tipoDocumento>PAS</tipoDocumento>
         <numeroDocumento>NX7P2K875</numeroDocumento>
+        <fechaNacimiento>1979-07-07+02:00</fechaNacimiento>
+        <nacionalidad>NLD</nacionalidad>
         <direccion>
           <direccion>NO CONSTA</direccion>
           <nombreMunicipio>Haarlem</nombreMunicipio>
@@ -1129,6 +1231,8 @@
         <apellido1>Wytema</apellido1>
         <tipoDocumento>PAS</tipoDocumento>
         <numeroDocumento>NTJHL8LB7</numeroDocumento>
+        <fechaNacimiento>2020-09-09+02:00</fechaNacimiento>
+        <nacionalidad>NLD</nacionalidad>
         <direccion>
           <direccion>NO CONSTA</direccion>
           <nombreMunicipio>Haarlem</nombreMunicipio>
@@ -1139,16 +1243,15 @@
         <parentesco>HJ</parentesco>
       </persona>
     </comunicacion>
-  </solicitud>
-  <solicitud>
-    <codigoEstablecimiento>0000277232</codigoEstablecimiento>
     <comunicacion>
       <contrato>
         <referencia>53C6601651</referencia>
-        <fechaContrato>2025-12-26</fechaContrato>
-        <fechaEntrada>2025-12-26T00:00:00</fechaEntrada>
-        <fechaSalida>2025-12-28T00:00:00</fechaSalida>
+        <fechaContrato>2025-12-26+01:00</fechaContrato>
+        <fechaEntrada>2025-12-26T00:00:00+01:00</fechaEntrada>
+        <fechaSalida>2025-12-28T00:00:00+01:00</fechaSalida>
         <numPersonas>5</numPersonas>
+        <numHabitaciones>3</numHabitaciones>
+        <internet>true</internet>
         <pago>
           <tipoPago>OTRO</tipoPago>
         </pago>
@@ -1159,6 +1262,8 @@
         <apellido1>Belmar</apellido1>
         <tipoDocumento>PAS</tipoDocumento>
         <numeroDocumento>R09411246</numeroDocumento>
+        <fechaNacimiento>1977-10-24+02:00</fechaNacimiento>
+        <nacionalidad>CHL</nacionalidad>
         <direccion>
           <direccion>NO CONSTA</direccion>
           <nombreMunicipio>Ñuñoa</nombreMunicipio>
@@ -1173,6 +1278,8 @@
         <apellido1>Fuentes</apellido1>
         <tipoDocumento>PAS</tipoDocumento>
         <numeroDocumento>R09411233</numeroDocumento>
+        <fechaNacimiento>1974-05-05+02:00</fechaNacimiento>
+        <nacionalidad>CHL</nacionalidad>
         <direccion>
           <direccion>NO CONSTA</direccion>
           <nombreMunicipio>Ñuñoa</nombreMunicipio>
@@ -1187,6 +1294,8 @@
         <apellido1>Parra</apellido1>
         <tipoDocumento>PAS</tipoDocumento>
         <numeroDocumento>F67725411</numeroDocumento>
+        <fechaNacimiento>1954-02-12+01:00</fechaNacimiento>
+        <nacionalidad>CHL</nacionalidad>
         <direccion>
           <direccion>NO CONSTA</direccion>
           <nombreMunicipio>Ñuñoa</nombreMunicipio>
@@ -1201,6 +1310,8 @@
         <apellido1>Belmar</apellido1>
         <tipoDocumento>PAS</tipoDocumento>
         <numeroDocumento>R01691275</numeroDocumento>
+        <fechaNacimiento>2002-02-26+01:00</fechaNacimiento>
+        <nacionalidad>CHL</nacionalidad>
         <direccion>
           <direccion>NO CONSTA</direccion>
           <nombreMunicipio>Ñuñoa</nombreMunicipio>
@@ -1215,6 +1326,8 @@
         <apellido1>Belmar</apellido1>
         <tipoDocumento>PAS</tipoDocumento>
         <numeroDocumento>R02811616</numeroDocumento>
+        <fechaNacimiento>2006-10-12+02:00</fechaNacimiento>
+        <nacionalidad>CHL</nacionalidad>
         <direccion>
           <direccion>NO CONSTA</direccion>
           <nombreMunicipio>Ñuñoa</nombreMunicipio>
@@ -1224,16 +1337,15 @@
         <correo>Jobelmar@gmail.com</correo>
       </persona>
     </comunicacion>
-  </solicitud>
-  <solicitud>
-    <codigoEstablecimiento>0000277232</codigoEstablecimiento>
     <comunicacion>
       <contrato>
         <referencia>1416D5E6A1</referencia>
-        <fechaContrato>2026-02-06</fechaContrato>
-        <fechaEntrada>2026-02-06T00:00:00</fechaEntrada>
-        <fechaSalida>2026-02-08T00:00:00</fechaSalida>
+        <fechaContrato>2026-02-06+01:00</fechaContrato>
+        <fechaEntrada>2026-02-06T00:00:00+01:00</fechaEntrada>
+        <fechaSalida>2026-02-08T00:00:00+01:00</fechaSalida>
         <numPersonas>2</numPersonas>
+        <numHabitaciones>3</numHabitaciones>
+        <internet>true</internet>
         <pago>
           <tipoPago>OTRO</tipoPago>
         </pago>
@@ -1246,6 +1358,8 @@
         <tipoDocumento>NIF</tipoDocumento>
         <numeroDocumento>73004740A</numeroDocumento>
         <soporteDocumento>CIN182779</soporteDocumento>
+        <fechaNacimiento>1988-08-09+02:00</fechaNacimiento>
+        <nacionalidad>ESP</nacionalidad>
         <direccion>
           <direccion>NO CONSTA</direccion>
           <codigoMunicipio>50297</codigoMunicipio>
@@ -1262,6 +1376,8 @@
         <tipoDocumento>NIF</tipoDocumento>
         <numeroDocumento>17453458T</numeroDocumento>
         <soporteDocumento>CHP163751</soporteDocumento>
+        <fechaNacimiento>1982-11-30+01:00</fechaNacimiento>
+        <nacionalidad>ESP</nacionalidad>
         <direccion>
           <direccion>NO CONSTA</direccion>
           <codigoMunicipio>50297</codigoMunicipio>
@@ -1271,16 +1387,15 @@
         <correo>sruben.256618@guest.booking.com</correo>
       </persona>
     </comunicacion>
-  </solicitud>
-  <solicitud>
-    <codigoEstablecimiento>0000277232</codigoEstablecimiento>
     <comunicacion>
       <contrato>
         <referencia>2E62D8D74B</referencia>
-        <fechaContrato>2026-02-16</fechaContrato>
-        <fechaEntrada>2026-02-16T00:00:00</fechaEntrada>
-        <fechaSalida>2026-02-20T00:00:00</fechaSalida>
+        <fechaContrato>2026-02-16+01:00</fechaContrato>
+        <fechaEntrada>2026-02-16T00:00:00+01:00</fechaEntrada>
+        <fechaSalida>2026-02-20T00:00:00+01:00</fechaSalida>
         <numPersonas>2</numPersonas>
+        <numHabitaciones>3</numHabitaciones>
+        <internet>true</internet>
         <pago>
           <tipoPago>OTRO</tipoPago>
         </pago>
@@ -1291,6 +1406,8 @@
         <apellido1>Hilgevoord</apellido1>
         <tipoDocumento>PAS</tipoDocumento>
         <numeroDocumento>NXC3RCC42</numeroDocumento>
+        <fechaNacimiento>1959-10-02+02:00</fechaNacimiento>
+        <nacionalidad>NLD</nacionalidad>
         <direccion>
           <direccion>NO CONSTA</direccion>
           <nombreMunicipio>Leiden</nombreMunicipio>
@@ -1305,6 +1422,8 @@
         <apellido1>Dekker</apellido1>
         <tipoDocumento>PAS</tipoDocumento>
         <numeroDocumento>NXC8J0B28</numeroDocumento>
+        <fechaNacimiento>1959-11-25+01:00</fechaNacimiento>
+        <nacionalidad>NLD</nacionalidad>
         <direccion>
           <direccion>NO CONSTA</direccion>
           <nombreMunicipio>Leiden</nombreMunicipio>
@@ -1314,16 +1433,15 @@
         <correo>jokehilgevoord@gmail.com</correo>
       </persona>
     </comunicacion>
-  </solicitud>
-  <solicitud>
-    <codigoEstablecimiento>0000277232</codigoEstablecimiento>
     <comunicacion>
       <contrato>
         <referencia>CFCBD3DF31</referencia>
-        <fechaContrato>2026-02-20</fechaContrato>
-        <fechaEntrada>2026-02-20T00:00:00</fechaEntrada>
-        <fechaSalida>2026-02-22T00:00:00</fechaSalida>
+        <fechaContrato>2026-02-20+01:00</fechaContrato>
+        <fechaEntrada>2026-02-20T00:00:00+01:00</fechaEntrada>
+        <fechaSalida>2026-02-22T00:00:00+01:00</fechaSalida>
         <numPersonas>4</numPersonas>
+        <numHabitaciones>3</numHabitaciones>
+        <internet>true</internet>
         <pago>
           <tipoPago>OTRO</tipoPago>
         </pago>
@@ -1334,6 +1452,8 @@
         <apellido1>Murash</apellido1>
         <tipoDocumento>PAS</tipoDocumento>
         <numeroDocumento>FT722074</numeroDocumento>
+        <fechaNacimiento>1976-02-20+01:00</fechaNacimiento>
+        <nacionalidad>AIA</nacionalidad>
         <direccion>
           <direccion>NO CONSTA</direccion>
           <nombreMunicipio>Lancaster</nombreMunicipio>
@@ -1349,6 +1469,8 @@
         <apellido1>Murash</apellido1>
         <tipoDocumento>PAS</tipoDocumento>
         <numeroDocumento>GM378241</numeroDocumento>
+        <fechaNacimiento>2012-05-13+02:00</fechaNacimiento>
+        <nacionalidad>AIA</nacionalidad>
         <direccion>
           <direccion>NO CONSTA</direccion>
           <nombreMunicipio>Lancaster</nombreMunicipio>
@@ -1364,6 +1486,8 @@
         <apellido1>Yavorska</apellido1>
         <tipoDocumento>PAS</tipoDocumento>
         <numeroDocumento>GG714209</numeroDocumento>
+        <fechaNacimiento>1997-04-09+02:00</fechaNacimiento>
+        <nacionalidad>UKR</nacionalidad>
         <direccion>
           <direccion>NO CONSTA</direccion>
           <nombreMunicipio>Irpen</nombreMunicipio>
@@ -1379,6 +1503,8 @@
         <apellido1>Dvarionas</apellido1>
         <tipoDocumento>PAS</tipoDocumento>
         <numeroDocumento>24099748</numeroDocumento>
+        <fechaNacimiento>1980-10-05+02:00</fechaNacimiento>
+        <nacionalidad>AIA</nacionalidad>
         <direccion>
           <direccion>NO CONSTA</direccion>
           <nombreMunicipio>Lancaster</nombreMunicipio>
@@ -1389,16 +1515,15 @@
         <parentesco>CY</parentesco>
       </persona>
     </comunicacion>
-  </solicitud>
-  <solicitud>
-    <codigoEstablecimiento>0000277232</codigoEstablecimiento>
     <comunicacion>
       <contrato>
         <referencia>8332142A94</referencia>
-        <fechaContrato>2026-02-23</fechaContrato>
-        <fechaEntrada>2026-02-23T00:00:00</fechaEntrada>
-        <fechaSalida>2026-02-25T00:00:00</fechaSalida>
+        <fechaContrato>2026-02-23+01:00</fechaContrato>
+        <fechaEntrada>2026-02-23T00:00:00+01:00</fechaEntrada>
+        <fechaSalida>2026-02-25T00:00:00+01:00</fechaSalida>
         <numPersonas>2</numPersonas>
+        <numHabitaciones>3</numHabitaciones>
+        <internet>true</internet>
         <pago>
           <tipoPago>OTRO</tipoPago>
         </pago>
@@ -1409,6 +1534,8 @@
         <apellido1>Fernandez</apellido1>
         <tipoDocumento>PAS</tipoDocumento>
         <numeroDocumento>K0B17U26</numeroDocumento>
+        <fechaNacimiento>1981-08-07+02:00</fechaNacimiento>
+        <nacionalidad>CHE</nacionalidad>
         <direccion>
           <direccion>NO CONSTA</direccion>
           <nombreMunicipio>Zürich</nombreMunicipio>
@@ -1424,6 +1551,8 @@
         <apellido1>Saray</apellido1>
         <tipoDocumento>PAS</tipoDocumento>
         <numeroDocumento>XDF699253</numeroDocumento>
+        <fechaNacimiento>2020-06-24+02:00</fechaNacimiento>
+        <nacionalidad>ESP</nacionalidad>
         <direccion>
           <direccion>NO CONSTA</direccion>
           <codigoMunicipio>28079</codigoMunicipio>
@@ -1434,16 +1563,15 @@
         <parentesco>HJ</parentesco>
       </persona>
     </comunicacion>
-  </solicitud>
-  <solicitud>
-    <codigoEstablecimiento>0000277232</codigoEstablecimiento>
     <comunicacion>
       <contrato>
         <referencia>EAB05BA4E2</referencia>
-        <fechaContrato>2026-02-26</fechaContrato>
-        <fechaEntrada>2026-02-26T00:00:00</fechaEntrada>
-        <fechaSalida>2026-03-03T00:00:00</fechaSalida>
+        <fechaContrato>2026-02-26+01:00</fechaContrato>
+        <fechaEntrada>2026-02-26T00:00:00+01:00</fechaEntrada>
+        <fechaSalida>2026-03-03T00:00:00+01:00</fechaSalida>
         <numPersonas>4</numPersonas>
+        <numHabitaciones>3</numHabitaciones>
+        <internet>true</internet>
         <pago>
           <tipoPago>OTRO</tipoPago>
         </pago>
@@ -1454,6 +1582,8 @@
         <apellido1>Hrbáč</apellido1>
         <tipoDocumento>PAS</tipoDocumento>
         <numeroDocumento>50048398</numeroDocumento>
+        <fechaNacimiento>1980-07-21+02:00</fechaNacimiento>
+        <nacionalidad>CZE</nacionalidad>
         <direccion>
           <direccion>NO CONSTA</direccion>
           <nombreMunicipio>Ostrava</nombreMunicipio>
@@ -1469,6 +1599,8 @@
         <apellido1>Hrbáčová</apellido1>
         <tipoDocumento>PAS</tipoDocumento>
         <numeroDocumento>47326235</numeroDocumento>
+        <fechaNacimiento>2020-05-13+02:00</fechaNacimiento>
+        <nacionalidad>POL</nacionalidad>
         <direccion>
           <direccion>NO CONSTA</direccion>
           <nombreMunicipio>Bystra</nombreMunicipio>
@@ -1484,6 +1616,8 @@
         <apellido1>Zurowska</apellido1>
         <tipoDocumento>OTRO</tipoDocumento>
         <numeroDocumento>El 6457740</numeroDocumento>
+        <fechaNacimiento>1984-03-16+01:00</fechaNacimiento>
+        <nacionalidad>POL</nacionalidad>
         <direccion>
           <direccion>NO CONSTA</direccion>
           <nombreMunicipio>Bystra</nombreMunicipio>
@@ -1499,6 +1633,8 @@
         <apellido1>zurowska</apellido1>
         <tipoDocumento>PAS</tipoDocumento>
         <numeroDocumento>Dex442592</numeroDocumento>
+        <fechaNacimiento>2010-10-07+02:00</fechaNacimiento>
+        <nacionalidad>POL</nacionalidad>
         <direccion>
           <direccion>NO CONSTA</direccion>
           <nombreMunicipio>Bystra</nombreMunicipio>
@@ -1509,16 +1645,15 @@
         <parentesco>HJ</parentesco>
       </persona>
     </comunicacion>
-  </solicitud>
-  <solicitud>
-    <codigoEstablecimiento>0000277232</codigoEstablecimiento>
     <comunicacion>
       <contrato>
         <referencia>6102603BB1</referencia>
-        <fechaContrato>2026-03-03</fechaContrato>
-        <fechaEntrada>2026-03-03T00:00:00</fechaEntrada>
-        <fechaSalida>2026-03-05T00:00:00</fechaSalida>
+        <fechaContrato>2026-03-03+01:00</fechaContrato>
+        <fechaEntrada>2026-03-03T00:00:00+01:00</fechaEntrada>
+        <fechaSalida>2026-03-05T00:00:00+01:00</fechaSalida>
         <numPersonas>2</numPersonas>
+        <numHabitaciones>3</numHabitaciones>
+        <internet>true</internet>
         <pago>
           <tipoPago>OTRO</tipoPago>
         </pago>
@@ -1529,6 +1664,8 @@
         <apellido1>Green</apellido1>
         <tipoDocumento>PAS</tipoDocumento>
         <numeroDocumento>135685972</numeroDocumento>
+        <fechaNacimiento>1963-02-27+01:00</fechaNacimiento>
+        <nacionalidad>GBR</nacionalidad>
         <direccion>
           <direccion>NO CONSTA</direccion>
           <nombreMunicipio>Shropshire</nombreMunicipio>
@@ -1543,6 +1680,8 @@
         <apellido1>Green</apellido1>
         <tipoDocumento>PAS</tipoDocumento>
         <numeroDocumento>135814451</numeroDocumento>
+        <fechaNacimiento>1963-02-17+01:00</fechaNacimiento>
+        <nacionalidad>GBR</nacionalidad>
         <direccion>
           <direccion>NO CONSTA</direccion>
           <nombreMunicipio>Shropshire</nombreMunicipio>
@@ -1552,16 +1691,15 @@
         <correo>no_email_from_airbnb@guest.airbnb.com</correo>
       </persona>
     </comunicacion>
-  </solicitud>
-  <solicitud>
-    <codigoEstablecimiento>0000277232</codigoEstablecimiento>
     <comunicacion>
       <contrato>
         <referencia>83FE4D8DDD</referencia>
-        <fechaContrato>2026-03-05</fechaContrato>
-        <fechaEntrada>2026-03-05T00:00:00</fechaEntrada>
-        <fechaSalida>2026-03-07T00:00:00</fechaSalida>
+        <fechaContrato>2026-03-05+01:00</fechaContrato>
+        <fechaEntrada>2026-03-05T00:00:00+01:00</fechaEntrada>
+        <fechaSalida>2026-03-07T00:00:00+01:00</fechaSalida>
         <numPersonas>5</numPersonas>
+        <numHabitaciones>3</numHabitaciones>
+        <internet>true</internet>
         <pago>
           <tipoPago>OTRO</tipoPago>
         </pago>
@@ -1574,6 +1712,8 @@
         <tipoDocumento>NIE</tipoDocumento>
         <numeroDocumento>Z2014039A</numeroDocumento>
         <soporteDocumento>E27599447</soporteDocumento>
+        <fechaNacimiento>2006-05-31+02:00</fechaNacimiento>
+        <nacionalidad>ESP</nacionalidad>
         <direccion>
           <direccion>NO CONSTA</direccion>
           <codigoMunicipio>28181</codigoMunicipio>
@@ -1589,6 +1729,8 @@
         <apellido2>Bastidas</apellido2>
         <tipoDocumento>PAS</tipoDocumento>
         <numeroDocumento>A9812815</numeroDocumento>
+        <fechaNacimiento>2006-03-01+01:00</fechaNacimiento>
+        <nacionalidad>ECU</nacionalidad>
         <direccion>
           <direccion>NO CONSTA</direccion>
           <nombreMunicipio>Guayaquil</nombreMunicipio>
@@ -1605,6 +1747,8 @@
         <tipoDocumento>NIE</tipoDocumento>
         <numeroDocumento>Z0340571S</numeroDocumento>
         <soporteDocumento>E28627202</soporteDocumento>
+        <fechaNacimiento>2001-10-03+02:00</fechaNacimiento>
+        <nacionalidad>ESP</nacionalidad>
         <direccion>
           <direccion>NO CONSTA</direccion>
           <codigoMunicipio>28181</codigoMunicipio>
@@ -1621,6 +1765,8 @@
         <tipoDocumento>NIE</tipoDocumento>
         <numeroDocumento>Z2922069Q</numeroDocumento>
         <soporteDocumento>E02392389</soporteDocumento>
+        <fechaNacimiento>2006-12-13+01:00</fechaNacimiento>
+        <nacionalidad>ESP</nacionalidad>
         <direccion>
           <direccion>NO CONSTA</direccion>
           <codigoMunicipio>28181</codigoMunicipio>
@@ -1637,6 +1783,8 @@
         <tipoDocumento>NIE</tipoDocumento>
         <numeroDocumento>Z2924652T</numeroDocumento>
         <soporteDocumento>E28482135</soporteDocumento>
+        <fechaNacimiento>2004-10-01+02:00</fechaNacimiento>
+        <nacionalidad>ESP</nacionalidad>
         <direccion>
           <direccion>NO CONSTA</direccion>
           <codigoMunicipio>28181</codigoMunicipio>
@@ -1646,16 +1794,15 @@
         <correo>lsantyortiz@gmail.com</correo>
       </persona>
     </comunicacion>
-  </solicitud>
-  <solicitud>
-    <codigoEstablecimiento>0000277232</codigoEstablecimiento>
     <comunicacion>
       <contrato>
         <referencia>97F6E65BC7</referencia>
-        <fechaContrato>2026-03-13</fechaContrato>
-        <fechaEntrada>2026-03-13T00:00:00</fechaEntrada>
-        <fechaSalida>2026-03-15T00:00:00</fechaSalida>
+        <fechaContrato>2026-03-13+01:00</fechaContrato>
+        <fechaEntrada>2026-03-13T00:00:00+01:00</fechaEntrada>
+        <fechaSalida>2026-03-15T00:00:00+01:00</fechaSalida>
         <numPersonas>5</numPersonas>
+        <numHabitaciones>3</numHabitaciones>
+        <internet>true</internet>
         <pago>
           <tipoPago>OTRO</tipoPago>
         </pago>
@@ -1668,6 +1815,8 @@
         <tipoDocumento>NIF</tipoDocumento>
         <numeroDocumento>46964351F</numeroDocumento>
         <soporteDocumento>Cep177664</soporteDocumento>
+        <fechaNacimiento>1978-09-08+02:00</fechaNacimiento>
+        <nacionalidad>ESP</nacionalidad>
         <direccion>
           <direccion>NO CONSTA</direccion>
           <codigoMunicipio>17023</codigoMunicipio>
@@ -1684,6 +1833,8 @@
         <tipoDocumento>NIE</tipoDocumento>
         <numeroDocumento>X2783063V</numeroDocumento>
         <soporteDocumento>E21652715</soporteDocumento>
+        <fechaNacimiento>1970-09-19+02:00</fechaNacimiento>
+        <nacionalidad>ESP</nacionalidad>
         <direccion>
           <direccion>NO CONSTA</direccion>
           <codigoMunicipio>17023</codigoMunicipio>
@@ -1700,6 +1851,8 @@
         <tipoDocumento>NIF</tipoDocumento>
         <numeroDocumento>44004828D</numeroDocumento>
         <soporteDocumento>Bhm128371</soporteDocumento>
+        <fechaNacimiento>1975-04-29+02:00</fechaNacimiento>
+        <nacionalidad>ESP</nacionalidad>
         <direccion>
           <direccion>NO CONSTA</direccion>
           <codigoMunicipio>17023</codigoMunicipio>
@@ -1714,8 +1867,10 @@
         <apellido1>Ramos</apellido1>
         <apellido2>Hernández</apellido2>
         <tipoDocumento>NIF</tipoDocumento>
-        <numeroDocumento>46287215z</numeroDocumento>
+        <numeroDocumento>46287215Z</numeroDocumento>
         <soporteDocumento>Cli107835</soporteDocumento>
+        <fechaNacimiento>1965-02-11+01:00</fechaNacimiento>
+        <nacionalidad>ESP</nacionalidad>
         <direccion>
           <direccion>NO CONSTA</direccion>
           <codigoMunicipio>17023</codigoMunicipio>
@@ -1731,6 +1886,8 @@
         <apellido2>Albuernes</apellido2>
         <tipoDocumento>PAS</tipoDocumento>
         <numeroDocumento>P182129</numeroDocumento>
+        <fechaNacimiento>1968-06-08+02:00</fechaNacimiento>
+        <nacionalidad>ESP</nacionalidad>
         <direccion>
           <direccion>NO CONSTA</direccion>
           <codigoMunicipio>17023</codigoMunicipio>
@@ -1740,16 +1897,15 @@
         <correo>Enriqueluis0806@gmail.com</correo>
       </persona>
     </comunicacion>
-  </solicitud>
-  <solicitud>
-    <codigoEstablecimiento>0000277232</codigoEstablecimiento>
     <comunicacion>
       <contrato>
         <referencia>E8C44FF504</referencia>
-        <fechaContrato>2026-03-19</fechaContrato>
-        <fechaEntrada>2026-03-19T00:00:00</fechaEntrada>
-        <fechaSalida>2026-03-23T00:00:00</fechaSalida>
+        <fechaContrato>2026-03-19+01:00</fechaContrato>
+        <fechaEntrada>2026-03-19T00:00:00+01:00</fechaEntrada>
+        <fechaSalida>2026-03-23T00:00:00+01:00</fechaSalida>
         <numPersonas>2</numPersonas>
+        <numHabitaciones>3</numHabitaciones>
+        <internet>true</internet>
         <pago>
           <tipoPago>OTRO</tipoPago>
         </pago>
@@ -1760,6 +1916,8 @@
         <apellido1>Anne</apellido1>
         <tipoDocumento>PAS</tipoDocumento>
         <numeroDocumento>C79HTW46F</numeroDocumento>
+        <fechaNacimiento>1964-10-25+01:00</fechaNacimiento>
+        <nacionalidad>DEU</nacionalidad>
         <direccion>
           <direccion>NO CONSTA</direccion>
           <nombreMunicipio>Königswinter</nombreMunicipio>
@@ -1774,6 +1932,8 @@
         <apellido1>Gabriele</apellido1>
         <tipoDocumento>PAS</tipoDocumento>
         <numeroDocumento>C76NL4WK9</numeroDocumento>
+        <fechaNacimiento>1964-10-13+02:00</fechaNacimiento>
+        <nacionalidad>DEU</nacionalidad>
         <direccion>
           <direccion>NO CONSTA</direccion>
           <nombreMunicipio>Bedburg</nombreMunicipio>
@@ -1783,16 +1943,15 @@
         <correo>koehn.gaby@web.de</correo>
       </persona>
     </comunicacion>
-  </solicitud>
-  <solicitud>
-    <codigoEstablecimiento>0000277232</codigoEstablecimiento>
     <comunicacion>
       <contrato>
         <referencia>19AE3180D8</referencia>
-        <fechaContrato>2026-03-26</fechaContrato>
-        <fechaEntrada>2026-03-26T00:00:00</fechaEntrada>
-        <fechaSalida>2026-03-30T00:00:00</fechaSalida>
+        <fechaContrato>2026-03-26+01:00</fechaContrato>
+        <fechaEntrada>2026-03-26T00:00:00+01:00</fechaEntrada>
+        <fechaSalida>2026-03-30T00:00:00+02:00</fechaSalida>
         <numPersonas>4</numPersonas>
+        <numHabitaciones>3</numHabitaciones>
+        <internet>true</internet>
         <pago>
           <tipoPago>OTRO</tipoPago>
         </pago>
@@ -1805,6 +1964,8 @@
         <tipoDocumento>NIF</tipoDocumento>
         <numeroDocumento>11971051B</numeroDocumento>
         <soporteDocumento>BDB111728</soporteDocumento>
+        <fechaNacimiento>1979-08-09+02:00</fechaNacimiento>
+        <nacionalidad>ESP</nacionalidad>
         <direccion>
           <direccion>NO CONSTA</direccion>
           <codigoMunicipio>37067</codigoMunicipio>
@@ -1822,6 +1983,8 @@
         <tipoDocumento>NIF</tipoDocumento>
         <numeroDocumento>11963122V</numeroDocumento>
         <soporteDocumento>CHT183537</soporteDocumento>
+        <fechaNacimiento>1976-07-25+02:00</fechaNacimiento>
+        <nacionalidad>ESP</nacionalidad>
         <direccion>
           <direccion>NO CONSTA</direccion>
           <codigoMunicipio>37067</codigoMunicipio>
@@ -1836,6 +1999,8 @@
         <nombre>Lucía</nombre>
         <apellido1>Rodríguez</apellido1>
         <apellido2>Pérez</apellido2>
+        <fechaNacimiento>2013-05-26+02:00</fechaNacimiento>
+        <nacionalidad>ESP</nacionalidad>
         <direccion>
           <direccion>NO CONSTA</direccion>
           <codigoMunicipio>37067</codigoMunicipio>
@@ -1850,6 +2015,8 @@
         <nombre>Diego</nombre>
         <apellido1>Rodríguez</apellido1>
         <apellido2>Pérez</apellido2>
+        <fechaNacimiento>2015-06-24+02:00</fechaNacimiento>
+        <nacionalidad>ESP</nacionalidad>
         <direccion>
           <direccion>NO CONSTA</direccion>
           <codigoMunicipio>37067</codigoMunicipio>
@@ -1860,16 +2027,15 @@
         <parentesco>HJ</parentesco>
       </persona>
     </comunicacion>
-  </solicitud>
-  <solicitud>
-    <codigoEstablecimiento>0000277232</codigoEstablecimiento>
     <comunicacion>
       <contrato>
         <referencia>BA2CA9B057</referencia>
-        <fechaContrato>2026-03-30</fechaContrato>
-        <fechaEntrada>2026-03-30T00:00:00</fechaEntrada>
-        <fechaSalida>2026-04-01T00:00:00</fechaSalida>
+        <fechaContrato>2026-03-30+02:00</fechaContrato>
+        <fechaEntrada>2026-03-30T00:00:00+02:00</fechaEntrada>
+        <fechaSalida>2026-04-01T00:00:00+02:00</fechaSalida>
         <numPersonas>4</numPersonas>
+        <numHabitaciones>3</numHabitaciones>
+        <internet>true</internet>
         <pago>
           <tipoPago>OTRO</tipoPago>
         </pago>
@@ -1881,6 +2047,8 @@
         <tipoDocumento>NIE</tipoDocumento>
         <numeroDocumento>X7746632W</numeroDocumento>
         <soporteDocumento>E23783586</soporteDocumento>
+        <fechaNacimiento>1979-07-24+02:00</fechaNacimiento>
+        <nacionalidad>ESP</nacionalidad>
         <direccion>
           <direccion>NO CONSTA</direccion>
           <codigoMunicipio>28065</codigoMunicipio>
@@ -1897,6 +2065,8 @@
         <tipoDocumento>NIE</tipoDocumento>
         <numeroDocumento>Y4607557G</numeroDocumento>
         <soporteDocumento>E23783558</soporteDocumento>
+        <fechaNacimiento>2004-03-24+01:00</fechaNacimiento>
+        <nacionalidad>ESP</nacionalidad>
         <direccion>
           <direccion>NO CONSTA</direccion>
           <codigoMunicipio>28065</codigoMunicipio>
@@ -1914,6 +2084,8 @@
         <tipoDocumento>NIF</tipoDocumento>
         <numeroDocumento>50183327H</numeroDocumento>
         <soporteDocumento>BJQ100253</soporteDocumento>
+        <fechaNacimiento>1970-08-06+02:00</fechaNacimiento>
+        <nacionalidad>ESP</nacionalidad>
         <direccion>
           <direccion>NO CONSTA</direccion>
           <codigoMunicipio>28065</codigoMunicipio>
@@ -1928,6 +2100,8 @@
         <nombre>Diego</nombre>
         <apellido1>Barrientos</apellido1>
         <apellido2>Montecalvo</apellido2>
+        <fechaNacimiento>2012-04-07+02:00</fechaNacimiento>
+        <nacionalidad>ESP</nacionalidad>
         <direccion>
           <direccion>NO CONSTA</direccion>
           <codigoMunicipio>28065</codigoMunicipio>
@@ -1938,16 +2112,15 @@
         <parentesco>HJ</parentesco>
       </persona>
     </comunicacion>
-  </solicitud>
-  <solicitud>
-    <codigoEstablecimiento>0000277232</codigoEstablecimiento>
     <comunicacion>
       <contrato>
         <referencia>7A618D18EF</referencia>
-        <fechaContrato>2026-04-01</fechaContrato>
-        <fechaEntrada>2026-04-01T00:00:00</fechaEntrada>
-        <fechaSalida>2026-04-03T00:00:00</fechaSalida>
+        <fechaContrato>2026-04-01+02:00</fechaContrato>
+        <fechaEntrada>2026-04-01T00:00:00+02:00</fechaEntrada>
+        <fechaSalida>2026-04-03T00:00:00+02:00</fechaSalida>
         <numPersonas>3</numPersonas>
+        <numHabitaciones>3</numHabitaciones>
+        <internet>true</internet>
         <pago>
           <tipoPago>OTRO</tipoPago>
         </pago>
@@ -1957,8 +2130,10 @@
         <nombre>Mildred</nombre>
         <apellido1>Gallardo</apellido1>
         <apellido2>Mafrid</apellido2>
-        <tipoDocumento>NIE</tipoDocumento>
+        <tipoDocumento>PAS</tipoDocumento>
         <numeroDocumento>Z2115282T</numeroDocumento>
+        <fechaNacimiento>1970-09-08+02:00</fechaNacimiento>
+        <nacionalidad>ESP</nacionalidad>
         <direccion>
           <direccion>NO CONSTA</direccion>
           <codigoMunicipio>13034</codigoMunicipio>
@@ -1972,8 +2147,10 @@
         <nombre>Hollman</nombre>
         <apellido1>Bonilla</apellido1>
         <apellido2>Cosrtes</apellido2>
-        <tipoDocumento>NIE</tipoDocumento>
+        <tipoDocumento>PAS</tipoDocumento>
         <numeroDocumento>Z2115323H</numeroDocumento>
+        <fechaNacimiento>1968-12-27+01:00</fechaNacimiento>
+        <nacionalidad>ESP</nacionalidad>
         <direccion>
           <direccion>NO CONSTA</direccion>
           <codigoMunicipio>13034</codigoMunicipio>
@@ -1990,6 +2167,8 @@
         <tipoDocumento>NIE</tipoDocumento>
         <numeroDocumento>Y3005447M</numeroDocumento>
         <soporteDocumento>E29255444</soporteDocumento>
+        <fechaNacimiento>1991-03-13+01:00</fechaNacimiento>
+        <nacionalidad>ESP</nacionalidad>
         <direccion>
           <direccion>NO CONSTA</direccion>
           <codigoMunicipio>13034</codigoMunicipio>
@@ -1999,16 +2178,15 @@
         <correo>edgardozun@gmail.com</correo>
       </persona>
     </comunicacion>
-  </solicitud>
-  <solicitud>
-    <codigoEstablecimiento>0000277232</codigoEstablecimiento>
     <comunicacion>
       <contrato>
         <referencia>6A69FF2FFD</referencia>
-        <fechaContrato>2026-04-03</fechaContrato>
-        <fechaEntrada>2026-04-03T00:00:00</fechaEntrada>
-        <fechaSalida>2026-04-05T00:00:00</fechaSalida>
+        <fechaContrato>2026-04-03+02:00</fechaContrato>
+        <fechaEntrada>2026-04-03T00:00:00+02:00</fechaEntrada>
+        <fechaSalida>2026-04-05T00:00:00+02:00</fechaSalida>
         <numPersonas>5</numPersonas>
+        <numHabitaciones>3</numHabitaciones>
+        <internet>true</internet>
         <pago>
           <tipoPago>OTRO</tipoPago>
         </pago>
@@ -2021,6 +2199,8 @@
         <tipoDocumento>NIF</tipoDocumento>
         <numeroDocumento>74840850T</numeroDocumento>
         <soporteDocumento>CBW190241</soporteDocumento>
+        <fechaNacimiento>1981-04-16+02:00</fechaNacimiento>
+        <nacionalidad>ESP</nacionalidad>
         <direccion>
           <direccion>NO CONSTA</direccion>
           <codigoMunicipio>28079</codigoMunicipio>
@@ -2038,6 +2218,8 @@
         <tipoDocumento>NIF</tipoDocumento>
         <numeroDocumento>49050381Y</numeroDocumento>
         <soporteDocumento>BOV168068</soporteDocumento>
+        <fechaNacimiento>1978-03-17+01:00</fechaNacimiento>
+        <nacionalidad>ESP</nacionalidad>
         <direccion>
           <direccion>NO CONSTA</direccion>
           <codigoMunicipio>28079</codigoMunicipio>
@@ -2052,6 +2234,8 @@
         <nombre>Zarah Ester</nombre>
         <apellido1>Cañizal</apellido1>
         <apellido2>Montenegro</apellido2>
+        <fechaNacimiento>2013-05-31+02:00</fechaNacimiento>
+        <nacionalidad>ESP</nacionalidad>
         <direccion>
           <direccion>NO CONSTA</direccion>
           <codigoMunicipio>28079</codigoMunicipio>
@@ -2066,6 +2250,8 @@
         <nombre>Josué David</nombre>
         <apellido1>Cañizal</apellido1>
         <apellido2>Montenegro</apellido2>
+        <fechaNacimiento>2015-04-04+02:00</fechaNacimiento>
+        <nacionalidad>ESP</nacionalidad>
         <direccion>
           <direccion>NO CONSTA</direccion>
           <codigoMunicipio>28079</codigoMunicipio>
@@ -2080,6 +2266,8 @@
         <nombre>Juan Manuel</nombre>
         <apellido1>Cañizal</apellido1>
         <apellido2>Montenegro</apellido2>
+        <fechaNacimiento>2018-12-04+01:00</fechaNacimiento>
+        <nacionalidad>ESP</nacionalidad>
         <direccion>
           <direccion>NO CONSTA</direccion>
           <codigoMunicipio>28079</codigoMunicipio>
@@ -2090,16 +2278,15 @@
         <parentesco>HJ</parentesco>
       </persona>
     </comunicacion>
-  </solicitud>
-  <solicitud>
-    <codigoEstablecimiento>0000277232</codigoEstablecimiento>
     <comunicacion>
       <contrato>
         <referencia>64D60FE76C</referencia>
-        <fechaContrato>2026-04-06</fechaContrato>
-        <fechaEntrada>2026-04-06T00:00:00</fechaEntrada>
-        <fechaSalida>2026-04-11T00:00:00</fechaSalida>
+        <fechaContrato>2026-04-06+02:00</fechaContrato>
+        <fechaEntrada>2026-04-06T00:00:00+02:00</fechaEntrada>
+        <fechaSalida>2026-04-11T00:00:00+02:00</fechaSalida>
         <numPersonas>4</numPersonas>
+        <numHabitaciones>3</numHabitaciones>
+        <internet>true</internet>
         <pago>
           <tipoPago>OTRO</tipoPago>
         </pago>
@@ -2110,6 +2297,8 @@
         <apellido1>Ivliev</apellido1>
         <tipoDocumento>PAS</tipoDocumento>
         <numeroDocumento>FV958063</numeroDocumento>
+        <fechaNacimiento>1984-03-07+01:00</fechaNacimiento>
+        <nacionalidad>GBR</nacionalidad>
         <direccion>
           <direccion>NO CONSTA</direccion>
           <nombreMunicipio>Swansea</nombreMunicipio>
@@ -2125,6 +2314,8 @@
         <apellido1>Ivlieva</apellido1>
         <tipoDocumento>PAS</tipoDocumento>
         <numeroDocumento>FG260136</numeroDocumento>
+        <fechaNacimiento>1982-08-03+02:00</fechaNacimiento>
+        <nacionalidad>GBR</nacionalidad>
         <direccion>
           <direccion>NO CONSTA</direccion>
           <nombreMunicipio>Swansea</nombreMunicipio>
@@ -2140,6 +2331,8 @@
         <apellido1>Ivliev</apellido1>
         <tipoDocumento>PAS</tipoDocumento>
         <numeroDocumento>GM548151</numeroDocumento>
+        <fechaNacimiento>2011-07-09+02:00</fechaNacimiento>
+        <nacionalidad>GBR</nacionalidad>
         <direccion>
           <direccion>NO CONSTA</direccion>
           <nombreMunicipio>Swansea</nombreMunicipio>
@@ -2155,6 +2348,8 @@
         <apellido1>Ivlieva</apellido1>
         <tipoDocumento>PAS</tipoDocumento>
         <numeroDocumento>GM548176</numeroDocumento>
+        <fechaNacimiento>2014-04-24+02:00</fechaNacimiento>
+        <nacionalidad>GBR</nacionalidad>
         <direccion>
           <direccion>NO CONSTA</direccion>
           <nombreMunicipio>Swansea</nombreMunicipio>
@@ -2165,16 +2360,15 @@
         <parentesco>HJ</parentesco>
       </persona>
     </comunicacion>
-  </solicitud>
-  <solicitud>
-    <codigoEstablecimiento>0000277232</codigoEstablecimiento>
     <comunicacion>
       <contrato>
         <referencia>5291EAD047</referencia>
-        <fechaContrato>2026-04-15</fechaContrato>
-        <fechaEntrada>2026-04-15T00:00:00</fechaEntrada>
-        <fechaSalida>2026-04-19T00:00:00</fechaSalida>
+        <fechaContrato>2026-04-15+02:00</fechaContrato>
+        <fechaEntrada>2026-04-15T00:00:00+02:00</fechaEntrada>
+        <fechaSalida>2026-04-19T00:00:00+02:00</fechaSalida>
         <numPersonas>3</numPersonas>
+        <numHabitaciones>3</numHabitaciones>
+        <internet>true</internet>
         <pago>
           <tipoPago>OTRO</tipoPago>
         </pago>
@@ -2185,6 +2379,8 @@
         <apellido1>Dragojevic</apellido1>
         <tipoDocumento>PAS</tipoDocumento>
         <numeroDocumento>NMRKD2KJ2</numeroDocumento>
+        <fechaNacimiento>1974-11-06+01:00</fechaNacimiento>
+        <nacionalidad>NLD</nacionalidad>
         <direccion>
           <direccion>NO CONSTA</direccion>
           <nombreMunicipio>Rhenen</nombreMunicipio>
@@ -2199,6 +2395,8 @@
         <apellido1>Oosterboer</apellido1>
         <tipoDocumento>PAS</tipoDocumento>
         <numeroDocumento>NVB175PL6</numeroDocumento>
+        <fechaNacimiento>1969-01-01+01:00</fechaNacimiento>
+        <nacionalidad>NLD</nacionalidad>
         <direccion>
           <direccion>NO CONSTA</direccion>
           <nombreMunicipio>Nijkerk</nombreMunicipio>
@@ -2213,6 +2411,8 @@
         <apellido1>Kerkhof</apellido1>
         <tipoDocumento>PAS</tipoDocumento>
         <numeroDocumento>NRJH7D949</numeroDocumento>
+        <fechaNacimiento>1952-06-30+02:00</fechaNacimiento>
+        <nacionalidad>NLD</nacionalidad>
         <direccion>
           <direccion>NO CONSTA</direccion>
           <nombreMunicipio>Amersfoort</nombreMunicipio>
@@ -2223,4 +2423,4 @@
       </persona>
     </comunicacion>
   </solicitud>
-</peticion>
+</ns2:peticion>
