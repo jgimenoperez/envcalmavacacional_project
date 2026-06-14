@@ -7,7 +7,17 @@
       "WebSearch",
       "Skill(update-config)",
       "PowerShell(head *)",
-      "PowerShell(Get-ChildItem -Path \"C:\\\\MCP_CLAUDE\\\\JOSE\\\\NaranjaIT\\\\En_Calma_Vacacional\" -Recurse -File | ForEach-Object { $_.FullName })"
+      "PowerShell(Get-ChildItem -Path \"C:\\\\MCP_CLAUDE\\\\JOSE\\\\NaranjaIT\\\\En_Calma_Vacacional\" -Recurse -File | ForEach-Object { $_.FullName })",
+      "Bash(node --check server.js)",
+      "Bash(node --check js/main.js)",
+      "Bash(node --check js/article.js)",
+      "Bash(node --check js/nav.js)",
+      "WebFetch(domain:api.anthropic.com)",
+      "Bash(cp webfetch-1781400033126-o65pcd.bin design.gz)",
+      "Bash(gzip -dk design.gz)",
+      "Bash(file design *)",
+      "Bash(mkdir -p extracted)",
+      "Bash(tar -xf design -C extracted)"
     ]
   }
 }

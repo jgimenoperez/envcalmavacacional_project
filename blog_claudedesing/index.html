@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actualidad de Sagunto · enCalma Vacacional</title>
+    <meta name="description" content="Guía de Sagunto: todo lo que ver, comer y vivir. Playas, patrimonio, gastronomía y consejos para tu estancia en la Costa de Valencia.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Dancing+Script:wght@500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-content">
+            <div class="logo-section">
+                <a href="index.html" class="logo-mark">
+                    <span class="logo-word">enCalma</span>
+                    <span class="logo-sub">Vacacional · Blog</span>
+                </a>
+            </div>
+            <button class="nav-toggle" aria-label="Menú">
+                <span></span><span></span><span></span>
+            </button>
+            <nav class="nav-section" id="mainNav">
+                <a href="#" class="nav-link">Inicio</a>
+                <div class="nav-dropdown">
+                    <a href="#" class="nav-link nav-dropdown-toggle">Apartamentos <span class="nav-arrow">&#9662;</span></a>
+                    <div class="nav-dropdown-menu">
+                        <a href="#">Apartamento Vacacional La Playa</a>
+                        <a href="#">Apartamento Vacacional El Ático</a>
+                    </div>
+                </div>
+                <a href="#" class="nav-link">Anfitriones</a>
+                <a href="#" class="nav-link">Contacto</a>
+                <a href="#" class="nav-link">Faqs</a>
+                <a href="index.html" class="nav-link">Blog</a>
+                <a href="index.html" class="nav-link nav-active">Actualidad de Sagunto</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero band + buscador -->
+    <section class="hero-band">
+        <div class="hero-band-inner">
+            <div class="hero-band-text">
+                <span class="eyebrow">Guía de Sagunto</span>
+                <h1 class="hero-band-title">Todo lo que ver, comer y vivir en Sagunto</h1>
+            </div>
+            <label class="search-box">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4-4"/></svg>
+                <input type="search" id="searchInput" placeholder="Buscar artículos…" aria-label="Buscar artículos">
+            </label>
+        </div>
+    </section>
+
+    <!-- Layout: sidebar + lista -->
+    <main class="guide-layout">
+        <!-- Sidebar -->
+        <aside class="guide-sidebar">
+            <div class="sidebar-block">
+                <h2 class="sidebar-title">Categorías</h2>
+                <div class="cat-list" id="categoriesGrid">
+                    <!-- Las categorías se cargan dinámicamente desde Prismic -->
+                </div>
+            </div>
+
+            <div class="host-card">
+                <div class="host-card-head">
+                    <img class="host-card-logo" src="https://images.prismic.io/encalmavacacionalblog/abk2Ibbci2UF6G39_logo_encalma-1-.webp?auto=format,compress&h=44&dpr=2" alt="enCalma" width="88" height="44" loading="lazy">
+                </div>
+                <p class="host-card-name">Gloria &amp; Álvaro</p>
+                <p class="host-card-text">Más que anfitriones, vuestros compañeros de viaje en Puerto de Sagunto.</p>
+                <a href="#" class="cta-link">Sobre los anfitriones →</a>
+            </div>
+        </aside>
+
+        <!-- Lista de artículos -->
+        <section class="guide-list">
+            <div class="guide-list-head">
+                <span class="eyebrow">Últimas historias</span>
+                <h2 class="guide-list-title">Actualidad de Sagunto</h2>
+            </div>
+            <div class="post-list" id="articlesContainer">
+                <!-- Los artículos se cargarán aquí con JavaScript -->
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-column footer-brand-col">
+                <span class="footer-word">enCalma</span>
+                <span class="footer-tagline">Apartamentos Vacacionales · Puerto de Sagunto</span>
+            </div>
+            <div class="footer-column footer-nav">
+                <div class="footer-nav-links">
+                    <a href="#">Inicio</a>
+                    <a href="#">Apartamentos</a>
+                    <a href="#">Anfitriones</a>
+                    <a href="#">Contacto</a>
+                    <a href="#">Faqs</a>
+                </div>
+                <div class="footer-nav-links">
+                    <a href="index.html">Actualidad de Sagunto</a>
+                    <span class="footer-flags">
+                        <img src="https://flagcdn.com/w20/es.png" alt="Español" width="20" height="14" loading="lazy">
+                        <img src="https://flagcdn.com/w20/gb.png" alt="English" width="20" height="14" loading="lazy">
+                    </span>
+                </div>
+            </div>
+            <div class="footer-column footer-contact">
+                <p class="footer-phone">📞 Gloria · <a href="tel:+34653399081">+34 653 39 90 81</a></p>
+                <p class="footer-phone">📞 Álvaro · <a href="tel:+34618874229">+34 618 87 4229</a></p>
+                <a href="#" class="footer-instagram">Instagram <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/nav.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
