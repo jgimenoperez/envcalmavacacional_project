@@ -192,6 +192,16 @@ a:hover { color: var(--terracotta); }
 
 /* Dropdown */
 .nav-dropdown { position: relative; }
+.nav-dropdown::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  height: 10px;
+  pointer-events: none;
+}
+.nav-dropdown:hover::after { pointer-events: auto; }
 .nav-dropdown-toggle { cursor: pointer; }
 .nav-arrow { font-size: 9px; margin-left: 2px; display: inline-block; transition: transform var(--dur-base) var(--ease-out); }
 .nav-dropdown:hover .nav-arrow { transform: rotate(180deg); }
