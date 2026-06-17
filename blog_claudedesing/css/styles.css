@@ -425,6 +425,8 @@ a:hover { color: var(--terracotta); }
   align-items: center;
 }
 .footer-column { display: flex; flex-direction: column; gap: 8px; }
+.footer-brand-col { color: inherit; transition: opacity var(--dur-fast) var(--ease-out); }
+.footer-brand-col:hover { opacity: 0.8; color: inherit; }
 .footer-word { font-family: var(--font-display); font-size: 1.6rem; color: #fff; font-weight: 700; }
 .footer-tagline { font-size: 0.8rem; opacity: 0.85; }
 
