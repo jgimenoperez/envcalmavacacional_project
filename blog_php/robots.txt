@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://encalmavacacional.com/blog/sitemap.xml

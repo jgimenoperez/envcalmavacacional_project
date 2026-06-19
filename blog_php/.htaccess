@@ -1,0 +1,24 @@
+# Blog enCalma — URLs limpias. Apache + mod_rewrite.
+# Asume despliegue en el subdirectorio /blog del dominio.
+
+RewriteEngine On
+RewriteBase /blog/
+
+# sitemap.xml -> sitemap.php
+RewriteRule ^sitemap\.xml$ sitemap.php [L]
+
+# /blog/articulo/mi-slug -> articulo.php?slug=mi-slug
+RewriteRule ^articulo/([^/]+)/?$ articulo.php?slug=$1 [L,QSA]
+
+# No reescribir ficheros/directorios reales (css, js, imágenes…)
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^ - [L]
+
+# Raíz del blog -> index.php
+RewriteRule ^$ index.php [L]
+
+# No servir la caché ni la config directamente
+RedirectMatch 404 ^/blog/cache/
+RedirectMatch 404 ^/blog/config\.php$
+RedirectMatch 404 ^/blog/lib/
