@@ -21,7 +21,8 @@
             <a href="<?= e(SITE_URL) ?>/somos-encalma/" class="nav-link">Anfitriones</a>
             <a href="<?= e(SITE_URL) ?>/contact/" class="nav-link">Contacto</a>
             <a href="<?= e(SITE_URL) ?>/#faqs_home" class="nav-link">Faqs</a>
-            <a href="<?= e(BLOG_BASE) ?>/" class="nav-link nav-active">Blog</a>
+            <a href="<?= e(BLOG_BASE) ?>/" class="nav-link">Blog</a>
+            <a href="<?= e(SITE_URL) ?>/actualidad-de-sagunto/" class="nav-link nav-active">Actualidad de Sagunto</a>
         </nav>
     </div>
 </header>

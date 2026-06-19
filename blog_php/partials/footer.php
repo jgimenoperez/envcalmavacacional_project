@@ -13,7 +13,7 @@
                 <a href="<?= e(SITE_URL) ?>/#faqs_home">Faqs</a>
             </div>
             <div class="footer-nav-links">
-                <a href="<?= e(BLOG_BASE) ?>/">Actualidad de Sagunto</a>
+                <a href="<?= e(SITE_URL) ?>/actualidad-de-sagunto/">Actualidad de Sagunto</a>
             </div>
         </div>
         <div class="footer-column footer-contact">

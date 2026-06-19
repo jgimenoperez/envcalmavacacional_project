@@ -120,10 +120,10 @@ $related = array_slice($related, 0, 3);
                     <?php endforeach; ?>
                 </nav>
                 <div class="share-row">
-                    <a class="share-btn" href="https://wa.me/?text=<?= rawurlencode($article['title'] . ' ' . $canonical) ?>" target="_blank" rel="noopener" aria-label="Compartir en WhatsApp" title="WhatsApp">
+                    <a class="share-btn" href="https://api.whatsapp.com/send/?phone=34618874229&amp;text=Encalma+Vacacional.%0D%0A%C2%BFEn+que+te+podemos+ayudar%3F&amp;type=phone_number&amp;app_absent=0" target="_blank" rel="noopener" aria-label="Contactar por WhatsApp" title="WhatsApp">
                         <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15l-1.3 4.8 4.9-1.3A10 10 0 1 0 12 2zm0 18a8 8 0 0 1-4.1-1.1l-.3-.2-2.9.8.8-2.8-.2-.3A8 8 0 1 1 12 20zm4.4-6c-.2-.1-1.4-.7-1.6-.8s-.4-.1-.5.1-.6.8-.8 1-.3.2-.5.1a6.5 6.5 0 0 1-3.2-2.8c-.2-.4.2-.4.6-1.2a.5.5 0 0 0 0-.5c0-.1-.5-1.3-.7-1.7s-.4-.4-.5-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c2.1.7 2.1.5 2.5.5a2.7 2.7 0 0 0 1.8-1.3 2.2 2.2 0 0 0 .2-1.3c-.1-.1-.3-.2-.5-.3z"/></svg>
                     </a>
-                    <a class="share-btn" href="mailto:?subject=<?= rawurlencode($article['title']) ?>&body=<?= rawurlencode($canonical) ?>" aria-label="Compartir por email" title="Email">
+                    <a class="share-btn" href="mailto:apartamentos@encalmavacacional.com?subject=<?= rawurlencode($article['title']) ?>&body=<?= rawurlencode($canonical) ?>" aria-label="Enviar email" title="Email">
                         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
                     </a>
                     <a class="share-btn" id="shareCopy" href="<?= e($canonical) ?>" aria-label="Copiar enlace" title="Copiar enlace">
