@@ -24,7 +24,8 @@
       "Bash(mkdir -p blog_php/lib blog_php/cache)",
       "Bash(cp -r blog_claudedesing/css blog_php/css)",
       "Bash(cp blog_claudedesing/js/nav.js blog_php/nav.js)",
-      "Read(//c/c/MCP_CLAUDE/JOSE/NaranjaIT/En_Calma_Vacacional/**)"
+      "Read(//c/c/MCP_CLAUDE/JOSE/NaranjaIT/En_Calma_Vacacional/**)",
+      "Bash(git *)"
     ]
   }
 }

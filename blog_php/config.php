@@ -24,5 +24,10 @@ define('OG_FALLBACK_IMAGE', SITE_URL . '/og-image.jpg');
 define('CACHE_DIR', __DIR__ . '/cache');
 define('CACHE_TTL', 600); // segundos (10 min). Se puede invalidar con webhook de Prismic.
 
+// Secreto compartido con el webhook de Prismic. Prismic lo envía en el campo
+// "secret" del JSON al publicar; webhook.php solo purga si coincide.
+// CÁMBIALO por una cadena larga y aleatoria, y pon la misma en Prismic.
+define('WEBHOOK_SECRET', 'j*F8Pwh!x6khWyo0');
+
 // Zona horaria para fechas
 date_default_timezone_set('Europe/Madrid');
